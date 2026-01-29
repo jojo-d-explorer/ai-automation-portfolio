@@ -15,3 +15,13 @@
 - # symbol = comment (ignored by code)
 - CSV files open in Numbers by default on Mac
 - Results_Count showed total available, not total extracted (misleading metric)
+
+### Git Workflow Learning
+- Learned Terminal navigation (cd, ls commands)
+- Initialized Git repository and connected to GitHub
+- Completed first commit and push
+- Escaped Vim successfully (developer rite of passage!)
+- Authenticated with Personal Access Token
+- Resolved merge conflicts between local and remote repos
+
+Key insight: Git tracks versions of files, GitHub hosts them online. The workflow is: add → commit → push.
