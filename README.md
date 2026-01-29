@@ -86,5 +86,8 @@ I'm Joey Clark - a program manager and ecosystem builder transitioning into star
 
 ## Contact
 
-- Email: joey.clark3@gmail.com
+Connect with me on https://www.linkedin.com/in/joseph-clark-iii/
+
+*Note: This is a learning portfolio documenting my technical skill development.*
+
 - Location: Washington, DC / Lisbon, Portugal
