@@ -1,0 +1,46 @@
+# Job Search Prompt Library
+
+*Organized collection of reusable search prompts for job hunting automation*
+
+---
+
+## Quick Start
+
+**To run a search:**
+1. Pick a prompt from categories below
+2. Click file link to view full prompt
+3. Customize: roles, locations, dates
+4. Copy/paste into CoWork
+5. Attach resume if scoring enabled
+6. Run!
+
+---
+
+## Categories
+
+### 📅 Weekly Searches
+| Prompt | File | Boards | Runtime |
+|--------|------|--------|---------|
+| Manila/Bogota | [weekly/manila_bogota_partnerships.md](prompts/weekly/manila_bogota_partnerships.md) | Greenhouse, Lever | 5-7 min |
+| Multi-Board | [weekly/comprehensive_multi_board.md](prompts/weekly/comprehensive_multi_board.md) | 3+ boards | 8-12 min |
+
+### ⚡ Daily Scans
+| Prompt | File | Boards | Runtime |
+|--------|------|--------|---------|
+| LinkedIn COS | [daily/linkedin_cos_remote.md](prompts/daily/linkedin_cos_remote.md) | LinkedIn | 2-3 min |
+
+### 👥 For Others
+| Prompt | File | Use Case | Runtime |
+|--------|------|----------|---------|
+| Phil Search | [for_others/phil_partnerships.md](prompts/for_others/phil_partnerships.md) | Partnerships | 5-8 min |
+
+---
+
+## Usage Notes
+
+**After running:** Update "Last Used" dates
+**Adding new:** Create in category folder, add to table above
+
+---
+
+*Last Updated: 2026-02-04*
