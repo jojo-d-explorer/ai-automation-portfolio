@@ -1,0 +1,37 @@
+Phil Tassi - Weekly Job Search
+Executed: 2026-02-08
+CURRENT_WEEK: 2026-02-02
+PREVIOUS_WEEK: 2026-01-26
+
+Calculated dates:
+- CURRENT_WEEK (most recent Monday): 2026-02-02
+- PREVIOUS_WEEK (Monday before): 2026-01-26
+- BASE_PATH: /Users/jc3/GitHub/ai-automation-portfolio
+- RESULTS_PATH: {BASE_PATH}/results/For_Others/Phil_Tassi/Week_of_2026-02-02
+- PREVIOUS_RESULTS: Compared against {BASE_PATH}/results/For_Others/Phil_Tassi_Search_2026-02-01.csv (legacy file)
+
+Search Configuration:
+- Boards: ashbyhq.com, jobs.lever.co, boards.greenhouse.io
+- Roles: Chief of Staff, Partnerships, Business Development
+- Locations: Washington DC, London UK
+- Combinations searched: 18 (3 boards x 3 roles x 2 locations)
+
+Scoring criteria (using Phillip Tassi - Resume - November 2025 (3).pdf):
+- Skills fit: 40 points
+- Industry alignment: 35 points
+- Experience match: 25 points
+- Filter threshold: 70+
+
+Results summary:
+- Total jobs found (before filtering): 51
+- Jobs scoring 70+: 18
+- NEW jobs: 18
+- REPEAT jobs: 0
+- Top score: 93 (Monzo - Growth Partnerships Lead, Business Banking)
+
+Output files:
+1. Master_List_2026-02-02.csv (18 jobs)
+2. Top10_New_2026-02-02.csv (10 jobs)
+3. Executed_Prompt_2026-02-02.txt (this file)
+
+Prompt source: /Users/jc3/GitHub/ai-automation-portfolio/searches/prompts/for_others/Phil_Tassi_Weekly_Search.md
