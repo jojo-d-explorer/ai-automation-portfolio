@@ -1,0 +1,37 @@
+Joey Clark - Weekly Job Search
+Executed: 2026-02-10
+CURRENT_WEEK: 2026-02-09
+PREVIOUS_WEEK: 2026-02-02
+
+Calculated dates:
+- CURRENT_WEEK (most recent Monday): 2026-02-09
+- PREVIOUS_WEEK (Monday before): 2026-02-02
+- BASE_PATH: /Users/jc3/GitHub/ai-automation-portfolio
+- RESULTS_PATH: {BASE_PATH}/results/Week_of_2026-02-09
+- PREVIOUS_RESULTS: Compared against {BASE_PATH}/results/Week_of_2026-02-02/Master_List_2026-02-02.csv
+
+Search Configuration:
+- Boards: boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com
+- Roles: Chief of Staff, Partnerships, Strategic Initiatives
+- Locations: Remote, Mexico City, Panama City
+- Combinations searched: 27 (3 boards x 3 roles x 3 locations)
+
+Scoring criteria (using Joey_Clark_Resume_2026.pdf):
+- Skills fit: 40 points
+- Industry alignment: 35 points
+- Experience match: 25 points
+- Filter threshold: 70+
+
+Results summary:
+- Total jobs found (before filtering): 45
+- Jobs scoring 70+: 44
+- NEW jobs: 44
+- REPEAT jobs: 0
+- Top score: 95 (Techstars - Chief of Staff)
+
+Output files:
+1. Master_List_2026-02-09.csv (44 jobs)
+2. Top10_New_2026-02-09.csv (10 jobs)
+3. executed_2026-02-09.txt (this file)
+
+Prompt source: ONE_CLICK_WEEKLY_SEARCH (via Cowork session)
