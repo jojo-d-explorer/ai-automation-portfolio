@@ -1,0 +1,97 @@
+EXECUTED PROMPT - Week of 2026-02-09
+Executed on: 2026-02-12 (Thursday)
+==============================================
+
+## DATE CALCULATION
+- Current week start (Monday): 2026-02-09
+- Previous week start (Monday): 2026-02-02
+
+## CONFIGURATION
+Job Boards searched (4 + LinkedIn browser):
+1. boards.greenhouse.io (WebSearch)
+2. jobs.lever.co (WebSearch)
+3. jobs.ashbyhq.com (WebSearch)
+4. linkedin.com/jobs (WebSearch + authenticated browser session)
+
+Roles searched (4):
+1. L/S Hedge Fund Analyst
+2. Hedge Fund PM
+3. Director of Equity Research
+4. Investment Analyst
+
+Additional LinkedIn searches:
+- "equity research" analyst (New York, SF, Chicago, Boston)
+- "L/S equity" analyst (United States)
+- "long short" equity analyst (United States)
+- "buy side" equity analyst (United States)
+- "equity research" OR "hedge fund" analyst (Chicago, Boston)
+
+Locations searched (5):
+1. New York
+2. San Francisco
+3. Chicago
+4. Miami
+5. Boston
+
+Filters: Posted within last 7 days, up to 20 results per combination
+Total combinations: 80 (boards) + 8 LinkedIn browser searches
+
+## SUPPLEMENTARY SEARCHES
+Company career pages checked:
+- Two Sigma, Point72, Verition Fund Management, Abdiel Capital
+- Millennium Management, Citadel, Balyasny, Schonfeld
+- ExodusPoint, Sculptor, Viking Global, Coatue, D1 Capital
+- iCapital Network, BlackRock
+
+LinkedIn Browser Session (authenticated):
+- Searched 8 query/location combinations directly in Chrome
+- Clicked through individual listings for full salary, description, and requirements
+- Captured: J. Goldman & Co. TMT L/S, JPMorgan SMid Tech VP, Arootah TMT L/S Client Role,
+  Chicago Trading Company ER, Wells Fargo ER (NYC + Boston), Kennison & Associates,
+  Long Ridge Partners L/S, Selby Jennings Financials ER, Landing Point Boston
+
+## SOURCE FILTERING
+- Excluded all third-party aggregators
+- Only included results from target ATS boards, company career pages, or LinkedIn direct postings
+- Recruiter-posted LinkedIn roles included but labeled as "(Recruiter)"
+
+## SCORING CRITERIA (Based on Aaron Kimson Resume dated 2.4.2026)
+Resume Profile:
+- VP Software Equity Research, Citizens JMP Securities (2021-Present)
+- CFA Charterholder, Series 87/63, Bloomberg Market Concepts
+- Covers vertical software & fintech (BLND, EVCM, EXFY, GWRE, etc.)
+- Ranked 4th/26 Senior Analysts in 2025 for buy-side touchpoints
+- J.P. Morgan Private Bank (2019-2021), J.P. Morgan LDP (2017-2019)
+- ~9 years total finance experience
+- Based in New York, NY
+
+Scoring Weights:
+- Industry Fit (40 pts): HF equity research = full; TMT coverage = strong; adjacent finance = partial
+- Salary Fit (20 pts): Target $150K+ base / $250K+ total; N/A = 10/20 neutral
+- Location Flexibility (20 pts): Remote/hybrid in target city = full; in-office target city = 10/20
+- Seniority Match (20 pts): Mid-level analyst/VP = strong; junior/entry = partial
+
+Filter: Score >= 70 to qualify
+
+## NEW JOB DETECTION
+Previous week file: not found (first run - all jobs marked NEW)
+
+## RESULTS SUMMARY
+Total jobs found (pre-filter): 40
+Jobs scoring 70+ (post-filter): 24
+NEW jobs: 24
+REPEAT jobs: 0
+Boards searched: 4 + LinkedIn browser
+Role/location combinations: 80+
+
+## OUTPUT FILES
+1. Master List: results/Aaron/Week_of_2026-02-09/Master_List_2026-02-09.csv
+2. Top 10 New: results/Aaron/Week_of_2026-02-09/Top10_New_2026-02-09.csv
+3. Executed Prompt: searches/prompts/for_others/Aaron/executed_2026-02-09.txt
+
+## NOTES
+- LinkedIn browser session significantly improved results (10 additional qualified jobs)
+- Top 3 matches: J. Goldman TMT L/S (97), JPMorgan SMid Tech VP (95), Arootah TMT L/S Client (95)
+- Miami returned zero relevant results across all boards
+- Most hedge funds recruit through headhunters rather than public ATS postings
+- Recruiter-posted roles (Selby Jennings, Long Ridge Partners) included but labeled accordingly
