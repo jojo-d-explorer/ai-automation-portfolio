@@ -123,3 +123,18 @@
 
 *Last updated: 2026-02-06*
 *Current week: 2 (complete) → 3 (upcoming)*
+
+## Week 3 Insight: Scoring Systems Are Iterative, Not Precise
+
+**Discovery:** Scoring adjustments (like -10 for healthcare, -15 for crypto) can feel arbitrary.
+
+**Learning:**
+- Scoring doesn't need precision, it needs useful ranking
+- Start simple (70+ threshold), refine based on actual behavior
+- Numbers should be data-driven (what I apply to) not guess-driven
+- Iteration > Perfection
+
+**Approach:**
+- Weeks 1-4: Simple scoring, gather application data
+- Week 5: Analyze patterns (what scores/sectors did I apply to?)
+- Week 6+: Adjust scoring based on revealed preferences
