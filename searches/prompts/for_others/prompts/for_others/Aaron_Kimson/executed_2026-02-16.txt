@@ -1,0 +1,120 @@
+EXECUTED PROMPT - Week of 2026-02-16
+Executed on: 2026-02-15 (Sunday)
+==============================================
+
+## DATE CALCULATION
+- Current week start (Monday): 2026-02-16
+- Previous week start (Monday): 2026-02-09
+- Today's date: 2026-02-15
+
+## CONFIGURATION
+Job Boards searched (4):
+1. boards.greenhouse.io (WebSearch)
+2. jobs.lever.co (WebSearch)
+3. jobs.ashbyhq.com (WebSearch)
+4. linkedin.com/jobs (WebSearch)
+
+Roles searched (4):
+1. Long/Short Hedge Fund Analyst
+2. Hedge Fund Portfolio Manager
+3. Director of Equity Research
+4. Investment Analyst
+
+Additional LinkedIn searches:
+- "equity research" analyst (New York, SF, Chicago, Boston, Stamford/Greenwich)
+- "L/S equity" analyst (United States)
+- "long short" equity analyst (United States)
+- "buy side" equity analyst (United States)
+- "equity research" TMT hedge fund (New York)
+- "long/short equity" analyst hedge fund (New York)
+
+Locations searched (6):
+1. New York, NY
+2. San Francisco, CA
+3. Chicago, IL
+4. Boston, MA
+5. Stamford / Greenwich, CT
+6. Miami, FL
+
+Filters: Posted within last 7 days, up to 20 results per combination
+Total combinations: 96 (boards) + supplementary LinkedIn queries
+
+## SUPPLEMENTARY SEARCHES
+Company career pages checked (16):
+- Two Sigma: 2 relevant roles found (Fundamental ER Analyst [REPEAT], Senior Fundamental ER Analyst [NEW])
+- Point72: 3 relevant roles found (Business Analyst L/S [REPEAT], Equity Financial Analyst [NEW], Academy Program [NEW])
+- Verition Fund Management: 1 relevant role found (Investment Analyst Industrials L/S [NEW])
+- Abdiel Capital: Summer 2026 internship only (too junior, excluded)
+- Millennium Management: Early career/training programs only (entry level, excluded)
+- Citadel: Equities Associate Program 2026 (entry level, excluded)
+- Balyasny: Catalyst/Bridge programs (early career, excluded)
+- Schonfeld: Internal PM & Analyst roles in HK, no NYC equity analyst posting
+- ExodusPoint: No relevant equity analyst listings found
+- Sculptor Capital: No relevant equity analyst listings found
+- Viking Global: No specific analyst openings posted (opportunistic applications welcome)
+- Coatue Management: No current analyst openings listed
+- D1 Capital Partners: No specific openings found (very selective)
+- iCapital Network: HF Finance roles (operations, not equity research)
+- BlackRock: VP Equity Quant Research Analyst [NEW]
+- Lone Pine Capital: No current analyst openings posted
+- Whale Rock Capital: No listings found
+
+Recruiter sites checked:
+- Selby Jennings: 5 relevant L/S equity roles found in NYC (4 NEW)
+
+## SOURCE FILTERING
+- Excluded all third-party aggregators (ZipRecruiter, Indeed, SimplyHired, Glassdoor used only for discovery; direct URLs captured where possible)
+- Only included results from target ATS boards, company career pages, or LinkedIn/recruiter direct postings
+- Recruiter-posted LinkedIn roles included but labeled as "(Recruiter)"
+- VantageRock Capital discovered via eFinancialCareers/ZipRecruiter (direct company listing not found)
+
+## SCORING CRITERIA (Based on Aaron Kimson Resume dated 2.4.2026)
+Resume Profile:
+- VP Software Equity Research, Citizens JMP Securities (2021-Present)
+- CFA Charterholder, Series 87/63, Bloomberg Market Concepts
+- Covers vertical software & fintech (BLND, EVCM, EXFY, GWRE, etc.)
+- Ranked 4th/26 Senior Analysts in 2025 for buy-side touchpoints
+- J.P. Morgan Private Bank (2019-2021), J.P. Morgan LDP (2017-2019)
+- ~9 years total finance experience
+- Based in New York, NY
+
+Scoring Weights:
+- Industry Fit (40 pts): HF equity research (L/S, fundamental) = full; TMT/software/fintech = strong (35+); sell-side top-tier = 25-30; adjacent finance = 15-25
+- Salary Fit (20 pts): Target $150K+ base / $250K+ total; N/A = 10/20 neutral
+- Location Flexibility (20 pts): Remote/hybrid target city = full; in-office target city = 15/20; outside target = 5/20
+- Seniority Match (20 pts): Mid-level analyst/VP/Senior (4-10 yrs) = full; Director/PM = full; Junior (1-3 yrs) = 10/20; C-suite = 5/20
+
+Filter: Score >= 70 to qualify
+
+## NEW JOB DETECTION
+Previous week file: results/For_Others/Aaron_Kimson/Week_of_2026-02-09/Master_List_2026-02-09.csv (24 jobs)
+Comparison: matched on Company + Job_Title
+- 8 jobs matched previous week (REPEAT)
+- 14 new jobs not in previous file (NEW)
+- 16 previous jobs not found this week (likely expired or filled)
+
+## RESULTS SUMMARY
+Total jobs found (pre-filter): 48
+Jobs scoring 70+ (post-filter): 22
+NEW jobs: 14
+REPEAT jobs: 8
+Boards searched: 4 + supplementary
+Role/location combinations: 96+
+Company career pages checked: 16
+
+## OUTPUT FILES
+1. Master List: results/For_Others/Aaron_Kimson/Week_of_2026-02-16/Master_List_2026-02-16.csv
+2. Top 10 New: results/For_Others/Aaron_Kimson/Week_of_2026-02-16/Top10_New_2026-02-16.csv
+3. Executed Prompt: searches/prompts/for_others/Aaron_Kimson/executed_2026-02-16.txt
+
+## NOTES
+- Selby Jennings recruiter postings dominated new results (4 of top 6 new jobs)
+- TMT/software-specific L/S equity roles remain scarce on public ATS boards
+- Most hedge funds recruit through headhunters (confirmed pattern from Week 1)
+- Two Sigma added a Senior role (management track) in addition to existing analyst posting
+- Point72 has 3 relevant entry paths: direct hire, academy program, and L/S business analyst
+- VantageRock Capital (Rockefeller's HF arm) in Greenwich CT is a strong new find
+- Miami and San Francisco returned limited hedge fund equity research results
+- Chicago returned minimal results; most HF activity remains NYC/CT corridor
+- 16 of 24 previous week jobs were not found this week (likely filled or expired)
+- Key companies with NO public equity analyst postings: Coatue, Viking, D1, Lone Pine, Whale Rock (these firms primarily recruit through headhunters)
