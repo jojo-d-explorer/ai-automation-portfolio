@@ -238,6 +238,30 @@ Report any errors, broken URLs, or boards that returned zero results.
 
 ---
 
+### JOB SEARCH TRACKING UPDATE
+
+After all output files are saved, update the tracking spreadsheet:
+
+**File:** /Users/jc3/GitHub/ai-automation-portfolio/Job_Search_Tracking.xlsx
+**Sheet:** "Job Search Tracking"
+
+Find the rows for **[FRIEND NAME]** (look for name in column A). Add a new continuation row immediately after the last [FRIEND NAME] row with:
+
+| Column | Value |
+|--------|-------|
+| C (Search Ran) | Today's date (YYYY-MM-DD) |
+| D (Results 70+) | Total jobs scoring 70+ |
+| E (Top Score) | Highest score in this search |
+| F (Search Config) | Boards searched \| Roles \| Locations (short summary) |
+| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
+| H (Link to Folder) | [NAME]/Week_of_CURRENT_WEEK/ |
+
+Also mark the previous [FRIEND NAME] row's "Next Search" (column G) as completed by appending " ✓".
+
+Save the updated spreadsheet back to the same path.
+
+---
+
 ⚠️  REMINDER: After reviewing results, run CONSOLIDATE_TO_MASTER.md to update [NAME]'s master database (if applicable).
 
 ---

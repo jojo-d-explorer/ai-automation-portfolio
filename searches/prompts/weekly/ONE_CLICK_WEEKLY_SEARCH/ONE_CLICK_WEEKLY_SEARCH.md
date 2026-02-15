@@ -136,4 +136,28 @@ Verify all files saved. Show:
 
 ---
 
+### JOB SEARCH TRACKING UPDATE
+
+After all output files are saved, update the tracking spreadsheet:
+
+**File:** /Users/jc3/GitHub/ai-automation-portfolio/Job_Search_Tracking.xlsx
+**Sheet:** "Job Search Tracking"
+
+Find the rows for **Joey Clark** (look for name in column A). Add a new continuation row immediately after the last Joey row with:
+
+| Column | Value |
+|--------|-------|
+| C (Search Ran) | Today's date (YYYY-MM-DD) |
+| D (Results 70+) | Total jobs scoring 70+ |
+| E (Top Score) | Highest score in this search |
+| F (Search Config) | Boards searched \| Roles \| Locations (short summary) |
+| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
+| H (Link to Folder) | Week_of_CURRENT_WEEK/ |
+
+Also mark the previous row's "Next Search" (column G) as completed by appending " ✓".
+
+Save the updated spreadsheet back to the same path.
+
+---
+
 *Run every Sunday. Runtime: 10-15 minutes.*
