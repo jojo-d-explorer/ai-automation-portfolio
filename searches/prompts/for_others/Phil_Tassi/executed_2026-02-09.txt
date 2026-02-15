@@ -1,0 +1,28 @@
+PHIL TASSI WEEKLY JOB SEARCH - EXECUTED 2026-02-09
+============================================================
+
+Execution Date: 2026-02-15 (Sunday)
+Current Week: 2026-02-09
+Previous Week: 2026-02-02
+
+SEARCH PARAMETERS:
+  Boards: Greenhouse, Lever, Ashby, LinkedIn
+  Roles: Chief of Staff, Partnerships, Business Development
+  Locations: Washington DC, London UK
+  Filter: Posted within last 7 days, score 70+
+
+RESULTS SUMMARY:
+  Total jobs found (pre-filter): 40
+  Jobs scoring 70+ (post-filter): 40
+  After deduplication: 40
+  NEW jobs: 30
+  REPEAT jobs: 10
+  Boards searched: 4
+  Role/location combinations: 24
+
+COMPARISON FILE: /sessions/intelligent-keen-edison/mnt/ai-automation-portfolio/results/For_Others/Phil_Tassi/Week_of_2026-02-02/Master_List_2026-02-02.csv
+
+OUTPUT FILES:
+  Master List: /sessions/intelligent-keen-edison/mnt/ai-automation-portfolio/results/For_Others/Phil_Tassi/Week_of_2026-02-09/Master_List_2026-02-09.csv
+  Top 10 New: /sessions/intelligent-keen-edison/mnt/ai-automation-portfolio/results/For_Others/Phil_Tassi/Week_of_2026-02-09/Top10_New_2026-02-09.csv
+  Executed Prompt: /sessions/intelligent-keen-edison/mnt/ai-automation-portfolio/searches/prompts/for_others/Phil_Tassi/executed_2026-02-09.txt
