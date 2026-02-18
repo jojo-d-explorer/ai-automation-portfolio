@@ -22,6 +22,7 @@ Locations:
 - Remote
 - Mexico City, Mexico
 - Panama City, Panama
+- Buenos Aires, Argentina
 
 **Note:** Remote-US roles consistently score 10+ points higher than location-specific roles. Consider focusing searches on Remote unless specifically targeting a city.
 

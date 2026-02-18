@@ -1,0 +1,81 @@
+EXECUTED PROMPT - Week of 2026-02-16
+Executed on: 2026-02-15 (Sunday)
+==============================================
+
+## DATE CALCULATION
+- Current week start (Monday): 2026-02-16
+- Previous week start (Monday): 2026-02-09
+- Today's date: 2026-02-15
+
+## CONFIGURATION
+Job Boards searched (3):
+1. boards.greenhouse.io (WebSearch)
+2. jobs.lever.co (WebSearch)
+3. jobs.ashbyhq.com (WebSearch)
+
+Roles searched (3):
+1. Chief of Staff
+2. Partnerships (Strategic Partnerships, Partnerships Manager/Lead)
+3. Strategic Initiatives (Strategic Operations, Strategy & Operations)
+
+Locations searched (4):
+1. Remote (all US/Americas/Global variants)
+2. Mexico City, Mexico
+3. Panama City, Panama
+4. Buenos Aires, Argentina
+
+Filters: Posted within last 7 days, up to 20 results per combination
+Total combinations: 36 (3 boards × 3 roles × 4 locations)
+
+## SCORING (Based on Joey Clark Resume)
+- Skills fit (40 points): CoS/exec support, partnerships/BD, strategic initiatives/ops, cross-functional leadership
+- Industry alignment (35 points): Fintech, defense/industrial, AI/ML, SaaS, venture/startup ecosystem
+- Experience match (25 points): 10+ years, VP/SVP level, startup banking, venture capital, government
+
+## SECTOR ADJUSTMENTS APPLIED
+- Healthcare/Health Tech: -10 points
+- Crypto/Web3/Blockchain: -15 points
+- Fintech: +5 points
+- AI/ML: +5 points
+- Defense/Industrial: +5 points
+
+## SOURCE FILTERING
+- Excluded all Jobgether postings (third-party aggregator)
+- Excluded roles requiring specific technical skills outside Joey's background (data center hardware, etc.)
+- Included only results from target ATS boards
+
+## NEW JOB DETECTION
+Previous week: results/Week_of_2026-02-09/Master_List_2026-02-09.csv (44 jobs)
+Comparison: matched on Company + Job_Title
+- 15 new jobs not in previous file (NEW)
+- 39 jobs matched previous week (REPEAT)
+- 5 previous week jobs not found this week (likely expired)
+
+## RESULTS SUMMARY
+Total jobs found (pre-filter): 72
+Jobs scoring 70+ (post-filter): 54
+NEW jobs: 15
+REPEAT jobs: 39
+Boards searched: 3
+Role/location combinations: 36
+
+## KEY NEW FINDINGS THIS WEEK
+- Affirm: 2 new fintech partnerships roles (scored 91, 93 with +5 fintech bonus)
+- dLocal: Strategic Ops Manager in Mexico City (target LATAM location, +5 fintech bonus)
+- Vanta: Director, Strategic Partnerships (VARs) - scored 87
+- 1Password: Senior Manager, Strategic Operations - scored 85
+- David Energy: Chief of Staff - scored 85 with industrial +5 bonus
+- KOHO: Chief of Staff at Canadian fintech - scored 83
+
+## OUTPUT FILES
+1. Master List: results/Week_of_2026-02-16/Master_List_2026-02-16.csv
+2. Top 10 New: results/Week_of_2026-02-16/Top10_New_2026-02-16.csv
+3. Executed Prompt: searches/prompts/weekly/executed_2026-02-16.txt
+
+## NOTES
+- LATAM-specific results remain sparse (only dLocal Mexico found)
+- Panama City and Buenos Aires returned zero direct ATS results
+- Fintech partnerships roles consistently score highest (Affirm, VGS, Column, Middesk, Sardine)
+- CoS roles at AI companies benefit from +5 sector bonus (Cambio AI, Dust, Firecrawl)
+- 39 of 44 previous week jobs still active (89% retention rate)
+- New Affirm roles are the highest-scoring new finds this week

@@ -1,0 +1,82 @@
+EXECUTED SEARCH: Vivienne Pham Weekly Job Search
+================================================
+Date: 2026-02-15 (Sunday)
+CURRENT_WEEK: 2026-02-16
+PREVIOUS_WEEK: 2026-02-09 (no previous data - first run)
+Run by: Joey Clark (on behalf of Vivienne Pham)
+
+SEARCH PARAMETERS
+=================
+Boards: Greenhouse, Lever, Ashby, LinkedIn
+Roles (3 archetypes, 9 titles):
+  Archetype 1 - Operator/Finance Leader: CFO, VP Finance, Head of Finance
+  Archetype 2 - Capital Markets & IR: Capital Markets Advisory, Investor Relations, Head of Investor Relations
+  Archetype 3 - Ecosystem/Platform/BD: Portfolio Operations, Platform Manager, Business Development
+Locations: New York NY, Washington DC, Remote
+Combinations: 4 boards x 9 roles x 3 locations = 108
+
+SUPPLEMENTARY SEARCHES
+======================
+- Anduril Industries career pages (defense tech focus)
+- Shield AI career pages (defense tech focus)
+- Palantir career pages (defense tech focus)
+- SecurityScorecard (cybersecurity)
+- Broader defense tech BD searches across all boards
+- Broader VP/Director IR searches across all boards
+
+FILTERS APPLIED
+===============
+- Excluded Fortune 200 companies
+- Excluded "Investment Banking Analyst" and "Investment Banking Associate" titles
+- Company size: growth-stage / mid-market (Series A through pre-IPO, non-Fortune 200 public)
+- Score threshold: 70+
+- Excluded third-party job aggregators (Jobgether, Talent.com, etc.)
+
+SCORING WEIGHTS
+===============
+- Seniority Match: 30 points
+- Skills Match: 25 points
+- Location Flexibility: 20 points
+- Industry Fit: 15 points
+- Salary Fit: 10 points
+
+RESULTS
+=======
+Total jobs scoring 70+: 31
+NEW jobs: 31 (first run - all new)
+REPEAT jobs: 0
+
+Score Distribution:
+  90-100: 7 jobs
+  80-89: 14 jobs
+  70-79: 10 jobs
+
+Top Score: 97 (Shield AI - Director, Strategic Capture - US Army)
+
+Archetype Breakdown:
+  Operator / Finance Leader: 12 roles
+  Capital Markets & IR: 7 roles
+  Ecosystem / Platform / BD: 11 roles (plus 1 hybrid)
+
+Top 5 Jobs:
+1. Shield AI - Director, Strategic Capture - US Army (97) - DC - Defense Tech
+2. Shield AI - Director, International Strategic Engagement (95) - DC - Defense Tech
+3. SecurityScorecard - VP, Strategic Alliances & Partnerships (93) - Remote - Cybersecurity
+4. Saronic - Director of Growth (92) - Austin/DC - Defense Tech
+5. Anduril - Head of Finance, Air Dominance & Strike (91) - CA/DC - Defense Tech
+
+OUTPUT FILES
+============
+Master List: results/For_Others/Vivienne_Pham/Week_of_2026-02-16/Master_List_2026-02-16.csv
+Top 10 New: results/For_Others/Vivienne_Pham/Week_of_2026-02-16/Top10_New_2026-02-16.csv
+Executed Prompt: searches/prompts/for_others/Vivienne_Pham/executed_2026-02-16.txt
+
+NOTES
+=====
+- First run for Vivienne Pham - baseline established
+- Defense tech sector dominated the top results (7 of top 10), validating the search strategy
+- Capital Markets and IR roles were less abundant on ATS boards; many are posted on LinkedIn directly
+- Archetype 3 (BD) produced the strongest defense tech matches
+- DC-based roles scored highest due to location + industry alignment
+- Consider adding defense-specific job boards (ClearanceJobs) in future weeks
+- Several Anduril and Shield AI roles may require security clearance (TS/SCI)
