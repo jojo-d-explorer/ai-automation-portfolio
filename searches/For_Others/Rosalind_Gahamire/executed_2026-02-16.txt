@@ -1,0 +1,31 @@
+Executed: 2026-02-18 (Wednesday)
+Week: 2026-02-16
+
+SEARCH CONFIGURATION:
+- Boards: Greenhouse, Lever, Ashby, LinkedIn
+- Roles: Brand Strategist, Creative Strategist, Marketing Manager (+ variants: Brand Strategy Manager, Creative Strategy Lead, Brand Marketing Manager, Senior Marketing Manager)
+- Locations: Lisbon Portugal, Remote (Global/EMEA/Europe only)
+- Hard filter: Exclude Remote-US, Remote-Americas, In-Office outside Lisbon
+- Exclude aggregators: Jobgether, Talent.com, Lensa, etc.
+
+RESULTS:
+- Total jobs found (pre-filter): ~35
+- After location filter: ~15
+- After scoring (70+ threshold): 8
+- All 8 marked NEW (first run)
+- Score range: 72-87
+- Average score: 80
+
+TOP FINDINGS:
+1. Maneuver Marketing - Creative Strategist (87) - D2C, Remote, Ashby
+2. Goodnotes - Head of Marketing (84) - Consumer Tech, Lisbon, Greenhouse
+3. GetGround - Sr Product Marketing Manager (84) - Fintech, Lisbon, Greenhouse
+4. Talo - Creative Strategist (83) - D2C, Remote EEA, LinkedIn
+5. Pleo - Integrated Campaigns Manager (82) - B2B SaaS, Lisbon, Greenhouse
+
+NOTES:
+- "Brand Strategist" exact title yielded 0 results on ATS boards — this title is rare in current job market. Most brand strategy work is packaged under Creative Strategist, Brand Marketing Manager, or Marketing Manager titles.
+- European creative/brand roles are less common on standard ATS boards (Greenhouse/Lever/Ashby) compared to US roles. LinkedIn had better coverage for European market.
+- D2C consumer brand roles specifically in Lisbon are very limited. Remote-Global D2C roles are the stronger pipeline.
+- Several Lisbon-based roles are in fintech/SaaS rather than D2C — reflects Lisbon's tech ecosystem skewing toward B2B.
+- Consider supplementing with: WeWorkRemotely, RemoteOK, Tomorrow Worldwide, and direct company career page checks for major D2C brands.
