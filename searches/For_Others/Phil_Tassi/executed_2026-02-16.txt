@@ -1,0 +1,107 @@
+PHIL TASSI - WEEK 3 JOB SEARCH EXECUTION REPORT
+Week of February 16, 2026
+Generated: February 22, 2026
+
+SEARCH PARAMETERS:
+- Target Roles: Chief of Staff, Partnerships, Business Development
+- Geographies: Washington DC, London, (NYC secondary)
+- Industries: Fintech/AI/Financial Services (primary), B2B SaaS (secondary)
+- Job Boards: Greenhouse, Lever, Ashby, LinkedIn
+- Minimum Score Threshold: 70
+
+SCORING CRITERIA APPLIED:
+- Skills Fit (40 points): Strategic partnerships, business development, stakeholder management, cross-functional leadership
+- Industry Alignment (35 points): Fintech/AI/financial services = full points, B2B SaaS = moderate, other = lower
+- Experience Match (25 points): 10+ years preferred, VP-level or CoS-to-CEO roles weighted heavily
+
+JOBS FOUND AND SCORED:
+21 positions identified across all boards
+All 21 positions scored 70+ points
+
+RESULTS SUMMARY:
+- Total Master List Entries: 21
+- Top 10 New Positions: 10
+- Score Distribution:
+  * 87 points: 1 position (Monzo CoS-CEO)
+  * 85 points: 1 position (Deliveroo CoS-CEO)
+  * 84 points: 1 position (Tandem Bank CoS)
+  * 83 points: 1 position (Twilio CoS EMEA)
+  * 82 points: 2 positions (GoCardless, Capital.com)
+  * 81 points: 1 position (Liberis)
+  * 80 points: 3 positions (Alethea, Plaid, SecurityScorecard)
+  * 79 points: 1 position (Method Financial)
+  * 78 points: 1 position (Copia Power)
+  * 77 points: 1 position (Ridgeline)
+  * 76 points: 1 position (Advocate)
+  * 75 points: 1 position (Monzo CoS-Product)
+  * 74 points: 2 positions (Stand Together, Wintermute)
+  * 73 points: 2 positions (Civis Analytics, OpusClip)
+  * 72 points: 1 position (Strada Education)
+  * 71 points: 1 position (Attentive)
+
+KEY INSIGHTS:
+
+Geographic Distribution:
+- London: 12 positions (57%)
+- Washington DC: 5 positions (24%)
+- New York/Multi-location: 4 positions (19%)
+
+Sector Distribution:
+- Fintech/Payments/Banking: 13 positions (62%)
+- Tech/AI/Communications: 5 positions (24%)
+- Government/Policy/Education: 3 positions (14%)
+
+Role Type Distribution:
+- Chief of Staff: 14 positions (67%)
+- Partnerships/BD Director: 5 positions (24%)
+- VP/Head Level: 2 positions (10%)
+
+Top Markets for Phil:
+1. London fintech ecosystem (Monzo, Tandem, GoCardless, Capital.com, Liberis) - 5 CoS roles
+2. DC government/policy technology (Alethea, Plaid, SecurityScorecard, Copia Power) - 4 roles
+3. Emerging finance platforms (Deliveroo, Twilio EMEA, Wintermute) - 3 roles
+
+STANDOUT OPPORTUNITIES (Score 85+):
+1. Monzo - Chief of Staff (CEO) - London - 87 pts
+   Perfect neobank fit, CEO-facing, direct fintech alignment
+
+2. Deliveroo - Chief of Staff to CEO - London - 85 pts
+   Unicorn-scale CoS-to-CEO role, broad exposure, operator focused
+
+3. Tandem Bank - Chief of Staff - London - 84 pts
+   Green fintech premium alignment, sustainable finance growth sector
+
+4. Twilio - Chief of Staff EMEA - London - 83 pts
+   Global comms platform, EMEA leadership exposure, London-based
+
+DC/US OPPORTUNITIES (Score 80+):
+1. Alethea - Chief of Staff - DC - 80 pts
+   AI/disinformation sector, CEO reporting, DC hybrid perfect fit
+
+2. Plaid - Strategic Partner Manager - DC/London/NYC - 80 pts
+   Fintech infrastructure leader, partnerships expertise match, multi-location
+
+3. SecurityScorecard - VP Strategic Alliances & Partnerships - Remote/DC - 80 pts
+   VP-level match, partnerships focus, remote-flexible with DC option
+
+REPEAT vs NEW ANALYSIS:
+- All 21 jobs are NEW (Week of Feb 16)
+- No overlaps with Week of Feb 9 master list
+- Fresh opportunity set across all job boards
+
+NEXT STEPS:
+1. Review top 10 opportunities with Phil (Scores 87-80)
+2. Flag 80+ scoring roles for immediate outreach
+3. Research company backgrounds and existing network connections
+4. Prepare targeted cover materials highlighting relevant experience
+5. Monitor for closing deadlines on high-scoring roles
+
+DELIVERABLES CREATED:
+✓ Master_List_2026-02-16.csv (21 positions)
+✓ Top10_New_2026-02-16.csv (top 10 positions)
+✓ Phil_Tassi_Master_List_2026-02-16.xlsx (branded master list)
+✓ Phil_Tassi_Top10_New_2026-02-16.xlsx (branded top 10 list)
+✓ executed_2026-02-16.txt (this report)
+
+SEARCH COMPLETION STATUS: COMPLETE
+All target job boards searched, scoring applied, and deliverables generated.
