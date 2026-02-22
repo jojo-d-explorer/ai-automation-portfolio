@@ -1,184 +1,171 @@
-# FUNDING INTELLIGENCE — Proactive Company Prospecting
+# FUNDING INTELLIGENCE: Proactive Company Prospecting
 
-*Standalone prompt. Run anytime for any person. Also integrated into MASTER_ANALYSIS as Analysis 6.*
+**Purpose:** Scan funding newsletters in Gmail to identify recently funded companies that match a user's target profile. Surfaces companies likely to hire BEFORE roles are posted.
+**Runtime:** 5-10 minutes
+**Prerequisites:** Access to Joey's Gmail, user profile (sectors, locations, role types)
 
 ---
 
 ## CONFIGURATION
 
-**Person:** [FRIEND_NAME]
-**Target roles:** [e.g., Chief of Staff, Head of Partnerships, Director of Strategy]
-**Target sectors:** [e.g., defense tech, AI/ML, fintech, B2B SaaS]
-**Target locations:** [e.g., Washington DC, Remote-US, NYC, Lisbon/EU-Remote]
-**Seniority level:** [e.g., Director/VP/C-suite → Series B+ or $30M+]
-**Network context (optional):** [e.g., "Connected to Anzu Partners portfolio", "JPM alumni network", "DoD ecosystem"]
+**User:** [NAME]
+**Target Sectors:** [FROM THEIR ONE_CLICK — e.g., fintech, AI/ML, defense, B2B SaaS]
+**Target Locations:** [FROM THEIR ONE_CLICK — e.g., DC, NYC, Lisbon, Remote]
+**Target Role Types:** [FROM THEIR ONE_CLICK — e.g., Chief of Staff, Partnerships, BD]
+**Seniority Level:** [FROM THEIR ONE_CLICK — e.g., VP/Director, Senior Manager]
 
 ---
 
-## STEP 1: GMAIL SCAN
+## STEP 0A: NEWSLETTER SCAN
 
-Search my Gmail for funding newsletter emails received in the last 7 days:
+Search Joey's Gmail for funding newsletters from the past 7 days. Scan ALL four sources:
 
-1. **StrictlyVC**: from:connie@strictlyvc.com
-   - Look for sections labeled: "Massive Fundings", "Big-But-Not-Crazy-Big Fundings", "Smaller Fundings"
-   - Also check: "New Funds", "Exits", "Going Public" (for market context)
+### Source 1: StrictlyVC
+**Search:** `from:connie@strictlyvc.com newer_than:7d`
+**Format:** "[Company], a [age] [city] startup that [description], raised [amount] [round] led by [investors]."
+**Extract per entry:** Company, City, Amount, Round Type, Sector (from description), Investors
 
-2. **FINSmes**: from:info@finsmes.com
-   - Look for: All entries under "FROM FINSMES.COM" organized by country
-   - Also check: "MERGERS AND ACQUISITIONS" (signals active sectors)
+### Source 2: FINSmes
+**Search:** `from:info@finsmes.com newer_than:7d`
+**Format:** "[Company], a [city]-based [description], raised/received [amount] in [round] funding"
+**Extract per entry:** Company, City, Amount, Round Type, Sector (from description)
 
-From each email, extract ALL funding announcements into a working list:
-- Company name
-- Location (city, country)
-- What they do (1 sentence)
-- Stage (Pre-Seed / Seed / Series A / B / C / D+)
-- Round size (USD — convert if in EUR/GBP using approximate rates)
-- Key investors (lead investor at minimum)
-- Source (StrictlyVC / FINSmes / both)
+### Source 3: EU-Startups (Thomas Ohr)
+**Search:** `from:thomas.ohr@eu-startups.com newer_than:7d`
+**Format:** Organized by emoji-labeled categories (🤖 AI, 💰 VC/Funds, 🔋 GreenTech, 🍎 Health/BioTech, 🛰️ European News). Each entry: "[City]-based [Company] raised €[amount] to [description]."
+**Currency:** Amounts in EUR — convert to USD at approximate current rate for consistency.
+**Extract per entry:** Company, City/Country, Amount (EUR + USD equivalent), Round Type, Sector (from category header + description)
+**Note:** Also extract any VC fund raises from the "💰 VC and Funds on the Move" section — these indicate which investors are deploying fresh capital and in which sectors.
 
-Deduplicate across sources. If a company appears in both, merge the entries and note "both" in source.
+### Source 4: Sunday CET (Dragos Novac)
+**Search:** `from:sundaycet@mail.beehiiv.com newer_than:7d`
+**Format:** Two parseable sections:
+1. **"Signals" section** — structured deal listings organized by:
+   - "Interesting early stage deals" — country flag emoji + company name + one-line description
+   - "Big numbers" — country flag emoji + company name + amount
+   - Deals organized by geography subsections (Nordics, UK, Germany, France, Netherlands, Other)
+2. **"Market talk" section** — editorial with deals embedded in narrative. Look for patterns like "[Company] raised [amount]", "at [valuation]", "led by [investor]". Extract any specific deals mentioned.
+3. **"Powder" section** — new VC fund raises (indicates fresh capital deployment)
+4. **"Exits" section** — acquisitions and secondary transactions (indicates companies with fresh capital post-exit)
 
-Show me the total count: "Found [X] funding announcements across [Y] newsletter emails this week."
+**Currency:** Amounts mix EUR and USD — normalize to USD.
+**Extract per entry:** Company, Country, Amount, Round Type/Stage, Sector (from description), Lead Investor(s) if mentioned
 
 ---
 
-## STEP 2: STRICT FILTER
+## STEP 0B: BUILD MASTER FUNDING LIST
 
-Cross-reference the funding list against [FRIEND_NAME]'s criteria above.
+Combine all extracted companies from all 4 sources into a single list. Deduplicate (same company may appear in multiple newsletters — keep the entry with the most detail).
 
-**A company must match 2 OR MORE of these criteria to pass the filter:**
+For each company, record:
+| Field | Value |
+|-------|-------|
+| Company | Name |
+| City/Country | Location |
+| Amount | USD (converted if needed) |
+| Round | Seed / Series A / Series B / etc. |
+| Sector | Best classification from description |
+| Source | Which newsletter(s) reported it |
+| Lead Investor(s) | If mentioned |
+| Description | One-line what they do |
 
-### Criterion 1: SECTOR MATCH
-Company operates in one of [FRIEND_NAME]'s target sectors, or in an adjacent sector where their skills clearly transfer.
-- Direct match = strong signal
-- Adjacent match = note the connection explicitly (e.g., "AI infrastructure — adjacent to your AI/ML target")
+---
 
-### Criterion 2: LOCATION MATCH
-Company is based in one of [FRIEND_NAME]'s target locations, OR:
-- Is known to hire remote in relevant geographies
-- Has a secondary office in a target location
-- Is headquartered elsewhere but the role type typically sits in a target city (e.g., a SF company that would base its DC government relations team in DC)
+## STEP 1: FILTER AGAINST USER PROFILE
 
-### Criterion 3: STAGE MATCH
-Company is at a growth stage where [FRIEND_NAME]'s target roles typically get created:
-- C-suite / VP roles → Series B+ or $30M+ total raised
-- Director / Head-of roles → Series A+ or $15M+ total raised
-- Manager / Senior IC roles → Seed+ or $5M+ total raised
-- Use the seniority level from CONFIGURATION to determine threshold
+Apply the following filters against the user's configuration. A company must match on **2 or more** of these criteria to be included:
 
-### Criterion 4: INVESTOR SIGNAL
-Backed by a top-tier firm known for helping portfolio companies build strong leadership teams.
-- Tier 1 signal: a16z, Sequoia, Founders Fund, Lightspeed, Accel, General Catalyst, Benchmark, Index, Bessemer, NEA, GIC, Thrive Capital, Iconiq
-- Tier 2 signal: Y Combinator, First Round, Felicis, Greylock, Sapphire, Eclipse, Khosla
-- Use judgment for firms not listed — the question is "does this investor actively help with exec hiring?"
+1. **Sector match:** Company's sector overlaps with user's target sectors
+2. **Location match:** Company is in or near user's target cities, OR company is known to hire remote
+3. **Stage match:** Funding round suggests company is at a stage where they'd hire user's target role type (e.g., Series A+ likely hiring COS/BD, Seed may be too early for VP-level)
+4. **Role signal:** Company description suggests they'd need someone with user's skill set (e.g., "go-to-market" → partnerships/BD, "scaling operations" → COS/ops)
+
+**Strict filtering:** If a company matches on only 1 criterion, exclude it. This keeps signal high and noise low.
+
+---
+
+## STEP 2: SCORE AND RANK
+
+For companies passing the 2+ filter, assign a relevance score 1-10:
+- **9-10:** Perfect sector + location + stage + obvious role need
+- **7-8:** Strong match on 3 criteria
+- **5-6:** Solid match on 2 criteria
+- **Below 5:** Should have been filtered out in Step 1
 
 ---
 
 ## STEP 3: OUTPUT
 
-### If 0 companies pass the filter:
+### Format: Funding Intelligence Report
 
-```
-No freshly funded companies this week matched 2+ of [FRIEND_NAME]'s criteria.
+**[NAME] — Funding Intelligence | Week of [DATE]**
 
-This is normal with strict filtering — it means only genuinely relevant companies surface.
-The newsletters contained [X] total announcements; none cleared the bar this week.
-
-Check again next week, or loosen to 1 criterion if you want broader coverage.
-```
-
-### If 1+ companies pass the filter:
-
-**Present as a ranked table (highest relevance first):**
-
-| # | Company | What They Do | Round | Location | Criteria Matched | Why Relevant |
-|---|---------|-------------|-------|----------|-----------------|-------------|
-| 1 | [Name] | [1 sentence] | [Stage, $Amount] | [City] | [e.g., Sector ✓ Stage ✓] | [Specific rationale tied to FRIEND_NAME's background] |
-
-**For each company in the table, recommend an action:**
-
-- 🔍 **MONITOR** — Just raised; roles likely not posted yet. Check their careers page in 2-4 weeks. Set a reminder.
-- 📨 **REACH OUT** — At a stage where they'd need [FRIEND_NAME]'s role type now. Draft a brief proactive outreach email to the founder/COO/Head of People.
-- 🔗 **NETWORK** — A warm intro path likely exists through [specific network from CONFIGURATION]. Identify the connection.
-
-**Format each recommendation as:**
-```
-[Company Name] → [ACTION EMOJI + LABEL]
-Timing: [Now / 2-4 weeks / When they post]
-Suggested entry point: [Who to contact — title, not name]
-Connection path: [If NETWORK — how to get introduced. If none, say "Cold outreach — use LinkedIn."]
-```
+**Sources scanned:** StrictlyVC ([X] editions), FINSmes ([X] editions), EU-Startups ([X] editions), Sunday CET ([X] editions)
+**Total companies extracted:** [X]
+**Companies passing filter (2+ criteria match):** [Y]
 
 ---
 
-### PATTERN NOTES (include if useful):
+**TOP MATCHES (Score 7+):**
 
-- Sectors showing repeated funding activity this week (market momentum signals)
-- Companies appearing in BOTH funding newsletters AND previous job search results (double signal — flag prominently)
-- Geographic clusters (e.g., "3 defense tech companies raised in DC this week")
-- Investor patterns (e.g., "a16z backed 3 companies in your target sectors this week")
+| Company | City | Amount | Round | Sector | Why Relevant | Score |
+|---------|------|--------|-------|--------|-------------|-------|
+| [Name] | [City] | [Amount] | [Round] | [Sector] | [1-sentence: how this maps to user's profile] | [Score] |
 
----
+**WORTH WATCHING (Score 5-6):**
 
-## STEP 4: SAVE OUTPUT
+| Company | City | Amount | Round | Sector | Why Relevant | Score |
+|---------|------|--------|-------|--------|-------------|-------|
+| [Name] | [City] | [Amount] | [Round] | [Sector] | [1-sentence] | [Score] |
 
-Save the complete analysis to:
-`/Users/jc3/GitHub/ai-automation-portfolio/results/funding_intel/[FRIEND_NAME]_funding_intel_[TODAY'S DATE].md`
+**VC FUND ACTIVITY (from EU-Startups "VC/Funds" + Sunday CET "Powder" sections):**
+List any new VC fund raises that align with user's target sectors. These indicate which investors are actively deploying and may lead their portfolio companies to hire.
 
-Create the `funding_intel/` folder if it doesn't exist.
-
-Confirm the file was saved and show the file path.
-
----
-
-## QUICK-START EXAMPLES
-
-### For Joey (personal search):
-```
-Person: Joey Clark
-Target roles: Chief of Staff, Head of Strategic Operations, Head of Partnerships
-Target sectors: defense tech, AI/ML, fintech, B2B SaaS, gov tech
-Target locations: Washington DC, Remote-US, Lisbon, EU-Remote
-Seniority level: Director/Head-of (Series A+ / $15M+)
-Network context: Anzu Partners portfolio companies and LP network; JPM startup banking alumni; DoD innovation ecosystem contacts
-```
-
-### For Aaron:
-```
-Person: Aaron Kimson
-Target roles: Equity Research Analyst, Portfolio Manager, Investment Analyst
-Target sectors: hedge funds (L/S equity), asset management, fintech, financial data
-Target locations: NYC, Stamford/Greenwich CT, Remote-US
-Seniority level: VP/Director (Series B+ / $30M+)
-Network context: JMP Securities / Citizens coverage network
-```
-
-### For a new friend (template):
-```
-Person: [NAME]
-Target roles: [ROLES]
-Target sectors: [SECTORS]
-Target locations: [LOCATIONS]
-Seniority level: [LEVEL] ([STAGE THRESHOLD])
-Network context: [NETWORKS — or "None specified"]
-```
+| Fund/Investor | Amount | Focus | Relevance |
+|--------------|--------|-------|-----------|
+| [Name] | [Amount] | [Sector/geo focus] | [Why this matters for user] |
 
 ---
 
-## HOW THIS CONNECTS TO MASTER_ANALYSIS
-
-When running the full MASTER_ANALYSIS (for people with 2+ weeks of data), this prompt's logic is embedded as Analysis 6. The difference:
-
-- **Standalone (this file):** Self-contained. Own config. Run anytime for anyone.
-- **Inside MASTER_ANALYSIS:** Pulls config from the existing CONFIGURATION block. Runs automatically as part of the 6-analysis sequence. Output folds into the Strategic Summary under "PROACTIVE TARGETS."
-
-You don't need to run both — if you're running MASTER_ANALYSIS with the Analysis 6 insert, it handles everything. Use this standalone version for:
-- First-run intelligence (before their first job search)
-- Mid-week checks ("anything new funded in Aaron's space?")
-- Quick scans for people not yet in the full analysis pipeline
+**RECOMMENDED ACTIONS:**
+1. [Top company] — Check their careers page for [role type]. Recently funded [round] companies typically post within 2-4 weeks.
+2. [Company] — Monitor for [specific role]. Their [description] suggests they'll need [user's skill].
+3. [Company] — Worth a proactive outreach. [Why timing is good].
 
 ---
 
-*Created: February 18, 2026*
-*Sources: StrictlyVC (connie@strictlyvc.com, ~4-5x/week), FINSmes (info@finsmes.com, daily)*
-*Filter: Strict (2+ criteria match required)*
+## NOTES FOR JOEY
+
+### When to run this:
+- Every Sunday alongside weekly searches
+- Takes 5-10 minutes
+- Can run for any user — just swap the CONFIGURATION block
+
+### Source frequency:
+- StrictlyVC: ~4-5x/week (highest volume)
+- FINSmes: Daily (broad coverage, US-heavy)
+- EU-Startups: Weekly on Thursdays (European focus, clean structure)
+- Sunday CET: Weekly on Sundays (European VC deep cuts, editorial + structured deals)
+
+### Per-user relevance:
+| User | Best sources | Why |
+|------|------------|-----|
+| Joey | All 4 | DC + Lisbon, broad sectors |
+| Aaron | StrictlyVC + FINSmes | US hedge fund/TMT focus |
+| Phil | All 4 | DC + London, partnerships |
+| Vivienne | All 4 | NYC + DC, defensetech + European exposure |
+| Rosalind | EU-Startups + Sunday CET | European D2C/brand strategy |
+
+### Adding new sources:
+To add a new newsletter, just add a new "Source N" block in Step 0A with:
+- Gmail search query (from: address)
+- Format description (how entries are structured)
+- Extraction fields
+
+The filter logic in Steps 1-2 is source-agnostic — it works on the combined master list regardless of origin.
+
+---
+
+*Created: 2026-02-19*
+*Updated: 2026-02-22 — Added EU-Startups (thomas.ohr@eu-startups.com) and Sunday CET (sundaycet@mail.beehiiv.com)*
+*Version: 2.0 — 4 newsletter sources*
