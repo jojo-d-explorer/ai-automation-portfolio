@@ -1,0 +1,37 @@
+Company,City_Country,Amount_USD,Round,Sector,Source,Lead_Investors,Description,Relevance_Score,Why_Relevant,Criteria_Matched,Recommended_Action
+Altesa BioSciences,Atlanta GA,$75M,Series B,Pharma,FINSmes Feb 20,Forbion,Pharmaceutical company,5,Pharma sector lacks TMT/Software/Fintech focus,Sector ✗ Stage ✓,MONITOR
+Ascent,San Diego CA,$45M,Series C,Financial products/education,FINSmes Feb 20,Unknown,Financial products and education platform,9,Fintech platform with massive funding in software category,Sector ✓ Stage ✓,REACH_OUT
+Braintrust,San Francisco CA,$80M,Series B,AI observability,FINSmes Feb 19,Unknown,AI observability/monitoring platform,9,Enterprise software monitoring platform in SF with strong Series B,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Code Metal,Boston MA,$125M,Series B,Code translation AI,StrictlyVC Feb 21,Salesforce Ventures + Accel,$1.25B valuation - AI code translation,10,Enterprise software with massive Series B funding in Boston tech hub,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Cogent Security,San Francisco CA,$42M,Series A,AI cybersecurity,FINSmes Feb 19,Unknown,AI-powered cybersecurity,8,Software security company with strong Series A in SF,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+DG Matrix,Morrisville NC,$60M,Series A,Energy/solid-state transformers,FINSmes Feb 19,Unknown,Energy/solid-state transformer technology,5,Energy tech lacks TMT/Software focus,Sector ✗ Stage ✓,MONITOR
+Efficient Computer,Pittsburgh PA,$60M,Series A,Energy-efficient processors,FINSmes Feb 19,Unknown,Energy-efficient processor manufacturer,6,Hardware manufacturer lacks fintech/TMT software focus,Sector ✗ Stage ✓,MONITOR
+FYLD,London UK,€34M,Series B,AI infrastructure platform,FINSmes Feb 18,Unknown,AI infrastructure platform,8,Enterprise software infrastructure with strong Series B funding,Sector ✓ Stage ✓,REACH_OUT
+Fluidstack,NYC,$100M,Unknown,Cloud computing,StrictlyVC Feb 21,Google,$7.5B valuation (rumored) - Cloud computing,10,Software/TMT cloud platform in NYC with massive funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Freeform,Hawthorne CA,€67M,Series B,3D printing/manufacturing AI,StrictlyVC Feb 20,Founders Fund,3D printing/manufacturing AI,6,Manufacturing software lacking core TMT/Fintech focus,Sector ✓ Stage ✓,MONITOR
+Heron Power,Scotts Valley CA,$140M,Series B,Energy infrastructure,FINSmes Feb 19,Unknown,Energy infrastructure platform,6,Energy company lacking TMT/Software focus,Sector ✗ Stage ✓,MONITOR
+Hook,NYC,€10M,Series A,Social music,StrictlyVC Feb 20,Khosla Ventures + Point72,Social music platform,6,Consumer software in NYC but lacks fintech/TMT enterprise focus,Sector ✓ Location ✓,MONITOR
+InScope,NY,$14.5M,Series A,Financial reporting AI,StrictlyVC Feb 20,Norwest,Financial reporting AI,8,Fintech software platform in NYC with strong investor,Sector ✓ Location ✓,MONITOR
+Jump,Salt Lake City UT,$80M,Series B,AI for financial advisors,FINSmes Feb 20,Insight Partners,AI platform for financial advisors,9,Fintech software with significant Series B funding,Sector ✓ Stage ✓,REACH_OUT
+Kombo,NYC,€25M,Series A,HR integration platform,StrictlyVC Feb 20,Volition Capital,HR integration platform,6,Enterprise software in NYC but lacks fintech/TMT focus,Sector ✓ Location ✓,MONITOR
+Korsana Biosciences,Waltham MA,$175M,Unknown,Biotech/neurodegenerative,FINSmes Feb 19,Wellington + TCGX,Biotech/neurodegenerative diseases,6,Biotech company lacks TMT/Software/Fintech focus,Sector ✗ Stage ✓,MONITOR
+LanzaJet,Chicago IL,$47M,Unknown,Sustainable aviation fuel,FINSmes Feb 20,IAG + Shell,Sustainable aviation fuel,6,Energy company in Chicago but lacks TMT/Software focus,Sector ✗ Stage ✓,MONITOR
+Novig,Unknown,$75M,Series B,Sports/prediction market,FINSmes Feb 19,Pantera,Sports/prediction market platform,8,Fintech/sports software with strong Series B funding,Sector ✓ Stage ✓,REACH_OUT
+Onshore,NYC,$31M,Series B,AI tax platform,FINSmes Feb 19,Unknown,AI tax platform,9,Fintech software platform in NYC with Series B,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Ownwell,Austin TX,$50M,Series B,Property tax tech,FINSmes Feb 20,Alpha Edison + Mercato,Property tax technology,8,Fintech platform with Series B and strong investors,Sector ✓ Stage ✓,REACH_OUT
+Phoenix Tailings,Woburn MA,$40.2M,Series B-3,Rare earth metals,FINSmes Feb 20,Unknown,Rare earth metals recycling,5,Materials company lacks TMT/Software/Fintech focus,Sector ✗ Stage ✓,MONITOR
+Render,San Francisco CA,$100M,Series C,Cloud computing,FINSmes Feb 18,$1.5B valuation - Cloud computing platform,10,Enterprise software/cloud in SF with massive funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Selector,Santa Clara CA,$32M,Unknown,AI network intelligence,FINSmes Feb 19,Unknown,AI network intelligence,8,Enterprise software/TMT networking platform with strong funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Stoke Space,Kent WA,$860M,Series D,Rocket/space,FINSmes Feb 17,Unknown,Rocket/space technology,6,Space tech lacks TMT/Software/Fintech focus,Sector ✗ Stage ✓,MONITOR
+Temporal,San Francisco CA,$300M,Series D,Developer platform,FINSmes Feb 18,$5B valuation - Developer platform,10,Enterprise software/TMT platform in SF with massive funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Venice,NYC,$33M,Series A,Cybersecurity/access platform,FINSmes Feb 19,Unknown,Cybersecurity/access platform,9,Enterprise software/TMT security in NYC with Series A,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Vestwell,NYC,$385M,Series E,Fintech/savings platform,FINSmes Feb 19,Unknown,Fintech/savings platform,10,Fintech platform in NYC with massive Series E funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+VulnCheck,Lexington MA,$25M,Series B,Cybersecurity,FINSmes Feb 18,Unknown,Cybersecurity vulnerability platform,8,Enterprise software/TMT security in Boston area with Series B,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Taalas,Toronto,€169M,Unknown,Custom AI chips,StrictlyVC Feb 20,Quiet Capital + Fidelity,Custom AI chips,8,TMT/Software infrastructure with massive funding,Sector ✓ Stage ✓,REACH_OUT
+Apptronik,Austin TX,$520M,Series A-X,AI robotics,FINSmes Feb 17,Unknown,AI-powered robotics platform,9,Enterprise software/TMT robotics with massive funding,Sector ✓ Stage ✓,REACH_OUT
+inKind,Austin TX,$450M,Unknown,Restaurant commerce,FINSmes Feb 18,Unknown,Restaurant commerce platform,8,Fintech/software commerce platform with massive funding,Sector ✓ Stage ✓,REACH_OUT
+Utility Global,Houston TX,$100M,Series D,Industrial decarbonization,FINSmes Feb 18,Unknown,Industrial decarbonization,6,Industrial tech lacks core TMT/Software focus,Sector ✗ Stage ✓,MONITOR
+Databricks,San Francisco CA,$7B+,Series L,Data/AI,FINSmes Feb 17,Unknown,$7B+ Series L funding - Data/AI platform,10,Enterprise software/TMT platform in SF with massive funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Codoxo,Duluth GA,$35M,Series C,Healthcare AI,FINSmes Feb 18,Unknown,Healthcare AI platform,6,Healthcare software lacks fintech/TMT focus,Sector ✓ Stage ✓,MONITOR
+ChipAgents,Santa Clara CA,$50M,Series A1,Semiconductor AI,FINSmes Feb 18,Unknown,Semiconductor AI platform,9,Enterprise software/TMT in Silicon Valley with strong funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Circuit,Austin TX,$30M,Unknown,Manufacturing AI,FINSmes Feb 18,Unknown,Manufacturing/industrial AI,7,Enterprise software with manufacturing focus and strong funding,Sector ✓ Stage ✓,REACH_OUT

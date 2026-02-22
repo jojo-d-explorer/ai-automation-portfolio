@@ -1,0 +1,35 @@
+Company,City_Country,Amount_USD,Round,Sector,Source,Lead_Investors,Description,Relevance_Score,Why_Relevant,Criteria_Matched,Recommended_Action
+Aliro,Boston MA,$15M,Series A,Quantum computing,FINSmes Feb 19,Unknown,Quantum computing platform,8,Fintech-adjacent quantum tech with strong B2B SaaS positioning in tech hub,Sector ✓ Stage ✓,MONITOR
+Ascent,San Diego CA,$45M,Series C,Financial products/education,FINSmes Feb 20,Unknown,Financial products and education platform,9,Core fintech company scaling financial products and education for advisors,Sector ✓ Stage ✓,REACH_OUT
+Avantos,NYC,$25M,Series A,AI-native OS,FINSmes Feb 19,Unknown,AI-native operating system,7,AI/ML enterprise platform with B2B SaaS model in key geography,Sector ✓ Stage ✓,MONITOR
+Badge,San Francisco CA,$17.1M,Unknown,Wallet platform,FINSmes Feb 20,TTV Capital,Wallet/payment platform,8,Fintech wallet platform with significant funding and strong lead investor,Sector ✓ Stage ✓,REACH_OUT
+Braintrust,San Francisco CA,$80M,Series B,AI observability,FINSmes Feb 19,Unknown,AI observability/monitoring platform,7,Enterprise AI/ML observability tool with strong B2B SaaS traction,Sector ✓ Stage ✓,MONITOR
+Code Metal,Boston MA,$125M,Series B,Code translation AI,StrictlyVC Feb 21,Salesforce Ventures + Accel,$1.25B valuation - AI code translation,8,Enterprise AI/ML platform backed by Salesforce Ventures with significant Series B,Sector ✓ Stage ✓,MONITOR
+Cogent Security,San Francisco CA,$42M,Series A,AI cybersecurity,FINSmes Feb 19,Unknown,AI-powered cybersecurity,7,B2B SaaS cybersecurity with AI/ML focus and strong funding,Sector ✓ Stage ✓,MONITOR
+Copla,Vilnius,€6M,Series A,Fintech compliance,StrictlyVC Feb 20,Unknown,Fintech compliance platform,9,Fintech compliance for banking and financial services,Sector ✓ Stage ✓,REACH_OUT
+DG Matrix,Morrisville NC,$60M,Series A,Energy/solid-state transformers,FINSmes Feb 19,Unknown,Energy/solid-state transformer technology,6,B2B infrastructure tech with enterprise focus,Stage ✓ Location ✗,MONITOR
+Efficient Computer,Pittsburgh PA,$60M,Series A,Energy-efficient processors,FINSmes Feb 19,Unknown,Energy-efficient processor manufacturer,6,B2B enterprise hardware with significant funding,Stage ✓ Sector ✗,MONITOR
+FYLD,London UK,€34M,Series B,AI infrastructure platform,FINSmes Feb 18,Unknown,AI infrastructure platform,9,AI/ML infrastructure platform in London with strong Series B funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Fluidstack,NYC,$100M,Unknown,Cloud computing,StrictlyVC Feb 21,Google,$7.5B valuation (rumored) - Cloud computing,8,AI/ML cloud infrastructure with significant funding and enterprise focus,Sector ✓ Stage ✓,REACH_OUT
+Freeform,Hawthorne CA,€67M,Series B,3D printing/manufacturing AI,StrictlyVC Feb 20,Founders Fund,3D printing/manufacturing AI,6,Enterprise AI/ML with manufacturing focus,Sector ✓ Stage ✓,MONITOR
+Grotto AI,Berkeley,€10M,Seed,Real estate AI,StrictlyVC Feb 20,Iconiq,Real estate AI platform,5,Real estate AI lacks strong fintech/B2B SaaS alignment,Sector ✗ Stage ✗,MONITOR
+Hook,NYC,€10M,Series A,Social music,StrictlyVC Feb 20,Khosla Ventures + Point72,Social music platform,5,Consumer music platform lacking fintech/B2B SaaS focus,Sector ✗ Stage ✓,MONITOR
+InScope,NY,$14.5M,Series A,Financial reporting AI,StrictlyVC Feb 20,Norwest,Financial reporting AI,9,Financial reporting AI platform for enterprises with strong Series A,Sector ✓ Stage ✓,REACH_OUT
+Jump,Salt Lake City UT,$80M,Series B,AI for financial advisors,FINSmes Feb 20,Insight Partners,AI platform for financial advisors,9,Core fintech AI platform for financial advisors with strong funding,Sector ✓ Stage ✓,REACH_OUT
+Kombo,NYC,€25M,Series A,HR integration platform,StrictlyVC Feb 20,Volition Capital,HR integration platform,6,B2B SaaS enterprise integration lacking fintech focus,Stage ✓ Location ✓,MONITOR
+Korsana Biosciences,Waltham MA,$175M,Unknown,Biotech/neurodegenerative,FINSmes Feb 19,Wellington + TCGX,Biotech/neurodegenerative diseases,5,Biotech company lacking fintech/AI/ML focus,Sector ✗ Stage ✗,MONITOR
+LanzaJet,Chicago IL,$47M,Unknown,Sustainable aviation fuel,FINSmes Feb 20,IAG + Shell,Sustainable aviation fuel,5,Energy company lacking fintech/AI/ML focus,Sector ✗ Stage ✓,MONITOR
+Monark,NYC,$8.1M,Unknown,Fintech/brokerage,FINSmes Feb 19,F-Prime,Fintech/brokerage platform,8,Fintech brokerage platform in NYC with strong investor backing,Sector ✓ Location ✓,REACH_OUT
+Onshore,NYC,$31M,Series B,AI tax platform,FINSmes Feb 19,Unknown,AI tax platform,9,Fintech/AI platform for tax in NYC with Series B funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Ownwell,Austin TX,$50M,Series B,Property tax tech,FINSmes Feb 20,Alpha Edison + Mercato,Property tax technology,8,Fintech property tax platform with Series B and strong investors,Sector ✓ Stage ✓,REACH_OUT
+Payra,Nashville TN,$15M,Unknown,B2B payments,FINSmes Feb 19,Edison Partners,B2B payments platform,9,B2B payments fintech platform with strong funding,Sector ✓ Stage ✓,REACH_OUT
+Portkey,San Francisco CA,€15M,Series A,AI gateway,StrictlyVC Feb 20,Elevation Capital,AI gateway/API platform,7,Enterprise AI/ML infrastructure with Series A funding,Sector ✓ Stage ✓,MONITOR
+Rainfall Health,San Francisco CA,$15M,Series A,Healthcare AI,FINSmes Feb 19,Two Bear Capital,Healthcare AI platform,6,Healthcare AI platform with Series A but less fintech focus,Sector ✓ Stage ✓,MONITOR
+Selector,Santa Clara CA,$32M,Unknown,AI network intelligence,FINSmes Feb 19,Unknown,AI network intelligence,7,Enterprise AI/ML networking platform with significant funding,Sector ✓ Stage ✓,MONITOR
+Solid,Helsinki,€20M,Seed,Enterprise data/AI,StrictlyVC Feb 20,Team8 + SignalFire,Enterprise data/AI platform,8,Enterprise AI/ML data platform with strong European investors,Sector ✓ Stage ✓,MONITOR
+Stacks,London UK,€23M,Series A,Enterprise finance AI,FINSmes Feb 19,Lightspeed,Enterprise finance AI,9,Enterprise finance AI in London with Series A and strong venture backer,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Temporal,San Francisco CA,$300M,Series D,Developer platform,FINSmes Feb 18,$5B valuation - Developer platform,8,Enterprise developer AI/ML platform with massive Series D,Sector ✓ Stage ✓,MONITOR
+Venice,NYC,$33M,Series A,Cybersecurity/access platform,FINSmes Feb 19,Unknown,Cybersecurity/access platform,7,Enterprise B2B SaaS cybersecurity in NYC with Series A,Sector ✓ Stage ✓ Location ✓,MONITOR
+Vestwell,NYC,$385M,Series E,Fintech/savings platform,FINSmes Feb 19,Unknown,Fintech/savings platform,10,Core fintech savings platform in NYC with massive Series E funding,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+VulnCheck,Lexington MA,$25M,Series B,Cybersecurity,FINSmes Feb 18,Unknown,Cybersecurity vulnerability platform,7,Enterprise cybersecurity B2B SaaS with Series B funding,Sector ✓ Stage ✓,MONITOR
+Taalas,Toronto,€169M,Unknown,Custom AI chips,StrictlyVC Feb 20,Quiet Capital + Fidelity,Custom AI chips,8,Enterprise AI/ML infrastructure with significant funding and strong investors,Sector ✓ Stage ✓,MONITOR

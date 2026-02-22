@@ -1,0 +1,33 @@
+Company,City_Country,Amount_USD,Round,Sector,Source,Lead_Investors,Description,Relevance_Score,Why_Relevant,Criteria_Matched,Recommended_Action
+ARCYN Defense,Washington DC,Unknown,Seed,Defense tech,FINSmes Feb 19,Unknown,Defense technology startup,8,Defense tech in DC matching primary focus area,Sector ✓ Location ✓,REACH_OUT
+Breaker,Austin TX/Sydney,$6M,Seed,Defense tech,FINSmes Feb 19,Unknown,Defense technology startup,7,Defense tech startup with emerging funding,Sector ✓ Stage ✗,MONITOR
+Braintrust,San Francisco CA,$80M,Series B,AI observability,FINSmes Feb 19,Unknown,AI observability/monitoring platform,8,Enterprise AI/ML observability with strong Series B,Sector ✓ Stage ✓,REACH_OUT
+Code Metal,Boston MA,$125M,Series B,Code translation AI,StrictlyVC Feb 21,Salesforce Ventures + Accel,$1.25B valuation - AI code translation,8,Enterprise AI/ML with massive Series B funding,Sector ✓ Stage ✓,REACH_OUT
+Cogent Security,San Francisco CA,$42M,Series A,AI cybersecurity,FINSmes Feb 19,Unknown,AI-powered cybersecurity,9,Cybersecurity with AI focus and strong Series A,Sector ✓ Stage ✓,REACH_OUT
+DG Matrix,Morrisville NC,$60M,Series A,Energy/solid-state transformers,FINSmes Feb 19,Unknown,Energy/solid-state transformer technology,9,Energy tech infrastructure with significant Series A funding,Sector ✓ Stage ✓,REACH_OUT
+Efficient Computer,Pittsburgh PA,$60M,Series A,Energy-efficient processors,FINSmes Feb 19,Unknown,Energy-efficient processor manufacturer,8,Energy tech with Series A and enterprise focus,Sector ✓ Stage ✓,REACH_OUT
+FYLD,London UK,€34M,Series B,AI infrastructure platform,FINSmes Feb 18,Unknown,AI infrastructure platform,7,Enterprise AI/ML infrastructure with strong Series B,Sector ✓ Stage ✓,MONITOR
+Heron Power,Scotts Valley CA,$140M,Series B,Energy infrastructure,FINSmes Feb 19,Unknown,Energy infrastructure platform,9,Energy infrastructure with massive Series B funding,Sector ✓ Stage ✓,REACH_OUT
+Kombo,NYC,€25M,Series A,HR integration platform,StrictlyVC Feb 20,Volition Capital,HR integration platform,6,Enterprise B2B SaaS in NYC but lacks defense/energy focus,Sector ✗ Stage ✓ Location ✓,MONITOR
+NuCube Energy,Idaho Falls ID,$13M,Unknown,Nuclear energy,FINSmes Feb 20,Unknown,Nuclear energy company,9,Energy tech with significant funding,Sector ✓ Stage ✓,REACH_OUT
+Onodrim Industries,Amsterdam NL,€40M,Seed,European defense tech,FINSmes Feb 18,Unknown,European defense technology,9,Defense tech with substantial Seed funding,Sector ✓ Stage ✓,REACH_OUT
+Phoenix Tailings,Woburn MA,$40.2M,Series B-3,Rare earth metals,FINSmes Feb 20,Unknown,Rare earth metals recycling,7,Energy/materials tech with strong Series B-3,Sector ✓ Stage ✓,MONITOR
+Seasats,San Diego CA,$20M,Series A,Defense/autonomous naval,FINSmes Feb 18,Unknown,Defense/autonomous naval systems,10,Defense tech with Series A and autonomous systems focus,Sector ✓ Stage ✓,REACH_OUT
+Selector,Santa Clara CA,$32M,Unknown,AI network intelligence,FINSmes Feb 19,Unknown,AI network intelligence,7,Enterprise AI/ML network platform with strong funding,Sector ✓ Stage ✓,MONITOR
+Skydrone,France,Unknown,Unknown,Defense/energy drones,Sunday CET,Unknown,Defense/energy drones,9,Defense/energy tech with dual sector fit,Sector ✓ Stage ✗,REACH_OUT
+Stoke Space,Kent WA,$860M,Series D,Rocket/space,FINSmes Feb 17,Unknown,Rocket/space technology,8,Defense/space tech with massive Series D,Sector ✓ Stage ✓,REACH_OUT
+Temporal,San Francisco CA,$300M,Series D,Developer platform,FINSmes Feb 18,$5B valuation - Developer platform,7,Enterprise developer AI/ML platform with massive funding,Sector ✓ Stage ✓,MONITOR
+Utility Global,Houston TX,$100M,Series D,Industrial decarbonization,FINSmes Feb 18,Unknown,Industrial decarbonization,9,Energy tech infrastructure with massive Series D,Sector ✓ Stage ✓,REACH_OUT
+Venice,NYC,$33M,Series A,Cybersecurity/access platform,FINSmes Feb 19,Unknown,Cybersecurity/access platform,9,Cybersecurity platform in NYC with Series A,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+VulnCheck,Lexington MA,$25M,Series B,Cybersecurity,FINSmes Feb 18,Unknown,Cybersecurity vulnerability platform,9,Cybersecurity platform with strong Series B,Sector ✓ Stage ✓,REACH_OUT
+ChipAgents,Santa Clara CA,$50M,Series A1,Semiconductor AI,FINSmes Feb 18,Unknown,Semiconductor AI platform,8,AI-powered semiconductor technology with strong funding,Sector ✓ Stage ✓,REACH_OUT
+Portkey,San Francisco CA,€15M,Series A,AI gateway,StrictlyVC Feb 20,Elevation Capital,AI gateway/API platform,7,Enterprise AI/ML infrastructure platform,Sector ✓ Stage ✓,MONITOR
+Taalas,Toronto,€169M,Unknown,Custom AI chips,StrictlyVC Feb 20,Quiet Capital + Fidelity,Custom AI chips,9,AI infrastructure/semiconductors with massive funding,Sector ✓ Stage ✓,REACH_OUT
+Avantos,NYC,$25M,Series A,AI-native OS,FINSmes Feb 19,Unknown,AI-native operating system,8,AI/ML platform in NYC with Series A,Sector ✓ Stage ✓ Location ✓,REACH_OUT
+Circuit,Austin TX,$30M,Unknown,Manufacturing AI,FINSmes Feb 18,Unknown,Manufacturing/industrial AI,7,Enterprise AI/ML with industrial focus and strong funding,Sector ✓ Stage ✓,MONITOR
+Databricks,San Francisco CA,$7B+,Series L,Data/AI,FINSmes Feb 17,Unknown,$7B+ Series L funding - Data/AI platform,8,Enterprise AI/ML platform with massive funding,Sector ✓ Stage ✓,MONITOR
+ZaiNar,Bay Area,€100M+,Unknown,Indoor positioning AI,StrictlyVC Feb 20,Unknown,$1B valuation - Indoor positioning AI,8,AI/ML infrastructure tech with significant funding,Sector ✓ Stage ✓,REACH_OUT
+Apptronik,Austin TX,$520M,Series A-X,AI robotics,FINSmes Feb 17,Unknown,AI-powered robotics platform,9,AI robotics potentially relevant to defense applications,Sector ✓ Stage ✓,REACH_OUT
+FYLD,London UK,€34M,Series B,AI infrastructure platform,FINSmes Feb 18,Unknown,AI infrastructure platform,8,Enterprise AI/ML infrastructure with strong Series B,Sector ✓ Stage ✓,REACH_OUT
+SurrealDB,London UK,€19M,Series A,AI-native database,FINSmes Feb 18,Unknown,AI-native database,7,Enterprise AI/ML database infrastructure,Sector ✓ Stage ✓,MONITOR
+Cogent Security,San Francisco CA,$42M,Series A,AI cybersecurity,FINSmes Feb 19,Unknown,AI-powered cybersecurity,9,Cybersecurity with AI and strong Series A,Sector ✓ Stage ✓,REACH_OUT
