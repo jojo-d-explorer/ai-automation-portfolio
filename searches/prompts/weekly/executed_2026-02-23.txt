@@ -1,0 +1,66 @@
+WEEKLY SEARCH EXECUTION LOG
+================================================================================
+
+Execution Date: 2026-02-23
+Week Of: 2026-02-23
+Previous Week: 2026-02-16
+
+SEARCH PARAMETERS
+--------------------------------------------------------------------------------
+Boards Searched:
+  - Greenhouse (greenhouse.io)
+  - Lever (lever.co)
+  - Ashby (ashbyhq.com)
+
+Roles Searched:
+  - Chief of Staff
+  - Strategic Partnerships Manager / Lead / Director
+  - Strategic Initiatives / Operations / Finance
+
+Target Locations:
+  - Remote-US
+  - Remote-Global
+  - Remote-Americas
+  - Hybrid
+  - Panama City, Panama
+  - Buenos Aires, Argentina
+  - Manila, Philippines
+
+RESULTS SUMMARY
+--------------------------------------------------------------------------------
+Total Jobs in Master List: 74
+Repeated Jobs from Previous Week: 53
+New Jobs This Week: 21
+Top 10 New Jobs (by Score): 10
+
+OUTPUT FILES GENERATED
+--------------------------------------------------------------------------------
+Master_List_2026-02-23.csv
+  - Location: /sessions/amazing-exciting-gates/mnt/ai-automation-portfolio/results/Week_of_2026-02-23/Master_List_2026-02-23.csv
+  - Jobs: 74
+  - Sorted by: Score (descending)
+
+Top10_New_2026-02-23.csv
+  - Location: /sessions/amazing-exciting-gates/mnt/ai-automation-portfolio/results/Week_of_2026-02-23/Top10_New_2026-02-23.csv
+  - Jobs: 10
+  - Sorted by: Score (descending)
+
+SCORE DISTRIBUTION (Master List)
+--------------------------------------------------------------------------------
+Highest Score: 95
+Lowest Score: 70
+Average Score: 84.4
+
+NEW JOBS - TOP SCORES
+--------------------------------------------------------------------------------
+1. Grammarly - CEO Chief of Staff (Score: 93)
+2. Twelve Labs - Chief of Staff (Score: 92)
+3. Alpaca - Chief of Staff (Score: 91)
+4. Sentient - Director of Strategic Partnerships for Capital Markets (Score: 91)
+5. Skylight - Chief of Staff (Score: 90)
+6. Promptfoo - Chief of Staff / Business Operations Lead (Score: 90)
+7. Ironclad - Chief of Staff & CEO Communications (Score: 88)
+8. Caribou - Chief of Staff (Score: 87)
+9. Tides Network - Chief of Staff (Score: 85)
+10. 32Co - Chief of Staff (Operations) (Score: 84)
+
