@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Search Dashboard</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0f172a;
+    --navy-mid: #1e293b;
+    --blue: #3b82f6;
+    --blue-light: #eff6ff;
+    --green: #10b981;
+    --green-light: #ecfdf5;
+    --yellow: #f59e0b;
+    --yellow-light: #fffbeb;
+    --red: #ef4444;
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-400: #94a3b8;
+    --gray-600: #475569;
+    --gray-900: #0f172a;
+    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+    --shadow-md: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--gray-100);
+    color: var(--gray-900);
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 0 32px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+  }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
+  .logo span { color: var(--blue); }
+
+  select#user-select {
+    background: var(--navy-mid);
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 7px 32px 7px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    min-width: 180px;
+  }
+  select#user-select:focus { border-color: var(--blue); }
+
+  /* Main layout */
+  main { max-width: 1200px; margin: 0 auto; padding: 28px 24px; }
+
+  /* Loading / empty state */
+  .empty-state {
+    text-align: center;
+    padding: 80px 24px;
+    color: var(--gray-400);
+  }
+  .empty-state h2 { font-size: 20px; margin-bottom: 8px; color: var(--gray-600); }
+
+  /* Section label */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin: 0 0 12px 0;
+  }
+
+  /* Stat cards */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+  }
+  .stat-label { font-size: 12px; color: var(--gray-400); font-weight: 500; margin-bottom: 6px; }
+  .stat-value { font-size: 32px; font-weight: 700; line-height: 1; color: var(--gray-900); }
+  .stat-sub { font-size: 12px; color: var(--gray-400); margin-top: 6px; }
+  .stat-card.highlight .stat-value { color: var(--green); }
+  .stat-card.warn .stat-value { color: var(--blue); }
+
+  /* Two-column layout */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+
+  /* Card */
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-title { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+  .card-count {
+    font-size: 12px;
+    background: var(--gray-100);
+    color: var(--gray-600);
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-weight: 500;
+  }
+  .card-body { padding: 0; }
+
+  /* Score badge */
+  .score {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 36px;
+    text-align: center;
+  }
+  .score-high  { background: var(--green-light); color: #065f46; }
+  .score-mid   { background: var(--blue-light);  color: #1d4ed8; }
+  .score-low   { background: var(--yellow-light); color: #92400e; }
+
+  /* Top 10 table */
+  .top10-table { width: 100%; border-collapse: collapse; }
+  .top10-table tr { border-bottom: 1px solid var(--gray-100); }
+  .top10-table tr:last-child { border-bottom: none; }
+  .top10-table tr:hover { background: var(--gray-50); }
+  .top10-table td { padding: 10px 20px; vertical-align: middle; }
+  .top10-table .td-score { width: 60px; }
+  .top10-table .td-company { font-weight: 600; color: var(--gray-900); }
+  .top10-table .td-title { color: var(--gray-600); font-size: 13px; }
+  .rank { font-size: 11px; color: var(--gray-400); font-weight: 600; width: 24px; display: inline-block; }
+
+  /* Sector bars */
+  .sector-list { padding: 8px 0; }
+  .sector-row { padding: 9px 20px; }
+  .sector-row:hover { background: var(--gray-50); }
+  .sector-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+  .sector-name { font-weight: 500; font-size: 13px; }
+  .sector-meta { font-size: 12px; color: var(--gray-400); }
+  .bar-track { background: var(--gray-100); border-radius: 99px; height: 5px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 99px; background: var(--blue); transition: width .4s ease; }
+
+  /* Apply Next table */
+  .apply-table { width: 100%; border-collapse: collapse; }
+  .apply-table thead tr { background: var(--gray-50); border-bottom: 1px solid var(--gray-200); }
+  .apply-table thead th {
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gray-400);
+  }
+  .apply-table tbody tr { border-bottom: 1px solid var(--gray-100); }
+  .apply-table tbody tr:last-child { border-bottom: none; }
+  .apply-table tbody tr:hover { background: var(--gray-50); }
+  .apply-table td { padding: 10px 16px; vertical-align: middle; }
+  .apply-table .td-company { font-weight: 600; }
+  .apply-table .td-title { color: var(--gray-600); font-size: 13px; max-width: 280px; }
+  .apply-table .td-url a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .apply-table .td-url a:hover { text-decoration: underline; }
+
+  /* Sector pill */
+  .sector-pill {
+    display: inline-block;
+    background: var(--gray-100);
+    color: var(--gray-600);
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* Status row */
+  .status-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border-radius: 8px;
+    padding: 12px 18px;
+    box-shadow: var(--shadow);
+    font-size: 13px;
+  }
+  .status-pill .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+  .dot-new { background: var(--green); }
+  .dot-repeat { background: var(--yellow); }
+  .dot-other { background: var(--gray-400); }
+  .status-pill strong { font-weight: 700; }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .two-col { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    main { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo">Job<span>Search</span></div>
+  </div>
+  <select id="user-select">
+    <option value="">Select a user…</option>
+  </select>
+</header>
+
+<main id="main">
+  <div class="empty-state">
+    <h2>Select a user to load their dashboard</h2>
+    <p>Use the dropdown in the top-right corner</p>
+  </div>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function scoreClass(s) {
+  if (s >= 90) return 'score-high';
+  if (s >= 80) return 'score-mid';
+  return 'score-low';
+}
+
+function dotClass(status) {
+  const s = (status || '').toLowerCase();
+  if (s === 'new') return 'dot-new';
+  if (s === 'repeat') return 'dot-repeat';
+  return 'dot-other';
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+async function loadUsers() {
+  const res = await fetch('/api/users');
+  const users = await res.json();
+  const sel = $('user-select');
+  users.forEach(u => {
+    const opt = document.createElement('option');
+    opt.value = u.slug;
+    opt.textContent = u.name;
+    sel.appendChild(opt);
+  });
+}
+
+async function loadDashboard(slug) {
+  $('main').innerHTML = '<div class="empty-state"><h2>Loading…</h2></div>';
+  const res = await fetch(`/api/data?user=${encodeURIComponent(slug)}`);
+  if (!res.ok) { $('main').innerHTML = '<div class="empty-state"><h2>Error loading data</h2></div>'; return; }
+  const d = await res.json();
+  render(d);
+}
+
+function render(d) {
+  const maxSectorCount = d.sectors.length ? Math.max(...d.sectors.map(s => s.count)) : 1;
+
+  // Stat cards
+  const stats = `
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Total Jobs</div>
+        <div class="stat-value">${d.total_jobs}</div>
+        <div class="stat-sub">${d.scored_jobs} scored</div>
+      </div>
+      <div class="stat-card highlight">
+        <div class="stat-label">Average Score</div>
+        <div class="stat-value">${d.avg_score}</div>
+        <div class="stat-sub">Range: ${d.min_score} – ${d.max_score}</div>
+      </div>
+      <div class="stat-card warn">
+        <div class="stat-label">Apply Next</div>
+        <div class="stat-value">${d.apply_next_count}</div>
+        <div class="stat-sub">Unapplied jobs scoring 85+</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Top Score</div>
+        <div class="stat-value">${d.max_score}</div>
+        <div class="stat-sub">${d.top10[0] ? esc(d.top10[0].company) : '—'}</div>
+      </div>
+    </div>`;
+
+  // Top 10
+  const top10Rows = d.top10.map((j, i) => `
+    <tr>
+      <td class="td-score"><span class="score ${scoreClass(j.score)}">${j.score}</span></td>
+      <td>
+        <span class="rank">#${i + 1}</span>
+        <span class="td-company">${esc(j.company)}</span><br>
+        <span class="td-title">${esc(j.title)}</span>
+      </td>
+      <td><span class="sector-pill">${esc(j.sector)}</span></td>
+    </tr>`).join('');
+
+  // Sectors
+  const sectorRows = d.sectors.map(s => `
+    <div class="sector-row">
+      <div class="sector-top">
+        <span class="sector-name">${esc(s.name)}</span>
+        <span class="sector-meta">${s.count} jobs · avg ${s.avg}</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${Math.round(s.count / maxSectorCount * 100)}%"></div>
+      </div>
+    </div>`).join('');
+
+  // Apply Next
+  const applyRows = d.apply_next.map(j => `
+    <tr>
+      <td class="td-score"><span class="score ${scoreClass(j.score)}">${j.score}</span></td>
+      <td class="td-company">${esc(j.company)}</td>
+      <td class="td-title">${esc(j.title)}</td>
+      <td><span class="sector-pill">${esc(j.sector)}</span></td>
+      <td class="td-url">${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">Open ↗</a>` : '—'}</td>
+    </tr>`).join('');
+
+  // Status pills
+  const statusPills = Object.entries(d.status_counts).map(([k, v]) => `
+    <div class="status-pill">
+      <div class="dot ${dotClass(k)}"></div>
+      <strong>${v}</strong> ${esc(k)}
+    </div>`).join('');
+
+  $('main').innerHTML = `
+    ${stats}
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Top 10 Jobs</span>
+          <span class="card-count">by score</span>
+        </div>
+        <div class="card-body">
+          <table class="top10-table">${top10Rows}</table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Sector Breakdown</span>
+          <span class="card-count">${d.sectors.length} sectors</span>
+        </div>
+        <div class="card-body sector-list">${sectorRows}</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:28px">
+      <div class="card-header">
+        <span class="card-title">Apply Next</span>
+        <span class="card-count">${d.apply_next_count} unapplied · score 85+</span>
+      </div>
+      <div class="card-body">
+        ${d.apply_next.length ? `
+        <table class="apply-table">
+          <thead><tr>
+            <th>Score</th><th>Company</th><th>Title</th><th>Sector</th><th>Link</th>
+          </tr></thead>
+          <tbody>${applyRows}</tbody>
+        </table>` : '<div style="padding:24px;color:var(--gray-400);text-align:center">All 85+ jobs have been applied to!</div>'}
+      </div>
+    </div>
+
+    <div class="status-row">${statusPills}</div>`;
+}
+
+// Boot
+loadUsers();
+$('user-select').addEventListener('change', e => {
+  if (e.target.value) loadDashboard(e.target.value);
+});
+</script>
+</body>
+</html>
