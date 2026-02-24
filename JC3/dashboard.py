@@ -1,27 +1,92 @@
 #!/usr/bin/env python3
-"""Quick dashboard summary of the JC3 master job database."""
+"""Job search dashboard — run for any user in the repo.
+
+Usage:
+  python3 dashboard.py            # list available users
+  python3 dashboard.py joey       # run dashboard for Joey
+  python3 dashboard.py aaron      # run dashboard for Aaron Kimson
+"""
 
 import csv
 import os
+import sys
 from collections import Counter
 
 _REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(_REPO, "results", "master_job_database.csv")
 
+
+# ---------------------------------------------------------------------------
+# User discovery
+# ---------------------------------------------------------------------------
+
+def find_databases():
+    """Return a dict of {slug: (display_name, csv_path)} for every user found."""
+    users = {}
+
+    # Joey — fixed location
+    joey_path = os.path.join(_REPO, "results", "master_job_database.csv")
+    if os.path.exists(joey_path):
+        users["joey"] = ("Joey Clark", joey_path)
+
+    # Friends — results/For_Others/{Name}/Master_Job_Database_{Name}.csv
+    for_others = os.path.join(_REPO, "results", "For_Others")
+    if os.path.isdir(for_others):
+        for name in sorted(os.listdir(for_others)):
+            folder = os.path.join(for_others, name)
+            if not os.path.isdir(folder):
+                continue
+            candidate = os.path.join(folder, f"Master_Job_Database_{name}.csv")
+            if os.path.exists(candidate):
+                slug = name.lower().replace("_", " ").split()[0]  # first name only
+                # Ensure uniqueness — use full name slug if collision
+                if slug in users:
+                    slug = name.lower().replace("_", "-")
+                display = name.replace("_", " ")
+                users[slug] = (display, candidate)
+
+    return users
+
+
+def resolve_user(arg, users):
+    """Match a CLI argument to a user slug (case-insensitive prefix match)."""
+    arg = arg.lower()
+    # Exact match first
+    if arg in users:
+        return arg
+    # Prefix match
+    matches = [slug for slug in users if slug.startswith(arg)]
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:
+        print(f"Ambiguous user '{arg}' — matches: {', '.join(matches)}")
+        sys.exit(1)
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Data helpers
+# ---------------------------------------------------------------------------
 
 def load_jobs(path):
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
+def parse_score(row):
+    try:
+        return float(row["Score"])
+    except (ValueError, KeyError):
+        return None
+
+
 SECTOR_MAP = {
     "Fintech": ["fintech", "crypto", "blockchain", "banking", "payments", "tax tech",
-                 "alternative investments", "market intelligence", "identity", "fraud",
-                 "insurtech", "web3"],
+                "alternative investments", "market intelligence", "identity", "fraud",
+                "insurtech", "web3"],
     "Health Tech": ["health", "wellness", "fitness", "biotech"],
     "AI / ML": ["ai/", "ai ", "/ai", " ai", "speech tech", "ml"],
     "SaaS / Software": ["saas", "developer tools", "devtools", "cloud", "automation",
-                         "martech", "adtech", "analytics"],
+                        "martech", "adtech", "analytics"],
     "E-commerce / Consumer": ["e-commerce", "commerce", "consumer tech", "marketplace",
                                "restaurant tech", "social media", "media/sports"],
 }
@@ -37,20 +102,17 @@ def normalize_sector(raw):
     return raw
 
 
-def parse_score(row):
-    try:
-        return float(row["Score"])
-    except (ValueError, KeyError):
-        return None
+# ---------------------------------------------------------------------------
+# Dashboard rendering
+# ---------------------------------------------------------------------------
 
-
-def main():
-    jobs = load_jobs(DB_PATH)
+def run_dashboard(display_name, db_path):
+    jobs = load_jobs(db_path)
     scored = [(j, parse_score(j)) for j in jobs if parse_score(j) is not None]
 
     # --- Overview ---
     print("=" * 60)
-    print("  JC3 JOB SEARCH DASHBOARD")
+    print(f"  JOB SEARCH DASHBOARD — {display_name.upper()}")
     print("=" * 60)
     print(f"\n  Total jobs in database : {len(jobs)}")
     print(f"  Jobs with scores       : {len(scored)}")
@@ -84,23 +146,21 @@ def main():
         sector = normalize_sector(job.get("Sector", ""))
         sector_scores.setdefault(sector, []).append(score)
 
-    rows = []
-    for sector, scores in sector_scores.items():
-        rows.append((sector, len(scores), sum(scores) / len(scores)))
-
-    rows.sort(key=lambda r: r[1], reverse=True)
+    sector_rows = sorted(
+        [(s, len(v), sum(v) / len(v)) for s, v in sector_scores.items()],
+        key=lambda r: r[1], reverse=True
+    )
 
     print(f"  {'Sector':<30} {'Jobs':>5}  {'Avg Score':>9}")
     print(f"  {'─'*28:<30} {'─'*5:>5}  {'─'*9:>9}")
-    for sector, count, avg in rows:
+    for sector, count, avg in sector_rows:
         print(f"  {sector:<30} {count:>5}  {avg:>9.1f}")
 
     # --- Apply Next ---
-    apply_next = [
-        (j, s) for j, s in scored
-        if s >= 85 and not j.get("Applied_Date", "").strip()
-    ]
-    apply_next.sort(key=lambda x: x[1], reverse=True)
+    apply_next = sorted(
+        [(j, s) for j, s in scored if s >= 85 and not j.get("Applied_Date", "").strip()],
+        key=lambda x: x[1], reverse=True
+    )
 
     print(f"\n{'─' * 60}")
     print(f"  APPLY NEXT  ({len(apply_next)} jobs scoring 85+ with no application)")
@@ -126,6 +186,29 @@ def main():
         print(f"  {status:<12} {count}")
 
     print()
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
+def main():
+    users = find_databases()
+
+    if len(sys.argv) < 2:
+        print("\nAvailable users:\n")
+        for slug, (display, path) in users.items():
+            print(f"  {slug:<20} {display}  ({os.path.relpath(path, _REPO)})")
+        print(f"\nUsage: python3 dashboard.py <user>\n")
+        sys.exit(0)
+
+    slug = resolve_user(sys.argv[1], users)
+    if slug is None:
+        print(f"User '{sys.argv[1]}' not found. Available: {', '.join(users)}")
+        sys.exit(1)
+
+    display_name, db_path = users[slug]
+    run_dashboard(display_name, db_path)
 
 
 if __name__ == "__main__":
