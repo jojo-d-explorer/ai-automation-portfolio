@@ -58,6 +58,28 @@ Apply these rules consistently for all extracted jobs. Do not leave Work_Arrange
 
 ---
 
+URL INTEGRITY (CRITICAL — enforced before any result is included):
+
+Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
+- Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
+- Lever: `jobs.lever.co/[company]/[uuid]`
+- Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
+- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
+
+EXCLUDE any result where:
+- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/company`)
+- The URL points to a general careers page or company homepage
+- You cannot navigate to the specific listing URL
+- The job ID is absent, guessed, or a placeholder
+
+Do not fabricate job IDs. If you cannot find the specific listing URL, omit the result entirely. A job without a verified, job-specific URL must not enter the database.
+
+No hallucinated results: Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
+
+Pre-save URL audit: Before writing output files, count how many raw results were excluded for missing or invalid URLs. Report this in the final summary.
+
+---
+
 DEDUPLICATION:
 Eliminate duplicate jobs (same company + same job title across boards). Keep highest-scoring version and list all boards where found in "Found_On" column.
 

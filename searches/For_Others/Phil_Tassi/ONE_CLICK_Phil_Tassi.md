@@ -65,14 +65,27 @@ Only include results hosted directly on the target ATS boards or the company's o
 
 **Exclude all third-party job aggregators** including but not limited to: Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob.
 
-**URL Verification:**
-For each result, verify the URL resolves to an active job listing. If the URL is broken or redirects to a general careers page, attempt to reconstruct the direct ATS link using standard board URL formats:
-- Greenhouse: boards.greenhouse.io/[company]/jobs/[id]
-- Lever: jobs.lever.co/[company]/[id]
-- Ashby: jobs.ashby.com/[company]/[id] or [company].ashbyhq.com
-- LinkedIn: linkedin.com/jobs/view/[id]
+**URL Integrity (CRITICAL — enforced before any result is included):**
 
-If the URL cannot be verified or reconstructed, mark URL_Status as "Unverified." Otherwise mark as "Verified."
+Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
+- Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
+- Lever: `jobs.lever.co/[company]/[uuid]`
+- Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
+- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
+
+**EXCLUDE any result where:**
+- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/anthropic`)
+- The URL points to a general careers page or company homepage
+- You cannot navigate to the specific listing URL
+- The job ID is absent, guessed, or a placeholder
+
+**Do not fabricate job IDs.** If you cannot find the specific listing URL, omit the result entirely. Do not mark it "Unverified" and include it anyway. A job without a verified, job-specific URL must not enter the database.
+
+**No hallucinated results:** Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
+
+Mark all included URLs as `URL_Status = "Verified"`.
+
+**Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
 
 ---
 
