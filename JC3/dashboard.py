@@ -5,7 +5,8 @@ import csv
 import os
 from collections import Counter
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "master_job_database.csv")
+_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(_REPO, "results", "master_job_database.csv")
 
 
 def load_jobs(path):
@@ -93,6 +94,28 @@ def main():
     print(f"  {'─'*28:<30} {'─'*5:>5}  {'─'*9:>9}")
     for sector, count, avg in rows:
         print(f"  {sector:<30} {count:>5}  {avg:>9.1f}")
+
+    # --- Apply Next ---
+    apply_next = [
+        (j, s) for j, s in scored
+        if s >= 85 and not j.get("Applied_Date", "").strip()
+    ]
+    apply_next.sort(key=lambda x: x[1], reverse=True)
+
+    print(f"\n{'─' * 60}")
+    print(f"  APPLY NEXT  ({len(apply_next)} jobs scoring 85+ with no application)")
+    print(f"{'─' * 60}")
+
+    if apply_next:
+        print(f"  {'Score':<7} {'Company':<20} {'Title':<28} URL")
+        print(f"  {'─'*5:<7} {'─'*18:<20} {'─'*26:<28} {'─'*30}")
+        for job, score in apply_next:
+            company = job["Company"][:18]
+            title = job["Job_Title"][:26]
+            url = job.get("URL", "")
+            print(f"  {score:<7.0f} {company:<20} {title:<28} {url}")
+    else:
+        print("  All 85+ jobs have been applied to!")
 
     # --- Status breakdown ---
     print(f"\n{'─' * 60}")

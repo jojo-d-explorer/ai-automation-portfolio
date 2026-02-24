@@ -65,7 +65,12 @@ Show progress: "Reading Week_of_2026-XX-XX... [N] jobs found"
 
 For each job across all weekly CSVs:
 
-**Match key:** Company + Job_Title (case-insensitive comparison)
+**Match key:** Company + Job_Title (case-insensitive, punctuation-normalized comparison)
+
+**Title normalization rule (apply before every comparison):**
+Strip all commas and collapse multiple spaces to one before comparing Job_Title values.
+Example: "Director, Strategic Partnerships" → "Director Strategic Partnerships"
+This prevents comma/spacing variants of the same title from creating duplicate rows.
 
 **If job already exists in master (DUPLICATE):**
 - Keep the version with the highest Score
