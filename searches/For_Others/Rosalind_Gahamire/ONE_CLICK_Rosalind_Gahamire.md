@@ -110,6 +110,21 @@ Mark all included URLs as `URL_Status = "Verified"`.
 
 **Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
 
+**URL Integrity & Bot Blocking:**
+
+Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
+
+Common sources of Blocked/Error status:
+- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
+- Niche or low-traffic job boards that return connection errors
+- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
+
+How the weekly check handles this:
+- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
+- Blocked and Error jobs are preserved in the database for manual review
+
+Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+
 ---
 
 ### FIELD EXTRACTION

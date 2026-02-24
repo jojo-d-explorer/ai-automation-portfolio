@@ -104,6 +104,23 @@ Mark all included URLs as `URL_Status = "Verified"`.
 
 **Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
 
+**URL Integrity & Bot Blocking:**
+
+Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
+
+Common sources of Blocked/Error status:
+- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
+- Niche or low-traffic job boards that return connection errors
+- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
+
+**Vivienne-specific note:** Defense contractor sites (e.g., Shield AI, Distributed Spectrum, Snorkel AI, Real-Time Innovations) and defensetechjobs.com aggregator links frequently block automated checks. Vivienne's database will consistently show higher Error/Blocked rates than other users — this is expected and does not indicate data quality issues. All defense contractor URLs should be manually verified weekly rather than relying on the automated check.
+
+How the weekly check handles this:
+- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
+- Blocked and Error jobs are preserved in the database for manual review
+
+Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+
 ---
 
 ### FIELD EXTRACTION
