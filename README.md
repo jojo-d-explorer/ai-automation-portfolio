@@ -1,46 +1,103 @@
-# AI Automation Portfolio
+# Job Search Intelligence Platform
 
-## About This Project
-
-I'm Joey Clark — a program manager and ecosystem builder transitioning into startup operations and partnerships roles. This repository documents my 12-week journey learning AI automation and agent development through real projects that solve real problems.
-
-**Goal:** Build practical automation skills that solve real problems while creating a technical portfolio for growth-stage startup roles.
-
-**Time Commitment:** 8-12 hours/week (Jan-April 2026)
+> A multi-user job search automation system built as part of a 12-week AI engineering portfolio. Covers the full pipeline from job discovery through scored results, strategic analysis, funded company intelligence, and professional deliverables — running weekly across five active users.
 
 ---
 
-## What I've Built
+## About
 
-### Job Search Intelligence Platform (Weeks 0-3)
+[Joey Clark](https://www.linkedin.com/in/joseph-clark-iii/) — program manager and ecosystem builder — built this system during a 12-week AI automation learning project (Jan–Apr 2026). What started as personal job search tooling evolved into a production-grade intelligence platform serving five people with distinct search profiles, custom scoring configurations, and weekly deliverables.
 
-What started as a personal job search automation evolved into a multi-user intelligence platform serving 5 people with personalized, data-driven job search support.
+This repository documents both the working system and the learning journey behind it.
 
-**Core system:**
-- Multi-board search automation across LinkedIn, Greenhouse, Lever, and Ashby
-- AI-powered resume-matching algorithm scoring jobs 1-100 with weighted criteria customized per user
-- Master database architecture with deduplication, weekly consolidation, and application tracking
-- 6-query strategic analysis engine (score distributions, sector concentration, company hiring signals, geographic patterns, search evolution, and proactive funding intelligence)
+**Time commitment:** 8–12 hours/week · Washington, DC / Lisbon, Portugal
 
-**Intelligence layer:**
-- Gmail integration scanning funding newsletters (StrictlyVC, FINSmes) to identify companies likely to hire before roles are posted
-- Job search advice corpus auto-refreshed weekly from newsletter sources and woven into personalized strategy recommendations
-- Strict filtering (2+ criteria match) to surface only high-signal funded companies per user's target profile
+---
 
-**Professional deliverables:**
-- Branded Excel reports with conditional formatting, score color-coding, and auto-filters
-- Strategic analysis reports with actionable recommendations
-- Templated email delivery system for weekly updates
+## Platform Overview
 
-**Multi-user operations:**
-- Onboarded 5 users with customized search configurations spanning hedge fund equity research, partnerships/BD, finance/capital markets, and brand strategy
-- Each user has personalized scoring weights, sector targets, location filters, and seniority thresholds
-- Searches span US and European markets (DC, NYC, Lisbon, Remote-Global)
+The system automates the full weekly job search cycle:
 
-**Scale:**
-- 118+ jobs in personal master database
-- Average match scores improved from 73.6 to 86.5 over 12 days of parameter tuning
-- Remote roles consistently score 10+ points higher than location-specific positions
+- **Multi-board search** across LinkedIn, Greenhouse, Lever, and Ashby
+- **AI scoring engine** matching jobs against each user's resume using weighted criteria (industry fit, skills match, seniority, location, compensation) — customized per user
+- **Master database** with deduplication, NEW/REPEAT detection, and application history tracking
+- **Funding intelligence** pipeline scanning StrictlyVC, FINSmes, EU-Startups, and Sunday CET to surface companies likely to hire before roles are posted
+- **Strategic analysis** engine generating score distributions, sector concentration, company hiring signals, and geographic breakdowns
+- **Professional deliverables** — branded Excel reports with conditional formatting and templated HTML email delivery
+
+---
+
+## Tools
+
+Python tools live in `JC3/` and run from the repo root.
+
+| Tool | Description | Run |
+|------|-------------|-----|
+| `dashboard.py` | Terminal dashboard showing scores, sectors, and application status per user | `python3 JC3/dashboard.py [user]` |
+| `serve.py` + `dashboard.html` | Local web server serving an interactive job browser at `localhost:8765` | `python3 JC3/serve.py` |
+| `check_urls.py` | Weekly URL health check — pings every job link and auto-removes confirmed-closed listings | `python3 JC3/check_urls.py [user] [--dry-run]` |
+
+---
+
+## Weekly Workflow
+
+Each user's search follows a five-step cycle, run every Sunday:
+
+```
+1. ONE_CLICK search   →  Multi-board scrape, AI score against resume, save Master List + Top 10
+2. CONSOLIDATE        →  Merge weekly results into user's master database, preserve application history
+3. check_urls.py      →  Ping all job URLs, drop confirmed-closed listings, flag blocked/error for review
+4. MASTER_ANALYSIS    →  Generate strategic analysis (score trends, sector patterns, funded company matches)
+5. Deliverables       →  Branded Excel files + delivery email drafted and sent to user
+```
+
+Funding intelligence and strategic analysis run from Week 2 onward, once enough data exists for trends.
+
+---
+
+## Users
+
+The platform currently supports five active users with distinct search profiles:
+
+- **Venture capital operator** — Chief of Staff and strategy roles, London and European fintech
+- **Equity research analyst** — Long/short TMT, hedge fund buy-side, New York
+- **Partnerships & BD** — Growth-stage startup roles, US remote and major markets
+- **Defense technology** — Program management and operations, DC metro
+- **European brand strategy** — Senior creative and brand leadership, international markets
+
+Each user has a dedicated search configuration (target roles, locations, sector weights, scoring criteria) and receives personalized deliverables weekly.
+
+---
+
+## Repo Structure
+
+```
+ai-automation-portfolio/
+├── searches/                     # Templates and prompts — edit here, not in results/
+│   ├── For_Others/               # Per-user ONE_CLICK search configurations
+│   ├── FRIEND_DELIVERY_EMAIL.md  # Email template + CoWork generation prompt
+│   ├── MASTER_ANALYSIS_1.md      # Strategic analysis prompt
+│   ├── FUNDING_INTEL.md          # Funding intelligence prompt
+│   └── FORMAT_SPEC.md            # Output formatting reference
+│
+├── results/                      # Generated outputs — do not edit manually
+│   └── For_Others/               # Per-user weekly results
+│       └── [User]/Week_of_[date]/
+│           ├── data/             # Master List CSV, Top 10 CSV (system backbone)
+│           └── deliverables/     # Branded Excel, analysis PDF, delivery email HTML
+│
+├── JC3/                          # Python tools + personal search config
+│   ├── dashboard.py              # Terminal stats dashboard
+│   ├── serve.py                  # Local web dashboard server
+│   ├── dashboard.html            # Web dashboard UI
+│   └── check_urls.py             # Weekly URL health check
+│
+├── Core/                         # System reference files and curriculum
+├── learning_log/                 # Weekly reflections and learning notes
+└── Job_Search_Tracking.xlsx      # Cross-user operations and scheduling tracker
+```
+
+> **Templates and prompts live in `searches/`.** All generated outputs (CSVs, Excel files, PDFs, HTML emails) live in `results/`. Re-run the relevant prompt rather than editing output files directly.
 
 ---
 
@@ -49,72 +106,67 @@ What started as a personal job search automation evolved into a multi-user intel
 ### Week 0: CoWork Foundations ✅
 **Completed:** January 28, 2026
 
-**What I Built:**
 - Organized file structure for job search automation
 - First working search automation (LinkedIn + Greenhouse)
 - Reusable search templates
 
-**What I Learned:**
-- Browser automation vs. direct web scraping
-- File system navigation and organization
-- Prompt engineering for AI agents
-- How to scope projects appropriately
+*Learned: browser automation vs. direct web scraping, prompt engineering for AI agents, project scoping*
 
 ---
 
 ### Week 1: Multi-Board Searches & GitHub Setup ✅
 **Completed:** February 4, 2026
 
-**What I Built:**
 - Multi-board search across LinkedIn, Greenhouse, Lever, Ashby in a single command
 - CSV output with structured fields and edge case handling
 - GitHub repository with version control workflow
 
-**What I Learned:**
-- Prompt structure (config → execution → extraction → verification)
-- Dynamic date handling (no manual updates week to week)
-- Git fundamentals (commit, push, .gitignore, staging)
+*Learned: prompt structure (config → execution → extraction → verification), dynamic date handling, Git fundamentals*
 
 ---
 
 ### Week 2: One-Click Automation & Scoring ✅
 **Completed:** February 9, 2026
 
-**What I Built:**
 - One-click weekly search with AI scoring against resume
 - Deduplication across boards with NEW/REPEAT detection
 - Friend search template and intake questionnaire system
-- Onboarded first friend (Aaron — hedge fund equity research)
+- Onboarded first user (hedge fund equity research)
 
-**What I Learned:**
-- Scoring system design (weighted criteria, rationale generation)
-- Template architecture (build once, customize per user)
-- Git workflow as daily habit (commit grouping, meaningful messages)
+*Learned: scoring system design, template architecture, Git workflow as daily habit*
 
 ---
 
 ### Week 3: Multi-User Operations & Intelligence ✅
 **Completed:** February 19, 2026
 
-**What I Built:**
 - Master database consolidation with application tracking columns
 - 6-query strategic analysis engine (MASTER_ANALYSIS)
-- Gmail intelligence pipeline (Remote100K advice + StrictlyVC/FINSmes funding data)
+- Gmail intelligence pipeline (job search advice + StrictlyVC/FINSmes funding data)
 - Branded Excel deliverables with professional formatting
-- Onboarded 4 additional users (Phil, Vivienne, Rosalind + personal search)
-- Job search tracking spreadsheet across all users
+- Onboarded 4 additional users across 5 search profiles
 - Standalone funding intelligence prompt for proactive company prospecting
 
-**What I Learned:**
-- Data consolidation patterns (weekly → master with preservation logic)
-- Gmail as an intelligence source (newsletter parsing, structured extraction)
-- Multi-user system design (shared templates, personalized configs)
-- Professional output design (branded reports, strategic narratives)
-- The difference between reactive search (posted jobs) and proactive intelligence (funded companies)
+*Learned: data consolidation patterns, Gmail as an intelligence source, multi-user system design, the difference between reactive search (posted jobs) and proactive intelligence (funded companies)*
 
 ---
 
-### Weeks 4-12: Upcoming
+### Week 4: Python Tooling & Data Quality 🔄
+**Started:** February 23, 2026
+
+- Claude Code installation and local development environment setup
+- Python terminal dashboard (`dashboard.py`) with multi-user support
+- Local web application (`serve.py` + `dashboard.html`) for interactive job browsing
+- URL health check system (`check_urls.py`) with auto-removal of confirmed-closed listings
+- Data quality audit removing 107+ hallucinated and closed jobs from master databases
+- URL integrity rules upgraded and enforced across all 6 active prompts
+
+*In progress*
+
+---
+
+### Weeks 5–12: Upcoming
+
 - Application tracking pipeline and follow-up automation
 - Advanced pattern analysis and predictive scoring
 - Error handling and edge case hardening
@@ -123,37 +175,20 @@ What started as a personal job search automation evolved into a multi-user intel
 
 ---
 
-## Technologies & Tools
+## Technologies
 
-- **Claude / CoWork** — AI agent orchestration and browser automation
+- **Claude / CoWork** — AI agent orchestration, browser automation, and analysis generation
+- **Python** — URL health checking, terminal dashboard, local web server (`dashboard.py`, `serve.py`, `check_urls.py`)
+- **Gmail API** — Funding newsletter intelligence gathering
+- **openpyxl** — Branded Excel report generation with conditional formatting
 - **GitHub** — Version control and portfolio documentation
-- **Python** — Data processing (planned)
-- **Gmail API** — Newsletter intelligence gathering
-- **Prompt Engineering** — Structured templates, scoring systems, multi-step workflows
-
----
-
-## Repository Structure
-
-```
-ai-automation-portfolio/
-├── searches/           # Prompt templates (ONE_CLICK, CONSOLIDATE, MASTER_ANALYSIS, FUNDING_INTEL)
-├── results/            # Weekly search outputs and deliverables per user
-├── learning_log/       # Weekly reflections and insights
-├── Core/               # Core prompt templates and system files
-├── JC3/                # Personal search configuration and results
-└── Job_Search_Tracking.xlsx  # Multi-user search operations tracker
-```
 
 ---
 
 ## Contact
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/joseph-clark-iii/)
-
-*This is a learning portfolio documenting my technical skill development.*
-- Location: Washington, DC / Lisbon, Portugal
+Connect on [LinkedIn](https://www.linkedin.com/in/joseph-clark-iii/)
 
 ---
 
-*Last updated: February 21, 2026*
+*Last updated: February 25, 2026*

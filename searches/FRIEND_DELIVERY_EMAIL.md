@@ -1,3 +1,6 @@
+> **TEMPLATE LIVES HERE — not in results/**
+> Templates and prompts live in `searches/`. Generated outputs, deliverables, and sent emails live in `results/`.
+
 # FRIEND DELIVERY EMAIL TEMPLATES
 
 *Standardized email templates for delivering weekly search results to friends.*
@@ -39,8 +42,31 @@ The HTML should be formatted for direct paste into Gmail:
 - Use Arial 14px font
 - Bold section headers (not markdown asterisks)
 - Clean bullet lists with proper indentation
+- Line height: 1.6
+- Max width: 680px
 - No red placeholder text remaining — everything should be filled in
 - Keep the same section structure and tone from the template
+
+**Always include the "What's New" section at the very top of the email, before the greeting.** Use the template below verbatim — this section is system-level content, not personalized per friend:
+
+```html
+<div style="background-color: #f0f5fb; border-left: 4px solid #2F5496; padding: 16px 20px; margin: 0 0 28px 0;">
+  <p style="margin: 0 0 14px 0;"><strong style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: #2F5496;">What's New</strong></p>
+
+  <p style="margin: 0 0 4px 0;"><strong>This Week's Updates</strong></p>
+  <ul style="margin: 4px 0 14px 0; padding-left: 20px;">
+    <li>Data quality improvements — better filtering, reduced noise in results</li>
+    <li>URL verification upgrade — all job links are verified before inclusion; every link should open directly to the listing</li>
+    <li>Closed jobs now automatically removed — the weekly check now drops confirmed closed listings, so your master list stays current</li>
+  </ul>
+
+  <p style="margin: 0 0 4px 0;"><strong>New: Job Tracking</strong></p>
+  <p style="margin: 4px 0 14px 0;">I've added application tracking to the system so we can see which opportunities you've pursued. To log what you've applied to this week, just reply to this email with the roles, or send back the Excel with the <em>Applied_Date</em> column filled in. A Google Sheet for self-service tracking is coming soon.</p>
+
+  <p style="margin: 0 0 4px 0;"><strong>Coming Soon</strong></p>
+  <p style="margin: 4px 0 0 0;">More features in the pipeline — including a web dashboard for browsing your results and tracking applications in one place. Screenshots incoming once it's ready to share.</p>
+</div>
+```
 
 After saving, show me a preview of the email content so I can review before sending.
 ```
@@ -57,6 +83,17 @@ After saving, show me a preview of the email content so I can review before send
 ---
 
 ### Structure & Content
+
+**0. WHAT'S NEW SECTION** *(always at top, before greeting — system-level content, same every week)*
+
+Light blue box with left border. Three subsections:
+- **This Week's Updates** — data quality improvements, URL verification upgrade, closed jobs now auto-removed
+- **New: Job Tracking** — system now tracks applications; ask friend to reply with roles applied to this week, or return Excel with Applied_Date filled in; note Google Sheet for self-service tracking coming soon
+- **Coming Soon** — teaser for upcoming features; screenshots will be included when web dashboard is ready to share
+
+*(Use the HTML snippet in the CoWork prompt above — do not paraphrase or shorten)*
+
+---
 
 **1. OPENER**
 
@@ -142,6 +179,17 @@ Joey
 
 ### Structure & Content
 
+**0. WHAT'S NEW SECTION** *(always at top, before greeting — system-level content, same every week)*
+
+Light blue box with left border. Three subsections:
+- **This Week's Updates** — data quality improvements, URL verification upgrade, closed jobs now auto-removed
+- **New: Job Tracking** — system now tracks applications; ask friend to reply with roles applied to this week, or return Excel with Applied_Date filled in; note Google Sheet for self-service tracking coming soon
+- **Coming Soon** — teaser for upcoming features; screenshots will be included when web dashboard is ready to share
+
+*(Use the HTML snippet in the CoWork prompt above — do not paraphrase or shorten)*
+
+---
+
 **1. OPENER + HEADLINE**
 
 Hey [FIRST_NAME],
@@ -224,9 +272,11 @@ CoWork generates the HTML file with these specs so it pastes cleanly into Gmail:
 - Bullet lists: Standard HTML ul/li with 24px left padding
 - Line height: 1.6
 - Max width: 680px
-- No background colors, borders, or styling that Gmail strips
+- No background colors or borders on the main body — Gmail strips stylesheet rules, so keep the job results section plain
+- **Exception — What's New section:** Uses inline styles only (not stylesheet) so Gmail preserves them. Background: `#f0f5fb`, left border: `4px solid #2F5496`, padding: `16px 20px`. Use the exact HTML snippet from the CoWork prompt above.
 
 ---
 
 *Created: 2026-02-19*
+*Updated: 2026-02-25 — Added "What's New" section (system updates, job tracking, coming soon) at top of both Variant A and Variant B. Added inline-styled HTML box to CoWork prompt and updated HTML spec.*
 *Based on: Rosalind first-run delivery, Phil Week 3 delivery, Aaron/Phil analysis teasers*
