@@ -24,5 +24,8 @@ Temporary Items
 # Temporary files
 *.tmp
 *.temp
+# Excel lock files
+~$*.xlsx
+~$*.xls
 # Optional: Uncomment if you don't want result CSVs in Git
 # results/**/*.csv
