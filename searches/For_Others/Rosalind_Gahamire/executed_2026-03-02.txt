@@ -1,0 +1,50 @@
+EXECUTED PROMPT — Week of 2026-03-02
+========================================
+Execution Date: Monday, March 2, 2026
+CURRENT_WEEK: 2026-03-02
+PREVIOUS_WEEK: 2026-02-23
+
+CONFIGURATION:
+- Job Boards: boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com
+- Roles: Brand Strategist, Creative Strategist, Marketing Manager, Head of Marketing, Brand Manager, Creative Director
+- Locations: Lisbon Portugal, Remote-Global, Remote-Europe, Europe
+- Deal-breaker: Exclude US-only, US-timezone, in-office outside Lisbon
+- Posted within: last 7 days (best-effort verification via web search)
+- Score threshold: 70+
+
+SEARCH EXECUTION:
+- Total board/role combinations searched: 18 (6 roles x 3 boards)
+- Location variants included in each search: Lisbon, Remote, Europe
+- Search method: WebSearch (site: operator) + targeted detail searches
+- Page verification: WebFetch blocked for all 3 ATS domains; Chrome browser unavailable
+- Detail extraction: Via secondary web searches and third-party job board snippets
+
+RESULTS SUMMARY:
+- Total jobs found (pre-filter): 40+
+- Jobs scoring 70+ (post-filter): 6
+- NEW jobs: 6
+- REPEAT jobs: 0 (first run, no previous week data)
+- Excluded (US-only location): 9 (Semafor, OpenSea, Dashlane, Influential, VaynerMedia, Monks, Grüns, StackAdapt, Reddit)
+- Excluded (in-office outside Lisbon): 4 (KAYAK/Paris, FeverUp/Madrid, FeverUp/Paris, Voodoo/Paris)
+- Excluded (language requirement): 1 (Broadvoice - Spanish fluency required)
+- Excluded (UK-only): 1 (Mattermost)
+- Excluded (possibly closed): 1 (DuckDuckGo)
+- Excluded (below score threshold): 3 (Synthesia 64, EoT Labs 68, Truvo 53)
+- Excluded (aggregator): All Jobgether listings
+- Excluded (invalid/general URLs): 0
+
+LIMITATIONS:
+- ATS domains blocked by egress proxy; could not navigate directly to job pages
+- Posting dates could not be precisely verified for 7-day window
+- Job details extracted from search snippets and third-party board cross-listings
+- Chrome browser not connected for page-level verification
+
+PREVIOUS WEEK CHECK:
+- Path checked: results/For_Others/Rosalind_Gahamire/Week_of_2026-02-23/
+- Result: No previous week directory found (first run)
+- All jobs marked as NEW
+
+OUTPUT FILES:
+- CSV: results/For_Others/Rosalind_Gahamire/Week_of_2026-03-02/Rosalind_Gahamire_2026-03-02.csv
+- XLSX: results/For_Others/Rosalind_Gahamire/Week_of_2026-03-02/Rosalind_Gahamire_2026-03-02.xlsx
+- Prompt: searches/For_Others/Rosalind_Gahamire/executed_2026-03-02.txt

@@ -1,48 +1,8 @@
-EXECUTED SEARCH: Phil Tassi Weekly Job Search
-Date: 2026-02-23 (executed 2026-02-24)
-Week: Week_of_2026-02-23
-
-CONFIGURATION:
-- Boards: boards.greenhouse.io, job-boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com, linkedin.com/jobs
-- Roles: Chief of Staff, Partnerships, Business Development
-- Locations: Washington DC, London UK
-- Combinations: 4 boards × 3 roles × 2 locations = 24
-
-SEARCH MATRIX (Results per combination):
-                    | Chief of Staff | Partnerships | Business Dev
-Greenhouse - DC     | 1 (Alethea)    | 0            | 0
-Greenhouse - London | 9 (Monzo x3, Deliveroo, Tandem, SoundCloud, Liberis, Twilio, Eucalyptus, CVX, WPP, MiQ) | 5 (Anthropic, Monzo, Ebury, Whatnot, WPP Media) | 1 (Gen H)
-Lever - DC          | 1 (Strada)     | 1 (Stand Together intern) | 2 (FreeBalance, Nava)
-Lever - London      | 2 (Capital.com, Attentive CRO) | 3 (Plaid, Pattern, Attentive) | 2 (Fresha, Saronic)
-Ashby - DC          | 0              | 0            | 0
-Ashby - London      | 5 (Omnea, LiveFlow, Tilt, Bjak, Lawhive) | 5 (Vanta, Mollie, OpenAI, Runna, ElevenLabs, Deel) | 0
-LinkedIn - DC       | 0 (relevant)   | 0 (relevant) | 0 (relevant)
-LinkedIn - London   | 1 (Cleo)       | 0 (relevant) | 0 (relevant)
-
-FILTERING:
-- Raw results found: ~60+
-- Excluded (aggregators): 5 (Jobgether, etc.)
-- Excluded (no job-specific URL): 8
-- Excluded (score <70): 6
-- Excluded (board root only): 4
-- Jobs scoring 70+ (post-filter): 37
-
-RESULTS:
-- Total jobs in Master List: 37
-- NEW jobs: 13
-- REPEAT jobs: 24
-- Score range: 70-93
-- Average score: 79.4
-
-FILES SAVED:
-- data/Master_List_2026-02-23.csv
-- data/Top10_New_2026-02-23.csv
-- deliverables/Phil_Tassi_Master_List_2026-02-23.xlsx
-- deliverables/Phil_Tassi_Top10_New_2026-02-23.xlsx
-
-MASTER DATABASE UPDATE:
-- Previous rows: 66
-- New rows added: 15
-- Updated master: 81 rows
-
-Template version: 2.0
+Phil Tassi Weekly Job Search - Executed 2026-02-23
+Boards: Greenhouse, Lever, Ashby
+Roles: Chief of Staff, Partnerships, Business Development
+Locations: Washington DC, London UK
+Combinations searched: 18
+Total jobs found (pre-filter): 47
+Jobs scoring 70+: 47
+NEW: 10, REPEAT: 37

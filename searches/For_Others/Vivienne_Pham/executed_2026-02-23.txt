@@ -1,0 +1,41 @@
+EXECUTED SEARCH PROMPT — Vivienne Pham
+Week of: 2026-02-23
+Executed on: 2026-02-28
+
+CONFIGURATION:
+- Boards: boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com
+- Roles (9): CFO, VP Finance, Head of Finance, Capital Markets Advisory, Investor Relations, Head of Investor Relations, Portfolio Operations, Platform Manager, Business Development
+- Archetypes: Operator/Finance Leader, Capital Markets & IR, Ecosystem/Platform/BD
+- Locations (3): New York NY, Washington DC, Remote
+- Combinations: 81 (3 boards × 9 roles × 3 locations)
+- Filters: Posted within 7 days, exclude IB Analyst/Associate, exclude Fortune 200, exclude aggregators
+- Scoring: Against Vivienne_Pham_Resume_2026.pdf, threshold 70+
+
+SEARCH EXECUTION NOTES:
+- Many specific Greenhouse/Lever job IDs from search results were expired (returned 404 or redirected to company careers page)
+- Approximately 40-50% of URLs discovered via web search were stale/expired
+- Browser-verified active postings: Modal (Ashby), ZeroMark (Ashby), DuckDuckGo (Ashby)
+- Additional URLs verified as valid format from search results
+- Excluded ~15 results for missing/invalid job-specific URLs
+- Excluded Jobgether results (aggregator hosted on Lever)
+- All included results have valid board-format URLs
+
+RESULTS SUMMARY:
+- Total raw results found: ~150+
+- After location/company size/URL filtering: ~35
+- After scoring (70+ threshold): 24
+- NEW jobs: 24
+- REPEAT jobs: 0
+- Score range: 70-88
+- Average score: 76.8
+
+ARCHETYPE BREAKDOWN:
+- Operator / Finance Leader: 9
+- Capital Markets & IR: 6
+- Ecosystem / Platform / BD: 10
+
+OUTPUT FILES:
+- Master_List_2026-02-23.csv (data/)
+- Top10_New_2026-02-23.csv (data/)
+- Vivienne_Pham_Master_List_2026-02-23.xlsx (deliverables/)
+- Vivienne_Pham_Top10_New_2026-02-23.xlsx (deliverables/)

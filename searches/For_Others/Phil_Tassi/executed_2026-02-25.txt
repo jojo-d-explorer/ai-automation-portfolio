@@ -1,0 +1,66 @@
+EXECUTED SEARCH: Phil Tassi Weekly Job Search (Updated)
+Date: 2026-02-25 (Wednesday)
+Week: Week_of_2026-02-23
+
+CONFIGURATION:
+- Boards: boards.greenhouse.io, job-boards.greenhouse.io, jobs.lever.co, jobs.ashbyhq.com, linkedin.com/jobs
+- Roles: Chief of Staff, Partnerships, Business Development
+- Locations: Washington DC, London UK
+- Combinations: 4 boards × 3 roles × 2 locations = 24
+
+SEARCH MATRIX (verified results per combination):
+                    | Chief of Staff    | Partnerships          | Business Dev
+Greenhouse - DC     | 3 (Alethea,       | 0                     | 0
+                    |  OneAcreFund,     |                       |
+                    |  Techstars)       |                       |
+Greenhouse - London | 9 (Monzo x4,      | 4 (Anthropic, Monzo,  | 1 (Anduril)
+                    |  Deliveroo,       |  Blacklane, Whatnot)  |
+                    |  Tandem,Twilio,   |                       |
+                    |  CVX, Eucalyptus) |                       |
+Lever - DC          | 2 (Strada,        | 1 (Stand Together)    | 1 (FreeBalance)
+                    |  Aledade)         |                       |
+Lever - London      | 3 (Capital.com,   | 3 (Plaid, Pattern,    | 2 (Binance x2)
+                    |  Zen Ed, Attentive)|  Octopus Energy)     |
+Ashby - DC          | 0                 | 0                     | 0
+Ashby - London      | 5 (Omnea, Tilt,   | 4 (Mollie, Goodlord,  | 0
+                    |  LiveFlow, Bjak,  |  Runna, OpenAI)       |
+                    |  Airwallex)       |                       |
+LinkedIn - DC       | 0                 | 0                     | 0
+LinkedIn - London   | 3 (Creditinfo,    | 0                     | 0
+                    |  Thought Machine, |                       |
+                    |  Cleever)         |                       |
+
+FILTERING:
+- Raw results across all combinations: ~100+
+- Excluded (aggregators/Jobgether): 6
+- Excluded (board root only / no specific URL): 12
+- Excluded (internships/BDR too junior): 8
+- Excluded (score <70): 6
+- Excluded (not in target location): 5
+- Jobs scoring 70+ (post-filter): 40
+
+RESULTS:
+- Total jobs in Master List: 40
+- NEW jobs: 26
+- REPEAT jobs: 14
+- Score range: 70-93
+- Average score: 80.2
+
+NOTE: High NEW count (26) is expected because the master database was
+recently pruned from 66 to 33 rows. Many previously-tracked jobs
+re-entered as NEW since they were removed from the master.
+
+FILES SAVED:
+- data/Master_List_2026-02-23.csv (40 rows)
+- data/Top10_New_2026-02-23.csv (10 rows)
+- deliverables/Phil_Tassi_Master_List_2026-02-23.xlsx
+- deliverables/Phil_Tassi_Top10_New_2026-02-23.xlsx
+- searches/For_Others/Phil_Tassi/executed_2026-02-25.txt
+
+MASTER DATABASE UPDATE:
+- Previous rows: 33
+- New rows added: 26
+- Existing rows updated: 14 (Times_Seen bumped, Last_Seen_Date updated)
+- Final master: 59 rows
+
+Template version: 2.0
