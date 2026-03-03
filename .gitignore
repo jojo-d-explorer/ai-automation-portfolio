@@ -27,5 +27,7 @@ Temporary Items
 # Excel lock files
 ~$*.xlsx
 ~$*.xls
+.~lock.*.xlsx#
+.~lock.*.xls#
 # Optional: Uncomment if you don't want result CSVs in Git
 # results/**/*.csv
