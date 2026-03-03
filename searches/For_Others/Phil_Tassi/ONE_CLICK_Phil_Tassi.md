@@ -1,19 +1,23 @@
-# ONE-CLICK WEEKLY SEARCH: PHIL TASSI
+# ONE-CLICK WEEKLY SEARCH: PHIL TASSI — v3.1
 
-**Owner:** Joey Clark (running on behalf of Phil Tassi)
-**Resume file:** Phillip Tassi - Resume - November 2025 (3).pdf
-**Created:** 2026-02-01
-**Last updated:** 2026-02-17 (v2.0 — added xlsx output, 14-column format, LinkedIn, data/deliverables subfolders)
+**This prompt does:** SEARCH + SCORE only (Phase 1)  
+**This prompt does NOT do:** URL verification — that's Phase 2, run separately
 
 ---
 
-## How to Use
-1. Copy everything from "Calculate today's date..." to "...where everything was saved"
-2. Paste into CoWork
-3. Attach resume: `Phillip Tassi - Resume - November 2025 (3).pdf`
-4. Hit enter
-5. Walk away for 10-15 minutes
-6. Come back to results in deliverables/ folder
+## PIPELINE CONTEXT
+
+This is **Phase 1 of 7**. After this prompt completes:
+
+```bash
+python3 JC3/check_urls.py results/For_Others/Phil_Tassi/Week_of_[DATE]/Phil_Tassi_[DATE].csv
+```
+
+---
+
+**Owner:** Joey Clark (running on behalf of Phil Tassi)  
+**Resume file:** Phil_Tassi_Resume.pdf  
+**Last updated:** 2026-03-02
 
 ---
 
@@ -26,245 +30,147 @@ Calculate today's date and determine:
 Define path variables:
 - BASE_PATH = /Users/jc3/GitHub/ai-automation-portfolio
 - RESULTS_PATH = {BASE_PATH}/results/For_Others/Phil_Tassi/Week_of_CURRENT_WEEK
-- PREVIOUS_RESULTS = {BASE_PATH}/results/For_Others/Phil_Tassi/Week_of_PREVIOUS_WEEK
-
-Create folders if they don't exist:
-- {RESULTS_PATH}/data/
-- {RESULTS_PATH}/deliverables/
 
 ---
 
 ### CONFIGURATION
 
-**Job Boards (search all):**
+**Job Boards (3 boards):**
 - site:boards.greenhouse.io
 - site:jobs.lever.co
 - site:jobs.ashbyhq.com
-- site:linkedin.com/jobs
 
 **Roles:**
 - Chief of Staff
 - Partnerships
 - Business Development
+- Director of Partnerships
+- Head of BD
 
 **Locations:**
-- Washington, DC
+- Washington DC
 - London, UK
+- Remote-US
+- Remote-Global
 
 **Filters:**
 - Posted within last 7 days
-- For each board/role/location combination, extract up to 20 results (paginate to page 2 if needed)
+- For each board/role/location combination, extract up to 20 results
 
-Show progress matrix as you search each combination (4 boards × 3 roles × 2 locations = 24 combinations).
+Show progress matrix as you search.
 
 ---
 
 ### SOURCE FILTERING
 
-Only include results hosted directly on the target ATS boards or the company's own careers domain.
+**Only include results from target ATS boards.**
 
-**Exclude all third-party job aggregators** including but not limited to: Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob.
+**Exclude aggregators:** Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob, Indeed, Glassdoor.
 
-**URL Integrity (CRITICAL — enforced before any result is included):**
+**URL rules:**
+- Must be job-specific URL with job ID
+- Exclude board roots without job ID
+- Exclude generic career pages
 
-Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
-- Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
-- Lever: `jobs.lever.co/[company]/[uuid]`
-- Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
-- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
-
-**EXCLUDE any result where:**
-- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/anthropic`)
-- The URL points to a general careers page or company homepage
-- You cannot navigate to the specific listing URL
-- The job ID is absent, guessed, or a placeholder
-
-**Do not fabricate job IDs.** If you cannot find the specific listing URL, omit the result entirely. Do not mark it "Unverified" and include it anyway. A job without a verified, job-specific URL must not enter the database.
-
-**No hallucinated results:** Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
-
-Mark all included URLs as `URL_Status = "Verified"`.
-
-**Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
-
-**URL Integrity & Bot Blocking:**
-
-Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
-
-Common sources of Blocked/Error status:
-- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
-- Niche or low-traffic job boards that return connection errors
-- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
-
-How the weekly check handles this:
-- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
-- Blocked and Error jobs are preserved in the database for manual review
-
-Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+**Anti-hallucination:** Only include jobs you actually visited. Zero results = report zero.
 
 ---
 
 ### FIELD EXTRACTION
 
-Extract these fields (use "N/A" if not available):
-- Company
-- Company Sector
-- Job Title
-- Location
-- Language Requirement (if no language mentioned: "N/A"; if other than English: list it)
-- Work Arrangement (see standardization below)
-- Salary (convert to USD if in other currency; "N/A" if not listed)
-- Job Summary (2-3 sentences)
-- URL
+Extract (use "N/A" if not available):
+- Company, Job_Title, Location, Work_Arrangement, Sector
+- Salary_USD (convert currencies; "N/A" if not listed)
+- Job_Summary (2-3 sentences)
+- URL, Found_On (board name)
 
----
-
-### WORK ARRANGEMENT STANDARDIZATION
-
-Normalize Work_Arrangement to one of these 5 categories:
-
-- **Remote-US** — Any variant of "Remote" + "US/USA/United States", or remote with US city qualifier
-- **Remote-Americas** — Any variant of "Remote" + "Americas/LATAM/Canada", or remote with Latin American country
-- **Remote-Global** — Generic "Remote" without geographic qualifier, or "Remote Worldwide/EMEA/Europe"
-- **Hybrid** — Any hybrid arrangement, including "Remote/Hybrid" variants
-- **In-Office** — Location-specific roles without Remote/Hybrid (e.g., "London", "Washington DC")
-
-Do not leave Work_Arrangement as generic "Remote" — always classify into the specific category above.
+**Work Arrangement** — exactly one of: Remote-US, Remote-Global, Hybrid, In-Office, Unclear
 
 ---
 
 ### DEDUPLICATION
 
-Eliminate duplicate jobs (same Company + same Job Title across boards). Keep highest-scoring version and list all boards where found in "Found_On" column.
+Same Company + Job_Title across boards → keep highest score, merge Found_On.
 
 ---
 
 ### SCORING
 
-Using attached resume (Phillip Tassi - Resume - November 2025 (3).pdf), score each job 1-100 based on:
+Using attached resume (Phil_Tassi_Resume.pdf), score each job 1-100:
 
-**Skills Fit (40 points):**
-- Key skills: Strategic partnerships, business development, stakeholder management, cross-functional leadership
-- Score based on overlap between resume skills and job requirements
+**Industry Fit (35 points):**
+- Defense tech, AI/ML, fintech, B2B SaaS, climate tech: full credit
+- Adjacent tech sectors: 25/35
+- Non-tech: 10/35
 
-**Industry Alignment (35 points):**
-- Strong fit: Fintech, AI/ML, financial services, payments, digital banking
-- Moderate fit: B2B SaaS, enterprise technology, marketplace platforms
-- Lower fit: Consumer tech, non-tech sectors
+**Skills Match (25 points):**
+- Key skills: Startup ecosystem building, partnership development, VC/investor relations, strategic operations
 
-**Experience Match (25 points):**
-- Score based on resume experience level alignment with role requirements
-- Phil has 10+ years of experience — roles expecting <5 years should be penalized
+**Seniority Match (20 points):**
+- Director/VP/Head level: full credit
+- Manager level: 15/20
+- Entry/junior: 5/20
 
-Provide 1-2 sentence score rationale for each job.
+**Location Flexibility (10 points):**
+- London, Washington DC: full credit
+- Remote-US, Remote-Global: full credit
+- Other: 5/10
 
-Filter to jobs scoring 70+ only. Rank by score (highest to lowest).
+**Salary Fit (10 points):**
+- $150K+ or £120K+: full credit
+- $120K-$150K: 7/10
+- Below $120K: 4/10
+- Not listed: 5/10
+
+Provide 1-2 sentence Score_Rationale.
+
+**Filter to 70+ only. Rank by score descending.**
 
 ---
 
-### NEW JOB DETECTION
+### NEW/REPEAT DETECTION
 
-Compare against previous week's Master List. Check in this order:
-1. First check: {PREVIOUS_RESULTS}/data/Master_List_PREVIOUS_WEEK.csv
-2. Legacy fallback: {PREVIOUS_RESULTS}/Master_List_PREVIOUS_WEEK.csv
-3. Original legacy: {BASE_PATH}/results/For_Others/Phil_Tassi_Search_2026-02-01.csv
+Compare to: {BASE_PATH}/results/For_Others/Phil_Tassi/Week_of_PREVIOUS_WEEK/Phil_Tassi_PREVIOUS_WEEK.csv
 
-- If file exists (any location): Mark jobs not in previous file as "NEW", matching jobs as "REPEAT"
-- If no previous file found (first run): Mark all jobs as "NEW"
-- Add "Status" column with "NEW" or "REPEAT"
+- File exists → mark NEW or REPEAT
+- No file → mark all NEW
 
 ---
 
 ### OUTPUT FILES
 
-**Data files (backbone for consolidation — not shared with Phil):**
+**Weekly CSV:** {RESULTS_PATH}/Phil_Tassi_CURRENT_WEEK.csv
 
-1. **Master List CSV:** {RESULTS_PATH}/data/Master_List_CURRENT_WEEK.csv
-   Columns (in this order): Status | Score | Score_Rationale | Company | Job_Title | Sector | Location | Language_Requirement | Work_Arrangement | Salary_USD | Job_Summary | URL | URL_Status | Found_On
+**Columns (21, this exact order):**
+```
+Score | Company | Job_Title | Location | Work_Arrangement | Sector | Salary_USD | Job_Summary | URL | Score_Rationale | Times_Seen | First_Seen_Date | Last_Seen_Date | Status | Found_On | URL_Status | Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
+```
 
-2. **Top 10 New CSV:** {RESULTS_PATH}/data/Top10_New_CURRENT_WEEK.csv
-   Same columns, only top 10 jobs marked "NEW". If <10 new jobs, include all new jobs. If zero new jobs, create file with headers and note "No new jobs this week."
+**Default values:**
+- Times_Seen: 1
+- First_Seen_Date: CURRENT_WEEK
+- Last_Seen_Date: CURRENT_WEEK
+- **URL_Status: "Not Checked"**
+- Applied_Date through Notes: leave blank
 
-3. **Executed prompt:** {BASE_PATH}/searches/For_Others/Phil_Tassi/executed_CURRENT_WEEK.txt
-
-**Deliverable files (shared with Phil):**
-
-4. **Branded Excel — Master List:** {RESULTS_PATH}/deliverables/Phil_Tassi_Master_List_CURRENT_WEEK.xlsx
-
-   Generate a formatted .xlsx version of the Master List CSV:
-   - Row 1: Title "Phil Tassi — Master Job List" (bold, 18pt, navy #1F3864, merged across all columns)
-   - Row 2: Subtitle "Week of [Month Day, Year]  |  Prepared by Joey Clark" (11pt, blue #2F5496)
-   - Row 3: Stats "[N] jobs  |  Score range: [min]-[max]  |  Avg: [avg]  |  [N] NEW, [N] REPEAT" (10pt, gray #595959, medium blue bottom border)
-   - Row 4: Blank separator
-   - Row 5: Column headers (bold, 10pt, white text, blue #2F5496 background, auto-filters enabled)
-   - Data rows starting Row 6:
-     - Font: Arial 10pt
-     - Row height: 45px
-     - Alternating row shading: even rows #F2F2F2, odd rows white
-     - Light grid borders: #D9D9D9
-     - Score cells color-coded: green #C6EFCE (90+), blue #D6E4F0 (80-89), yellow #FFF2CC (70-79), red #F2DCDB (<70)
-     - Status cells: NEW = bold dark green #006100, REPEAT = gray #808080
-     - Text wrapping on Score_Rationale and Job_Summary columns
-   - Freeze panes below header row (row 5)
-   - Legend row 2 rows below last data: "Score Key: 🟢 90+ Elite | 🔵 80-89 Strong | 🟡 70-79 Good | 🔴 Below 70" (9pt italic gray)
-   - Column widths: Status 8, Score 7, Score_Rationale 40, Company 22, Job_Title 35, Sector 20, Location 20, Language_Requirement 12, Work_Arrangement 14, Salary_USD 18, Job_Summary 45, URL 35, URL_Status 10, Found_On 12
-
-5. **Branded Excel — Top 10:** {RESULTS_PATH}/deliverables/Phil_Tassi_Top10_New_CURRENT_WEEK.xlsx
-   Same formatting as item 4, with title: "Phil Tassi — Top 10 New Opportunities"
+**Branded XLSX:** {RESULTS_PATH}/Phil_Tassi_CURRENT_WEEK.xlsx
 
 ---
 
 ### VERIFICATION
 
-Verify all files saved. Show:
-
-| Metric | Count |
-|--------|-------|
-| Total jobs found (pre-filter) | X |
-| Jobs scoring 70+ (post-filter) | Y |
-| NEW jobs | Z |
-| REPEAT jobs | W |
-| Boards searched | 4 |
-| Role/location combinations | 24 |
-
-**Files saved at:**
-- Master List CSV: [full path]
-- Top 10 CSV: [full path]
-- Master List Excel: [full path]
-- Top 10 Excel: [full path]
-- Executed prompt: [full path]
-
-Report any errors, broken URLs, or boards that returned zero results.
+Show summary with job counts, files saved.
 
 ---
 
-### JOB SEARCH TRACKING UPDATE
+## STOP HERE
 
-After all output files are saved, update the tracking spreadsheet:
+**Phase 1 complete.** Run Phase 2:
 
-**File:** {BASE_PATH}/Job_Search_Tracking.xlsx
-**Sheet:** "Job Search Tracking"
-
-Find the rows for **Phil Tassi** (look for name in column A). Add a new continuation row immediately after the last Phil row with:
-
-| Column | Value |
-|--------|-------|
-| C (Search Ran) | Today's date (YYYY-MM-DD) |
-| D (Results 70+) | Total jobs scoring 70+ |
-| E (Top Score) | Highest score in this search |
-| F (Search Config) | 4 boards \| COS, Partnerships, BD \| DC, London |
-| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
-| H (Link to Folder) | Phil_Tassi/Week_of_CURRENT_WEEK/ |
-
-Also mark the previous Phil row's "Next Search" (column G) as completed by appending " ✓".
-
-Save the updated spreadsheet back to the same path.
+```bash
+python3 JC3/check_urls.py results/For_Others/Phil_Tassi/Week_of_CURRENT_WEEK/Phil_Tassi_CURRENT_WEEK.csv
+```
 
 ---
 
-⚠️  REMINDER: After reviewing results, run CONSOLIDATE_TO_MASTER to update Phil's master database. After consolidation (Week 2+), run MASTER_ANALYSIS to generate the PDF analysis report in {RESULTS_PATH}/deliverables/.
-
----
-
-*Run every Sunday. Attach Phil's resume each time.*
-*Template version: 2.0 | Updated: 2026-02-17*
+*v3.1 | 2026-03-02*

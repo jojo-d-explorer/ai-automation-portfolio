@@ -1,29 +1,23 @@
-# ONE-CLICK WEEKLY SEARCH: ROSALIND GAHAMIRE
+# ONE-CLICK WEEKLY SEARCH: ROSALIND GAHAMIRE — v3.1
 
-**Owner:** Joey Clark (running on behalf of Rosalind Gahamire)
-**Resume file:** Rosalind_Gahamire_CV_2026.pdf
-**Created:** 2026-02-18
-**Last updated:** 2026-02-18
+**This prompt does:** SEARCH + SCORE only (Phase 1)  
+**This prompt does NOT do:** URL verification — that's Phase 2, run separately
 
 ---
 
-**Setup checklist:**
-- [x] Friend completed intake questionnaire
-- [x] Resume received (PDF)
-- [x] Replaced all bracketed fields
-- [x] Created results folder: `results/For_Others/Rosalind_Gahamire/`
-- [x] Saved ONE_CLICK file
+## PIPELINE CONTEXT
+
+This is **Phase 1 of 7**. After this prompt completes:
+
+```bash
+python3 JC3/check_urls.py results/For_Others/Rosalind_Gahamire/Week_of_[DATE]/Rosalind_Gahamire_[DATE].csv
+```
 
 ---
 
-## USAGE INSTRUCTIONS
-
-1. Copy everything from "Calculate today's date..." to "...where everything was saved"
-2. Paste into CoWork
-3. Attach: Rosalind_Gahamire_CV_2026.pdf
-4. Hit enter
-5. Walk away for 10-15 minutes
-6. Come back to results
+**Owner:** Joey Clark (running on behalf of Rosalind Gahamire)  
+**Resume file:** RosalindGahamireCV__2026__1_.pdf  
+**Last updated:** 2026-03-02
 
 ---
 
@@ -33,8 +27,6 @@ Calculate today's date and determine:
 - Current week start date (most recent Monday): CURRENT_WEEK
 - Previous week start date (Monday before that): PREVIOUS_WEEK
 
-Use these dates for file paths and comparisons below.
-
 Define path variables:
 - BASE_PATH = /Users/jc3/GitHub/ai-automation-portfolio
 - RESULTS_PATH = {BASE_PATH}/results/For_Others/Rosalind_Gahamire/Week_of_CURRENT_WEEK
@@ -43,301 +35,161 @@ Define path variables:
 
 ### CONFIGURATION
 
-**Job Boards (search all):**
+**Job Boards (3 boards):**
 - site:boards.greenhouse.io
 - site:jobs.lever.co
 - site:jobs.ashbyhq.com
-- site:linkedin.com/jobs
-
-Note: Rosalind is based in Lisbon and targets European/global remote roles. LinkedIn will likely produce the strongest results for European creative roles. Greenhouse and Lever have decent coverage for D2C brands with international presence. If first search yields <15 results, consider supplementing with: WeWorkRemotely, Remote OK, or targeted career page checks for major D2C brands and creative agencies with Lisbon/European presence.
 
 **Roles:**
 - Brand Strategist
 - Creative Strategist
 - Marketing Manager
-
-**Search Archetypes:**
-These roles cluster into two career path archetypes:
-1. **Strategy Track:** Brand Strategist, Creative Strategist, Brand Strategy Manager, Creative Strategy Lead, Head of Brand Strategy
-2. **Marketing Leadership Track:** Marketing Manager, Brand Marketing Manager, Creative Marketing Lead, Senior Marketing Manager
-
-When searching, use both the exact titles above AND these related variants to maximize coverage.
+- Head of Marketing
+- Brand Manager
+- Creative Director
 
 **Locations:**
 - Lisbon, Portugal
-- Remote
+- Remote-Global
+- Remote-Europe
+- Europe
 
-**HARD LOCATION FILTER:** Only include roles where the primary work location is Lisbon, Portugal OR the role is fully remote (Remote-Global or Remote-Europe/EMEA). Exclude Remote-US and Remote-Americas roles — Rosalind is based in Lisbon and cannot work US/Americas-restricted remote roles. Also exclude In-Office roles outside of Lisbon.
-
-**Language Note:** Rosalind speaks English (Native) and Portuguese (B2). Roles requiring fluent Portuguese are acceptable. Flag roles requiring any other language in the Language_Requirement field.
+**Deal-breaker:** Exclude US-only or US-timezone-required roles.
 
 **Filters:**
 - Posted within last 7 days
-- EXCLUDE roles that are Remote-US only or Remote-Americas only
-- EXCLUDE In-Office roles outside Lisbon
-- Full-time roles only (no contract/freelance unless explicitly "freelance-to-permanent")
-- For each board/role/location combination, extract up to 20 results (paginate to page 2 if needed)
+- For each board/role/location combination, extract up to 20 results
 
-Show progress matrix as you search each combination.
+Show progress matrix as you search.
 
 ---
 
 ### SOURCE FILTERING
 
-Only include results hosted directly on the target ATS boards or the company's own careers domain.
+**Only include results from target ATS boards.**
 
-**Exclude all third-party job aggregators** including but not limited to: Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob.
+**Exclude aggregators:** Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob, Indeed, Glassdoor.
 
-**URL Integrity (CRITICAL — enforced before any result is included):**
+**URL rules:**
+- Must be job-specific URL with job ID
+- Exclude board roots without job ID
+- Exclude generic career pages
 
-Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
-- Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
-- Lever: `jobs.lever.co/[company]/[uuid]`
-- Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
-- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
-
-**EXCLUDE any result where:**
-- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/anthropic`)
-- The URL points to a general careers page or company homepage
-- You cannot navigate to the specific listing URL
-- The job ID is absent, guessed, or a placeholder
-
-**Do not fabricate job IDs.** If you cannot find the specific listing URL, omit the result entirely. Do not mark it "Unverified" and include it anyway. A job without a verified, job-specific URL must not enter the database.
-
-**No hallucinated results:** Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
-
-Mark all included URLs as `URL_Status = "Verified"`.
-
-**Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
-
-**URL Integrity & Bot Blocking:**
-
-Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
-
-Common sources of Blocked/Error status:
-- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
-- Niche or low-traffic job boards that return connection errors
-- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
-
-How the weekly check handles this:
-- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
-- Blocked and Error jobs are preserved in the database for manual review
-
-Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+**Anti-hallucination:** Only include jobs you actually visited. Zero results = report zero.
 
 ---
 
 ### FIELD EXTRACTION
 
-Extract these fields (use "N/A" if not available):
-- Company
-- Company Sector
-- Job Title
-- Location
-- Language Requirement (if no language mentioned: "N/A"; if other than English: list it)
-- Work Arrangement (see standardization below)
-- Salary (convert to USD if in EUR or other currency; "N/A" if not listed)
-- Job Summary (2-3 sentences)
-- URL
+Extract (use "N/A" if not available):
+- Company, Job_Title, Location, Work_Arrangement, Sector
+- Salary_USD (convert €1 = $1.08; "N/A" if not listed)
+- Job_Summary (2-3 sentences)
+- URL, Found_On (board name)
 
----
-
-### WORK ARRANGEMENT STANDARDIZATION
-
-Normalize Work_Arrangement to one of these 5 categories:
-
-- **Remote-US** — Any variant of "Remote" + "US/USA/United States", or remote with US city qualifier
-- **Remote-Americas** — Any variant of "Remote" + "Americas/LATAM/Canada", or remote with Latin American country
-- **Remote-Global** — Generic "Remote" without geographic qualifier, or "Remote Worldwide/EMEA/Europe"
-- **Hybrid** — Any hybrid arrangement, including "Remote/Hybrid" variants
-- **In-Office** — Location-specific roles without Remote/Hybrid (e.g., "Lisbon", "London", "Berlin")
-
-Do not leave Work_Arrangement as generic "Remote" — always classify into the specific category above.
-
-**For Rosalind's search:** After classification, EXCLUDE any jobs classified as Remote-US or Remote-Americas. Keep: Remote-Global, Hybrid (Lisbon only), In-Office (Lisbon only).
+**Work Arrangement** — exactly one of: Remote-Global, Remote-Europe, Hybrid, In-Office, Unclear
 
 ---
 
 ### DEDUPLICATION
 
-Eliminate duplicate jobs (same Company + same Job Title across boards). Keep highest-scoring version and list all boards where found in "Found_On" column.
+Same Company + Job_Title across boards → keep highest score, merge Found_On.
 
 ---
 
 ### SCORING
 
-Using attached resume (Rosalind_Gahamire_CV_2026.pdf), score each job 1-100 based on:
+Using attached resume (RosalindGahamireCV__2026__1_.pdf), score each job 1-100:
 
-**Rosalind's priority ranking:** Location #1, Skills Match #2, Industry Fit #3, Salary #4, Seniority #5
-
-**Location Flexibility (30 points):**
-- Lisbon-based (In-Office or Hybrid): 30/30
-- Remote-Global with no geographic restriction: 30/30
-- Remote-Europe/EMEA: 25/30
-- Hybrid in another European city: 10/30
-- Remote-US or Remote-Americas: 0/30 (auto-exclude, but score 0 if somehow included)
+**Location Flexibility (30 points):** — HIGHEST PRIORITY
+- Lisbon-based: 30/30
+- Remote-Global or Remote-Europe: 30/30
+- Other European with remote flexibility: 20/30
+- Hybrid in non-Lisbon Europe: 15/30
+- US-only: 0/30 (exclude entirely)
 
 **Skills Match (25 points):**
-Rosalind's core skills from her CV:
-- Brand strategy & positioning
-- Insight-led research (qualitative + quantitative)
-- Workshop planning & facilitation
-- Creative direction & concept development
-- Brand purpose, value propositions & messaging frameworks
-- Client & stakeholder communication
-- Design literacy & collaboration with creative teams
-
-Score based on overlap between these skills and job requirements:
-- 5+ skills overlap: 25/25
-- 3-4 skills overlap: 18/25
-- 1-2 skills overlap: 10/25
-- No overlap: 5/25
+- Key skills: Brand strategy, creative direction, insight-led research, workshop facilitation, D2C marketing, content strategy
+- Direct match: full credit
+- Adjacent (product marketing, growth): 18/25
+- Tangential (social media only): 10/25
 
 **Industry Fit (20 points):**
-Target sectors (from intake):
-- D2C consumer brands: 20/20 (perfect fit — she has direct D2C experience at Undandy and Bond Touch)
-- Creative/brand agencies: 20/20 (perfect fit — she has agency experience at ACT.3 and Rankin)
-- Consumer tech / lifestyle brands: 15/20
-- Fashion, beauty, wellness, food & beverage: 15/20
-- SaaS/B2B with strong brand focus: 12/20
-- Traditional corporate / heavy industry: 5/20
+- D2C consumer brands, creative agencies: full credit
+- Consumer tech, lifestyle: 15/20
+- B2B SaaS with strong brand: 12/20
+- Other: 8/20
 
 **Salary Fit (15 points):**
-No salary floor specified. Score generously:
-- Salary listed and appears competitive for role level: 15/15
-- Salary listed but appears below market: 10/15
-- Salary not listed ("N/A"): 12/15 (neutral-positive — don't penalize unknown)
+- €70K+ or equivalent: full credit
+- €50K-€70K: 10/15
+- Below €50K: 5/15
+- Not listed: 8/15
 
-**Seniority Match (10 points):**
-Rosalind has 8+ years of experience. Target seniority: Mid-Senior (Manager, Lead, Senior Strategist level).
-- Manager / Lead / Senior level: 10/10
-- Director level: 8/10 (stretch but possible)
-- Junior / Associate level: 3/10
-- VP / C-level: 5/10 (likely overqualified requirements)
+**Seniority Match (10 points):** — LOWEST PRIORITY
+- Senior/Lead/Head: full credit
+- Manager: 8/10
+- Director/VP: 7/10
+- Junior: 3/10
 
-Provide 1-2 sentence score rationale for each job.
+Provide 1-2 sentence Score_Rationale.
 
-Filter to jobs scoring 70+ only. Rank by score (highest to lowest).
+**Filter to 70+ only. Rank by score descending.**
 
 ---
 
-### NEW JOB DETECTION
+### NEW/REPEAT DETECTION
 
-Compare against previous week's Master List. Check in this order:
-1. First check: {BASE_PATH}/results/For_Others/Rosalind_Gahamire/Week_of_PREVIOUS_WEEK/data/Master_List_PREVIOUS_WEEK.csv
-2. Legacy fallback: {BASE_PATH}/results/For_Others/Rosalind_Gahamire/Week_of_PREVIOUS_WEEK/Master_List_PREVIOUS_WEEK.csv
+Compare to: {BASE_PATH}/results/For_Others/Rosalind_Gahamire/Week_of_PREVIOUS_WEEK/Rosalind_Gahamire_PREVIOUS_WEEK.csv
 
-- If file exists (either location): Mark jobs not in previous file as "NEW", matching jobs as "REPEAT"
-- If no previous file found (first run): Mark all jobs as "NEW"
-- Add "Status" column with "NEW" or "REPEAT"
+- File exists → mark NEW or REPEAT
+- No file → mark all NEW
 
 ---
 
 ### OUTPUT FILES
 
-Create folders if they don't exist:
-- {RESULTS_PATH}/data/
-- {RESULTS_PATH}/deliverables/
-- {BASE_PATH}/searches/For_Others/Rosalind_Gahamire/
+**Weekly CSV:** {RESULTS_PATH}/Rosalind_Gahamire_CURRENT_WEEK.csv
 
-**Data files (backbone for consolidation — not shared with friend):**
+**Columns (21, this exact order):**
+```
+Score | Company | Job_Title | Location | Work_Arrangement | Sector | Salary_USD | Job_Summary | URL | Score_Rationale | Times_Seen | First_Seen_Date | Last_Seen_Date | Status | Found_On | URL_Status | Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
+```
 
-1. **Master List CSV:** {RESULTS_PATH}/data/Master_List_CURRENT_WEEK.csv
-   Columns (in this order): Status | Score | Score_Rationale | Company | Job_Title | Sector | Location | Language_Requirement | Work_Arrangement | Salary_USD | Job_Summary | URL | URL_Status | Found_On
+**Default values:**
+- Times_Seen: 1
+- First_Seen_Date: CURRENT_WEEK
+- Last_Seen_Date: CURRENT_WEEK
+- **URL_Status: "Not Checked"**
+- Applied_Date through Notes: leave blank
 
-2. **Top 10 New CSV:** {RESULTS_PATH}/data/Top10_New_CURRENT_WEEK.csv
-   Same columns, only top 10 jobs marked "NEW". If <10 new jobs, include all new jobs. If zero new jobs, create file with headers and note "No new jobs this week."
-
-3. **Executed prompt:** {BASE_PATH}/searches/For_Others/Rosalind_Gahamire/executed_CURRENT_WEEK.txt
-
-**Deliverable files (shared with friend):**
-
-4. **Branded Excel — Master List:** {RESULTS_PATH}/deliverables/Rosalind_Gahamire_Master_List_CURRENT_WEEK.xlsx
-
-   Generate a formatted .xlsx version of the Master List CSV:
-   - Row 1: Title "Rosalind Gahamire — Master Job List" (bold, 18pt, navy #1F3864, merged across all columns)
-   - Row 2: Subtitle "Week of [Month Day, Year]  |  Prepared by Joey Clark" (11pt, blue #2F5496)
-   - Row 3: Stats "[N] jobs  |  Score range: [min]-[max]  |  Avg: [avg]  |  [N] NEW, [N] REPEAT" (10pt, gray #595959, medium blue bottom border)
-   - Row 4: Blank separator
-   - Row 5: Column headers (bold, 10pt, white text, blue #2F5496 background, auto-filters enabled)
-   - Data rows starting Row 6:
-     - Font: Arial 10pt
-     - Row height: 45px
-     - Alternating row shading: even rows #F2F2F2, odd rows white
-     - Light grid borders: #D9D9D9
-     - Score cells color-coded: green #C6EFCE (90+), blue #D6E4F0 (80-89), yellow #FFF2CC (70-79), red #F2DCDB (<70)
-     - Status cells: NEW = bold dark green #006100, REPEAT = gray #808080
-     - Text wrapping on Score_Rationale and Job_Summary columns
-   - Freeze panes below header row (row 5)
-   - Legend row 2 rows below last data: "Score Key: 🟢 90+ Elite | 🔵 80-89 Strong | 🟡 70-79 Good | 🔴 Below 70" (9pt italic gray)
-   - Column widths: Status 8, Score 7, Score_Rationale 40, Company 22, Job_Title 35, Sector 20, Location 20, Language_Requirement 12, Work_Arrangement 14, Salary_USD 18, Job_Summary 45, URL 35, URL_Status 10, Found_On 12
-
-5. **Branded Excel — Top 10:** {RESULTS_PATH}/deliverables/Rosalind_Gahamire_Top10_New_CURRENT_WEEK.xlsx
-   Same formatting as item 4, with title: "Rosalind Gahamire — Top 10 New Opportunities"
+**Branded XLSX:** {RESULTS_PATH}/Rosalind_Gahamire_CURRENT_WEEK.xlsx
 
 ---
 
 ### VERIFICATION
 
-Verify all files saved. Show:
-
+Show summary:
 | Metric | Count |
 |--------|-------|
-| Total jobs found (pre-filter) | X |
-| Jobs scoring 70+ (post-filter) | Y |
+| Total jobs found | X |
+| Jobs scoring 70+ | Y |
 | NEW jobs | Z |
 | REPEAT jobs | W |
-| Boards searched | [N] |
-| Role/location combinations | [N] |
+| Excluded (US-only) | X |
 
-**Files saved at:**
-- Master List CSV: [full path]
-- Top 10 CSV: [full path]
-- Master List Excel: [full path]
-- Top 10 Excel: [full path]
-- Executed prompt: [full path]
-
-Report any errors, broken URLs, or boards that returned zero results.
+Files saved at: [list paths]
 
 ---
 
-### JOB SEARCH TRACKING UPDATE
+## STOP HERE
 
-After all output files are saved, update the tracking spreadsheet:
+**Phase 1 complete.** Run Phase 2:
 
-**File:** {BASE_PATH}/Job_Search_Tracking.xlsx
-**Sheet:** "Job Search Tracking"
-
-Find the rows for **Rosalind Gahamire** (look for name in column A). Add a new continuation row immediately after the last Rosalind Gahamire row with:
-
-| Column | Value |
-|--------|-------|
-| C (Search Ran) | Today's date (YYYY-MM-DD) |
-| D (Results 70+) | Total jobs scoring 70+ |
-| E (Top Score) | Highest score in this search |
-| F (Search Config) | Boards searched \| Roles \| Locations (short summary) |
-| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
-| H (Link to Folder) | Rosalind_Gahamire/Week_of_CURRENT_WEEK/ |
-
-Also mark the previous Rosalind Gahamire row's "Next Search" (column G) as completed by appending " ✓".
-
-Save the updated spreadsheet back to the same path.
+```bash
+python3 JC3/check_urls.py results/For_Others/Rosalind_Gahamire/Week_of_CURRENT_WEEK/Rosalind_Gahamire_CURRENT_WEEK.csv
+```
 
 ---
 
-⚠️  REMINDER: After reviewing results, run CONSOLIDATE_TO_MASTER to update Rosalind_Gahamire's master database. After consolidation (Week 2+), run MASTER_ANALYSIS to generate the PDF analysis report in {RESULTS_PATH}/deliverables/.
-
----
-
-## NOTES
-
-**Rosalind's unique considerations:**
-- **Europe-based search:** Unlike other friends (US-focused), Rosalind is in Lisbon. Remote-US roles are useless to her. Focus on Remote-Global and Lisbon-based.
-- **Creative/brand background:** She has a design + strategy hybrid background (UAL + IADE). This is a differentiator — she bridges visual design and strategic thinking.
-- **Agency + brand-side experience:** ACT.3 (agency), Bond Touch (D2C brand), Undandy (D2C brand), Rankin (agency). She can go either direction.
-- **Portuguese B2 is an asset:** For Lisbon-based roles, this opens doors at Portuguese companies and international companies with Lisbon offices.
-- **8+ years experience:** Target mid-senior roles (Manager, Lead, Senior). Not entry level, not yet Director unless it's a smaller company.
-
----
-
-*Run every Sunday. Attach Rosalind_Gahamire_CV_2026.pdf each time.*
+*v3.1 | 2026-03-02*

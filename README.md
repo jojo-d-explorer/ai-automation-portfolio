@@ -45,7 +45,7 @@ Each user's search follows a five-step cycle, run every Sunday:
 
 ```
 1. ONE_CLICK search   →  Multi-board scrape, AI score against resume, save Master List + Top 10
-2. CONSOLIDATE        →  Merge weekly results into user's master database, preserve application history
+2. CONSOLIDATE        →  Merge weekly results into user's master database (CONSOLIDATE_UNIVERSAL.md)
 3. check_urls.py      →  Ping all job URLs, drop confirmed-closed listings, flag blocked/error for review
 4. MASTER_ANALYSIS    →  Generate strategic analysis (score trends, sector patterns, funded company matches)
 5. Deliverables       →  Branded Excel files + delivery email drafted and sent to user

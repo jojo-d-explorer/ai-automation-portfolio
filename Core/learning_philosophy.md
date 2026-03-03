@@ -61,16 +61,16 @@
 ### Technical Starting Point
 
 - **Rusty but familiar:** SQL, Python, Tableau
-- **Currently learning:** CoWork, Claude AI, prompt engineering, Git/GitHub
-- **No experience with:** Modern automation tools, AI agents, version control workflows
+- **Currently learning:** CoWork, Claude AI, prompt engineering, Git/GitHub, Claude Code
+- **Building competence in:** Python scripting (check_urls.py, linkedin_links.py), API calls (Ashby GraphQL), data pipelines
 - **Comfortable with:** Strategic thinking, systems design, stakeholder management
 
 ### Current Setup
 
 - **Primary working directory:** `/Users/jc3/GitHub/ai-automation-portfolio/`
-- **Tools:** CoWork, GitHub Desktop, Claude Sonnet 4.5
+- **Tools:** CoWork, Claude Code, GitHub Desktop, Claude Sonnet 4.5
 - **Computer:** Mac (Apple Silicon)
-- **Real project:** Job search automation (own use + helping friends)
+- **Real project:** Job search automation (own use + 5-user service for friends)
 
 ## Key Insights About My Learning
 
@@ -82,6 +82,14 @@
 - "Templates > memorization - build reusable systems"
 - "Learning = pattern recognition developing faster over time"
 
+### Week 3+ Insights
+
+- **Trust in automated systems requires verification** — a 33% false-positive rate on URL checks eroded confidence in the entire system. Building check_urls.py wasn't optional polish, it was foundational to the service being credible.
+- **Platform-specific edge cases matter** — generic solutions fail. Ashby needs GraphQL API calls, LinkedIn needs to be searched directly, Greenhouse/Lever need content scanning. Each platform has its own failure mode.
+- **Scaling decisions have compound effects** — removing LinkedIn from automated search was a design decision driven by pattern recognition across multiple users' data. One architectural change cascaded to 6+ files, a verification script, and a new utility (linkedin_links.py).
+- **Real problems don't follow curricula** — Week 3 data consolidation work surfaced Week 7 error handling problems. The skills developed simultaneously, not sequentially.
+- **Questioning arbitrary numbers is a feature, not a bug** — applying this to scoring weights, staleness thresholds (45 days), and any system parameter. The numbers need to be consistent and useful, not precise.
+
 ### Success Indicators
 
 - Can explain concepts to others (teaching = mastery)
@@ -89,6 +97,8 @@
 - Recognize issues before they happen (pattern recognition developing)
 - Think "what else could I automate?" (creative application)
 - Help others with their automation needs (proof of transferable skills)
+- Debug systematically when things break (check_urls.py development process)
+- Make architectural decisions with scaling implications (LinkedIn removal)
 
 ## Goals for This Learning Journey
 
@@ -121,20 +131,5 @@
 
 ---
 
-*Last updated: 2026-02-06*
-*Current week: 2 (complete) → 3 (upcoming)*
-
-## Week 3 Insight: Scoring Systems Are Iterative, Not Precise
-
-**Discovery:** Scoring adjustments (like -10 for healthcare, -15 for crypto) can feel arbitrary.
-
-**Learning:**
-- Scoring doesn't need precision, it needs useful ranking
-- Start simple (70+ threshold), refine based on actual behavior
-- Numbers should be data-driven (what I apply to) not guess-driven
-- Iteration > Perfection
-
-**Approach:**
-- Weeks 1-4: Simple scoring, gather application data
-- Week 5: Analyze patterns (what scores/sectors did I apply to?)
-- Week 6+: Adjust scoring based on revealed preferences
+*Last updated: 2026-02-26*
+*Current week: 3 (in progress)*

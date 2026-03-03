@@ -28,7 +28,7 @@ Locations:
 
 For each board/role/location combination, extract up to 20 results (paginate to page 2 if needed).
 
-Show progress matrix as you search each combination.
+Show progress matrix as you search each board/role/location combination (3 boards × 3 roles × 4 locations = 36 combinations + supplementary LinkedIn queries).
 
 ---
 

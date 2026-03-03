@@ -1,4 +1,6 @@
-# ONE-CLICK WEEKLY SEARCH: AARON KIMSON — v3.1
+# ONE-CLICK WEEKLY SEARCH: [FRIEND NAME] — TEMPLATE v3.1
+
+**Purpose:** Duplicate this file for each new friend. Replace all [BRACKETED] values. Save as `ONE_CLICK_[First_Last].md`.
 
 **This prompt does:** SEARCH + SCORE only (Phase 1)  
 **This prompt does NOT do:** URL verification — that's Phase 2, run separately
@@ -10,14 +12,17 @@
 This is **Phase 1 of 7**. After this prompt completes:
 
 ```bash
-python3 JC3/check_urls.py results/For_Others/Aaron_Kimson/Week_of_[DATE]/Aaron_Kimson_[DATE].csv
+# Phase 2 — run this in Terminal:
+python3 JC3/check_urls.py results/For_Others/[First_Last]/Week_of_[DATE]/[First_Last]_[DATE].csv
 ```
+
+Then continue with Phases 3-7 per ops_playbook_v2.
 
 ---
 
-**Owner:** Joey Clark (running on behalf of Aaron Kimson)  
-**Resume file:** Aaron_Kimson_Resume.pdf  
-**Last updated:** 2026-03-02
+**Owner:** Joey Clark (running on behalf of [FRIEND NAME])  
+**Resume file:** [RESUME FILENAME.pdf]  
+**Last updated:** [DATE]
 
 ---
 
@@ -29,7 +34,7 @@ Calculate today's date and determine:
 
 Define path variables:
 - BASE_PATH = /Users/jc3/GitHub/ai-automation-portfolio
-- RESULTS_PATH = {BASE_PATH}/results/For_Others/Aaron_Kimson/Week_of_CURRENT_WEEK
+- RESULTS_PATH = {BASE_PATH}/results/For_Others/[First_Last]/Week_of_CURRENT_WEEK
 
 ---
 
@@ -40,28 +45,21 @@ Define path variables:
 - site:jobs.lever.co
 - site:jobs.ashbyhq.com
 
-**Note:** ATS boards have limited coverage for hedge fund roles. Aaron receives LinkedIn direct search links separately.
-
 **Roles:**
-- Long/Short Hedge Fund Analyst
-- Hedge Fund Portfolio Manager
-- Equity Research Analyst
-- Investment Analyst
-- Research Analyst
+- [Role 1]
+- [Role 2]
+- [Role 3]
 
 **Locations:**
-- New York, NY
-- San Francisco, CA
-- Chicago, IL
-- Miami, FL
-- Boston, MA
-- Remote-US
+- [Location 1]
+- [Location 2]
+- [Location 3]
 
 **Filters:**
 - Posted within last 7 days
 - For each board/role/location combination, extract up to 20 results
 
-Show progress matrix as you search.
+Show progress matrix as you search each combination.
 
 ---
 
@@ -72,11 +70,11 @@ Show progress matrix as you search.
 **Exclude aggregators:** Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob, Indeed, Glassdoor.
 
 **URL rules:**
-- Must be job-specific URL with job ID
-- Exclude board roots without job ID
+- Must be job-specific URL with job ID (e.g., `/jobs/12345` or `/[uuid]`)
+- Exclude board roots without job ID (e.g., `jobs.lever.co/stripe`)
 - Exclude generic career pages
 
-**Anti-hallucination:** Only include jobs you actually visited. Zero results = report zero.
+**Anti-hallucination:** Only include jobs you actually visited and extracted data from. Zero results = report zero.
 
 ---
 
@@ -100,32 +98,14 @@ Same Company + Job_Title across boards → keep highest score, merge Found_On.
 
 ### SCORING
 
-Using attached resume (Aaron_Kimson_Resume.pdf), score each job 1-100:
+Using attached resume, score each job 1-100:
 
-**Industry Fit (35 points):**
-- Finance, hedge funds, asset management: full credit
-- Fintech, trading platforms: 25/35
-- Adjacent (PE, VC, corporate finance): 15/35
-- Unrelated: 5/35
-
-**Skills Match (25 points):**
-- Key skills: Financial modeling, equity research, fundamental analysis, portfolio management
-
-**Seniority Match (20 points):**
-- Analyst to PM level: full credit
-- Junior: partial
-- C-suite: partial
-
-**Location Flexibility (10 points):**
-- NYC, SF, Chicago, Miami, Boston: full credit
-- Remote-US: full credit
-- Other US: 5/10
-
-**Salary Fit (10 points):**
-- $150K+ base: full credit
-- $100K-$150K: 7/10
-- Below $100K: 3/10
-- Not listed: 5/10
+**[CUSTOMIZE WEIGHTS PER FRIEND]**
+- Industry Fit: [X] points
+- Skills Match: [X] points  
+- Seniority Match: [X] points
+- Location Flexibility: [X] points
+- Salary Fit: [X] points
 
 Provide 1-2 sentence Score_Rationale.
 
@@ -135,7 +115,7 @@ Provide 1-2 sentence Score_Rationale.
 
 ### NEW/REPEAT DETECTION
 
-Compare to: {BASE_PATH}/results/For_Others/Aaron_Kimson/Week_of_PREVIOUS_WEEK/Aaron_Kimson_PREVIOUS_WEEK.csv
+Compare to: {BASE_PATH}/results/For_Others/[First_Last]/Week_of_PREVIOUS_WEEK/[First_Last]_PREVIOUS_WEEK.csv
 
 - File exists → mark NEW or REPEAT
 - No file → mark all NEW
@@ -144,7 +124,7 @@ Compare to: {BASE_PATH}/results/For_Others/Aaron_Kimson/Week_of_PREVIOUS_WEEK/Aa
 
 ### OUTPUT FILES
 
-**Weekly CSV:** {RESULTS_PATH}/Aaron_Kimson_CURRENT_WEEK.csv
+**Weekly CSV:** {RESULTS_PATH}/[First_Last]_CURRENT_WEEK.csv
 
 **Columns (21, this exact order):**
 ```
@@ -155,27 +135,37 @@ Score | Company | Job_Title | Location | Work_Arrangement | Sector | Salary_USD 
 - Times_Seen: 1
 - First_Seen_Date: CURRENT_WEEK
 - Last_Seen_Date: CURRENT_WEEK
-- **URL_Status: "Not Checked"**
+- **URL_Status: "Not Checked"** ← check_urls.py fills this in Phase 2
 - Applied_Date through Notes: leave blank
 
-**Branded XLSX:** {RESULTS_PATH}/Aaron_Kimson_CURRENT_WEEK.xlsx
+**Branded XLSX:** {RESULTS_PATH}/[First_Last]_CURRENT_WEEK.xlsx
+
+**Executed prompt:** {BASE_PATH}/searches/For_Others/[First_Last]/executed_CURRENT_WEEK.txt
 
 ---
 
 ### VERIFICATION
 
-Show summary with job counts, files saved.
+Show summary:
+| Metric | Count |
+|--------|-------|
+| Total jobs found | X |
+| Jobs scoring 70+ | Y |
+| NEW jobs | Z |
+| REPEAT jobs | W |
+
+Files saved at: [list paths]
 
 ---
 
 ## STOP HERE
 
-**Phase 1 complete.** Run Phase 2:
+**Phase 1 complete.** Next step is Phase 2 (VERIFY):
 
 ```bash
-python3 JC3/check_urls.py results/For_Others/Aaron_Kimson/Week_of_CURRENT_WEEK/Aaron_Kimson_CURRENT_WEEK.csv
+python3 JC3/check_urls.py results/For_Others/[First_Last]/Week_of_CURRENT_WEEK/[First_Last]_CURRENT_WEEK.csv
 ```
 
 ---
 
-*v3.1 | 2026-03-02*
+*Template v3.1 | 2026-03-02 | Pipeline-aligned*

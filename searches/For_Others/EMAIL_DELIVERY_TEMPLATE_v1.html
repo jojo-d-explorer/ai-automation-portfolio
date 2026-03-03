@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Job Search Delivery Email Template v1.0</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    /* Instructions box - NOT part of the email */
+    .instructions {
+      background: #FFF9E6;
+      border: 2px solid #F0C000;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .instructions h2 {
+      margin-top: 0;
+      color: #8B6914;
+    }
+    .instructions code {
+      background: #FFF3CC;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    .instructions ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    
+    /* Email content container */
+    .email-content {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 30px;
+      background: #fff;
+    }
+    
+    /* Section dividers */
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 25px 0;
+    }
+    
+    /* Section headers with emoji */
+    .section-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+    }
+    
+    /* Stats list */
+    .stats-list {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .stats-list li {
+      margin: 5px 0;
+    }
+    
+    /* Role highlights */
+    .role-item {
+      margin: 15px 0;
+    }
+    .role-title {
+      font-weight: bold;
+    }
+    .role-meta {
+      color: #666;
+    }
+    .role-description {
+      margin-top: 5px;
+    }
+    
+    /* Funding intel */
+    .funding-company {
+      margin: 12px 0;
+    }
+    .funding-header {
+      font-weight: bold;
+    }
+    .funding-details {
+      color: #666;
+      font-size: 14px;
+    }
+    .funding-relevance {
+      margin-top: 4px;
+      font-style: italic;
+    }
+    
+    /* Worth watching (compact) */
+    .worth-watching {
+      color: #555;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+    
+    /* System notes box */
+    .system-notes {
+      background: #f8f9fa;
+      border-left: 3px solid #6c757d;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    
+    /* Coming soon */
+    .coming-soon-item {
+      margin: 10px 0;
+    }
+    .coming-soon-title {
+      font-weight: bold;
+    }
+    
+    /* Feedback section */
+    .feedback-questions {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .feedback-questions li {
+      margin: 8px 0;
+    }
+    
+    /* Criteria recap box */
+    .criteria-recap {
+      background: #f0f7ff;
+      border: 1px solid #cce0ff;
+      border-radius: 6px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    .criteria-recap strong {
+      color: #0056b3;
+    }
+    
+    /* Placeholder styling */
+    .placeholder {
+      background: #ffeb3b;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    
+    /* First-run only sections */
+    .first-run-only {
+      border: 2px dashed #17a2b8;
+      padding: 15px;
+      margin: 15px 0;
+      background: #e7f6f8;
+    }
+    .first-run-label {
+      background: #17a2b8;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== INSTRUCTIONS (DO NOT COPY) ========== -->
+<div class="instructions">
+  <h2>📋 How to Use This Template</h2>
+  
+  <p><strong>Subject Line:</strong></p>
+  <code>Job Search [DATE] — [COUNT] Verified Roles + Funding Intel</code>
+  
+  <p><strong>To:</strong> <code>[FRIEND_EMAIL]</code></p>
+  
+  <p><strong>Attachments:</strong></p>
+  <ul>
+    <li>Master_Job_Database_[NAME].xlsx (3 tabs: All Results, Search Summary, LinkedIn Links)</li>
+    <li>Analysis_[NAME]_[DATE].pdf (Week 3+ only)</li>
+  </ul>
+  
+  <p><strong>Steps:</strong></p>
+  <ol>
+    <li>Replace all <span class="placeholder">[PLACEHOLDERS]</span> with actual data</li>
+    <li>Delete sections marked "FIRST RUN ONLY" for recurring deliveries</li>
+    <li>Delete this yellow instructions box</li>
+    <li>Select all content inside the bordered email area</li>
+    <li>Copy and paste into Gmail compose window</li>
+  </ol>
+  
+  <p><strong>Quality checks before sending:</strong></p>
+  <ul>
+    <li>☐ Job count in email matches spreadsheet</li>
+    <li>☐ Every company mentioned exists in the attachment</li>
+    <li>☐ All URLs contain specific job IDs (not generic career pages)</li>
+    <li>☐ Friend's name is correct throughout</li>
+    <li>☐ No [PLACEHOLDER] text remaining</li>
+    <li>☐ Funding intel companies trace to actual newsletters</li>
+  </ul>
+</div>
+
+<!-- ========== EMAIL CONTENT (COPY BELOW THIS LINE) ========== -->
+<div class="email-content">
+
+<!-- SECTION 1: OPENER + HEADLINE -->
+<p>Hey <span class="placeholder">[FIRST_NAME]</span>,</p>
+
+<p>This week's search is in — <strong><span class="placeholder">[COUNT]</span> verified, confirmed-open listings</strong> across Greenhouse, Lever, and Ashby. Every link has been checked and is live.</p>
+
+<p>The <strong><span class="placeholder">[TOP_COMPANY]</span> — <span class="placeholder">[TOP_ROLE]</span></strong> role (<span class="placeholder">[TOP_SCORE]</span>) <span class="placeholder">[WHY_IT_STANDS_OUT — e.g., "continues to be your strongest match — it's now appeared in X consecutive scans" OR "is new this week and directly matches your background in..."]</span></p>
+
+<hr>
+
+<!-- SECTION 2: QUICK STATS -->
+<p class="section-header">📊 Quick stats</p>
+<ul class="stats-list">
+  <li><span class="placeholder">[COUNT]</span> verified open roles (all links confirmed live)</li>
+  <li>Score range: <span class="placeholder">[MIN]</span>–<span class="placeholder">[MAX]</span>, average <span class="placeholder">[AVG]</span></li>
+  <li>Boards searched: Greenhouse, Lever, Ashby</li>
+  <li>Roles: <span class="placeholder">[ROLE_LIST]</span></li>
+  <li>Locations: <span class="placeholder">[LOCATION_LIST]</span></li>
+</ul>
+
+<hr>
+
+<!-- FIRST RUN ONLY: HOW SCORING WORKS -->
+<div class="first-run-only">
+  <span class="first-run-label">FIRST RUN ONLY — DELETE FOR RECURRING</span>
+  
+  <p class="section-header">📋 How scoring works</p>
+  <p>Every job gets scored out of 100 based on five weighted criteria matched against your resume:</p>
+  <ul>
+    <li><strong>Seniority (<span class="placeholder">[SENIORITY_WEIGHT]</span> points)</strong> — <span class="placeholder">[What levels you're targeting and why]</span></li>
+    <li><strong>Skills alignment (<span class="placeholder">[SKILLS_WEIGHT]</span> points)</strong> — <span class="placeholder">[What skills from their resume map to role requirements]</span></li>
+    <li><strong>Location (<span class="placeholder">[LOCATION_WEIGHT]</span> points)</strong> — <span class="placeholder">[Which locations score highest]</span></li>
+    <li><strong>Industry fit (<span class="placeholder">[INDUSTRY_WEIGHT]</span> points)</strong> — <span class="placeholder">[Target sectors]</span></li>
+    <li><strong>Salary (<span class="placeholder">[SALARY_WEIGHT]</span> points)</strong> — most roles don't list comp, so the system scores conservatively when it's missing</li>
+  </ul>
+  <p>Each job has a Score Rationale column explaining exactly why it scored where it did.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 3: TOP ROLES -->
+<p class="section-header">⭐ Top roles to look at</p>
+
+<div class="role-item">
+  <p><span class="role-title"><span class="placeholder">[COMPANY_1]</span> — <span class="placeholder">[ROLE_1]</span></span> <span class="role-meta">(<span class="placeholder">[SCORE_1]</span>, <span class="placeholder">[LOCATION_1]</span>, <span class="placeholder">[ARRANGEMENT_1]</span>)</span></p>
+  <p class="role-description"><span class="placeholder">[1-2 sentences: What the role is + why it fits THIS person's specific background. Reference their resume experience directly. If Times_Seen > 3, note "Seen X weeks running — they're actively hiring."]</span></p>
+</div>
+
+<div class="role-item">
+  <p><span class="role-title"><span class="placeholder">[COMPANY_2]</span> — <span class="placeholder">[ROLE_2]</span></span> <span class="role-meta">(<span class="placeholder">[SCORE_2]</span>, <span class="placeholder">[LOCATION_2]</span>, <span class="placeholder">[ARRANGEMENT_2]</span>)</span></p>
+  <p class="role-description"><span class="placeholder">[1-2 sentences connecting to their background]</span></p>
+</div>
+
+<div class="role-item">
+  <p><span class="role-title"><span class="placeholder">[COMPANY_3]</span> — <span class="placeholder">[ROLE_3]</span></span> <span class="role-meta">(<span class="placeholder">[SCORE_3]</span>, <span class="placeholder">[LOCATION_3]</span>, <span class="placeholder">[ARRANGEMENT_3]</span>)</span></p>
+  <p class="role-description"><span class="placeholder">[1-2 sentences connecting to their background]</span></p>
+</div>
+
+<div class="role-item">
+  <p><span class="role-title"><span class="placeholder">[COMPANY_4]</span> — <span class="placeholder">[ROLE_4]</span></span> <span class="role-meta">(<span class="placeholder">[SCORE_4]</span>, <span class="placeholder">[LOCATION_4]</span>, <span class="placeholder">[ARRANGEMENT_4]</span>)</span></p>
+  <p class="role-description"><span class="placeholder">[1-2 sentences connecting to their background]</span></p>
+</div>
+
+<div class="role-item">
+  <p><span class="role-title"><span class="placeholder">[COMPANY_5]</span> — <span class="placeholder">[ROLE_5]</span></span> <span class="role-meta">(<span class="placeholder">[SCORE_5]</span>, <span class="placeholder">[LOCATION_5]</span>, <span class="placeholder">[ARRANGEMENT_5]</span>)</span></p>
+  <p class="role-description"><span class="placeholder">[1-2 sentences connecting to their background]</span></p>
+</div>
+
+<p><strong>Also worth a look:</strong> <span class="placeholder">[COMPANY_6]</span>'s <span class="placeholder">[ROLE_6]</span> (<span class="placeholder">[SCORE_6]</span>), <span class="placeholder">[COMPANY_7]</span>'s <span class="placeholder">[ROLE_7]</span> (<span class="placeholder">[SCORE_7]</span>), and <span class="placeholder">[COMPANY_8]</span>'s <span class="placeholder">[ROLE_8]</span> (<span class="placeholder">[SCORE_8]</span>).</p>
+
+<hr>
+
+<!-- SECTION 4: FUNDING INTELLIGENCE -->
+<p class="section-header">💰 Funding Intelligence — Companies to Watch Before They Post</p>
+
+<p>I scanned 4 funding newsletters this week (StrictlyVC, FINSmes, EU-Startups, Sunday CET) — <span class="placeholder">[DEAL_COUNT]</span> deals, $<span class="placeholder">[TOTAL_AMOUNT]</span>+ in announced funding. Below are the recently funded companies that match your profile. These companies are likely hiring <em>before</em> roles hit the boards. Proactive outreach here gives you a head start.</p>
+
+<p><strong>🎯 Top Matches (Score 8-10)</strong></p>
+
+<div class="funding-company">
+  <p class="funding-header"><span class="placeholder">[FUNDING_COMPANY_1]</span> 🇬🇧</p>
+  <p class="funding-details"><span class="placeholder">[Location]</span> • ~$<span class="placeholder">[Amount]</span> <span class="placeholder">[Round]</span> • <span class="placeholder">[Sector]</span></p>
+  <p class="funding-relevance"><span class="placeholder">[Why it matters for THIS person — what roles they'd likely be hiring, why person's background fits]</span></p>
+</div>
+
+<div class="funding-company">
+  <p class="funding-header"><span class="placeholder">[FUNDING_COMPANY_2]</span></p>
+  <p class="funding-details"><span class="placeholder">[Location]</span> • ~$<span class="placeholder">[Amount]</span> <span class="placeholder">[Round]</span> • <span class="placeholder">[Sector]</span></p>
+  <p class="funding-relevance"><span class="placeholder">[Why it matters]</span></p>
+</div>
+
+<div class="funding-company">
+  <p class="funding-header"><span class="placeholder">[FUNDING_COMPANY_3]</span></p>
+  <p class="funding-details"><span class="placeholder">[Location]</span> • ~$<span class="placeholder">[Amount]</span> <span class="placeholder">[Round]</span> • <span class="placeholder">[Sector]</span></p>
+  <p class="funding-relevance"><span class="placeholder">[Why it matters]</span></p>
+</div>
+
+<p><strong>👁 Worth Watching (Score 5-7)</strong></p>
+<p class="worth-watching"><strong><span class="placeholder">[Company]</span></strong> ($<span class="placeholder">[Amount]</span>, <span class="placeholder">[Sector]</span>) • <strong><span class="placeholder">[Company]</span></strong> ($<span class="placeholder">[Amount]</span>, <span class="placeholder">[Sector]</span>) • <strong><span class="placeholder">[Company]</span></strong> ($<span class="placeholder">[Amount]</span>, <span class="placeholder">[Sector]</span>)</p>
+
+<p><strong>💸 VC Fund Activity</strong></p>
+<p><span class="placeholder">[VC_FUND]</span> raised $<span class="placeholder">[Amount]</span> for <span class="placeholder">[Focus area]</span>. <span class="placeholder">[Why this matters — e.g., "Their portfolio companies in [sector] will be hiring."]</span></p>
+
+<hr>
+
+<!-- SECTION 5: SYSTEM NOTES (honest, transparent) -->
+<div class="system-notes">
+  <p class="section-header">🔧 A note on <span class="placeholder">[TOPIC — e.g., "search quality" or "link quality" or "this week's results"]</span></p>
+  
+  <p><span class="placeholder">[What happened — be honest about any issues, limitations, or changes. Example: "The initial search pulled 24 jobs scoring 70+, but after URL verification, 8 survived. That's a stricter-than-usual filter — earlier pipeline versions would have shipped all 24, some of which pointed to generic careers pages rather than actual job listings."]</span></p>
+  
+  <p><span class="placeholder">[What you fixed or why it's this way — e.g., "The 8 you're getting are confirmed live, specific listings. I'd rather send you 8 real ones than 24 where half are dead ends."]</span></p>
+  
+  <p><span class="placeholder">[Any other observations — e.g., board performance, salary data availability, clearance requirements]</span></p>
+</div>
+
+<hr>
+
+<!-- SECTION 6: COMING SOON -->
+<p class="section-header">🚀 Coming soon</p>
+
+<div class="coming-soon-item">
+  <p><span class="coming-soon-title">📊 Shared Google Sheet — Application Analytics</span></p>
+  <p>A shared Google Sheet that we'll both have access to. You'll mark roles as "Applied," "Interview," "Rejected," etc. and I'll pull that into weekly analytics — conversion rates, response times, which sectors produce the most traction. A lightweight ATS built around your search.</p>
+</div>
+
+<div class="coming-soon-item">
+  <p><span class="coming-soon-title">🌐 Personal Results Webpage</span></p>
+  <p>A simple, private webpage where you can view your weekly results — filterable by score, sector, location, and status. No login, just a private link. Easier to scan on your phone or share specific roles without opening spreadsheets.</p>
+</div>
+
+<div class="coming-soon-item">
+  <p><span class="coming-soon-title">🔗 LinkedIn Integration</span></p>
+  <p>Pre-built LinkedIn search URLs tailored to your profile are included in the spreadsheet (Tab 3). One click and you're looking at a filtered LinkedIn search.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 7: FEEDBACK ASK -->
+<p class="section-header">💬 Anything to adjust?</p>
+
+<p>If certain roles or companies aren't landing, let me know and I'll tune the search. The system gets smarter each week — your feedback on what feels right (and what doesn't) is what makes the difference.</p>
+
+<ul class="feedback-questions">
+  <li><strong>Other job boards?</strong> Right now the pipeline scans Greenhouse, Lever, and Ashby. Are there other ATS boards or platforms you're seeing roles on — Workday, BambooHR, Recruitee, SmartRecruiters?</li>
+  <li><strong>Other funding newsletters?</strong> The funding intel currently pulls from StrictlyVC, FINSmes, EU-Startups, and Sunday CET. Are there newsletters you read that cover <span class="placeholder">[THEIR_SECTOR]</span> startup funding?</li>
+  <li><strong>Want to adjust your criteria or scoring?</strong></li>
+</ul>
+
+<div class="criteria-recap">
+  <strong>Search criteria recap:</strong>
+  <ul>
+    <li><strong>Roles:</strong> <span class="placeholder">[ROLE_LIST]</span></li>
+    <li><strong>Locations:</strong> <span class="placeholder">[LOCATION_LIST]</span></li>
+    <li><strong>Boards:</strong> Greenhouse, Lever, Ashby</li>
+    <li><strong>Score range this week:</strong> <span class="placeholder">[MIN]</span>–<span class="placeholder">[MAX]</span> (cutoff at 70)</li>
+  </ul>
+</div>
+
+<p>Best,</p>
+<p>Joey</p>
+
+</div>
+<!-- ========== END EMAIL CONTENT ========== -->
+
+</body>
+</html>

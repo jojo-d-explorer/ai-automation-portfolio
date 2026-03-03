@@ -1,6 +1,6 @@
 # Technical Setup & Environment
 
-*Current state as of Week 4 (March 2026)*
+*Current state as of Week 3*
 
 ---
 
@@ -26,14 +26,13 @@
 ai-automation-portfolio/
 ├── .git/                          (Git internals - don't touch)
 ├── .gitignore                     (Files to ignore)
-├── README.md                      (Repository homepage)
+├── README.md                      (Repository homepage — updated Week 3)
 │
 ├── learning_philosophy.md         (My learning style & context)
 ├── curriculum_plan.md             (12-week roadmap)
 ├── prompt_engineering_principles.md
 ├── git_workflows.md
 ├── technical_setup.md             (this file)
-├── ops_playbook_v2.docx           (Weekly operations playbook)
 │
 ├── JC3/                           (Python scripts & utilities)
 │   ├── check_urls.py              (URL verification — v2 with Ashby API, staleness detection)
@@ -46,7 +45,7 @@ ai-automation-portfolio/
 │   │   ├── ONE_CLICK_WEEKLY_SEARCH.md
 │   │   └── CONSOLIDATE_TO_MASTER.md
 │   ├── For_Others/                (Friend search operations)
-│   │   ├── ONE_CLICK_TEMPLATE_Friends_v3.md  (Master template — v3.0)
+│   │   ├── ONE_CLICK_TEMPLATE_Friends.md
 │   │   ├── MASTER_ANALYSIS.md     (6-query analysis pipeline + PDF output)
 │   │   ├── FUNDING_INTEL.md       (Standalone funding intelligence prompt)
 │   │   ├── Aaron_Kimson/
@@ -63,7 +62,6 @@ ai-automation-portfolio/
 │   ├── Week_of_2026-01-26/        (Week 1)
 │   ├── Week_of_2026-02-02/        (Week 2)
 │   ├── Week_of_2026-02-10/        (Week 3)
-│   ├── Week_of_2026-03-01/        (Week 4)
 │   ├── funding_intel/             (Funding intelligence reports)
 │   └── For_Others/                (Friend results)
 │       ├── Aaron_Kimson/
@@ -73,7 +71,6 @@ ai-automation-portfolio/
 │       │   ├── Master_Job_Database_Phil_Tassi.csv
 │       │   └── Week_of_YYYY-MM-DD/
 │       ├── Vivienne_Pham/
-│       │   ├── Master_Job_Database_Vivienne_Pham.csv
 │       │   └── Week_of_YYYY-MM-DD/
 │       └── Rosalind/
 │           └── Week_of_YYYY-MM-DD/
@@ -101,7 +98,7 @@ ai-automation-portfolio/
 - Model: Sonnet 4.5
 - Subscription: Max (higher usage limits)
 - Used for: Teaching/curriculum, prompt engineering, analysis, CoWork orchestration
-- Projects feature: Stores context files (this file, curriculum, learning philosophy, skills)
+- Projects feature: Stores context files (this file, curriculum, learning philosophy)
 
 **Claude Code (Terminal)**
 
@@ -130,7 +127,7 @@ ai-automation-portfolio/
 
 **Numbers** — Opens .csv files by default on Mac; sufficient for reviewing search results
 
-**Gmail** — Central hub for funding newsletter intelligence (StrictlyVC, FINSmes, EU-Startups, Sunday CET)
+**Gmail** — Central hub for funding newsletter intelligence (StrictlyVC, FINSmes, EU-Startups, Sunday CET, Remote100K)
 
 ---
 
@@ -154,28 +151,23 @@ ai-automation-portfolio/
 
 | Person | Role Types | Locations | Status |
 |--------|-----------|-----------|--------|
-| **Joey** (personal) | Chief of Staff, Strategic Ops, Partnerships | DC, Remote-US, Lisbon, EU-Remote | 4+ weeks of data |
-| **Aaron Kimson** | L/S Hedge Fund Analyst, HF PM, Equity Research, Investment Analyst | NYC, SF, Chicago, Miami, Boston | 3+ weeks |
-| **Phil Tassi** | Chief of Staff, Partnerships, BD | Washington DC, London UK | 3+ weeks |
-| **Vivienne Pham** | 3 archetypes: Operator (CFO/VP Finance), Capital Markets (IR), Ecosystem (BD/Portfolio Ops) | NYC, DC, Remote | 2 weeks |
+| **Joey** (personal) | Chief of Staff, Strategic Ops, Partnerships | DC, Remote-US, Lisbon, EU-Remote | 3+ weeks of data, master database (118+ jobs) |
+| **Aaron Kimson** | L/S Hedge Fund Analyst, HF PM, Equity Research, Investment Analyst | NYC, SF, Chicago, Miami, Boston | 2-3 weeks |
+| **Phil Tassi** | Chief of Staff, Partnerships, BD | Washington DC, London UK | 2-3 weeks |
+| **Vivienne Pham** | 3 archetypes: Operator (CFO/VP Finance), Capital Markets (IR), Ecosystem (BD/Portfolio Ops) | NYC, DC, Remote | 1 week |
 | **Rosalind** | TBD | TBD | New — first run pending |
 
-### Search Pipeline (7 phases, ~45 min per person)
+### Search Pipeline (per person, per week)
 
 ```
-SEARCH → VERIFY → CLEAN → CONSOLIDATE → ANALYZE → PACKAGE → DELIVER
+ONE_CLICK → Weekly CSV outputs → CONSOLIDATE_TO_MASTER → Master Database
+                                                              ↓
+                                                    MASTER_ANALYSIS (6 queries)
+                                                              ↓
+                                                    Branded XLSX + PDF report
+                                                              ↓
+                                                    Delivery email to friend
 ```
-
-**Phase details:**
-1. **SEARCH** (8-10 min) — ONE_CLICK prompt runs against 3 boards
-2. **VERIFY** (5-8 min) — check_urls.py validates all URLs are live
-3. **CLEAN** (3-5 min) — master-db-cleanup SKILL standardizes data
-4. **CONSOLIDATE** (3-5 min) — Merge into master database
-5. **ANALYZE** (8-10 min) — MASTER_ANALYSIS for users with 3+ weeks
-6. **PACKAGE** (5-8 min) — Build XLSX (3 tabs) + PDF report
-7. **DELIVER** (5 min) — Draft email using job-search-delivery SKILL
-
-**Key change (March 2026):** URL verification now runs BEFORE consolidation, not after. This prevents dead links from ever entering the master database.
 
 ### Job Boards Searched (3 boards)
 
@@ -184,6 +176,8 @@ SEARCH → VERIFY → CLEAN → CONSOLIDATE → ANALYZE → PACKAGE → DELIVER
 - `site:jobs.ashbyhq.com`
 
 **LinkedIn removed from automated search** (Feb 2026) — Google's index of LinkedIn job pages returns months-old stale listings. Friends receive personalized LinkedIn direct search links instead, generated by `JC3/linkedin_links.py`.
+
+**Workday** — Planned addition, pending testing of dead link behavior.
 
 ### Funding Intelligence Sources (4 newsletters)
 
@@ -194,28 +188,7 @@ SEARCH → VERIFY → CLEAN → CONSOLIDATE → ANALYZE → PACKAGE → DELIVER
 | EU-Startups | thomas.ohr@eu-startups.com | Weekly (Thu) |
 | Sunday CET | sundaycet@mail.beehiiv.com | Weekly (Sun) |
 
-Scanned via Gmail search using funding-intel SKILL. Identifies recently funded companies matching user's target sectors/locations before jobs are posted.
-
----
-
-## Claude Skills (3 active)
-
-Skills are stored in Claude Project knowledge and trigger automatically based on context.
-
-### job-search-delivery
-**Triggers:** "draft email for [name]", "send [name] results", "delivery email"
-**Purpose:** Generates 7-section delivery email following standardized format
-**Output:** HTML file copy-paste ready for Gmail
-
-### master-db-cleanup
-**Triggers:** "clean [name]'s database", "fix the master list", "standardize CSV"
-**Purpose:** Enforces 21-column schema, removes LinkedIn URLs, URL specificity check, deduplication
-**Output:** Cleaned CSV + backup of original
-
-### funding-intel
-**Triggers:** "run funding intel", "scan newsletters", "check StrictlyVC"
-**Purpose:** Scans 4 funding newsletters, scores companies against friend's criteria
-**Output:** Funding matches for email Section 4
+Scanned via Gmail search in FUNDING_INTEL prompt. Identifies recently funded companies matching user's target sectors/locations before jobs are posted.
 
 ---
 
@@ -236,7 +209,7 @@ Skills are stored in Claude Project knowledge and trigger automatically based on
 python3 JC3/check_urls.py results/For_Others/Phil_Tassi/Master_Job_Database_Phil_Tassi.csv
 ```
 
-**Output columns added:** `URL_Status`, `Close_Reason`, `Posting_Age_Days`
+**Output columns added:** `Close_Reason`, `Posting_Age_Days`
 
 ### linkedin_links.py
 
@@ -269,35 +242,32 @@ python3 JC3/verify_linkedin_removal.py
 
 **Always use ISO 8601:** `YYYY-MM-DD`
 
-- ✅ `2026-03-01` (unambiguous, sorts correctly)
-- ❌ `3-1` or `03/01/26` (ambiguous)
+- ✅ `2026-02-25` (unambiguous, sorts correctly)
+- ❌ `2-4` or `02/04/26` (ambiguous)
 
 ### File Naming
 
 **Pattern:** `[Category]_[Description]_[Date].[extension]`
 
 Examples:
-- `Master_Job_Database_Phil_Tassi.csv`
-- `Weekly_Results_Aaron_Kimson_2026-03-01.csv`
+- `Master_List_Phil_Tassi_2026-02-24.csv`
+- `Top10_New_Aaron_Kimson_2026-02-17.csv`
 - `ONE_CLICK_Vivienne_Pham.md`
 
 Rules: No spaces (use underscores), descriptive names, always include extension.
 
-### Column Schema (21 columns, standard across all users)
+### Column Schema (14 columns, standard across all users)
 
-**Core columns (16):**
 ```
-Score | Company | Job_Title | Location | Work_Arrangement | Sector | 
-Salary_USD | Job_Summary | URL | Score_Rationale | Times_Seen | 
-First_Seen_Date | Last_Seen_Date | Status | Found_On | URL_Status
-```
-
-**Application tracking columns (5):**
-```
-Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
+Status | Score | Score_Rationale | Company | Job_Title | Sector | Location |
+Language_Requirement | Work_Arrangement | Salary_USD | Job_Summary | URL |
+URL_Status | Found_On
 ```
 
-**Note:** Language_Requirement column was dropped in v3.0 (rarely populated, added noise).
+Plus 5 application tracking columns (when used):
+```
+Interest_Level | Applied_Date | Application_Method | Response_Status | Notes
+```
 
 ### Work Arrangement Categories (standardized)
 
@@ -306,13 +276,6 @@ Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
 - Hybrid
 - In-Office
 - Unclear
-
-### Status Values (standardized)
-
-- NEW — First time seen this week
-- REPEAT — Seen in previous weeks
-- CLOSED — URL verified dead
-- APPLIED — User has applied
 
 ---
 
@@ -333,8 +296,8 @@ Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
 Joey's search:
 /Users/jc3/GitHub/ai-automation-portfolio/searches/joey/ONE_CLICK_WEEKLY_SEARCH.md
 
-Friend template (v3.0):
-/Users/jc3/GitHub/ai-automation-portfolio/searches/For_Others/ONE_CLICK_TEMPLATE_Friends_v3.md
+Friend template:
+/Users/jc3/GitHub/ai-automation-portfolio/searches/For_Others/ONE_CLICK_TEMPLATE_Friends.md
 
 Friend ONE_CLICK:
 /Users/jc3/GitHub/ai-automation-portfolio/searches/For_Others/[Name]/ONE_CLICK_[Name].md
@@ -358,32 +321,38 @@ Funding intel:
 
 ### Running a Weekly Search (per person)
 
-See **ops_playbook_v2.docx** for detailed 7-phase instructions.
+1. Open the person's ONE_CLICK file
+2. Copy prompt (from "Calculate today's date..." to end)
+3. Paste into CoWork
+4. Attach their resume PDF
+5. Hit enter, wait 10-15 minutes
+6. Check results folder for outputs (CSV + XLSX)
 
-**Quick version:**
-1. Run ONE_CLICK prompt with resume attached (8-10 min)
-2. Run check_urls.py on weekly output (5-8 min)
-3. Run master-db-cleanup SKILL (3-5 min)
-4. Consolidate to master database (3-5 min)
-5. Run MASTER_ANALYSIS if Week 3+ (8-10 min)
-6. Package XLSX + PDF (5-8 min)
-7. Draft delivery email using job-search-delivery SKILL (5 min)
+### Consolidating to Master Database
 
-### Verifying URL Quality (post-search, pre-consolidation)
+1. After weekly search completes, run CONSOLIDATE_TO_MASTER prompt
+2. Merges new weekly results into cumulative master database
+3. Handles deduplication (Company + Job_Title match)
+
+### Running Analysis (for users with 2+ weeks of data)
+
+1. Run MASTER_ANALYSIS prompt (6 queries)
+2. Produces branded PDF with scoring trends, sector analysis, location patterns, funding intel
+3. Attach to delivery email with XLSX
+
+### Verifying URL Quality (post-search)
 
 ```bash
-python3 JC3/check_urls.py results/For_Others/[Name]/Week_of_YYYY-MM-DD/[Name]_YYYY-MM-DD.csv
+python3 JC3/check_urls.py results/For_Others/[Name]/Master_Job_Database_[Name].csv
 ```
 
-Run BEFORE consolidating to master. Dead links never enter the master database.
+Removes dead links, adds Close_Reason column, flags stale postings.
 
 ### Delivering Results to Friends
 
-1. Complete phases 1-6 above
-2. Run `python3 JC3/linkedin_links.py [name]` for LinkedIn supplement
-3. Use job-search-delivery SKILL to draft email
-4. Attach XLSX (3 tabs) + PDF (Week 3+)
-5. Send via Gmail
+1. Run search → consolidate → analysis
+2. Run `python3 JC3/linkedin_links.py [name]` for their LinkedIn supplement
+3. Email: XLSX attachment + key findings + LinkedIn direct search links
 
 ---
 
@@ -405,10 +374,10 @@ Run BEFORE consolidating to master. Dead links never enter the master database.
 **What:** CoWork sometimes saves to unexpected locations.
 **Fix:** Always specify full absolute paths with verification step in prompts.
 
-### Issue 4: Generic Career Page URLs
+### Issue 4: Duplicate Master List Locations (Phil)
 
-**What:** Search sometimes returns company career pages instead of specific job listings.
-**Fix:** master-db-cleanup SKILL enforces URL specificity — URLs must contain job ID (numeric or UUID path segment).
+**What:** Phil has master database in both `results/For_Others/Phil_Tassi/` and weekly subfolders.
+**Status:** Needs consolidation — pending cleanup.
 
 ---
 
@@ -431,8 +400,8 @@ Run BEFORE consolidating to master. Dead links never enter the master database.
 
 **Near-term:**
 - Workday as 4th job board (pending dead-link testing)
-- Shared Google Sheet for application tracking
-- Personal results webpage per friend
+- Additional funding newsletter sources
+- Proactive company prospecting from funding announcements
 
 **Weeks 9-10:**
 - Zapier/Make accounts (landscape survey)
@@ -444,5 +413,5 @@ Run BEFORE consolidating to master. Dead links never enter the master database.
 
 ---
 
-*Last updated: 2026-03-01*
-*Reflects Week 4 environment + ONE_CLICK v3.0 + 7-phase pipeline*
+*Last updated: 2026-02-26*
+*Reflects Week 3 environment*

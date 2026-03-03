@@ -1,19 +1,25 @@
-# ONE-CLICK WEEKLY SEARCH: VIVIENNE PHAM
+# ONE-CLICK WEEKLY SEARCH: VIVIENNE PHAM — v3.1
 
-**Owner:** Joey Clark (running on behalf of Vivienne Pham)
-**Resume file:** Vivienne_Pham_Resume_2026.pdf
-**Created:** 2026-02-15
-**Last updated:** 2026-02-17 (v2.0 — added data/deliverables subfolders, branded xlsx output, path variables, security clearance handling)
+**This prompt does:** SEARCH + SCORE only (Phase 1)  
+**This prompt does NOT do:** URL verification — that's Phase 2, run separately
 
 ---
 
-## How to Use
-1. Copy everything from "Calculate today's date..." to "...where everything was saved"
-2. Paste into CoWork
-3. Attach: Vivienne_Pham_Resume_2026.pdf
-4. Hit enter
-5. Walk away for 10-15 minutes
-6. Come back to results in deliverables/ folder
+## PIPELINE CONTEXT
+
+This is **Phase 1 of 7**. After this prompt completes:
+
+```bash
+python3 JC3/check_urls.py results/For_Others/Vivienne_Pham/Week_of_[DATE]/Vivienne_Pham_[DATE].csv
+```
+
+---
+
+**Owner:** Joey Clark (running on behalf of Vivienne Pham)  
+**Resume file:** Vivienne_Pham_Resume.pdf  
+**Last updated:** 2026-03-02
+
+**Note:** 3 role archetypes — Operator (Finance), Capital Markets (IR), Ecosystem (BD)
 
 ---
 
@@ -26,371 +32,160 @@ Calculate today's date and determine:
 Define path variables:
 - BASE_PATH = /Users/jc3/GitHub/ai-automation-portfolio
 - RESULTS_PATH = {BASE_PATH}/results/For_Others/Vivienne_Pham/Week_of_CURRENT_WEEK
-- PREVIOUS_RESULTS = {BASE_PATH}/results/For_Others/Vivienne_Pham/Week_of_PREVIOUS_WEEK
-
-Create folders if they don't exist:
-- {RESULTS_PATH}/data/
-- {RESULTS_PATH}/deliverables/
 
 ---
 
 ### CONFIGURATION
 
-**Job Boards (search all):**
+**Job Boards (3 boards):**
 - site:boards.greenhouse.io
 - site:jobs.lever.co
 - site:jobs.ashbyhq.com
-- site:linkedin.com/jobs
 
-**Roles (organized by archetype — search all):**
+**Roles (3 archetypes):**
 
-*Archetype 1: Operator / Finance Leader*
-- CFO
+*Operator:*
 - VP Finance
+- CFO
 - Head of Finance
+- Director of Finance
 
-*Archetype 2: Capital Markets & Investor Relations*
-- Capital Markets Advisory
+*Capital Markets:*
+- IR Director
 - Investor Relations
-- Head of Investor Relations
+- Head of IR
 
-*Archetype 3: Ecosystem / Platform / BD*
+*Ecosystem:*
+- Director of Business Development
 - Portfolio Operations
-- Platform Manager
-- Business Development
+- Director of Growth
 
 **Locations:**
 - New York, NY
-- Washington, DC
-- Remote
-
-**Hard Location Filter:**
-Only include roles where the primary work location is New York, Washington DC, or Remote-US. If a role lists dual locations (e.g., "Costa Mesa, CA / Washington, DC"), include it only if NYC or DC is one of the options. Exclude all roles based solely in other cities (SF, Austin, Germany, etc.) even if they appear in search results.
+- Washington DC
+- Remote-US
 
 **Filters:**
 - Posted within last 7 days
-- Exclude roles with "Investment Banking Analyst" or "Investment Banking Associate" in the title
-- For each board/role/location combination, extract up to 20 results (paginate to page 2 if needed)
+- For each board/role/location combination, extract up to 20 results
 
-Show progress matrix as you search each combination (4 boards × 9 roles × 3 locations = 108 combinations).
+Show progress matrix as you search.
 
 ---
 
 ### SOURCE FILTERING
 
-Only include results hosted directly on the target ATS boards or the company's own careers domain.
+**Only include results from target ATS boards.**
 
-**Exclude all third-party job aggregators** including but not limited to: Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob.
+**Exclude aggregators:** Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob, Indeed, Glassdoor.
 
-**URL Integrity (CRITICAL — enforced before any result is included):**
+**URL rules:**
+- Must be job-specific URL with job ID
+- Exclude board roots without job ID
+- Exclude generic career pages
 
-Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
-- Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
-- Lever: `jobs.lever.co/[company]/[uuid]`
-- Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
-- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
-
-**EXCLUDE any result where:**
-- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/anthropic`)
-- The URL points to a general careers page or company homepage
-- You cannot navigate to the specific listing URL
-- The job ID is absent, guessed, or a placeholder
-
-**Do not fabricate job IDs.** If you cannot find the specific listing URL, omit the result entirely. Do not mark it "Unverified" and include it anyway. A job without a verified, job-specific URL must not enter the database.
-
-**No hallucinated results:** Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
-
-Mark all included URLs as `URL_Status = "Verified"`.
-
-**Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
-
-**URL Integrity & Bot Blocking:**
-
-Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
-
-Common sources of Blocked/Error status:
-- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
-- Niche or low-traffic job boards that return connection errors
-- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
-
-**Vivienne-specific note:** Defense contractor sites (e.g., Shield AI, Distributed Spectrum, Snorkel AI, Real-Time Innovations) and defensetechjobs.com aggregator links frequently block automated checks. Vivienne's database will consistently show higher Error/Blocked rates than other users — this is expected and does not indicate data quality issues. All defense contractor URLs should be manually verified weekly rather than relying on the automated check.
-
-How the weekly check handles this:
-- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
-- Blocked and Error jobs are preserved in the database for manual review
-
-Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+**Anti-hallucination:** Only include jobs you actually visited. Zero results = report zero.
 
 ---
 
 ### FIELD EXTRACTION
 
-Extract these fields (use "N/A" if not available):
-- Company
-- Company Sector
-- Job Title
-- Location
-- Language Requirement (if no language mentioned: "N/A"; if other than English: list it)
-- Work Arrangement (see standardization below)
-- Salary (convert to USD if in other currency; "N/A" if not listed)
-- Job Summary (2-3 sentences)
-- URL
+Extract (use "N/A" if not available):
+- Company, Job_Title, Location, Work_Arrangement, Sector
+- Salary_USD (convert currencies; "N/A" if not listed)
+- Job_Summary (2-3 sentences)
+- URL, Found_On (board name)
 
----
-
-### WORK ARRANGEMENT STANDARDIZATION
-
-Normalize Work_Arrangement to one of these 5 categories:
-
-- **Remote-US** — Any variant of "Remote" + "US/USA/United States", or remote with US city qualifier
-- **Remote-Americas** — Any variant of "Remote" + "Americas/LATAM/Canada"
-- **Remote-Global** — Generic "Remote" without geographic qualifier, or "Remote Worldwide/EMEA/Europe"
-- **Hybrid** — Any hybrid arrangement, including "Remote/Hybrid" variants
-- **In-Office** — Location-specific roles without Remote/Hybrid (e.g., "New York, NY", "Washington, DC")
-
-Do not leave Work_Arrangement as generic "Remote" — always classify into the specific category above.
-
----
-
-### COMPANY SIZE FILTERING
-
-Vivienne targets small and mid-cap companies. Apply these guidelines:
-
-**Include:**
-- Startups (Series A through pre-IPO / growth stage)
-- Public companies that are NOT Fortune 200 / mega-cap
-- VC/PE firms (any size — she's interested in platform/BD roles)
-- Government contractors and defense tech companies (any size — sector fit overrides size)
-
-**Exclude:**
-- Fortune 200 companies (e.g., JPMorgan, Goldman Sachs, Microsoft, Amazon, Google)
-- Exception: If a Fortune 200 company has a standalone venture arm, defense tech subsidiary, or growth-stage spinout that operates independently, include it
-
-Use judgment — the spirit is "growth-stage and mid-market," not "only tiny companies."
-
----
-
-### SECURITY CLEARANCE HANDLING
-
-Many defensetech roles require or prefer US security clearance. Vivienne does not currently hold a clearance.
-
-- If a posting mentions security clearance as "required": apply -15 point penalty in scoring, flag in Score_Rationale as "Clearance required — Vivienne does not currently hold clearance"
-- If a posting mentions clearance as "preferred" or "ability to obtain": apply -5 point penalty, note in rationale
-- If no mention of clearance: no penalty
-- Do NOT exclude clearance-required roles entirely — some companies sponsor clearances for strong candidates
+**Work Arrangement** — exactly one of: Remote-US, Remote-Global, Hybrid, In-Office, Unclear
 
 ---
 
 ### DEDUPLICATION
 
-Eliminate duplicate jobs (same Company + same Job Title across boards). Keep highest-scoring version and list all boards where found in "Found_On" column.
+Same Company + Job_Title across boards → keep highest score, merge Found_On.
 
 ---
 
 ### SCORING
 
-Using attached resume (Vivienne_Pham_Resume_2026.pdf), score each job 1-100 based on:
+Using attached resume (Vivienne_Pham_Resume.pdf), score each job 1-100:
 
 **Seniority Match (30 points):**
-Vivienne is an Executive Director at JPM with 15+ years of experience spanning IB, law, and infrastructure policy. She should be targeting Director, VP, Head-of, or C-suite roles.
-- C-suite / Head of / Director level at growth company: full credit
-- VP level: 25/30
-- Senior Manager / Principal: 20/30
-- Manager or below: 10/30
-- Entry-level / Associate: 0/30
+- Director, VP, C-suite: full credit
+- Senior Manager: 22/30
+- Manager: 15/30
+- Below: 5/30
 
 **Skills Match (25 points):**
-Key skills: building networks, bringing relevant content and ideas, building trust and credibility, understanding business models. Also has deep IB execution skills (M&A advisory, capital markets, debt/equity), legal/regulatory background, and resource management experience.
-- Role requires capital markets, fundraising, investor-facing, or financial strategy skills: full credit
-- Role requires business development, partnerships, or ecosystem building: full credit
-- Role requires operational finance (FP&A, budgeting, financial modeling): 20/25
-- Role requires general management but not finance-specific: 15/25
-- Role requires skills outside her background: 5/25
+- Key skills: Investment banking, legal, infrastructure policy, deal execution, financial modeling
 
 **Location Flexibility (20 points):**
-- New York, NY: full credit
-- Washington, DC: full credit
+- NYC, DC: full credit
 - Remote-US: full credit
-- Hybrid in NYC or DC: 18/20
-- Remote-Global: 15/20
-- Other US cities: 0/20 (hard filter — should not appear, but if they slip through, score at 0)
+- Other major US: 10/20
 
 **Industry Fit (15 points):**
-Vivienne targets tech, defensetech, cybersecurity, and AI — especially companies with public sector, federal defense, or energy exposure.
-- Defensetech / cybersecurity / national security tech: full credit
-- AI/ML companies with government or defense contracts: full credit
-- Energy tech / climate tech with infrastructure angle: 13/15
-- General enterprise tech (SaaS, fintech): 10/15
-- Adjacent sectors (govtech, aerospace, dual-use): 10/15
-- Unrelated sectors (consumer, healthcare, retail): 5/15
+- Defense tech, AI/ML, energy, cybersecurity: full credit
+- Adjacent (govtech, aerospace, climate): 10/15
+- Other: 5/15
 
 **Salary Fit (10 points):**
-- Target: $250K+ total compensation
-- If salary listed and meets target: full credit
-- If salary listed but below target: score proportionally
-- If salary not listed ("N/A"): award 5/10 (neutral — don't penalize unknown)
+- $200K+ total comp: full credit
+- $150K-$200K: 7/10
+- Below $150K: 4/10
+- Not listed: 5/10
 
-Provide 1-2 sentence score rationale for each job.
+**Clearance handling:** If TS/SCI required, apply -15 penalty (still include if 70+).
 
-Filter to jobs scoring 70+ only. Rank by score (highest to lowest).
+Provide 1-2 sentence Score_Rationale.
+
+**Filter to 70+ only. Rank by score descending.**
 
 ---
 
-### NEW JOB DETECTION
+### NEW/REPEAT DETECTION
 
-Compare against previous week's Master List. Check in this order:
-1. First check: {PREVIOUS_RESULTS}/data/Master_List_PREVIOUS_WEEK.csv
-2. Legacy fallback: {PREVIOUS_RESULTS}/Master_List_PREVIOUS_WEEK.csv
+Compare to: {BASE_PATH}/results/For_Others/Vivienne_Pham/Week_of_PREVIOUS_WEEK/Vivienne_Pham_PREVIOUS_WEEK.csv
 
-- If file exists (either location): Mark jobs not in previous file as "NEW", matching jobs as "REPEAT"
-- If no previous file found (first run): Mark all jobs as "NEW"
-- Add "Status" column with "NEW" or "REPEAT"
+- File exists → mark NEW or REPEAT
+- No file → mark all NEW
 
 ---
 
 ### OUTPUT FILES
 
-**Data files (backbone for consolidation — not shared with Vivienne):**
+**Weekly CSV:** {RESULTS_PATH}/Vivienne_Pham_CURRENT_WEEK.csv
 
-1. **Master List CSV:** {RESULTS_PATH}/data/Master_List_CURRENT_WEEK.csv
-   Columns (in this order): Status | Score | Score_Rationale | Company | Job_Title | Sector | Location | Language_Requirement | Work_Arrangement | Salary_USD | Job_Summary | URL | URL_Status | Found_On
+**Columns (21, this exact order):**
+```
+Score | Company | Job_Title | Location | Work_Arrangement | Sector | Salary_USD | Job_Summary | URL | Score_Rationale | Times_Seen | First_Seen_Date | Last_Seen_Date | Status | Found_On | URL_Status | Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
+```
 
-2. **Top 10 New CSV:** {RESULTS_PATH}/data/Top10_New_CURRENT_WEEK.csv
-   Same columns, only top 10 jobs marked "NEW". If <10 new jobs, include all new jobs. If zero new jobs, create file with headers and note "No new jobs this week."
+**Default values:**
+- Times_Seen: 1
+- First_Seen_Date: CURRENT_WEEK
+- Last_Seen_Date: CURRENT_WEEK
+- **URL_Status: "Not Checked"**
+- Applied_Date through Notes: leave blank
 
-3. **Executed prompt:** {BASE_PATH}/searches/For_Others/Vivienne_Pham/executed_CURRENT_WEEK.txt
-
-**Deliverable files (shared with Vivienne):**
-
-4. **Branded Excel — Master List:** {RESULTS_PATH}/deliverables/Vivienne_Pham_Master_List_CURRENT_WEEK.xlsx
-
-   Generate a formatted .xlsx version of the Master List CSV:
-   - Row 1: Title "Vivienne Pham — Master Job List" (bold, 18pt, navy #1F3864, merged across all columns)
-   - Row 2: Subtitle "Week of [Month Day, Year]  |  Prepared by Joey Clark" (11pt, blue #2F5496)
-   - Row 3: Stats "[N] jobs  |  Score range: [min]-[max]  |  Avg: [avg]  |  [N] NEW, [N] REPEAT" (10pt, gray #595959, medium blue bottom border)
-   - Row 4: Blank separator
-   - Row 5: Column headers (bold, 10pt, white text, blue #2F5496 background, auto-filters enabled)
-   - Data rows starting Row 6:
-     - Font: Arial 10pt
-     - Row height: 45px
-     - Alternating row shading: even rows #F2F2F2, odd rows white
-     - Light grid borders: #D9D9D9
-     - Score cells color-coded: green #C6EFCE (90+), blue #D6E4F0 (80-89), yellow #FFF2CC (70-79), red #F2DCDB (<70)
-     - Status cells: NEW = bold dark green #006100, REPEAT = gray #808080
-     - Text wrapping on Score_Rationale and Job_Summary columns
-   - Freeze panes below header row (row 5)
-   - Legend row 2 rows below last data: "Score Key: 🟢 90+ Elite | 🔵 80-89 Strong | 🟡 70-79 Good | 🔴 Below 70" (9pt italic gray)
-   - Column widths: Status 8, Score 7, Score_Rationale 40, Company 22, Job_Title 35, Sector 20, Location 20, Language_Requirement 12, Work_Arrangement 14, Salary_USD 18, Job_Summary 45, URL 35, URL_Status 10, Found_On 12
-
-5. **Branded Excel — Top 10:** {RESULTS_PATH}/deliverables/Vivienne_Pham_Top10_New_CURRENT_WEEK.xlsx
-   Same formatting as item 4, with title: "Vivienne Pham — Top 10 New Opportunities"
+**Branded XLSX:** {RESULTS_PATH}/Vivienne_Pham_CURRENT_WEEK.xlsx
 
 ---
 
 ### VERIFICATION
 
-Verify all files saved. Show:
-
-| Metric | Count |
-|--------|-------|
-| Total jobs found (pre-filter) | X |
-| Jobs scoring 70+ (post-filter) | Y |
-| NEW jobs | Z |
-| REPEAT jobs | W |
-| Boards searched | 4 |
-| Role/location combinations | 108 |
-
-**Files saved at:**
-- Master List CSV: [full path]
-- Top 10 CSV: [full path]
-- Master List Excel: [full path]
-- Top 10 Excel: [full path]
-- Executed prompt: [full path]
-
-Report any errors, broken URLs, or boards that returned zero results.
-
-Also show breakdown by archetype:
-- Operator / Finance Leader roles found: X
-- Capital Markets & IR roles found: X
-- Ecosystem / Platform / BD roles found: X
+Show summary with job counts, files saved.
 
 ---
 
-### JOB SEARCH TRACKING UPDATE
+## STOP HERE
 
-After all output files are saved, update the tracking spreadsheet:
+**Phase 1 complete.** Run Phase 2:
 
-**File:** {BASE_PATH}/Job_Search_Tracking.xlsx
-**Sheet:** "Job Search Tracking"
-
-Find the rows for **Vivienne Pham** (look for name in column A). Add a new continuation row immediately after the last Vivienne row with:
-
-| Column | Value |
-|--------|-------|
-| C (Search Ran) | Today's date (YYYY-MM-DD) |
-| D (Results 70+) | Total jobs scoring 70+ |
-| E (Top Score) | Highest score in this search |
-| F (Search Config) | 4 boards \| 9 roles (3 archetypes) \| NYC, DC, Remote |
-| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
-| H (Link to Folder) | Vivienne_Pham/Week_of_CURRENT_WEEK/ |
-
-Also mark the previous Vivienne row's "Next Search" (column G) as completed by appending " ✓".
-
-Save the updated spreadsheet back to the same path.
+```bash
+python3 JC3/check_urls.py results/For_Others/Vivienne_Pham/Week_of_CURRENT_WEEK/Vivienne_Pham_CURRENT_WEEK.csv
+```
 
 ---
 
-⚠️  REMINDER: After reviewing results, run CONSOLIDATE_TO_MASTER to update Vivienne's master database. After consolidation (Week 2+), run MASTER_ANALYSIS to generate the PDF analysis report in {RESULTS_PATH}/deliverables/.
-
----
-
-*Run every Sunday. Attach Vivienne's resume each time.*
-*Template version: 2.0 | Updated: 2026-02-17*
-
----
----
-
-## SEARCH NOTES (Joey's reference — don't copy into prompt)
-
-### Vivienne's profile summary:
-- Executive Director, JPM Tech IB (2017-present) + Tech Commercial Banking (2023-present)
-- Associate, Morgan Stanley Global Power & Utilities IB (2014-2017, NYC + London)
-- Senior Policy Analyst, Powercor/CKI Infrastructure (2010-2012, Melbourne)
-- Attorney, DLA Piper Antitrust Law (2008-2010, Melbourne)
-- Columbia MBA (2014), GMAT 740
-- LLB + B.Econ (Hons) First Class, La Trobe University
-- US Green Card holder, admitted to Australian Supreme Court and High Court
-- Extensive defensetech/cybersecurity/AI coverage in DMV region
-- Network across DIU, Army Fuze, Navy, Australian/Canadian Embassies, defense tech investors
-
-### Key notes from Joey's intake conversation:
-- Interpret job titles broadly — she has a wide aperture
-- BD/Platform roles at VCs means early-stage ecosystem work, not fund management
-- Sectors: broadly tech, but especially those with public sector/federal defense/energy exposure
-- "Investment banking" as deal-breaker means IB execution work (deal teams, pitch books, live transactions), NOT roles that require IB background as a prerequisite
-- 90+ hour week concern — not filtering on this, too hard to discern from postings
-- Small/mid-cap = Series A+ startups through non-Fortune-200 public companies
-- Similar profile to Joey (program management, ecosystem building, stakeholder coordination + finance)
-
-### Scoring weights rationale:
-Vivienne ranked: Seniority > Skills > Location > Industry > Salary
-→ Seniority 30, Skills 25, Location 20, Industry 15, Salary 10
-Industry is lower because she's open to broad tech — the sector preference is a tilt, not a hard filter. Seniority is #1 because at ED level she shouldn't be looking at Manager-level roles.
-
-### Archetype search strategy:
-The three archetypes capture her range without creating noise:
-1. Operator (CFO, VP Finance, Head of Finance) — leverages IB financial skills in operating roles
-2. Capital Markets/IR (Capital Markets Advisory, IR, Head of IR) — direct extension of IB skill set
-3. Ecosystem/Platform (Portfolio Ops, Platform Manager, BD) — leverages network-building and ecosystem skills
-
-### Board coverage notes:
-- Defensetech companies (Anduril, Shield AI, Palantir, etc.) tend to post on Greenhouse and their own career pages
-- VC platform roles often appear on Lever and Ashby
-- LinkedIn will be important for DC-based defense/govtech roles
-- May want to add defense-specific boards in future weeks if ATS coverage is thin
-
-### Issues from first run (2026-02-16):
-- Location drift: 10 of 31 results were outside NYC/DC/Remote (SF had 5, Austin, Germany, ambiguous "TBD")
-- Fix applied: Hard location filter added to CONFIGURATION section, location scoring tightened to 0/20 for non-target
-- Security clearance: Shield AI, Anduril, Saronic likely require clearance Vivienne doesn't hold
-- Fix applied: Security clearance handling section added with -15 point penalty for required, -5 for preferred
+*v3.1 | 2026-03-02*

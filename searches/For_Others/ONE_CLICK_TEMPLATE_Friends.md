@@ -1,12 +1,13 @@
-# ONE-CLICK WEEKLY SEARCH: [FRIEND NAME] — TEMPLATE
+# ONE-CLICK WEEKLY SEARCH: [FRIEND NAME] — TEMPLATE v3.0
 
-**Purpose:** Duplicate this file for each new friend. Replace all [BRACKETED] values with their intake questionnaire responses. Save as `ONE_CLICK_[First_Last].md` in `/searches/prompts/for_others/[First_Last]/`.
-**Runtime:** 10-15 minutes
+**Purpose:** Duplicate this file for each new friend. Replace all [BRACKETED] values with their intake questionnaire responses. Save as `ONE_CLICK_[First_Last].md` in `/searches/For_Others/[First_Last]/`.
+
+**Runtime:** 8-10 minutes (Phase 1 of 7-phase pipeline)
 **Prerequisites:** Friend's resume (PDF), completed intake questionnaire
 
 **Setup checklist before first run:**
 - [ ] Friend completed intake questionnaire
-- [ ] Resume received (PDF) at joey.clark3@gmail.com
+- [ ] Resume received (PDF)
 - [ ] Replaced all [BRACKETED] fields below
 - [ ] Created results folder: `/results/For_Others/[First_Last]/`
 - [ ] Saved this file as `ONE_CLICK_[First_Last].md`
@@ -20,23 +21,13 @@
 
 ---
 
-## CUSTOMIZATION CHECKLIST
+## WHAT'S NEW IN v3.0
 
-Before running, collect from friend:
-- [ ] **Name:** [Friend's full name]
-- [ ] **Resume:** [Attach their resume PDF]
-- [ ] **Target Roles:** [2-3 specific role titles]
-  - Examples: "Chief of Staff", "Partnerships", "Business Development"
-- [ ] **Target Locations:** [Specific cities or Remote]
-  - Examples: "Remote-US", "London, UK", "New York, NY"
-- [ ] **Target Sectors:** (optional — for context)
-  - Examples: "Fintech", "Healthcare Tech", "AI/ML"
-- [ ] **Salary Range:** (optional)
-  - Example: "$120K-$180K"
-- [ ] **Deal-Breakers:** (optional — becomes exclusion filters)
-  - Examples: "Exclude fully in-office roles", "Full-time only, no contract", "Exclude roles requiring 10+ years travel"
-- [ ] **Priority Ranking 1-5:** Industry Fit, Skills Match, Seniority, Location, Salary
-  - Used to adjust scoring weights (see Weight Adjustment Guide at bottom)
+- **21-column schema** — Language_Requirement dropped, tracking columns added
+- **Pipeline reorder** — URL verification runs BEFORE consolidation (dead links never enter master)
+- **No Top 10 file** — Full results delivered; friend decides what's interesting
+- **Simplified output** — Single weekly CSV + branded XLSX
+- **Anti-hallucination strengthened** — Explicit rules against fabricated listings
 
 ---
 
@@ -46,10 +37,14 @@ Before running, collect from friend:
 2. Paste into CoWork
 3. Attach: [RESUME FILENAME.pdf]
 4. Hit enter
-5. Walk away for 10-15 minutes
-6. Come back to results
+5. Wait 8-10 minutes
+6. Proceed to Phase 2 (VERIFY) per ops_playbook_v2
 
-**Note:** Remote-US roles consistently score 10+ points higher than location-specific roles. Consider focusing searches on Remote unless friend specifically targets a city.
+**Pipeline reminder:** This prompt is Phase 1 (SEARCH). After completion:
+- Phase 2: Run `check_urls.py` on weekly output
+- Phase 3: Run master-db-cleanup SKILL
+- Phase 4: Consolidate to master database
+- Phases 5-7: Analyze, Package, Deliver
 
 ---
 
@@ -69,16 +64,15 @@ Define path variables:
 
 ### CONFIGURATION
 
-**Job Boards (search all):**
+**Job Boards (3 boards):**
 - site:boards.greenhouse.io
 - site:jobs.lever.co
 - site:jobs.ashbyhq.com
-- site:linkedin.com/jobs
 
-[ADD/REMOVE BOARDS AS NEEDED — e.g., for finance roles, these ATS boards may have limited coverage. Consider supplementing with industry-specific channels.]
+**LinkedIn is NOT searched** — Google's index returns stale listings. Friend receives LinkedIn direct search links separately via `linkedin_links.py`.
 
 **Roles:**
-[FROM INTAKE — list 3-5 specific titles]
+[FROM INTAKE — list 2-5 specific titles]
 - [Role 1]
 - [Role 2]
 - [Role 3]
@@ -92,89 +86,75 @@ Define path variables:
 **Filters:**
 - Posted within last 7 days
 - [FROM INTAKE — deal-breakers become exclusion filters]
-- For each board/role/location combination, extract up to 20 results (paginate to page 2 if needed)
+- For each board/role/location combination, extract up to 20 results
 
 Show progress matrix as you search each combination.
 
 ---
 
-### SOURCE FILTERING
+### SOURCE FILTERING & URL INTEGRITY
 
-Only include results hosted directly on the target ATS boards or the company's own careers domain.
+**Only include results hosted directly on the target ATS boards.**
 
 **Exclude all third-party job aggregators** including but not limited to: Jobgether, Talent.com, Lensa, Jooble, Adzuna, SimplyHired, ZipRecruiter, Snagajob.
 
-**URL Integrity (CRITICAL — enforced before any result is included):**
+**URL Integrity (CRITICAL):**
 
-Every job included in output MUST have a direct, job-specific URL containing a unique job ID. Valid patterns:
+Every job included MUST have a direct, job-specific URL containing a unique job ID.
+
+**Valid URL patterns:**
 - Greenhouse: `boards.greenhouse.io/[company]/jobs/[numeric-id]`
 - Lever: `jobs.lever.co/[company]/[uuid]`
 - Ashby: `jobs.ashbyhq.com/[company]/[uuid]`
-- LinkedIn: `linkedin.com/jobs/view/[numeric-id]`
 
 **EXCLUDE any result where:**
-- The URL is only a board root (e.g., `jobs.lever.co/stripe`, `boards.greenhouse.io/anthropic`)
-- The URL points to a general careers page or company homepage
-- You cannot navigate to the specific listing URL
-- The job ID is absent, guessed, or a placeholder
+- URL is only a board root (e.g., `jobs.lever.co/stripe`)
+- URL points to a general careers page
+- Job ID is absent, guessed, or fabricated
 
-**Do not fabricate job IDs.** If you cannot find the specific listing URL, omit the result entirely. Do not mark it "Unverified" and include it anyway. A job without a verified, job-specific URL must not enter the database.
+**Anti-hallucination rule:** Only include jobs you actually navigated to and extracted data from in this session. If a board/role/location returns zero results, report "0 results" — do not fill gaps with assumed listings.
 
-**No hallucinated results:** Only include jobs you actually navigated to and read in this search session. If a board/role/location combination returns zero results, report "0 results" — do not fill the gap with companies you believe are likely hiring.
-
-Mark all included URLs as `URL_Status = "Verified"`.
-
-**Pre-save URL audit:** Before writing any output files, count how many raw results were excluded for missing or invalid URLs. Report this number in the verification summary (e.g., "Excluded 4 results — no job-specific URL found").
-
-**URL Integrity & Bot Blocking:**
-
-Some legitimate job sites block automated checks and will show as Blocked (~) or Error (?) in the weekly `check_urls.py` health check. This does NOT mean the job is closed — it means the site cannot be verified automatically and requires manual review.
-
-Common sources of Blocked/Error status:
-- Recruiter-posted roles (e.g., Selby Jennings, Arootah) — many recruiter sites block bots
-- Niche or low-traffic job boards that return connection errors
-- Company career pages not hosted on standard ATS (Greenhouse/Lever/Ashby)
-
-How the weekly check handles this:
-- `check_urls.py` only removes confirmed 404/closed jobs — it does NOT auto-remove Blocked or Error status jobs
-- Blocked and Error jobs are preserved in the database for manual review
-
-Workaround: When a URL shows Blocked or Error in the weekly check, manually open the link in a browser to confirm whether the job is still live. If confirmed open, no action needed. If confirmed closed, delete the row from the master CSV or mark Interest = "Not Interested" with a note in Interest_Notes.
+**Pre-save audit:** Before writing output files, count how many results were excluded for invalid URLs. Report this in verification summary.
 
 ---
 
 ### FIELD EXTRACTION
 
 Extract these fields (use "N/A" if not available):
-- Company
-- Company Sector
-- Job Title
-- Location
-- Language Requirement (if no language mentioned: "N/A"; if other than English: list it)
-- Work Arrangement (see standardization below)
-- Salary (convert to USD if in other currency; "N/A" if not listed)
-- Job Summary (2-3 sentences)
-- URL
+
+| Field | Notes |
+|-------|-------|
+| Company | Exact company name |
+| Job_Title | Exact title from listing |
+| Location | City, State/Country or "Remote" |
+| Work_Arrangement | See standardization below |
+| Sector | Company's primary industry |
+| Salary_USD | Convert to USD; "N/A" if not listed |
+| Job_Summary | 2-3 sentences |
+| URL | Full job-specific URL |
+| Found_On | Board name (Greenhouse, Lever, Ashby) |
 
 ---
 
 ### WORK ARRANGEMENT STANDARDIZATION
 
-Normalize Work_Arrangement to one of these 5 categories:
+Normalize to exactly one of these 5 categories:
 
-- **Remote-US** — Any variant of "Remote" + "US/USA/United States", or remote with US city qualifier
-- **Remote-Americas** — Any variant of "Remote" + "Americas/LATAM/Canada", or remote with Latin American country
-- **Remote-Global** — Generic "Remote" without geographic qualifier, or "Remote Worldwide/EMEA/Europe"
-- **Hybrid** — Any hybrid arrangement, including "Remote/Hybrid" variants
-- **In-Office** — Location-specific roles without Remote/Hybrid (e.g., "New York, NY", "Paris", "Vienna")
+- **Remote-US** — Remote limited to US
+- **Remote-Global** — Remote worldwide or no geographic restriction
+- **Hybrid** — Any hybrid arrangement
+- **In-Office** — Location-specific, no remote option
+- **Unclear** — Cannot determine from listing
 
-Do not leave Work_Arrangement as generic "Remote" — always classify into the specific category above.
+Do not leave as generic "Remote" — always classify into specific category.
 
 ---
 
 ### DEDUPLICATION
 
-Eliminate duplicate jobs (same Company + same Job Title across boards). Keep highest-scoring version and list all boards where found in "Found_On" column.
+If same Company + same Job_Title appears across multiple boards:
+- Keep highest-scoring version
+- Merge all boards into "Found_On" column (e.g., "Greenhouse, Lever")
 
 ---
 
@@ -182,100 +162,96 @@ Eliminate duplicate jobs (same Company + same Job Title across boards). Keep hig
 
 Using attached resume ([RESUME FILENAME.pdf]), score each job 1-100 based on:
 
-[SCORING WEIGHTS — adjust based on intake priority ranking. Default weights below. See Weight Adjustment Guide at bottom of this file.]
+[SCORING WEIGHTS — adjust based on intake priority ranking]
 
 **Industry Fit ([X] points):**
-[FROM INTAKE — define what "good fit" means for this person's target industry]
-- [Full credit criteria]
-- [Partial credit criteria]
-- [Minimal credit criteria]
+[FROM INTAKE — define target sectors]
+- Full credit: [criteria]
+- Partial credit: [criteria]
+- Minimal credit: [criteria]
 
 **Skills Match ([X] points):**
 [FROM INTAKE — their top skills]
-- Key skills to match: [Skill 1], [Skill 2], [Skill 3]
-- Score based on overlap between resume skills and job requirements
+- Key skills: [Skill 1], [Skill 2], [Skill 3]
+- Score based on overlap with job requirements
 
 **Seniority Match ([X] points):**
-- Score based on resume experience alignment with role requirements
+- Score based on experience alignment with role level
 
 **Location Flexibility ([X] points):**
-- Role is in a target location: full credit
-- Remote with flexibility: full credit
-- Hybrid in target city: [X]/[max]
-- Outside target locations: [X]/[max]
+- Target location or Remote: full credit
+- Hybrid in target city: partial credit
+- Outside targets: minimal credit
 
 **Salary Fit ([X] points):**
-[FROM INTAKE]
-- Target: $[X]K+ base salary, $[X]K+ total compensation
-- If salary listed and meets target: full credit
-- If salary listed but below target: score proportionally
-- If salary not listed ("N/A"): award [half points] (neutral — don't penalize unknown)
+[FROM INTAKE — target compensation]
+- Listed and meets target: full credit
+- Listed but below: score proportionally
+- Not listed ("N/A"): half points (neutral)
 
-Provide 1-2 sentence score rationale for each job.
+Provide 1-2 sentence Score_Rationale for each job.
 
-Filter to jobs scoring 70+ only. Rank by score (highest to lowest).
+**Filter to jobs scoring 70+ only. Rank by score descending.**
 
 ---
 
-### NEW JOB DETECTION
+### NEW/REPEAT DETECTION
 
-Compare against previous week's Master List. Check in this order:
-1. First check: {BASE_PATH}/results/For_Others/[First_Last]/Week_of_PREVIOUS_WEEK/data/Master_List_PREVIOUS_WEEK.csv
-2. Legacy fallback: {BASE_PATH}/results/For_Others/[First_Last]/Week_of_PREVIOUS_WEEK/Master_List_PREVIOUS_WEEK.csv
+Compare against previous week's results:
 
-- If file exists (either location): Mark jobs not in previous file as "NEW", matching jobs as "REPEAT"
-- If no previous file found (first run): Mark all jobs as "NEW"
-- Add "Status" column with "NEW" or "REPEAT"
+**Check location:** {BASE_PATH}/results/For_Others/[First_Last]/Week_of_PREVIOUS_WEEK/[First_Last]_PREVIOUS_WEEK.csv
+
+- If file exists: Jobs not in previous = "NEW", matching jobs = "REPEAT"
+- If no file (first run): Mark all as "NEW"
+
+Add "Status" column with NEW or REPEAT.
 
 ---
 
 ### OUTPUT FILES
 
-Create folders if they don't exist:
-- {RESULTS_PATH}/data/
-- {RESULTS_PATH}/deliverables/
-- {BASE_PATH}/searches/prompts/for_others/[First_Last]/
+Create folder if needed: {RESULTS_PATH}/
 
-**Data files (backbone for consolidation — not shared with friend):**
+**Primary output (1 file):**
 
-1. **Master List CSV:** {RESULTS_PATH}/data/Master_List_CURRENT_WEEK.csv
-   Columns (in this order): Status | Score | Score_Rationale | Company | Job_Title | Sector | Location | Language_Requirement | Work_Arrangement | Salary_USD | Job_Summary | URL | URL_Status | Found_On
+**Weekly Results CSV:** {RESULTS_PATH}/[First_Last]_CURRENT_WEEK.csv
 
-2. **Top 10 New CSV:** {RESULTS_PATH}/data/Top10_New_CURRENT_WEEK.csv
-   Same columns, only top 10 jobs marked "NEW". If <10 new jobs, include all new jobs. If zero new jobs, create file with headers and note "No new jobs this week."
+**Columns (21 total, in this exact order):**
+```
+Score | Company | Job_Title | Location | Work_Arrangement | Sector | Salary_USD | Job_Summary | URL | Score_Rationale | Times_Seen | First_Seen_Date | Last_Seen_Date | Status | Found_On | URL_Status | Applied_Date | Application_Method | Response_Status | Interview_Stage | Notes
+```
 
-3. **Executed prompt:** {BASE_PATH}/searches/prompts/for_others/[First_Last]/executed_CURRENT_WEEK.txt
+**Column notes:**
+- Times_Seen: Set to 1 for all (will be updated during consolidation)
+- First_Seen_Date: CURRENT_WEEK date
+- Last_Seen_Date: CURRENT_WEEK date
+- URL_Status: "Not Checked" (will be updated by check_urls.py in Phase 2)
+- Applied_Date through Notes: Leave blank (tracking columns for friend's use)
 
-**Deliverable files (shared with friend):**
+**Branded XLSX:** {RESULTS_PATH}/[First_Last]_CURRENT_WEEK.xlsx
 
-4. **Branded Excel — Master List:** {RESULTS_PATH}/deliverables/[First_Last]_Master_List_CURRENT_WEEK.xlsx
+Generate formatted .xlsx version:
+- Row 1: Title "[Friend Name] — Job Search Results" (bold, 18pt, navy #1F3864)
+- Row 2: Subtitle "Week of [Month Day, Year] | Prepared by Joey Clark" (11pt, blue #2F5496)
+- Row 3: Stats "[N] jobs | Score range: [min]-[max] | Avg: [avg] | [N] NEW, [N] REPEAT" (10pt, gray)
+- Row 4: Blank separator
+- Row 5: Column headers (bold, white text, blue #2F5496 background, auto-filters)
+- Data rows starting Row 6:
+  - Font: Arial 10pt
+  - Alternating row shading: even #F2F2F2, odd white
+  - Score color-coded: green (90+), blue (80-89), yellow (70-79)
+  - Status: NEW = bold green, REPEAT = gray
+  - Text wrapping on Score_Rationale and Job_Summary
+- Freeze panes below row 5
+- Column widths optimized for readability
 
-   Generate a formatted .xlsx version of the Master List CSV:
-   - Row 1: Title "[Friend Name] — Master Job List" (bold, 18pt, navy #1F3864, merged across all columns)
-   - Row 2: Subtitle "Week of [Month Day, Year]  |  Prepared by Joey Clark" (11pt, blue #2F5496)
-   - Row 3: Stats "[N] jobs  |  Score range: [min]-[max]  |  Avg: [avg]  |  [N] NEW, [N] REPEAT" (10pt, gray #595959, medium blue bottom border)
-   - Row 4: Blank separator
-   - Row 5: Column headers (bold, 10pt, white text, blue #2F5496 background, auto-filters enabled)
-   - Data rows starting Row 6:
-     - Font: Arial 10pt
-     - Row height: 45px
-     - Alternating row shading: even rows #F2F2F2, odd rows white
-     - Light grid borders: #D9D9D9
-     - Score cells color-coded: green #C6EFCE (90+), blue #D6E4F0 (80-89), yellow #FFF2CC (70-79), red #F2DCDB (<70)
-     - Status cells: NEW = bold dark green #006100, REPEAT = gray #808080
-     - Text wrapping on Score_Rationale and Job_Summary columns
-   - Freeze panes below header row (row 5)
-   - Legend row 2 rows below last data: "Score Key: 🟢 90+ Elite | 🔵 80-89 Strong | 🟡 70-79 Good | 🔴 Below 70" (9pt italic gray)
-   - Column widths: Status 8, Score 7, Score_Rationale 40, Company 22, Job_Title 35, Sector 20, Location 20, Language_Requirement 12, Work_Arrangement 14, Salary_USD 18, Job_Summary 45, URL 35, URL_Status 10, Found_On 12
-
-5. **Branded Excel — Top 10:** {RESULTS_PATH}/deliverables/[First_Last]_Top10_New_CURRENT_WEEK.xlsx
-   Same formatting as item 4, with title: "[Friend Name] — Top 10 New Opportunities"
+**Executed prompt:** {BASE_PATH}/searches/For_Others/[First_Last]/executed_CURRENT_WEEK.txt
 
 ---
 
 ### VERIFICATION
 
-Verify all files saved. Show:
+Show completion summary:
 
 | Metric | Count |
 |--------|-------|
@@ -283,70 +259,35 @@ Verify all files saved. Show:
 | Jobs scoring 70+ (post-filter) | Y |
 | NEW jobs | Z |
 | REPEAT jobs | W |
-| Boards searched | [N] |
+| Excluded (invalid URLs) | X |
+| Boards searched | 3 |
 | Role/location combinations | [N] |
 
 **Files saved at:**
-- Master List CSV: [full path]
-- Top 10 CSV: [full path]
-- Master List Excel: [full path]
-- Top 10 Excel: [full path]
+- Weekly CSV: [full path]
+- Weekly XLSX: [full path]
 - Executed prompt: [full path]
 
-Report any errors, broken URLs, or boards that returned zero results.
+Report any boards that returned zero results.
 
 ---
 
-### JOB SEARCH TRACKING UPDATE
+### NEXT STEPS (after this prompt completes)
 
-After all output files are saved, update the tracking spreadsheet:
+**Phase 2 — VERIFY:** Run check_urls.py on the weekly CSV:
+```bash
+python3 JC3/check_urls.py {RESULTS_PATH}/[First_Last]_CURRENT_WEEK.csv
+```
 
-**File:** {BASE_PATH}/Job_Search_Tracking.xlsx
-**Sheet:** "Job Search Tracking"
+**Phase 3 — CLEAN:** Run master-db-cleanup SKILL to standardize data.
 
-Find the rows for **[FRIEND NAME]** (look for name in column A). Add a new continuation row immediately after the last [FRIEND NAME] row with:
+**Phase 4 — CONSOLIDATE:** Merge into master database.
 
-| Column | Value |
-|--------|-------|
-| C (Search Ran) | Today's date (YYYY-MM-DD) |
-| D (Results 70+) | Total jobs scoring 70+ |
-| E (Top Score) | Highest score in this search |
-| F (Search Config) | Boards searched \| Roles \| Locations (short summary) |
-| G (Next Search) | CURRENT_WEEK + 7 days (YYYY-MM-DD) |
-| H (Link to Folder) | [First_Last]/Week_of_CURRENT_WEEK/ |
-
-Also mark the previous [FRIEND NAME] row's "Next Search" (column G) as completed by appending " ✓".
-
-Save the updated spreadsheet back to the same path.
+**Phases 5-7:** See ops_playbook_v2.docx for ANALYZE, PACKAGE, DELIVER instructions.
 
 ---
 
-⚠️  REMINDER: After reviewing results, run CONSOLIDATE_TO_MASTER to update [First_Last]'s master database. After consolidation (Week 2+), run MASTER_ANALYSIS to generate the PDF analysis report in {RESULTS_PATH}/deliverables/.
-
----
-
-## USAGE NOTES
-
-**Before sharing with friend:**
-- Run the search yourself first
-- Review results for quality
-- Customize score threshold if needed (might be 65+ or 75+ depending on their profile)
-- Check that excluded aggregators didn't sneak through
-
-**After running:**
-- Send friend the .xlsx files from the deliverables/ folder (NOT the raw CSVs)
-- Explain scoring methodology briefly
-- Highlight top 3-5 jobs worth applying to immediately
-- If Week 2+, include the PDF analysis report from MASTER_ANALYSIS
-
----
-
-*Run every Sunday. Attach [First_Last]'s resume each time.*
-
----
----
-
-## WEIGHT ADJUSTMENT GUIDE (Joey's reference — don't copy into prompt)
+## WEIGHT ADJUSTMENT GUIDE
 
 **Default weights (100 points total):**
 - Industry Fit: 35
@@ -355,20 +296,28 @@ Save the updated spreadsheet back to the same path.
 - Location Flexibility: 10
 - Salary Fit: 10
 
-**How to adjust based on intake priority ranking (1-5):**
+**Adjust based on friend's priority ranking (1-5):**
 
-| Their #1 Priority | Suggested Adjustment |
-|---|---|
-| Salary | Salary → 30pts, reduce Industry to 25 |
-| Location | Location → 25pts, reduce Skills to 20 |
-| Skills Match | Skills → 35pts, reduce Industry to 25 |
-| Industry Fit | Industry → 40pts (already high, keep) |
-| Seniority | Seniority → 30pts, reduce Location to 10 |
+| Their #1 Priority | Adjustment |
+|-------------------|------------|
+| Salary | Salary → 30pts, Industry → 25pts |
+| Location | Location → 25pts, Skills → 20pts |
+| Skills Match | Skills → 35pts, Industry → 25pts |
+| Industry Fit | Industry → 40pts (keep high) |
+| Seniority | Seniority → 30pts, Location → 10pts |
 
-**General principle:** Their #1 gets 35-40pts, #5 gets 10pts, middle three split the rest. Use judgment — some categories overlap for certain industries.
+**Principle:** #1 priority gets 35-40pts, #5 gets 10pts, middle three split the rest.
 
 ---
 
-*Template version: 2.0*
-*Updated: 2026-02-17*
-*Changes from v1.0: Added data/deliverables subfolder structure, branded xlsx output, corrected path convention to For_Others/[First_Last], added path variables, legacy fallback for NEW detection, PDF reminder for MASTER_ANALYSIS*
+*Template version: 3.0*
+*Updated: 2026-03-01*
+
+**Changes from v2.0:**
+- 21-column schema (Language_Requirement dropped, tracking columns added)
+- Removed Top 10 output file (full results only)
+- Simplified folder structure (no data/deliverables split)
+- Added pipeline phase references to ops_playbook_v2
+- Strengthened anti-hallucination language
+- URL_Status defaults to "Not Checked" (check_urls.py fills in Phase 2)
+- LinkedIn explicitly excluded from boards
