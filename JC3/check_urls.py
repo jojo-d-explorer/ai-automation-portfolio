@@ -742,12 +742,21 @@ def main():
     users = find_databases()
 
     if args:
-        slug = args[0].lower()
-        match = [k for k in users if k.startswith(slug)]
-        if not match:
-            print(f"User '{slug}' not found. Available: {', '.join(users)}")
-            sys.exit(1)
-        targets = {match[0]: users[match[0]]}
+        arg = args[0]
+        # Accept a direct file path if it contains a path separator or ends in .csv
+        if os.sep in arg or "/" in arg or arg.endswith(".csv"):
+            if not os.path.exists(arg):
+                print(f"File not found: {arg}")
+                sys.exit(1)
+            display_name = os.path.splitext(os.path.basename(arg))[0].replace("_", " ")
+            targets = {"_file": (display_name, arg)}
+        else:
+            slug = arg.lower()
+            match = [k for k in users if k.startswith(slug)]
+            if not match:
+                print(f"User '{slug}' not found. Available: {', '.join(users)}")
+                sys.exit(1)
+            targets = {match[0]: users[match[0]]}
     else:
         targets = users
 
