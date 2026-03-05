@@ -4,7 +4,7 @@ A multi-user job search automation system built as part of a 12-week AI engineer
 
 ## About
 
-Joey Clark — program manager and ecosystem builder — built this system during a 12-week AI automation learning project (Jan–Apr 2026). What started as personal job search tooling evolved into a production-grade intelligence platform serving five people with distinct search profiles, custom scoring configurations, and weekly deliverables.
+Joey Clark is an operator — most recently SVP at Anzu Partners — targeting Chief of Staff and strategic operations roles, who designed and built this system independently to develop hands-on AI automation capability. What started as personal job search tooling became a production intelligence platform: 5 active users, weekly deliverables, real feedback loops, and a system that gets better each week.
 
 This repository documents both the working system and the learning journey behind it.
 
