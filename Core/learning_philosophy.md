@@ -2,7 +2,7 @@
 
 ## Background
 
-- **Current Role:** SVP & Principal at Anzu Partners (venture capital)
+- **Current Role:** Former SVP & Principal at Anzu Partners (venture capital)
 - **Target Roles:** Chief of Staff, Strategic Operations, Partnerships at growth-stage startups
 - **Career Transition:** Banking/VC → Startup operator roles
 - **Learning Goal:** Build AI automation skills as differentiator for executive roles
@@ -12,7 +12,7 @@
 ### What Works Best
 
 - **Conceptual understanding over memorization** - Learning = pattern recognition, not rote memory
-- **Real-world applications** - Immediate practical value (job search automation, helping friends)
+- **Real-world applications** - Immediate practical value (job search automation, personal OS, helping friends)
 - **Productive struggle** - Embrace challenges but need guidance when genuinely stuck
 - **"Why" before "how"** - Understanding principles before implementation details
 - **Narrative context** - Connect concepts to business problems and real use cases
@@ -58,19 +58,21 @@
 - **Occasional travel** - may have gaps between sessions
 - **Sustainable pacing > sprint intensity**
 
-### Technical Starting Point
+### Technical Starting Point (Updated)
 
-- **Rusty but familiar:** SQL, Python, Tableau
-- **Currently learning:** CoWork, Claude AI, prompt engineering, Git/GitHub, Claude Code
-- **Building competence in:** Python scripting (check_urls.py, linkedin_links.py), API calls (Ashby GraphQL), data pipelines
+- **Competent:** Prompt engineering, Git/GitHub, Python scripting, data pipeline design
+- **Building competence in:** Claude API, MCP integrations, tool-calling agents, multi-agent orchestration
 - **Comfortable with:** Strategic thinking, systems design, stakeholder management
+- **Rusty but familiar:** SQL, Tableau
 
 ### Current Setup
 
-- **Primary working directory:** `/Users/jc3/GitHub/ai-automation-portfolio/`
-- **Tools:** CoWork, Claude Code, GitHub Desktop, Claude Sonnet 4.5
+- **Phase 1 repo:** `/Users/jc3/GitHub/ai-automation-portfolio/` (production/maintenance)
+- **Phase 2 repo:** `/Users/jc3/GitHub/personal-os/` (active development)
+- **Tools:** Claude.ai, Claude Code, GitHub Desktop, CoWork
 - **Computer:** Mac (Apple Silicon)
-- **Real project:** Job search automation (own use + 5-user service for friends)
+- **Active project:** Personal OS (Gmail, Calendar, Notion integrations)
+- **Maintenance project:** Job search platform (weekly searches for 5 users)
 
 ## Key Insights About My Learning
 
@@ -82,41 +84,42 @@
 - "Templates > memorization - build reusable systems"
 - "Learning = pattern recognition developing faster over time"
 
-### Week 3+ Insights
+### Phase 1 Insights
 
 - **Trust in automated systems requires verification** — a 33% false-positive rate on URL checks eroded confidence in the entire system. Building check_urls.py wasn't optional polish, it was foundational to the service being credible.
 - **Platform-specific edge cases matter** — generic solutions fail. Ashby needs GraphQL API calls, LinkedIn needs to be searched directly, Greenhouse/Lever need content scanning. Each platform has its own failure mode.
 - **Scaling decisions have compound effects** — removing LinkedIn from automated search was a design decision driven by pattern recognition across multiple users' data. One architectural change cascaded to 6+ files, a verification script, and a new utility (linkedin_links.py).
 - **Real problems don't follow curricula** — Week 3 data consolidation work surfaced Week 7 error handling problems. The skills developed simultaneously, not sequentially.
 - **Questioning arbitrary numbers is a feature, not a bug** — applying this to scoring weights, staleness thresholds (45 days), and any system parameter. The numbers need to be consistent and useful, not precise.
+- **Know when to ship** — Phase 1 reached production at Week 5. Padding to 12 weeks would have been artificial. Declaring "done" and moving to the next project was the right call.
 
 ### Success Indicators
 
 - Can explain concepts to others (teaching = mastery)
-- Prompts work on first try more often (70-80% success rate by Week 2)
+- Prompts work on first try more often (80%+ success rate by Phase 1 end)
 - Recognize issues before they happen (pattern recognition developing)
 - Think "what else could I automate?" (creative application)
 - Help others with their automation needs (proof of transferable skills)
 - Debug systematically when things break (check_urls.py development process)
-- Make architectural decisions with scaling implications (LinkedIn removal)
+- Make architectural decisions with scaling implications (LinkedIn removal, phase transition)
 
-## Goals for This Learning Journey
+## Goals
 
-### Short-term (12 weeks)
+### Phase 2 (Personal OS)
 
-- Build 8-10 working automations solving real problems
-- Develop strong prompt engineering skills
-- Create public GitHub portfolio demonstrating capabilities
-- Master one tool ecosystem deeply (Claude/CoWork) before surveying others
+- Build a working personal operating system with Gmail, Calendar, and Notion integrations
+- Learn Claude API tool-calling and MCP integration patterns
+- Demonstrate progression from browser automation (Phase 1) to API-driven agents (Phase 2)
+- Create a second portfolio project that maps to Chief of Staff workflow
 
-### Medium-term (Resume/career)
+### Career
 
 - Position AI automation skills as executive differentiator
 - Demonstrate technical fluency for startup operator roles
-- Build "job search as a service" offering for network
-- Prove I can learn and apply new technical skills independently
+- Prove ability to learn and apply new technical skills independently
+- Two public portfolio projects showing real systems, real users, real iteration
 
-### Long-term (Professional development)
+### Long-term
 
 - Become valuable in AI-augmented workplace
 - Design human-in-the-loop systems for startup operations
@@ -131,5 +134,5 @@
 
 ---
 
-*Last updated: 2026-02-26*
-*Current week: 3 (in progress)*
+*Last updated: 2026-03-10*
+*Active project: Phase 2 (Personal OS)*

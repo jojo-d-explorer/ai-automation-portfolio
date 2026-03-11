@@ -16,8 +16,8 @@ This repository documents both the working system and the learning journey behin
 
 The system automates the full weekly job search cycle through a unified pipeline combining direct ATS API querying with broad web search:
 
-* **ATS API checker** — Python script querying 126+ companies directly via Greenhouse, Lever, and Ashby APIs, bypassing Google's stale index entirely. Returns only live, verified-open jobs.
-* **200-company corpus** (`companies.json`) — tiered company database (multi-role signals, strong signals, search hits, funding intel) that feeds the API checker and grows weekly through search results and funding intelligence.
+* **ATS API checker** — per-user Python script querying target companies directly via Greenhouse, Lever, and Ashby APIs, bypassing Google's stale index entirely. Returns only live, verified-open jobs. The company corpus grows weekly as new companies are discovered through search results and funding intelligence.
+* **Growing company corpus** (`companies.json`) — per-user tiered company database (multi-role signals, strong signals, search hits, funding intel) that feeds the API checker. Each user's corpus starts small and compounds over time — for one user, the corpus grew from 52 to 200 companies over 6 weeks, with 126 of those being API-queryable.
 * **7-source wide-net search** across Greenhouse, Lever, Ashby, and Workday (via Google site:), plus Otta, Welcome to the Jungle, and efinancialcareers (direct platform searches)
 * **AI scoring engine** matching jobs against each user's resume using weighted criteria (industry fit, skills match, seniority, location, compensation) — customized per user
 * **Merge/dedup engine** combining API-verified results with search-sourced results, with API URLs taking priority and duplicate detection on Company + Job Title
@@ -33,11 +33,11 @@ The system automates the full weekly job search cycle through a unified pipeline
 
 The fundamental problem with AI-powered job search is Google's stale index. Google's cache of ATS job boards lags by days or weeks — a search returning 30+ results might yield only 5 live URLs after verification. This erodes trust and wastes time.
 
-The breakthrough: query ATS APIs directly. Greenhouse, Lever, and Ashby all expose public board APIs that return real-time job data. By maintaining a growing corpus of target companies and querying their APIs before each search, the system gets verified-live results without touching Google at all.
+The breakthrough: query ATS APIs directly. Greenhouse, Lever, and Ashby all expose public board APIs that return real-time job data. By maintaining a growing corpus of target companies per user and querying their APIs before each search, the system gets verified-live results without touching Google at all. The corpus compounds — each week's search results surface new companies that get added to the corpus, expanding next week's API coverage.
 
-The unified pipeline merges these high-confidence API results with broader web search results (which still catch companies not in the corpus), deduplicates, scores, and verifies — producing a deliverable where every job is confirmed live.
+The unified pipeline merges these high-confidence API results with broader web search results (which still catch companies not yet in the corpus), deduplicates, scores, and verifies — producing a deliverable where every job is confirmed live.
 
-**Result:** Phil Tassi's search went from 2 verified jobs to 42 in one week after deploying this architecture.
+**Example:** One user's search went from 2 verified jobs to 42 in a single week after deploying this architecture, driven by a corpus that had grown to 126 API-queryable companies across Greenhouse, Lever, and Ashby.
 
 ---
 
@@ -47,7 +47,7 @@ Python tools live in `JC3/` and per-user tools live in `searches/For_Others/[Use
 
 | Tool | Description | Run |
 | --- | --- | --- |
-| `ats_api_checker.py` | Queries 126+ companies via Greenhouse/Lever/Ashby APIs for live open roles matching target criteria | `python3 searches/For_Others/[User]/ats_api_checker.py` |
+| `ats_api_checker.py` | Per-user script querying the user's company corpus via Greenhouse/Lever/Ashby APIs for live open roles | `python3 searches/For_Others/[User]/ats_api_checker.py` |
 | `check_urls.py` | URL health check with platform-specific detection (Ashby GraphQL, JSON-LD dates, content scanning) | `python3 JC3/check_urls.py [csv_path]` |
 | `linkedin_links.py` | Generate personalized LinkedIn direct search URLs per user | `python3 JC3/linkedin_links.py [user]` |
 | `verify_linkedin_removal.py` | Dry-run checker confirming LinkedIn removed from all ONE_CLICK files | `python3 JC3/verify_linkedin_removal.py` |
@@ -76,7 +76,7 @@ LOCAL                    COWORK                         LOCAL
 | Step | Tool | Action | Time |
 | --- | --- | --- | --- |
 | 1. FUNDING INTEL | CoWork / Manual | Scan newsletters, add companies to corpus (optional, biweekly) | 10-15 min |
-| 2. API CHECK | Terminal | `python3 ats_api_checker.py` — query 126+ companies via API | 2-3 min |
+| 2. API CHECK | Terminal | `python3 ats_api_checker.py` — query user's company corpus via API | 2-3 min |
 | 3. SEARCH + MERGE | CoWork | ONE_CLICK prompt: ingest API results + wide-net search + merge/dedup + score | 10-15 min |
 | 4. VERIFY | Terminal | `python3 JC3/check_urls.py [csv]` — only checks "Not Checked" rows | 5 min |
 | 5. PACKAGE | CoWork | Rebuild 3-tab XLSX with verified results | 5-8 min |
@@ -95,11 +95,11 @@ The platform currently supports five active users with distinct search profiles:
 
 * **Venture capital operator** — Chief of Staff and strategy roles, DC and European markets
 * **Equity research analyst** — Long/short TMT, hedge fund buy-side, New York metro
-* **Partnerships & BD** — Growth-stage startup roles, DC and London; first user on the v5.0 unified pipeline with 200-company corpus and ATS API checker
+* **Partnerships & BD** — Growth-stage startup roles, DC and London; first user on the v5.0 unified pipeline with ATS API checker and growing company corpus
 * **Defense technology** — Finance and IR leadership, DC and NYC
 * **European brand strategy** — Senior creative and brand leadership, Lisbon and remote-global
 
-Each user has a dedicated ONE_CLICK configuration (target roles, locations, sector weights, scoring criteria) and receives personalized deliverables weekly. Users with the v5.0 pipeline also have a companies.json corpus and ats_api_checker.py.
+Each user has a dedicated ONE_CLICK configuration (target roles, locations, sector weights, scoring criteria) and receives personalized deliverables weekly. As users are upgraded to the v5.0 pipeline, each gets their own companies.json corpus and ats_api_checker.py — the corpus starts with companies from their sector and grows weekly through search results and funding intelligence.
 
 ---
 
@@ -111,7 +111,7 @@ ai-automation-portfolio/
 │   ├── For_Others/                        # Per-user search configurations
 │   │   └── [User]/
 │   │       ├── ONE_CLICK_[User].md        # Unified pipeline prompt (v5.0)
-│   │       ├── companies.json             # Target company corpus (200+)
+│   │       ├── companies.json             # Target company corpus
 │   │       ├── ats_api_checker.py         # ATS API checker script
 │   │       └── executed_YYYY-MM-DD.txt    # Run logs
 │   ├── ONE_CLICK_TEMPLATE_Friends_v3.md   # Master template for new users
@@ -231,23 +231,23 @@ ai-automation-portfolio/
 
 **Learned:** when to stop building features and ship, documentation as a product, the difference between "done" and "perfect"
 
-### Week 6: ATS API-First Architecture & 200-Company Corpus ✅
+### Week 6: ATS API-First Architecture & Growing Company Corpus ✅
 
 *Completed: March 17, 2026*
 
 The biggest system upgrade since launch. Diagnosed the root cause of low verified-job counts (Google's stale ATS board index) and built a fundamentally different approach: query ATS APIs directly instead of searching Google.
 
-* **ATS API checker** (`ats_api_checker.py`) — Python script querying Greenhouse, Lever, and Ashby board APIs directly for real-time job data. Bypasses Google's stale index entirely. Filters by 17+ role keywords and 10+ location targets.
-* **200-company corpus** (`companies.json`) — expanded from 52 to 200 target companies by mining every historical search result and funding intel file. Organized in 4 tiers: multi-role signals, strong signals, search hits, funding intel. 126 API-queryable (Greenhouse/Lever/Ashby), 74 non-queryable (Workday/unknown).
+* **ATS API checker** (`ats_api_checker.py`) — per-user Python script querying Greenhouse, Lever, and Ashby board APIs directly for real-time job data. Bypasses Google's stale index entirely. Filters by configurable role keywords and location targets.
+* **Growing company corpus** (`companies.json`) — per-user tiered company database that compounds weekly. Companies are added from three sources: historical search results, funding intelligence, and manual additions. For the first user deployed, the corpus grew from 52 to 200 companies over 6 weeks by mining every historical search result and funding intel file — 126 API-queryable (Greenhouse/Lever/Ashby), 74 non-queryable (Workday/unknown). Each user's corpus starts small and grows as the system runs.
 * **Unified pipeline (ONE_CLICK v5.0)** — single prompt orchestrating: API result ingestion → wide-net search across 7 sources → merge/dedup with API-URL priority → scoring → 3-tab XLSX output. Replaces the previous search-only prompt.
 * **7-source search system** — added Workday (Google site:), Otta, Welcome to the Jungle, and efinancialcareers as search sources alongside existing Greenhouse/Lever/Ashby boards.
 * **2-tier role system** — Primary roles (CoS, Partnerships, BD, Strategic Alliances, Commercial Director) searched everywhere; Secondary roles (Strategy & Ops, Growth, Ecosystem Partnerships, Corporate Development, Operating Partner, GTM Lead) searched on ATS + Otta only.
 * **3-tab branded XLSX deliverable** — Tab 1: Verified Jobs with conditional formatting (score 90+, REPEAT, API-Verified indicators). Tab 2: Non-Queryable Companies with ATS resolution guide. Tab 3: LinkedIn Search Links grouped by location and role tier.
 * **Funding intel → corpus integration** — newly funded companies automatically feed into companies.json tier_4, picked up by next API checker run. Closes the loop between proactive intelligence and verified job discovery.
 
-**Result:** Phil Tassi's search went from 2 verified jobs (Week 5) to 42 verified jobs (Week 6) — a 21x improvement. Of the 42, all had confirmed-live URLs via either API verification or URL health check.
+**Result:** First deployment went from 2 verified jobs to 42 in one week — a 21x improvement — driven by a corpus of 126 API-queryable companies built from 6 weeks of historical data. All 42 had confirmed-live URLs via either API verification or URL health check.
 
-**Learned:** when the data source is the problem, no amount of post-processing helps — go to the source of truth. API-first architectures are more reliable than search-first. Growing the company corpus is a compounding advantage: more companies → more API queries → more verified jobs → more new companies discovered → repeat.
+**Learned:** when the data source is the problem, no amount of post-processing helps — go to the source of truth. API-first architectures are more reliable than search-first. The company corpus is a compounding advantage: more companies → more API queries → more verified jobs → new companies discovered in results → corpus grows → repeat. Each user's corpus gets more powerful over time.
 
 ---
 
