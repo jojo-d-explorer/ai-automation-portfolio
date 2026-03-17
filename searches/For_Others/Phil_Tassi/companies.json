@@ -1,0 +1,1281 @@
+{
+  "_meta": {
+    "description": "Target company list for Phil Tassi ATS API checker. Grows each week as funding intel and search results surface new companies.",
+    "last_updated": "2026-03-17",
+    "total_companies": 200,
+    "how_to_add": "Append to the appropriate tier array. slug = URL path component (boards.greenhouse.io/{slug}). ats = greenhouse|lever|ashby."
+  },
+  "tier_1_multi_role_signals": [
+    {
+      "slug": "anthropic",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "monzo",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "ramp",
+      "ats": "ashby",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "deepmind",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "fireblocks",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    }
+  ],
+  "tier_2_strong_signals": [
+    {
+      "slug": "ebury",
+      "ats": "lever",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "thoughtmachine",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "deliveroo",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "airwallex",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-09"
+    },
+    {
+      "slug": "binance",
+      "ats": "lever",
+      "source": "master_db",
+      "added": "2026-02-23"
+    },
+    {
+      "slug": "elevenlabs",
+      "ats": "ashby",
+      "source": "master_db",
+      "added": "2026-02-23"
+    },
+    {
+      "slug": "bjakcareer",
+      "ats": "ashby",
+      "source": "master_db",
+      "added": "2026-02-23"
+    },
+    {
+      "slug": "cvx",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-09"
+    },
+    {
+      "slug": "attentive",
+      "ats": "lever",
+      "source": "master_db",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "deel",
+      "ats": "ashby",
+      "source": "master_db",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "pattern",
+      "ats": "lever",
+      "source": "master_db",
+      "added": "2026-02-23"
+    },
+    {
+      "slug": "vanta",
+      "ats": "ashby",
+      "source": "master_db",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "andurilindustries",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-02-23"
+    },
+    {
+      "slug": "plaid",
+      "ats": "lever",
+      "source": "master_db",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "twilio",
+      "ats": "greenhouse",
+      "source": "master_db",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "blacklane",
+      "ats": "greenhouse",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "capital",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "eucalyptus",
+      "ats": "greenhouse",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "freebalance.com",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "generationhome",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "iwoca.co.uk",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "liberis",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "mollie",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "octoenergy",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "omnea",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "oneacrefundglobal",
+      "ats": "greenhouse",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "runna",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "saronic",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "stand",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "stradaeducation",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "tandemmoneylimited",
+      "ats": "greenhouse",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "tilt",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "starship",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "fresha",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "kraken123",
+      "ats": "lever",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "ridgeline",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "wintermute",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "elliptic",
+      "ats": "ashby",
+      "source": "historical_multi_week",
+      "added": "2026-03-17"
+    }
+  ],
+  "tier_3_search_hits": [
+    {
+      "slug": "unlimit",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-16"
+    },
+    {
+      "slug": "tryjeeves",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "offchainlabs",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "pleo",
+      "ats": "greenhouse",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "forter",
+      "ats": "greenhouse",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "offerfit",
+      "ats": "greenhouse",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "quantummetric",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "cloudinary",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "saviynt",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "partnerstack",
+      "ats": "greenhouse",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "aircall",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "360learning",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "icertis",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "instructure",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "secureframe",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "cognite",
+      "ats": "lever",
+      "source": "search_2026-03-16",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "xero",
+      "ats": "ashby",
+      "source": "search_2026-03-16",
+      "added": "2026-03-16"
+    },
+    {
+      "slug": "liveflow",
+      "ats": "ashby",
+      "source": "search_2026-03-16",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "openai",
+      "ats": "ashby",
+      "source": "search_2026-03-16",
+      "added": "2026-03-16"
+    },
+    {
+      "slug": "advocate",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "affirm",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "aledade",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "alethea",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "appliedintuition",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "apron",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "autofi",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "brex",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "carta",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "checkoutcom",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "circle",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "civicmarketplace",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "cleo",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "collective",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "column",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "copiapower",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "credible",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "deeter-analytics",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "defenseunicorns",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "farsight",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "floqast",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "goodlord",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "griffin",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "gusto",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "hivesmart-consulting",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "kernel",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "lawhive",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "loopreturns",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "lumen.energy",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "mercury",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "meridianlink",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "metaview",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "neo4j",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "okta",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "opusclip",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "dnagenotek",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "paddle",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "qumis",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "rain",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "ravio",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "real",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "rebuy",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "remotecom",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "samsara",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "sandboxaq",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "sardine",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "simplyinsured",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "spotify",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "sustainlife",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "taaraconnect",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "techstars57",
+      "ats": "greenhouse",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "trustyou",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "wayflyer",
+      "ats": "ashby",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "yuno",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "zeneducate",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "zopa",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "zushealth",
+      "ats": "lever",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "earlywarning",
+      "ats": "workday",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "nasdaq",
+      "ats": "workday",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "workiva",
+      "ats": "workday",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "adyen",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "acquired",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "securityscorecard",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "tradingview",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "freeform",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    },
+    {
+      "slug": "square-block",
+      "ats": "unknown",
+      "source": "historical_search",
+      "added": "2026-03-17"
+    }
+  ],
+  "tier_4_funding_intel": [
+    {
+      "slug": "coinbase",
+      "ats": "greenhouse",
+      "source": "funding_intel",
+      "added": "2026-03-09"
+    },
+    {
+      "slug": "stripe",
+      "ats": "greenhouse",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "revolut",
+      "ats": "lever",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "gocardless",
+      "ats": "lever",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "checkout",
+      "ats": "greenhouse",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "wise",
+      "ats": "greenhouse",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "moonpay",
+      "ats": "greenhouse",
+      "source": "funding_intel",
+      "added": "2026-02-02"
+    },
+    {
+      "slug": "ascent",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Ascent"
+    },
+    {
+      "slug": "avantos",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Avantos"
+    },
+    {
+      "slug": "axelera-ai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Axelera AI"
+    },
+    {
+      "slug": "badge",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Badge"
+    },
+    {
+      "slug": "braintrust",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Braintrust"
+    },
+    {
+      "slug": "code-metal",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Code Metal"
+    },
+    {
+      "slug": "cogent-security",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Cogent Security"
+    },
+    {
+      "slug": "copla",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Copla"
+    },
+    {
+      "slug": "dg-matrix",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "DG Matrix"
+    },
+    {
+      "slug": "efficient-computer",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Efficient Computer"
+    },
+    {
+      "slug": "entrepreneurs-first",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Entrepreneurs First"
+    },
+    {
+      "slug": "fluidstack",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Fluidstack"
+    },
+    {
+      "slug": "fyld",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "FYLD"
+    },
+    {
+      "slug": "grotto-ai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Grotto AI"
+    },
+    {
+      "slug": "hook",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Hook"
+    },
+    {
+      "slug": "hybridity",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Hybridity"
+    },
+    {
+      "slug": "inscope",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "InScope"
+    },
+    {
+      "slug": "jazz",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Jazz"
+    },
+    {
+      "slug": "jump",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Jump"
+    },
+    {
+      "slug": "kai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Kai"
+    },
+    {
+      "slug": "kombo",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Kombo"
+    },
+    {
+      "slug": "korsana-biosciences",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Korsana Biosciences"
+    },
+    {
+      "slug": "lanzajet",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "LanzaJet"
+    },
+    {
+      "slug": "legora",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Legora"
+    },
+    {
+      "slug": "letter-ai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Letter AI"
+    },
+    {
+      "slug": "monark",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Monark"
+    },
+    {
+      "slug": "mondra",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Mondra"
+    },
+    {
+      "slug": "mozark",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Mozark"
+    },
+    {
+      "slug": "nexthop-ai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Nexthop AI"
+    },
+    {
+      "slug": "nimble",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Nimble"
+    },
+    {
+      "slug": "nscale",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Nscale"
+    },
+    {
+      "slug": "onshore",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Onshore"
+    },
+    {
+      "slug": "orqa",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Orqa"
+    },
+    {
+      "slug": "outpost",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Outpost"
+    },
+    {
+      "slug": "ownwell",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Ownwell"
+    },
+    {
+      "slug": "payra",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Payra"
+    },
+    {
+      "slug": "plato",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Plato"
+    },
+    {
+      "slug": "portkey",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Portkey"
+    },
+    {
+      "slug": "quince",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Quince"
+    },
+    {
+      "slug": "rainfall-health",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Rainfall Health"
+    },
+    {
+      "slug": "replit",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Replit"
+    },
+    {
+      "slug": "saltz",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Saltz"
+    },
+    {
+      "slug": "satvu",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "SatVu"
+    },
+    {
+      "slug": "selector",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Selector"
+    },
+    {
+      "slug": "slide",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Slide"
+    },
+    {
+      "slug": "solid",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Solid"
+    },
+    {
+      "slug": "solveai",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "SolveAI"
+    },
+    {
+      "slug": "stable-money",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Stable Money"
+    },
+    {
+      "slug": "stacks",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Stacks"
+    },
+    {
+      "slug": "surrealdb",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "SurrealDB"
+    },
+    {
+      "slug": "taalas",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Taalas"
+    },
+    {
+      "slug": "temporal",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Temporal"
+    },
+    {
+      "slug": "toyo",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Toyo"
+    },
+    {
+      "slug": "venice",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Venice"
+    },
+    {
+      "slug": "vestwell",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Vestwell"
+    },
+    {
+      "slug": "vizzia",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Vizzia"
+    },
+    {
+      "slug": "vulncheck",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "VulnCheck"
+    },
+    {
+      "slug": "wonderful",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Wonderful"
+    },
+    {
+      "slug": "xflow",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Xflow"
+    },
+    {
+      "slug": "finperks",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "finperks"
+    },
+    {
+      "slug": "mea-platform",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "mea Platform"
+    },
+    {
+      "slug": "ami-labs",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "AMI Labs"
+    },
+    {
+      "slug": "alan",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Alan"
+    },
+    {
+      "slug": "aliro",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Aliro"
+    },
+    {
+      "slug": "comeryx-insurance",
+      "ats": "unknown",
+      "source": "funding_intel",
+      "added": "2026-03-17",
+      "name": "Comeryx Insurance"
+    }
+  ]
+}

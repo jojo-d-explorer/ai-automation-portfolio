@@ -1,0 +1,172 @@
+================================================================================
+PHIL TASSI - WEEKLY JOB SEARCH REPORT
+Week of March 16, 2026 | Generated March 17, 2026
+================================================================================
+
+EXECUTIVE SUMMARY
+The weekly job search identified 25 opportunities scoring 70+ across the 3 target
+ATS boards. 22 are NEW jobs not previously tracked, and 3 are REPEAT listings
+from Week of March 9 (active hiring signal). The search yielded 4 perfect-match
+roles scoring 90+ — led by a Head of Partnerships at fintech payments company
+Unlimit (94) and Director of Product Partnerships at Ramp (92). Strong fintech
+partnerships pipeline this week with multiple Head/Director-level opportunities.
+
+================================================================================
+SEARCH PARAMETERS
+================================================================================
+Roles Searched:
+  • Chief of Staff
+  • Partnerships (Director of, Head of, Manager)
+  • Business Development (Director of, Head of)
+
+Locations Targeted:
+  • London, UK
+  • Washington DC, USA
+  • Remote-US
+  • Remote-Global
+
+ATS Boards Searched:
+  1. site:boards.greenhouse.io
+  2. site:jobs.lever.co
+  3. site:jobs.ashbyhq.com
+
+Date Range: Posted within 7 days (after March 9, 2026)
+
+================================================================================
+KEY RESULTS
+================================================================================
+
+TOTALS:
+• Total jobs found:         25
+• Jobs scoring 70+:         25 (100%)
+• NEW jobs:                 22
+• REPEAT jobs:              3
+• Jobs below 70:            0 (filtered out)
+
+BREAKDOWN BY BOARD:
+Board           Total    NEW    REPEAT
+─────────────────────────────────────────
+Greenhouse        8       8        0
+Lever             8       7        1
+Ashby             9       7        2
+─────────────────────────────────────────
+TOTAL            25      22        3
+
+BY ROLE TYPE:
+• Chief of Staff roles:      9 (36%)
+• Partnerships roles:       13 (52%)
+• Business Development:      3 (12%)
+
+BY SECTOR:
+• Fintech/Banking/Payments:  8 (32%)
+• SaaS/Enterprise Tech:      5 (20%)
+• AI/Deep Tech:              4 (16%)
+• Web3/Crypto:               1 (4%)
+• Other Tech:                7 (28%)
+
+BY LOCATION:
+• London, UK:                7 (28%)
+• Remote-US:                 7 (28%)
+• Remote-Global:             6 (24%)
+• Remote-Europe:             2 (8%)
+• San Francisco:             2 (8%)
+• Washington DC:             1 (4%)
+
+BY WORK ARRANGEMENT:
+• Hybrid:                    10 (40%)
+• Remote-US:                  7 (28%)
+• Remote-Global:              8 (32%)
+
+================================================================================
+TOP 10 OPPORTUNITIES (by Score)
+================================================================================
+
+Rank Score Company          Role                              Location         Board
+──── ───── ────────────── ──────────────────────────────── ─────────────── ──────
+1.   94    Unlimit         Head of Partnerships              London          Lever
+2.   92    Ramp            Director, Product Partnerships    Remote-US       Ashby
+3.   91    lemon.markets   Head of Strategic Partnerships    Remote-Europe   Ashby
+4.   91    Yuno            Head of Partnerships - Europe     Remote-Europe   Lever
+5.   89    XMTP Labs       Head of BD & Partnerships         Remote-Global   GH
+6.   88*   Bjak            Chief of Staff - UK               London          Ashby
+7.   87    LiveFlow        Chief of Staff                    Remote          Ashby
+8.   87    Credible        Partnerships & BD Director        Remote-US       GH
+9.   86    OpenAI          Partner Dir, Head of Tech Ptnrs   San Francisco   Ashby
+10.  85    Deepgram        Chief of Staff                    Remote          Ashby
+
+* = REPEAT from previous week (active hiring signal)
+
+PERFECT MATCH CRITERIA (Score 90+, Fintech/Tech, London/Remote):
+• Unlimit - Head of Partnerships [94] - London (payments infrastructure fintech)
+• Ramp - Director, Product Partnerships [92] - Remote-US (fintech/corporate cards)
+• lemon.markets - Head of Strategic Partnerships [91] - Remote-EU (capital markets fintech)
+• Yuno - Head of Partnerships Europe [91] - Remote-EU (payments infrastructure)
+
+================================================================================
+REPEAT JOB SIGNALS (Hiring Urgency Indicators)
+================================================================================
+
+3 jobs from Week of March 9 are still actively listed:
+
+• Bjak - Chief of Staff UK [88] — Also in master DB from earlier weeks. London
+  fintech/insurtech. STRONG SIGNAL: Multi-week persistent posting = urgent hire.
+
+• Attentive - Chief of Staff CRO [84] — Week 2 of posting. London hub available.
+  SaaS revenue org CoS. Consider applying soon.
+
+• Deel - Partnerships Manager VC [81] — Week 2+ persistent. Remote-Global.
+  VC/PE ecosystem partnerships at $120-180K. Phil's Techstars/Interstate
+  experience is a direct match.
+
+================================================================================
+WEEK-OVER-WEEK COMPARISON
+================================================================================
+
+                    This Week    Last Week    Change
+                    ─────────    ─────────    ──────
+Total 70+:          25           18           +7 (+39%)
+NEW jobs:           22           18           +4 (+22%)
+Score 90+:          4            3            +1
+Score 85-89:        5            3            +2
+Partnerships:       13           7            +6
+Chief of Staff:     9            7            +2
+Fintech sector:     8            6            +2
+London-based:       7            10           -3
+Remote roles:       15           6            +9
+
+Key shift: Remote/global roles surged this week. Fintech partnerships pipeline
+is the strongest it's been — 8 direct fintech roles vs 6 last week, with
+multiple Head-level opportunities.
+
+================================================================================
+SCORING RATIONALE SUMMARY
+================================================================================
+
+Phil's profile strengths leveraged in scoring:
+• Industry Fit (35 pts max): Fintech/banking/payments = 35; AI/deep tech = 25-28
+• Skills Match (25 pts max): Partnership ecosystem, startup banking, investor
+  relations, startup operations, founder discovery, GTM/commercial build
+• Seniority (20 pts max): VP-level at JPMorgan, VC roles; all top jobs
+  target Director/CoS/Head roles matching his level
+• Location (10 pts max): London = 10, Remote-US = 10, Remote-Global = 10
+• Salary (10 pts max): $150K+ = 10, $120-150K = 7, <$120K = 4, Not listed = 5
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+Recommended Actions:
+1. Review top 4 perfect matches (scores 90+) for targeted applications
+2. PRIORITY: Unlimit Head of Partnerships (94) — fintech payments in London,
+   Phil's strongest sector + location combination
+3. REPEAT SIGNAL: Bjak (88), Attentive (84), Deel (81) still open — apply soon
+4. For Ramp/lemon.markets (91-92): Emphasize fintech ecosystem building,
+   JPMorgan startup partnerships, and VC network
+5. Update Master Database with all 25 jobs (22 NEW + 3 REPEAT updated)
+6. Run Phase 2 URL verification on CSV
+
+Data Location:
+• CSV:  results/For_Others/Phil_Tassi/Week_of_2026-03-16/Phil_Tassi_2026-03-16.csv
+• XLSX: results/For_Others/Phil_Tassi/Week_of_2026-03-16/Phil_Tassi_2026-03-16.xlsx
+
+================================================================================

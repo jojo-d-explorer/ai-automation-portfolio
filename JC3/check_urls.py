@@ -52,6 +52,11 @@ v2.1 UPGRADE (2026-02-26):
   10. Anti-hallucination defense: GENERIC check runs BEFORE any HTTP request,
       saving time and preventing false "OPEN" results on company pages that
       return HTTP 200 but aren't actual job listings.
+
+v2.2 UPGRADE (2026-03-11):
+  11. WTTJ SUPPORT: Added /jobs/[a-zA-Z0-9]{6,12} pattern to _JOB_ID_PATTERNS
+      so Welcome to the Jungle short alphanumeric slugs (e.g. /jobs/mGUwqlPc)
+      are recognised as valid specific job URLs rather than flagged as GENERIC.
 """
 
 import csv
@@ -111,6 +116,8 @@ _JOB_ID_PATTERNS = [
     r'/jobs?/\d{5,}',
     # Workday-style: /job/<slug>/<numeric-id>
     r'/job/[^/]+/\d{5,}',
+    # WTTJ (Welcome to the Jungle): /jobs/<short-alphanumeric-slug>
+    r'/jobs/[a-zA-Z0-9]{6,12}',
 ]
 
 _JOB_ID_RE = re.compile('|'.join(_JOB_ID_PATTERNS), re.IGNORECASE)
@@ -760,7 +767,7 @@ def main():
     else:
         targets = users
 
-    print(f"\n  check_urls v2.1 — platform-aware + content-aware + date-aware + specificity-aware")
+    print(f"\n  check_urls v2.2 — platform-aware + content-aware + date-aware + specificity-aware")
     print(f"  NEW: Generic URL detection (no job ID = auto-remove)")
     print(f"  Ashby: GraphQL API (bypasses client-side rendering)")
     print(f"  LinkedIn: closed-phrase + date detection")
