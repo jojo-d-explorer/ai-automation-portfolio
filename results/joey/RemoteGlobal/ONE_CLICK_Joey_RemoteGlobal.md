@@ -1,8 +1,8 @@
 # ONE_CLICK_Joey_RemoteGlobal.md
 # Remote-Global Variant | 5 Boards | Joey Clark
-# Last updated: 2026-03-09
-# v1.1 — Removed JazzHR (applytojob.com): URLs redirect to generic landing page,
-#         incompatible with URL verification pipeline.
+# Last updated: 2026-03-17
+# v1.2 — Expanded role titles: added business operations, program management,
+#         strategic projects/initiatives. Added seniority filtering guidance.
 
 ---
 
@@ -28,6 +28,10 @@ All date references below use these calculated values.
 - "VP Partnerships"
 - "Director of Partnerships"
 - "Business Development" (senior/director/VP level only — filter out junior titles)
+- "Director of Operations" / "Head of Operations" / "Business Operations" (director+ only)
+- "Program Director" / "Senior Program Manager" (director/senior level only)
+- "Director of Strategic Projects" / "Strategic Projects"
+- "Strategic Initiatives" / "Director of Strategic Initiatives"
 
 **Location filter:** Remote-Global ONLY  
 - Include: Remote, Remote-Global, Remote (Worldwide), Remote (International), Remote (Europe), Work from anywhere
