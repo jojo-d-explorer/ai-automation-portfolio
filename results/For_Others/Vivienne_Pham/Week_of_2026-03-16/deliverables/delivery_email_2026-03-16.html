@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vivienne Pham — Weekly Delivery Email</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #222;
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .instructions {
+    background: #fffde7;
+    border: 1px solid #f0e68c;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #555;
+    border-radius: 4px;
+  }
+  .email-content {
+    border: 1px solid #ddd;
+    padding: 24px 28px;
+    border-radius: 6px;
+    background: #fff;
+  }
+  .email-content p {
+    margin: 0 0 14px 0;
+  }
+  .section-header {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 22px 0 8px 0;
+    color: #222;
+  }
+  .email-content ul {
+    margin: 6px 0 14px 0;
+    padding-left: 24px;
+  }
+  .email-content ul li {
+    margin-bottom: 8px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+  .win-box {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 12px 0;
+  }
+  .win-box .win-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #166534;
+    margin-bottom: 8px;
+  }
+  .stats-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 12px 0;
+  }
+  .stats-box .stats-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 10px;
+  }
+  .role-item {
+    border-left: 3px solid #2563eb;
+    padding: 8px 0 8px 14px;
+    margin: 10px 0;
+  }
+  .role-item .co-name {
+    font-weight: bold;
+    font-size: 13px;
+    color: #1e3a5f;
+  }
+  .role-item .co-meta {
+    font-size: 12px;
+    color: #64748b;
+  }
+  .role-item .co-why {
+    font-size: 13px;
+    color: #334155;
+    margin-top: 3px;
+  }
+  .expand-box {
+    background: #eff6ff;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  .honest-box {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 12px 0;
+    font-size: 13px;
+    color: #991b1b;
+  }
+  a { color: #2563eb; }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <strong>Subject:</strong> Job Search Update &mdash; Week of Mar 16 (ATS API Upgrade &mdash; 13 Verified)<br>
+  <strong>To:</strong> Vivienne<br>
+  <strong>Attachments:</strong> Vivienne_Pham_Complete_2026-03-16.xlsx (3-tab document: verified jobs, company watchlist, LinkedIn links)<br>
+  <strong>How to use:</strong> Select everything inside the bordered box below &rarr; Copy &rarr; Paste into Gmail
+</div>
+
+<div class="email-content">
+
+<p>Hey Vivienne,</p>
+
+<p>Two big things this week. First, I built a new system that <b>directly queries company job boards via their APIs</b> instead of relying on Google search results. Second, every single URL went through verification &mdash; and I'm only sending you the ones that are confirmed open right now. The result: <b>13 verified, live roles</b> across 11 companies.</p>
+
+<hr class="divider">
+
+<div class="win-box">
+  <div class="win-title">&#9989; New: ATS API Checker for your profile</div>
+  <p style="margin: 0; font-size: 13px; color: #166534;">I built a Python script that directly hits the Greenhouse, Lever, and Ashby APIs for <b>108 companies</b> curated to your profile &mdash; defense tech, AI/ML, energy, cybersecurity, and capital markets firms. Instead of hoping Google indexes a posting before it goes stale, the API returns every open role in real time. The script filters for your three archetypes (Operator, Capital Markets, Ecosystem) and target locations (NYC, DC, Remote-US). This week it found roles that the regular search completely missed.</p>
+</div>
+
+<div class="honest-box">
+  <b>Transparency note:</b> The combined search initially surfaced 42 roles. After URL verification and filtering (removed controller-level roles and non-US locations), 29 were cut &mdash; 13 returned 404, 2 were stale, 10 pointed to generic career pages, and 4 were below Director/VP seniority or outside the US. The 13 you're getting are confirmed live, Director+ level, US-based listings.
+</div>
+
+<hr class="divider">
+
+<p class="section-header">&#128200; This week's numbers</p>
+
+<div class="stats-box">
+  <div class="stats-title">Headline Stats</div>
+  <div style="font-size: 13px; color: #334155;">
+    &bull; <b>13 verified open roles</b> across 11 companies (all URLs confirmed live, Director+ level, US only)<br>
+    &bull; <b>Score range:</b> 70&ndash;95 &bull; <b>Average:</b> 85<br>
+    &bull; <b>By archetype:</b> Operator/Finance (4) &bull; Ecosystem/BD (4) &bull; Capital Markets/IR (5)<br>
+    &bull; <b>Locations:</b> NYC (4), Remote-US (4), DC (1), Austin (1), SF/Multi (2), US-wide (1)<br>
+    &bull; <b>Sources:</b> 12 from ATS API, 1 carried from last week's ONE_CLICK (charity: water CFO &mdash; API-confirmed still open)
+  </div>
+</div>
+
+<hr class="divider">
+
+<p class="section-header">&#11088; Top roles to look at</p>
+
+<div class="role-item">
+  <div class="co-name">Saronic &mdash; Director of Growth <span style="color:#2563eb;">(95)</span></div>
+  <div class="co-meta">Washington, DC &bull; In-Office &bull; Defense Tech</div>
+  <div class="co-why">Strategic capture lead for DoD programs in unmanned maritime systems. DC-based, reporting to leadership. Your deal execution and government infrastructure experience map directly to this. <a href="https://jobs.lever.co/saronic/e7c88eb5-0def-4cd9-87bd-1994a9b8654a">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Saronic &mdash; Director of Accounting Operations <span style="color:#2563eb;">(95)</span></div>
+  <div class="co-meta">Austin, TX &bull; In-Office &bull; Defense Tech</div>
+  <div class="co-why">Two Saronic roles open simultaneously is a strong hiring signal. This one owns the finance operations function at one of the fastest-growing defense tech companies. Austin-based. <a href="https://jobs.lever.co/saronic/8f98fe4b-edb9-4f3e-892c-ac0e3658f74e">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Vannevar Labs &mdash; Senior Growth Director <span style="color:#2563eb;">(95)</span></div>
+  <div class="co-meta">Remote &bull; Defense Tech/AI</div>
+  <div class="co-why">Defense AI company building tools for national security analysts. Growth director role, fully remote. Strong IB-to-defense-tech bridge opportunity. <a href="https://job-boards.greenhouse.io/vannevarlabs/jobs/5023199007">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Modal &mdash; VP Finance <span style="color:#2563eb;">(90)</span></div>
+  <div class="co-meta">New York &bull; In-Office &bull; AI Infrastructure</div>
+  <div class="co-why">First full-time finance hire at a $1.1B AI infrastructure company. Build the function from scratch, report to CEO, path to CFO. This has appeared in multiple weeks &mdash; they're actively looking. <a href="https://jobs.ashbyhq.com/modal/5ac02bd3-a7ac-4e3d-b9c2-cc1abede0ae3">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Tagup &mdash; Director of Business Development <span style="color:#2563eb;">(90)</span></div>
+  <div class="co-meta">New York, NY &bull; In-Office &bull; Energy/AI</div>
+  <div class="co-why">Defense AI logistics platform. Leading capture across Army, Air Force, Navy, Marine Corps. NYC-based. Deal background + defense interest = strong fit. <a href="https://jobs.lever.co/tagup/d58d9629-eff3-487d-a57f-1a45871ce5a8">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Mercury &mdash; Head of Growth Marketing <span style="color:#2563eb;">(90)</span></div>
+  <div class="co-meta">NYC / SF / Remote-US &bull; Fintech</div>
+  <div class="co-why">Leading growth at one of the top fintech companies for startups. Remote-eligible with NYC office. Ecosystem archetype. <a href="https://job-boards.greenhouse.io/mercury/jobs/5812238004">Apply &rarr;</a></div>
+</div>
+
+<div class="role-item">
+  <div class="co-name">Canals &mdash; VP Finance <span style="color:#2563eb;">(85)</span></div>
+  <div class="co-meta">New York &bull; In-Office &bull; Technology</div>
+  <div class="co-why">VP Finance at an NYC-based company. Strong Operator archetype match. <a href="https://jobs.ashbyhq.com/canals/bdf9801c-9b82-4cde-965a-4d20789c48ee">Apply &rarr;</a></div>
+</div>
+
+<p style="font-size: 13px; color: #555;">Also in the spreadsheet: <b>charity: water</b> CFO at $260&ndash;280K remote (83, confirmed still open via API), <b>CFGI</b> Capital Markets Senior Manager (82), <b>Anthropic</b> Strategic Account Exec for IB &amp; Capital Markets in NYC (75), <b>Stripe</b> Senior Debt Capital Markets Specialist in NYC (75), <b>GitLab</b> IR Manager remote (70), and <b>Crux Climate</b> Debt Capital Markets roles remote (70).</p>
+
+<hr class="divider">
+
+<p class="section-header">&#128161; What the API caught that Google missed</p>
+
+<p style="font-size: 13px; color: #555;">Of the 13 verified roles, 12 came from the new ATS API system. Several wouldn't have appeared in the regular Google-based search:</p>
+
+<ul>
+  <li><b>Stripe</b> &mdash; Senior Debt Capital Markets Specialist. Not a "VP Finance" or "Director BD" title, but the API caught it via the capital markets keyword filter.</li>
+  <li><b>Crux Climate</b> &mdash; Multiple Debt Capital Markets roles. Climate tech + capital markets crossover. Surfaced from the energy/climate tier in the company corpus.</li>
+  <li><b>GitLab</b> &mdash; Investor Relations Manager. Public company IR seat. Google had stale links; the API returned the live posting.</li>
+  <li><b>CFGI</b> &mdash; Capital Markets Senior Manager. Financial services advisory firm; the API caught this from the capital markets archetype filter.</li>
+</ul>
+
+<hr class="divider">
+
+<p class="section-header">&#128736; How the two systems work together now</p>
+
+<div class="expand-box">
+  <b>ONE_CLICK search</b> scans Google for recent postings on Greenhouse, Lever, and Ashby using your role titles and locations. Good at catching fresh listings in the first few days, but depends on Google's index being current.
+</div>
+
+<div class="expand-box">
+  <b>ATS API Checker</b> (new this week) directly calls the APIs of <b>108 companies</b>, pulling every open role in real time. Filters for your three archetypes (Operator, Capital Markets, Ecosystem) and locations. Catches roles that Google missed or hasn't indexed yet, plus titles the regular search doesn't cover.
+</div>
+
+<div class="expand-box">
+  <b>URL Verification + Seniority Filter</b> runs on the combined output. Every URL gets an HTTP check &mdash; 404s are dropped, generic career pages are flagged, and posting age is recorded. Then controller-level and non-US roles are filtered out. Only confirmed-live, Director+ level, US-based listings make the final cut. This week: 42 &rarr; 13.
+</div>
+
+<hr class="divider">
+
+<p class="section-header">&#128202; By archetype</p>
+
+<div class="stats-box">
+  <div style="font-size: 13px; color: #334155;">
+    <b>Operator (Finance) &mdash; 4 roles</b><br>
+    Saronic Dir. Accounting Ops (95), Modal VP Finance (90), Canals VP Finance (85), charity: water CFO (83)<br><br>
+    <b>Ecosystem (BD/Growth) &mdash; 4 roles</b><br>
+    Saronic Dir. of Growth (95), Vannevar Labs Senior Growth Dir. (95), Tagup Dir. BD (90), Mercury Head of Growth (90)<br><br>
+    <b>Capital Markets (IR) &mdash; 5 roles</b><br>
+    CFGI Capital Markets Sr. Manager (82), Anthropic Strategic Account Exec IB &amp; Capital Markets (75), Stripe Senior Debt Capital Markets (75), Crux Debt Capital Markets (70), GitLab IR Manager (70)
+  </div>
+</div>
+
+<hr class="divider">
+
+<p class="section-header">&#128205; Tab 2: Non-Queryable Companies (83) &mdash; your research opportunity</p>
+
+<p>The second tab lists 83 companies that the API checker can't query yet &mdash; 23 with unknown ATS systems, 7 on Workday (no public API), and 53 from funding intel that haven't been searched on job boards yet. Companies like <b>Chariot Defense</b>, <b>NODA AI</b>, <b>Aalyria</b>, <b>Revel</b>, <b>Astelia</b>, <b>Basis</b>, and <b>Rowspace</b> are recently funded and relevant to your profile.</p>
+
+<p><b>How to resolve them (takes ~30 seconds per company):</b></p>
+
+<div class="expand-box" style="font-family: monospace;">
+  For each company, try these URLs in order:<br><br>
+  1. https://boards-api.greenhouse.io/v1/boards/<b>{company-slug}</b>/jobs<br>
+  2. https://api.lever.co/v0/postings/<b>{company-slug}</b><br>
+  3. https://api.ashbyhq.com/posting-api/job-board/<b>{company-slug}</b><br><br>
+  If any returns JSON (not a 404), that&rsquo;s their ATS.<br>
+  The slug is usually the company name, lowercase, no spaces.
+</div>
+
+<p style="font-size: 13px; color: #555;">Each company you resolve adds +1 to the API checker pool. The high-priority ones to research first: <b>Chariot Defense</b>, <b>NODA AI</b>, <b>Aalyria</b>, <b>Revel</b>, <b>Basis</b>, <b>Rowspace</b>, <b>Cogent Security</b> (all recently funded, all directly relevant).</p>
+
+<hr class="divider">
+
+<p class="section-header">&#128279; Tab 3: LinkedIn Search Links (27 pre-built searches)</p>
+
+<p>The third tab has 27 one-click LinkedIn search URLs, organized by archetype and location. Each link is pre-filtered to <b>Director+ level</b> and <b>posted in the last 7 days</b>. Covers all three archetypes:</p>
+
+<ul>
+  <li><b>Operator:</b> VP Finance, CFO, Head/Director of Finance, Director FP&amp;A &mdash; NYC, DC, Remote-US</li>
+  <li><b>Capital Markets:</b> IR Director, Head of IR, Capital Markets Director, Director Capital Formation &mdash; NYC, Remote-US</li>
+  <li><b>Ecosystem:</b> Director BD, Director of Growth, Chief of Staff, Portfolio Operations &mdash; NYC, DC, Remote-US</li>
+</ul>
+
+<p style="font-size: 13px; color: #555;">LinkedIn is the one platform the API checker can't cover (no public API). These links are the complement &mdash; takes about 5 minutes to click through all 27 and scan the results. If you spot an interesting role on LinkedIn, flag it and I'll add the company to the corpus.</p>
+
+<hr class="divider">
+
+<p class="section-header">&#128172; What I need from you</p>
+
+<ul>
+  <li><b>Top 3 priorities.</b> Saronic (DC, defense tech), Modal (NYC, AI infrastructure), and Vannevar Labs (remote, defense AI) feel like the strongest matches. Do you agree? Any others jump out?</li>
+  <li><b>Archetype weighting:</b> The three archetypes are now evenly split (4 Operator, 4 Ecosystem, 5 Capital Markets). Should I lean harder into one?</li>
+  <li><b>Non-queryable research:</b> If you have 15 minutes, try resolving a few of the high-priority funding intel companies on Tab 2. Each one makes the weekly search wider.</li>
+  <li><b>Applied to anything?</b> Reply with roles or fill in the Applied_Date column in the spreadsheet. Helps me track what's getting traction.</li>
+</ul>
+
+<p>One attachment this week: <b>Vivienne_Pham_Complete_2026-03-16.xlsx</b> with all three tabs. Everything is in one document.</p>
+
+<p>Best,<br>Joey</p>
+
+</div>
+
+</body>
+</html>

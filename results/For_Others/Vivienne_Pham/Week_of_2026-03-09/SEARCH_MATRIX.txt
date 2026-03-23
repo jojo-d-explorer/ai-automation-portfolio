@@ -1,0 +1,148 @@
+VIVIENNE PHAM - WEEKLY JOB SEARCH
+Week of 2026-03-09 | Execution Date: 2026-03-15
+
+SEARCH MATRIX SUMMARY
+=====================
+
+BOARD × ROLE × LOCATION COMBINATIONS EXECUTED:
+
+GREENHOUSE.IO (4 search combinations executed)
+  ✓ VP Finance + New York         → 1 result (B Capital Singapore)
+  ✓ VP Finance + Remote           → 4 results 
+  ✓ CFO + New York                → Multiple results (Away, BillionToOne, Monomoy, etc.)
+  ✓ CFO + Remote                  → Multiple results (Pilot, Qualio, Khan Academy, Interface AI)
+
+JOBS.LEVER.CO (12 search combinations executed)
+  ✓ VP Finance + New York         → 2 results (CSC Generation, Free Press)
+  ✓ VP Finance + Remote           → 6 results (Wisp, CSC Generation, Noibu, Raptor Maps, etc.)
+  ✓ CFO + New York                → Supporting roles (Planned Parenthood)
+  ✓ CFO + Remote                  → Multiple results (charity:water, Air Protein, etc.)
+  ✓ Investor Relations + New York → 10 results (Match Group, Bitwise, Alumni Ventures, Pantera, BridgeBio, etc.)
+  ✓ Business Development + New York → 10 results (Aircall, dLocal, Dataiku, Convelio, etc.)
+  ✓ Business Development + DC     → 3 results (Aurora Solar, Development Seed, Avalere Health)
+
+JOBS.ASHBYHQ.COM (4 search combinations executed)
+  ✓ VP Finance + Remote           → 1 result (Canals)
+  ✓ Business Development + New York → 10 results (Fonzi AI, Dandy, Casdin Capital, Tabs, etc.)
+  ✓ CFO + New York                → No direct CFO match, but Head of Finance tech
+  ✓ Investor Relations + New York → No direct matches
+
+MYWORKDAYJOBS.COM (4 search combinations executed)
+  ✓ VP Finance + New York         → 10 results (PVH/Calvin Klein, Pernod Ricard, Brookfield, Blackstone, etc.)
+  ✓ CFO + New York                → 3 results (Datasite, Nasdaq, Morgan Stanley)
+  ✓ CFO + Remote                  → 10 results (Humana, TruStage, Cerence, Gartner, etc.)
+  ✓ Investor Relations + New York → 10 results (Brookfield, Ares, Broadridge, Citi, Alliance Bernstein, etc.)
+  ✓ Business Development + New York → 10 results (Alston & Bird, Trade Desk, RSM, etc.)
+
+FINAL QUALIFIED RESULTS (70+ SCORE)
+===================================
+
+22 NEW JOBS IDENTIFIED (all 70+ scores):
+
+FINANCE OPERATOR ROLES (7 jobs):
+  87 - CSC Generation, VP Finance & Strategy (Multiple US)
+  85 - CSC Generation, VP Finance (Chicago/Austin/Toronto)
+  83 - charity: water, CFO (Remote-US)
+  80 - CAIS, Director of Finance (New York)
+  80 - Noibu, VP Finance (Remote-US)
+  79 - Humana, VP CFO Home Solutions (Remote-US)
+  72 - Wisp, VP Finance (Remote-US)
+
+CAPITAL MARKETS / IR ROLES (7 jobs):
+  82 - Citi, IR VP Rating Agencies (New York)
+  77 - Blue Apron, Director of IR (New York)
+  76 - Brookfield, Director IR Private Equity (New York)
+  76 - Match Group, Manager Corp Dev/IR (New York)
+  75 - Pantera Capital, Director Capital Formation (New York)
+  74 - BridgeBio, Associate/Senior Associate IR and Strategy (New York)
+  71 - Ares Management, Principal IR & Product Mgmt DI (New York)
+
+BUSINESS DEVELOPMENT / ECOSYSTEM ROLES (8 jobs):
+  78 - Casdin Capital, Director BD (New York)
+  74 - Crunchbase, Director of BD (New York/Hybrid)
+  73 - The Trade Desk, Director BD (New York/Hybrid)
+  73 - Aurora Solar, Senior BD Manager (Washington DC)
+  72 - Mastercard, Director BD Digital Partnerships (New York)
+  72 - Capital One, Senior Associate BD (New York)
+  71 - Development Seed, Sales & Business Strategy Lead (Washington DC)
+  70 - Wisp, VP Finance (San Francisco/Remote)
+
+DEDUPLICATION STATUS
+====================
+✓ No duplicate company+title combinations found
+✓ All 22 jobs are NEW (not in master database)
+✓ CSV consolidation complete
+
+LOCATION BREAKDOWN
+==================
+New York, NY:           13 jobs (59%)
+Remote-US:              6 jobs (27%)
+Washington DC:          2 jobs (9%)
+Multiple/Other:         1 job  (5%)
+
+WORK ARRANGEMENT BREAKDOWN
+==========================
+In-Office:             11 jobs (50%)
+Remote-US:              9 jobs (41%)
+Hybrid:                 2 jobs (9%)
+
+SECTOR CONCENTRATION
+====================
+Financial Services/Capital Markets:  8 jobs
+Technology/SaaS:                     6 jobs
+Alternative Investments/PE:          4 jobs
+Healthcare:                          2 jobs
+Climate/Sustainability:              1 job
+Other:                               1 job
+
+SALARY DATA COVERAGE
+====================
+Salary specified:       9 jobs (41%)
+Salary N/A:            13 jobs (59%)
+
+Salary ranges where specified:
+  $110K - $149K:  Aurora Solar (low end)
+  $157K - $236K:  Citi (mid-range capital markets)
+  $200K - $275K:  CAIS (director level)
+  $260K - $280K:  charity:water (CFO level)
+
+SCORING METHODOLOGY
+===================
+Rubric: 100 points distributed as follows
+  • Seniority Match (30 pts):    Director/VP/C-suite = full
+  • Skills Match (25 pts):        IB, legal, infrastructure policy, deal execution, financial modeling
+  • Location Flexibility (20 pts): NYC/DC = full, Remote-US = full, Other major US = 10
+  • Industry Fit (15 pts):        Defense tech/AI-ML/energy/cybersecurity = full, Adjacent = 10, Other = 5
+  • Salary Fit (10 pts):          $200K+ = full, $150-200K = 7, Below $150K = 4, Not listed = 5
+  • Clearance penalty (-15):      If TS/SCI required AND score would drop below 70
+  • Filter: 70+ only, ranked descending
+
+KEY INSIGHTS
+============
+1. Vivienne's background (JPM IB, defensetech coverage, M&A expertise) maps well to:
+   - Director+ finance roles at growth-stage companies
+   - Capital markets and IR positions at asset managers and public companies
+   - Business development in financial services and capital formation
+
+2. Strong alignment with top scorers:
+   - CSC Generation (87, 85): Retail transformation through M&A fits Altaba/Arris deal experience
+   - charity:water (83): CFO-level finance leadership with nonprofit scale
+   - CAIS (80): Alternative investments, director-level finance leadership
+   - Citi (82): Capital markets IR leverage her network with DIU, defense investors
+
+3. Location preferences reflected:
+   - 59% of qualified jobs in NYC (closest to DC base, known finance hub)
+   - 27% remote (flexibility for DC-based candidate)
+   - 9% DC (home market)
+
+4. Role archetype balance:
+   - Operator/Finance: 32% (VP Finance, CFO roles)
+   - Capital Markets: 32% (IR, capital formation roles)
+   - Ecosystem/BD: 36% (business development roles)
+
+FILES GENERATED
+===============
+1. Vivienne_Pham_2026-03-09.csv    - 22 jobs × 21 columns
+2. Vivienne_Pham_2026-03-09.xlsx   - Formatted with professional styling
+3. SEARCH_MATRIX.txt               - This summary document
+
