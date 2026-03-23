@@ -30,3 +30,4 @@ Temporary Items
 .~lock.*
 # Optional: Uncomment if you don't want result CSVs in Git
 # results/**/*.csv
+job_search_project/
