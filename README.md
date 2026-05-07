@@ -4,11 +4,13 @@ A multi-user job search automation system built as Phase 1 of an AI engineering 
 
 ## About
 
-Joey Clark is an operator — most recently SVP at Anzu Partners — targeting Chief of Staff and strategic operations roles, who designed and built this system independently to develop hands-on AI automation capability. What started as personal job search tooling became a production intelligence platform: 5 active users, weekly deliverables, real feedback loops, and a system that gets better each week.
+I'm Joey Clark, most recently SVP at Anzu Partners, with about a decade across DoD program management, banking, and venture capital. I built this system because I needed it. I was running my own job search and helping a few friends with theirs, and the existing tools weren't doing what I needed. So I started building, one piece at a time, and ended up with something I now run weekly for five people including myself.
 
-This repository documents both the working system and the learning journey behind it. **Phase 2** (Personal OS) continues in a [separate repository](https://github.com/jojo-d-explorer/personal-os).
+The repo has two tracks. A production system (v5.x) runs weekly searches and produces deliverables for the five active users. An R&D track (v2.x) is where I prototype more sophisticated patterns against my own search first, before bringing them into the production track. The two-stage discovery and scoring split, the auto-growing corpus, the JD-based filtering: all started as experiments on my search before they earned their way into the broader system.
 
-**Time commitment:** 8–12 hours/week · Washington, DC / Lisbon, Portugal
+Phase 2 (Personal OS) is in a separate repository.
+
+Time commitment: 8-12 hours/week · Washington, DC / Lisbon, Portugal
 
 ---
 
@@ -17,7 +19,7 @@ This repository documents both the working system and the learning journey behin
 The system automates the full weekly job search cycle through a unified pipeline combining direct ATS API querying with broad web search:
 
 * **ATS API checker** — per-user Python script querying target companies directly via Greenhouse, Lever, and Ashby APIs, bypassing Google's stale index entirely. Returns only live, verified-open jobs. The company corpus grows weekly as new companies are discovered through search results and funding intelligence.
-* **Growing company corpus** (`companies.json`) — per-user tiered company database (multi-role signals, strong signals, search hits, funding intel) that feeds the API checker. Each user's corpus starts small and compounds over time — for one user, the corpus grew from 52 to 200 companies over 6 weeks, with 126 of those being API-queryable.
+* **Growing company corpus** (companies.json) a tiered list of target companies that feeds the API checker. Each user has their own. They start small and grow week over week. My own corpus has gone from 52 companies in February to 430 in May, covering Chief of Staff, Strategic Operations, International GM and Country Manager roles, and Government Affairs/Defense. 254 of those are API-queryable today (Greenhouse, Lever, Ashby); the rest sit on Workday, SmartRecruiters, WTTJ, or proprietary careers pages.
 * **7-source wide-net search** across Greenhouse, Lever, Ashby, and Workday (via Google site:), plus Otta, Welcome to the Jungle, and efinancialcareers (direct platform searches)
 * **AI scoring engine** matching jobs against each user's resume using weighted criteria (industry fit, skills match, seniority, location, compensation) — customized per user
 * **Merge/dedup engine** combining API-verified results with search-sourced results, with API URLs taking priority and duplicate detection on Company + Job Title
@@ -53,7 +55,9 @@ Python tools live in `JC3/` and per-user tools live in `searches/For_Others/[Use
 | `verify_linkedin_removal.py` | Dry-run checker confirming LinkedIn removed from all ONE_CLICK files | `python3 JC3/verify_linkedin_removal.py` |
 | `dashboard.py` | Terminal dashboard showing scores, sectors, and application status per user | `python3 JC3/dashboard.py [user]` |
 | `serve.py` | Local web server serving an interactive job browser at localhost:8765 | `python3 JC3/serve.py` |
-
+| `verify_ats.py` | Three-step ATS verification. Auto-discovery first, then manual fill-in for the misses, then apply changes back with a backup. | `python3 scripts/verify_ats.py auto` |
+| `install_gm_expansion.py` | Adds the GM lane corpus expansion to the right places, with validation and backup. | `python3 scripts/install_gm_expansion.py` |
+| `corpus_append.py` | Adds newly discovered companies to the corpus automatically, filtering out ones that don't fit. | `python3 scripts/corpus_append.py --candidates [csv]` |
 ---
 
 ## Weekly Workflow
@@ -249,6 +253,39 @@ The biggest system upgrade since launch. Diagnosed the root cause of low verifie
 
 **Learned:** when the data source is the problem, no amount of post-processing helps — go to the source of truth. API-first architectures are more reliable than search-first. The company corpus is a compounding advantage: more companies → more API queries → more verified jobs → new companies discovered in results → corpus grows → repeat. Each user's corpus gets more powerful over time.
 
+### Week 7-9: Splitting Discovery from Scoring (v2.3) ✅
+Completed: April 25, 2026
+
+The biggest architecture change since the API-first switch in March. Running the system weekly, I noticed scores weren't always matching reality. Some near-miss roles were getting strong scores, and some genuinely good fits were getting middling scores. Tracing it back, the problem was that scoring was happening against search snippets (a sentence or two) rather than the full job description. The fix was to split the work into two stages.
+
+- Stage 1, discovery only. Find candidate roles. Apply a title gate (drop anything clearly junior) and a remote gate (drop in-person-locked roles). No scoring. Produce a clean candidate list and grow the corpus with new companies that surfaced.
+- Stage 2, verification and scoring. Fetch every candidate's full job description, then apply the scoring rubric to actual JD content. The remote check runs again at this stage against the JD itself, which catches cases where a snippet said "remote" but the JD specified "remote-EMEA only."
+- Auto-grow corpus with a disqualifier list. New companies surfaced in discovery get added automatically, but a blocklist filters out categories that aren't a fit (consumer crypto retail, dating, gambling, healthcare admin, recruiting agencies). The list is conservative on purpose. Easier to remove a disqualifier than to manually filter the corpus every week.
+- One threshold instead of two. Earlier versions had a "bubble band" of borderline scores I'd review manually each week. After watching it for a month, the bubble was usually noise. Removed it, kept a single 70+ cutoff for the master list, and started logging 60-69 separately for diagnostics.
+
+Learned: when scoring is misbehaving, the problem is almost never the rubric. It's the data the rubric is being applied to. Snippet scoring was a load-bearing failure mode for months before I diagnosed it.
+
+### Week 10: Two New Role Families and a Mode Flag (v2.3.1) ✅
+Completed: April 26, 2026
+
+Three small additive changes. Running v2.3 for a week surfaced gaps in the role family list. Strategy & Operations roles weren't being captured because they were getting tagged as "other" rather than fitting any of the existing seven families. Same with Corporate Development. Added both as their own families.
+
+The other change was a MODE flag for which anchor variants to run. Some weeks I want everything (open remote plus geo-specific). Other weeks I want to sprint on a specific geography (Lisbon, EMEA, LATAM). Added a single config line that controls which anchors fire, so I don't have to comment out queries to focus a search.
+
+Learned: the right time to add a configuration flag is the second time I want to do something different at run time. Not the first time, and not the fifth.
+
+### Week 11-12: GM Lane Expansion and ATS Verification Tooling (v2.4) ✅
+Completed: May 6, 2026
+
+Two related projects.
+
+The first was a deliberate corpus expansion. Reviewing several months of search results, I noticed the corpus was thin on International GM, Country Manager, and Vertical GM roles. Exactly the role types where my combination (DoD background, JD/MBA/MPP, planned Lisbon move) is most useful. So I built a target list of 35 new companies across four lanes (EMEA expansion plays, LATAM expansion plays, multi-region distributed, and Portuguese-rooted), then wrote a v2.4 addendum to the prompts. The addendum adds three new role families (international_gm, country_manager, vertical_gm) and expands the geographic anchor list to include the cities where these roles actually post (Lisbon, Madrid, London, Berlin, São Paulo, Mexico City, Bogotá, Buenos Aires, Miami).
+
+The second was a verification tool I needed for myself. After the corpus expansion, I had about 48 companies whose ATS metadata was either unknown, marked needs-verification, or had notes like "real ATS but slug needs checking." Manually verifying 48 entries at a time isn't sustainable, so I wrote verify_ats.py. Three commands (auto, manual, apply) that probe Greenhouse/Lever/Ashby for what's findable, surface the rest for manual review, and apply the changes back with a backup.
+
+Result: corpus grew from 395 to 430 companies. The ATS verification tool now handles a class of maintenance task that used to be one-off manual edits.
+
+Learned: an automation system needs maintenance tooling at least as much as it needs feature tooling. Most of what's gone wrong with this system over six months has been data quality issues, not logic bugs.
 ---
 
 ## What's Next: Phase 2
