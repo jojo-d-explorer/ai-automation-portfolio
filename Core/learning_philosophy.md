@@ -12,7 +12,7 @@
 ### What Works Best
 
 - **Conceptual understanding over memorization** - Learning = pattern recognition, not rote memory
-- **Real-world applications** - Immediate practical value (job search automation, personal OS, helping friends)
+- **Real-world applications** - Immediate practical value (job search automation, Spanish learning, helping friends)
 - **Productive struggle** - Embrace challenges but need guidance when genuinely stuck
 - **"Why" before "how"** - Understanding principles before implementation details
 - **Narrative context** - Connect concepts to business problems and real use cases
@@ -68,11 +68,12 @@
 ### Current Setup
 
 - **Phase 1 repo:** `/Users/jc3/GitHub/ai-automation-portfolio/` (production/maintenance)
-- **Phase 2 repo:** `/Users/jc3/GitHub/personal-os/` (active development)
+- **Phase 2 repo:** `/Users/jc3/GitHub/spanish-aula/` (active development)
 - **Tools:** Claude.ai, Claude Code, GitHub Desktop, CoWork
 - **Computer:** Mac (Apple Silicon)
-- **Active project:** Personal OS (Gmail, Calendar, Notion integrations)
+- **Active project:** Aula (Spanish-learning app — React/Vite frontend, Supabase, Anthropic API)
 - **Maintenance project:** Job search platform (weekly searches for 5 users)
+- **Shelved:** Personal OS (original Phase 2 plan — scoped, never built)
 
 ## Key Insights About My Learning
 
@@ -105,12 +106,12 @@
 
 ## Goals
 
-### Phase 2 (Personal OS)
+### Phase 2 (Aula)
 
-- Build a working personal operating system with Gmail, Calendar, and Notion integrations
-- Learn Claude API tool-calling and MCP integration patterns
-- Demonstrate progression from browser automation (Phase 1) to API-driven agents (Phase 2)
-- Create a second portfolio project that maps to Chief of Staff workflow
+- Build a full-stack Spanish-learning app for a real, daily need (DELE exam prep)
+- Learn schema design, structured LLM output contracts, and model routing by task
+- Demonstrate progression from pipeline automation (Phase 1) to owning the whole stack — data layer, frontend, and LLM-orchestration API (Phase 2)
+- Create a second portfolio project built on genuine daily use, not a hypothetical workflow
 
 ### Career
 
@@ -134,5 +135,5 @@
 
 ---
 
-*Last updated: 2026-03-10*
-*Active project: Phase 2 (Personal OS)*
+*Last updated: 2026-07-14*
+*Active project: Phase 2 (Aula / spanish-aula)*

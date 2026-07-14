@@ -8,7 +8,7 @@ I'm Joey Clark, most recently SVP at Anzu Partners, with about a decade across D
 
 The repo has two tracks. A production system (v5.x) runs weekly searches and produces deliverables for the five active users. An R&D track (v2.x) is where I prototype more sophisticated patterns against my own search first, before bringing them into the production track. The two-stage discovery and scoring split, the auto-growing corpus, the JD-based filtering: all started as experiments on my search before they earned their way into the broader system.
 
-Phase 2 (Personal OS) is in a separate repository.
+Phase 2 — [Aula](https://github.com/jojo-d-explorer/spanish-aula), a full-stack Spanish-learning app — is live in a separate repository.
 
 Time commitment: 8-12 hours/week · Washington, DC / Lisbon, Portugal
 
@@ -288,25 +288,27 @@ Result: corpus grew from 395 to 430 companies. The ATS verification tool now han
 Learned: an automation system needs maintenance tooling at least as much as it needs feature tooling. Most of what's gone wrong with this system over six months has been data quality issues, not logic bugs.
 ---
 
-## What's Next: Phase 2
+## Phase 2: Aula (Spanish Learning Platform)
 
-**Project:** Personal OS
-**Repository:** [personal-os](https://github.com/jojo-d-explorer/personal-os)
+**Project:** Aula — a full-stack Spanish-learning web app
+**Repository:** [spanish-aula](https://github.com/jojo-d-explorer/spanish-aula)
 
-Phase 2 applies the prompt engineering, pipeline architecture, and systems thinking from this project to personal executive operations — Gmail triage, calendar coordination, and task management through Claude API with MCP integrations.
+Phase 1 built automation on top of systems that already existed — Claude, ATS APIs, Gmail — orchestrating and querying them well. Phase 2 is building the tool itself: a full-stack app from scratch, including the data layer, the frontend, and my own LLM-orchestration API, that I use daily studying for the DELE exam.
 
-This maps directly to Chief of Staff and Strategic Ops roles where managing information flow, scheduling, and cross-functional coordination are core responsibilities.
+Where Phase 1's hardest problems were pipeline and data-quality problems (stale indexes, snippet-vs-JD scoring, dedup), Phase 2's hardest problems are systems-design problems: structured LLM output a UI can trust, a real schema with migrations, and model routing decided per task instead of one-size-fits-all.
 
 | Phase 1 Skill | Phase 2 Application |
 |---|---|
-| Prompt engineering | Agent system prompts, tool-calling patterns |
-| Pipeline architecture (unified v5.0) | Multi-agent orchestration |
-| ATS API integration | External API design patterns |
-| Gmail intelligence extraction | Email triage and classification |
-| Multi-user config management | Personal preference system |
-| Quality gates (URL verification) | Response quality verification |
-| Company corpus management | Knowledge base maintenance |
-| Anti-hallucination rules | Grounded responses from real data |
+| Prompt engineering | Tool-forced structured JSON output ("grading contracts"), prompt caching on stable system prompts |
+| Pipeline architecture (unified v5.0) | React + Vite frontend, Vercel serverless API layer |
+| Multi-user config management | Supabase/Postgres schema design with versioned migrations |
+| Quality gates (URL verification) | Truncation detection and runtime contract validation on every LLM response |
+| Company corpus + funding intel | Anki deck/schema-aware flashcard generation with a dedup ledger |
+| Anti-hallucination rules | Grounded generation against a fixed error taxonomy and level-calibrated prompts |
+| — | Full-stack ownership: schema design, frontend, mobile-first responsive UI, offline caching |
+| — | Cost metering (token usage logged per call) built in from day one, not retrofitted |
+
+**Status:** in active development. Writing practice with structured grading, threaded lessons, generated workbook exercises, and Anki-integrated flashcard generation are shipped; multi-user auth is deliberately deferred.
 
 ---
 
@@ -331,4 +333,4 @@ This maps directly to Chief of Staff and Strategic Ops roles where managing info
 ---
 
 *Phase 1 active: January–March 2026 · 120+ commits*
-*Phase 2: [personal-os](https://github.com/jojo-d-explorer/personal-os)*
+*Phase 2: [spanish-aula](https://github.com/jojo-d-explorer/spanish-aula) — active*

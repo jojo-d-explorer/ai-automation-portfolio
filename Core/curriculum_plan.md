@@ -13,10 +13,12 @@ This curriculum runs across two projects (phases), each in its own GitHub reposi
 - Duration: Weeks 0-5 (Jan 27 – Mar 2026)
 - Status: Production / maintenance mode
 
-**Phase 2: Personal OS** 🔄 Active
-- Repo: `personal-os`
-- Duration: Starting March 2026
+**Phase 2: Aula (Spanish Learning Platform)** 🔄 Active
+- Repo: `spanish-aula`
+- Duration: Starting June 2026
 - Status: Building
+
+*Personal OS was the original Phase 2 plan (scoped, never built) — shelved in favor of Aula. See "Phase 2 (shelved): Personal OS" below for the record.*
 
 ---
 
@@ -59,7 +61,9 @@ Production / maintenance. Weekly searches continue for 5 users. No new features 
 
 ---
 
-## Phase 2: Personal OS (Starting March 2026)
+## Phase 2 (shelved): Personal OS
+
+*Scoped in March 2026, never built — shelved before implementation started in favor of Aula (below). Kept here as the record of the original plan, not as active documentation.*
 
 ### Why This Project
 
@@ -99,6 +103,40 @@ Chief of Staff and Strategic Ops roles are fundamentally about managing informat
 
 ---
 
+## Phase 2: Aula (Spanish Learning Platform) (Starting June 2026)
+
+### Why This Project
+
+Personal OS was scoped but never built — Aula became the more compelling second project because it's a genuine, daily need (studying for the DELE exam) rather than a hypothetical one, the same pattern that made Phase 1 work: build what you actually use. It also demands full-stack ownership Personal OS's plan didn't require to the same degree — schema design, a frontend, and an LLM-orchestration API, not just tool-calling against existing platforms.
+
+### Architecture
+
+**Stack:**
+- React + Vite frontend
+- Vercel serverless functions proxying the Anthropic API
+- Supabase (Postgres) for persistence, with versioned migrations
+
+**Core Features:**
+- Structured LLM output ("grading contracts") for writing feedback, calibrated to DELE level and dialect
+- Threaded lesson chat, generated workbook exercises, Anki-integrated flashcard generation with a dedup ledger
+- Per-call token metering built in from day one
+
+### Skills Transfer from Phase 1
+
+| Phase 1 Skill | Phase 2 Application |
+|---|---|
+| Prompt engineering | Tool-forced structured JSON output, prompt caching on stable system prompts |
+| Pipeline architecture (7-phase) | React + Vite frontend, Vercel serverless API layer |
+| Multi-user config management | Supabase/Postgres schema design with versioned migrations |
+| Quality gates (URL verification) | Truncation detection and runtime contract validation on every LLM response |
+| Anti-hallucination rules | Grounded generation against a fixed error taxonomy and level-calibrated prompts |
+
+### Status
+
+In active development. Writing practice with structured grading, threaded lessons, generated workbook exercises, and Anki-integrated flashcard generation are shipped; multi-user auth is deliberately deferred.
+
+---
+
 ## Decision Rationale
 
 ### Why depth-first?
@@ -113,14 +151,19 @@ Chief of Staff and Strategic Ops roles are fundamentally about managing informat
 - Two completed projects with clear scope > one sprawling repo
 - Each repo tells a coherent story independently
 
-### Why Personal OS?
+### Why Personal OS (original plan, shelved)?
 - Maps directly to target roles (COS, Strategic Ops)
 - Adds tool breadth missing from Phase 1 (Claude API, MCP, Calendar, Notion)
 - Personal-use system = always-relevant, always-testable
 - Demonstrates progression: from browser automation → API-driven agents
 
+### Why Aula (instead)?
+- A real, daily-use need (studying for the DELE), not a hypothetical one — same "built because I needed it" pattern as Phase 1
+- Forces full-stack ownership Personal OS's tool-calling plan didn't require: schema design, a frontend, and an LLM-orchestration API
+- Demonstrates progression: from pipeline automation (Phase 1) → owning the whole stack, including the system being called (Phase 2)
+
 ---
 
-*Last updated: 2026-03-10*
+*Last updated: 2026-07-14*
 *Phase 1: Complete (ai-automation-portfolio)*
-*Phase 2: Active (personal-os)*
+*Phase 2: Active (spanish-aula)*

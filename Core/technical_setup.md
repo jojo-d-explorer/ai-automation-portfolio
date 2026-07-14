@@ -1,6 +1,6 @@
 # Technical Setup & Environment
 
-*Updated for Phase 2 transition — March 2026*
+*Updated for Phase 2 transition — Aula, July 2026*
 
 ---
 
@@ -8,50 +8,50 @@
 
 | Project | Repo | Directory | Status |
 |---------|------|-----------|--------|
-| **Personal OS** (Phase 2) | `personal-os` | `/Users/jc3/GitHub/personal-os/` | Active development |
+| **Aula** (Phase 2) | `spanish-aula` | `/Users/jc3/GitHub/spanish-aula/` | Active development |
 | **Job Search Platform** (Phase 1) | `ai-automation-portfolio` | `/Users/jc3/GitHub/ai-automation-portfolio/` | Production / maintenance |
+| ~~Personal OS~~ (shelved) | `personal-os` | — | Scoped, never built — superseded by Aula |
 
 ---
 
-## Phase 2: Personal OS
+## Phase 2: Aula
+
+*Personal OS was the original Phase 2 plan — scoped, never built, shelved in favor of Aula. See `curriculum_plan.md` for the record.*
 
 ### Working Directory
 
-**Location:** `/Users/jc3/GitHub/personal-os/`
+**Location:** `/Users/jc3/GitHub/spanish-aula/`
 
-### Repository Structure (Initial)
+### Repository Structure
 
 ```
-personal-os/
-├── README.md
-├── .gitignore
-├── docs/
-│   ├── architecture.md
-│   └── learning_log/
-├── agents/
-│   ├── email/                 (Gmail agent)
-│   ├── calendar/              (Google Calendar agent)
-│   └── tasks/                 (Notion agent)
-├── prompts/                   (Agent system prompts)
-└── scripts/                   (Utility scripts)
+spanish-aula/
+├── src/
+│   ├── features/       (writing, word-bank, lessons, workbook, flashcards)
+│   └── shared/          (grading, prompts, flashcards, db)
+├── api/                  (Vercel serverless functions — Anthropic proxy)
+├── scripts/              (Anki .colpkg parser, plain Python)
+├── supabase/migrations/
+├── docs/                 (PRD.md, ANKI_SCHEMA.md)
+└── CLAUDE.md
 ```
+
+Full technical detail lives in that repo's own `CLAUDE.md` and `docs/PRD.md` — not duplicated here.
 
 ### Tools & Integrations
 
 **AI Platform:**
-- Claude API (tool-calling, MCP integrations)
-- Claude.ai (CoWork for browser tasks, Projects for context)
+- Anthropic API (Claude Sonnet for grading/lessons/flashcards, Haiku for workbook generation) via a Vercel serverless proxy — no client-side API key
 - Claude Code (terminal-based development)
 
-**Target Integrations (MCP):**
-- Gmail — email triage, priority classification, draft responses
-- Google Calendar — schedule analysis, meeting prep, conflict detection
-- Notion — task tracking, project status, meeting notes
+**Stack:**
+- React + Vite frontend
+- Supabase (Postgres), versioned SQL migrations
+- Vercel (serverless functions + hosting)
 
 **Development:**
 - GitHub Desktop (version control)
 - VS Code / Cursor (code editing)
-- Python (scripting, API calls)
 - Mac (Apple Silicon)
 
 ---
@@ -131,7 +131,7 @@ ONE_CLICK → VERIFY (check_urls.py) → CLEAN → CONSOLIDATE → ANALYZE → P
 **GitHub**
 - Username: jojo-d-explorer
 - Phase 1 repo: ai-automation-portfolio (public)
-- Phase 2 repo: personal-os (private → public when ready)
+- Phase 2 repo: spanish-aula (public)
 
 **Claude.ai**
 - Plan: Max
@@ -157,5 +157,5 @@ ONE_CLICK → VERIFY (check_urls.py) → CLEAN → CONSOLIDATE → ANALYZE → P
 
 ---
 
-*Last updated: 2026-03-10*
-*Active project: Phase 2 (Personal OS)*
+*Last updated: 2026-07-14*
+*Active project: Phase 2 (Aula / spanish-aula)*
