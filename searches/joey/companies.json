@@ -51,7 +51,8 @@
       "notes": "Also on WTTJ. Multiple partnership roles found.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "remotecom",
@@ -69,7 +70,8 @@
       "notes": "Multiple remote-global roles found.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "omnipresent",
@@ -87,7 +89,8 @@
       "notes": "Also on WTTJ.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "automatticcareers",
@@ -105,7 +108,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "gitlab",
@@ -123,7 +127,8 @@
       "notes": "All-remote global company.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "substack",
@@ -141,7 +146,8 @@
       "notes": "Multiple regional partnerships roles.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "scope3pbc",
@@ -159,7 +165,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "monarchmoney",
@@ -177,7 +184,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "apheris",
@@ -195,7 +203,8 @@
       "notes": "Also on WTTJ.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "yuno",
@@ -213,7 +222,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "pleo",
@@ -231,7 +241,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "formance",
@@ -249,7 +260,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "taskrabbit",
@@ -267,7 +279,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "Nithio",
@@ -285,7 +298,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "findem",
@@ -303,7 +317,8 @@
       "notes": "Also on WTTJ.",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "trust-wallet",
@@ -321,7 +336,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "sentient",
@@ -339,7 +355,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "The-Flex",
@@ -357,7 +374,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "dust",
@@ -375,7 +393,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "agicap",
@@ -393,7 +412,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "secureframe",
@@ -411,7 +431,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "policyme",
@@ -429,7 +450,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "botify",
@@ -447,7 +469,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "360learning",
@@ -465,7 +488,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "owner",
@@ -483,7 +507,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "firstround",
@@ -501,7 +526,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "32Co",
@@ -519,7 +545,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "stargate-foundation",
@@ -537,7 +564,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "anchorage",
@@ -555,7 +583,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "pylon",
@@ -573,7 +602,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "humatahealth",
@@ -591,7 +621,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "firecrawl",
@@ -609,7 +640,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "decagon",
@@ -627,7 +659,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "character",
@@ -645,7 +678,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "koho",
@@ -663,7 +697,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "bureau",
@@ -681,7 +716,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "pivotal-health",
@@ -699,7 +735,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "betterup",
@@ -717,7 +754,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "satispay",
@@ -735,7 +773,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "offerfit",
@@ -753,7 +792,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "hightouch",
@@ -771,7 +811,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "intercom",
@@ -789,7 +830,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "merge",
@@ -807,7 +849,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "khanacademy",
@@ -825,7 +868,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "nift",
@@ -843,7 +887,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "thanx",
@@ -861,7 +906,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "coinbase",
@@ -879,7 +925,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "upwork",
@@ -897,7 +944,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "apolloio",
@@ -915,7 +963,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "opentable",
@@ -933,7 +982,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "headway",
@@ -951,7 +1001,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "angi",
@@ -969,7 +1020,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "papa",
@@ -987,7 +1039,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "reforge",
@@ -1005,7 +1058,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "smartcar",
@@ -1023,7 +1077,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "theathletic",
@@ -1041,7 +1096,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "aledade",
@@ -1059,7 +1115,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "Archive",
@@ -1077,7 +1134,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "Snif",
@@ -1095,7 +1153,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "sprucesystems",
@@ -1113,7 +1172,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "resonanceglobal",
@@ -1131,7 +1191,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "mulliganfunding",
@@ -1149,7 +1210,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "lifeforce",
@@ -1167,7 +1229,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "creatordeck",
@@ -1185,7 +1248,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "includedhealth",
@@ -1203,7 +1267,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "equiphealth",
@@ -1221,7 +1286,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "knownwell",
@@ -1239,7 +1305,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "wonolo",
@@ -1257,7 +1324,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "Jasper AI",
@@ -1275,7 +1343,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "maximustribe",
@@ -1293,7 +1362,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "rula",
@@ -1311,7 +1381,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "hackerone",
@@ -1329,7 +1400,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "hims-and-hers",
@@ -1347,7 +1419,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "Nivoda",
@@ -1365,7 +1438,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "deel-wttj",
@@ -1383,7 +1457,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "omnipresent-wttj",
@@ -1401,7 +1476,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "apheris-wttj",
@@ -1419,7 +1495,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "findem-wttj",
@@ -1437,7 +1514,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "cleo-ai-wttj",
@@ -1455,7 +1533,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "founder-coach-wttj",
@@ -1473,7 +1552,8 @@
       "notes": "",
       "source": "historical_search",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "modus-create-wttj",
@@ -1491,7 +1571,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "remote-wttj",
@@ -1509,7 +1590,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "refurbed-wttj",
@@ -1527,7 +1609,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "qonto-wttj",
@@ -1545,7 +1628,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "invisible-tech-wttj",
@@ -1563,7 +1647,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "shamaazi-wttj",
@@ -1581,7 +1666,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "wise-wttj",
@@ -1599,7 +1685,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "affirm-wttj",
@@ -1617,7 +1704,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "recharge-wttj",
@@ -1635,7 +1723,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "grid-wttj",
@@ -1653,7 +1742,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "botify-wttj",
@@ -1671,7 +1761,8 @@
       "notes": "",
       "source": "search_expanded",
       "added": "2026-03-17",
-      "schema_origin": "v1_migrated"
+      "schema_origin": "v1_migrated",
+      "latam_relevance": "none"
     },
     {
       "slug": "plata",
@@ -1702,7 +1793,8 @@
       "notes": "Series C $405M @ $5B val (Apr 2026). Just received full Mexican bank license. Considering IPO. 3.5M+ credit card customers. Strong Combination Fit.",
       "source": "scenius_latam_ep173",
       "verification_note": "User reported HiBob - HRIS not ATS. Treat as unknown until careers page reverified.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "uala",
@@ -1736,7 +1828,8 @@
       "notes": "$195M round @ $3.2B val (Mar 2026). 11M+ customers AR/MX/CO. Launched Acciones (US equities investing for MX users via DriveWealth). Market entry/country lead roles likely.",
       "source": "scenius_latam_ep168",
       "verification_note": "User-verified Ashby. Slug needs verification.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "arq",
@@ -1765,7 +1858,8 @@
       "notes": "Series B $70M (Mar 2026). 2M+ users, $10B+ TPV. Building from cross-border product → full digital bank (wealth mgmt, credit, local-currency accounts).",
       "source": "scenius_latam_ep168",
       "verification_note": "User reported UltiPro - HRIS not ATS. Treat as unknown until reverified.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "somos-internet",
@@ -1798,7 +1892,8 @@
       "notes": "Series B $40M (Apr 2026). Medellín HQ, launching Mexico City as first international market = market entry role imminent. Enterprise clients include Mercado Libre, Rappi.",
       "source": "scenius_latam_ep171",
       "verification_note": "Zoho Recruit - not currently supported by API checker.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "kavak",
@@ -1831,7 +1926,8 @@
       "notes": "Series F $300M (Feb 2026). Mexico's first unicorn (2020). 120K transactions in 2025, first month of consolidated global profit Dec 2025. Fintech arm financed $1B+ in loans. Post-recovery growth mode = scope-heavy hiring expected.",
       "source": "scenius_latam_ep166",
       "verification_note": "User-verified Ashby. Slug needs verification.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "aplazo",
@@ -1857,7 +1953,8 @@
       "notes": "$50M credit line Mar 2026. 15,000+ commercial partners = partnerships function central. Mexican BNPL market $4B → $14B by 2031.",
       "source": "scenius_latam_ep170",
       "verification_note": "User reported N/A - no public careers page found.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "credismart",
@@ -1884,7 +1981,8 @@
       "notes": "$48M credit line (Apr 2026). 500K+ customers across CO/PE/BR. Brazil ops = Lusophone signal. Active regional expansion mode.",
       "source": "scenius_latam_ep172",
       "verification_note": "Notion-based careers page - not currently supported.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "tapi",
@@ -1911,7 +2009,8 @@
       "notes": "Series B $27M (Feb 2026). Reached profitability in 2025. Acquired Arcus assets from Mastercard. 250M+ transactions/year. Partnership-native (PayJoy integration).",
       "source": "scenius_latam_ep164",
       "verification_note": "User-verified Ashby. Slug needs verification.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "addi",
@@ -1938,7 +2037,8 @@
       "notes": "Just licensed as Colombian Compañía de Financiamiento. Regulatory transformation moment = operator hiring catalyst. Can now capture Fogafín-protected deposits. JD/regulatory Combination Fit strong.",
       "source": "scenius_latam_ep172",
       "verification_note": "User-verified Lever. Slug needs verification.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "dlocal",
@@ -1973,7 +2073,8 @@
       "notes": "Public. $1B+ revenue FY2025, $41B+ TPV, 40+ markets. Expanding Asia/Africa/MENA + new verticals. Highest Combination Fit: cross-border + institutional + regulated financial services.",
       "source": "scenius_latam_ep170",
       "verification_note": "User reported N/A - public co. likely Workday or in-house.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "fracttal",
@@ -2003,7 +2104,8 @@
       "notes": "$35M growth round Jan 2026. Just acquired Spanish TCMAN (35+ yrs Spanish market). Chile → Europe expansion = transatlantic bridge Combination Fit.",
       "source": "scenius_latam_ep173",
       "verification_note": "User-verified Ashby. Slug needs verification.",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "oxio",
@@ -2031,7 +2133,8 @@
       "status": "active",
       "notes": "Anchored $450M acquisition of Movistar Mexico (Apr 2026). Telecom-as-a-Service. Post-close integration = high-scope operator hiring. Very high Combination Fit: deal structuring + regulatory + cross-border.",
       "source": "scenius_latam_ep172",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "handle",
@@ -2059,7 +2162,8 @@
       "status": "active",
       "notes": "Seed $6M led by a16z (Mar 2026). Vertical AI agents for enterprise ops, insurance broker vertical first. Builder Bonus eligible (seed + a16z pedigree). Founding CoS/Ops pattern.",
       "source": "scenius_latam_ep169",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "lulo-bank",
@@ -2085,7 +2189,8 @@
       "status": "active",
       "notes": "Colombian digital bank. Mercado Libre partnership launched Mar 2026 = active partnerships function. Upgrade to Tier 1 if growth-stage with regional expansion confirmed.",
       "source": "scenius_latam_ep169",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "felix-pago",
@@ -2113,7 +2218,8 @@
       "status": "active",
       "notes": "WhatsApp-native US→LATAM remittance, no app download. Market-by-market expansion (DR latest, Apr 2026). Country lead/market entry = core function. Regulated cross-border = JD+finance Combination Fit.",
       "source": "scenius_latam_ep172",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "clara",
@@ -2141,7 +2247,8 @@
       "status": "active",
       "notes": "Mexican unicorn. $150M credit line (total $250M+ debt capacity). B2B corporate payments across MX/BR/CO. Brazil ops = Lusophone signal. Verticalized co-branded cards (Mastercard/L'Oréal).",
       "source": "scenius_latam_ep164",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "efex",
@@ -2172,7 +2279,8 @@
       "status": "active",
       "notes": "Seed $8M (Feb 2026). $1B+ payment volume 2025, 6x revenue growth. Mexico-US corridor focus. 140-country support. CNBV-authorized. Builder Bonus eligible (seed + builder-coded market entry).",
       "source": "scenius_latam_ep166",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "bravo",
@@ -2199,7 +2307,8 @@
       "status": "active",
       "notes": "Founded 2009. Operations across 6 countries. 500K debts settled, $1B+ managed, $300M+ credit originated. Debt settlement + credit division growth mode.",
       "source": "scenius_latam_ep166",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "naranja-x",
@@ -2225,7 +2334,8 @@
       "status": "active",
       "notes": "Filed Mexican bank license application Feb 2026 = market entry moment, mirroring Ualá path. Direct-operations shift from third-party arrangement. Country lead / market entry operator roles expected.",
       "source": "scenius_latam_ep164",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "kushki",
@@ -2250,7 +2360,8 @@
       "status": "active",
       "notes": "Ecuadorian paytech, partnership w/ Spreedly (global payment orchestration) Mar 2026. Cross-border merchant-facing business = partnerships-native.",
       "source": "scenius_latam_ep169",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "n5",
@@ -2277,7 +2388,8 @@
       "status": "active",
       "notes": "AI solutions for banks/fintechs/insurers. Regional expansion into Colombia Mar 2026. B2B to financial institutions = institutional-credibility Combination Fit.",
       "source": "scenius_latam_ep169",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "mambu",
@@ -2305,7 +2417,8 @@
       "status": "active",
       "notes": "German cloud banking platform expanding Payments Hub to Mexico Mar 2026. European HQ + LATAM expansion. Market entry moment for LATAM.",
       "source": "scenius_latam_ep168",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "kapital",
@@ -2330,7 +2443,8 @@
       "status": "active",
       "notes": "Mexican fintech unicorn. Moody's rating upgrades (A mx, Apr 2026). $1.2B loan portfolio, $2.9B deposits. B2B focus. Institutional-credibility Combination Fit.",
       "source": "scenius_latam_ep171",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "prestamype",
@@ -2355,7 +2469,8 @@
       "status": "active",
       "notes": "$27M total (bridge + credit line) Mar 2026. Mortgage-backed SME lending + factoring. Creating SAFI regulated fund vehicle = regulatory transformation moment.",
       "source": "scenius_latam_ep170",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "gangkhar",
@@ -2384,7 +2499,8 @@
       "status": "active",
       "notes": "Seed $4.25M Mar 2026. Global embedded insurance orchestration platform. $300B LATAM insurance deficit addressable. Builder Bonus candidate.",
       "source": "scenius_latam_ep170",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "lemontech",
@@ -2411,7 +2527,8 @@
       "status": "active",
       "notes": "Legal AI agent (LIA Memory) for timesheet automation. Peru expansion Apr 2026. Narrow product but LegalTech + JD Combination Fit worth monitoring.",
       "source": "scenius_latam_ep173",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "somos-evertec",
@@ -2440,7 +2557,8 @@
       "status": "active",
       "notes": "Just acquired Brazilian Dimensa for $181M (Feb 2026) — 4th Brazilian acquisition. B2B tech for 15K+ financial institutions. Post-acquisition integration = operator hiring. Lusophone exposure via Brazil consolidation strategy.",
       "source": "scenius_latam_ep164",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "quipu",
@@ -2466,7 +2584,8 @@
       "status": "active",
       "notes": "Pre-Series A $1.1M Feb 2026. Non-traditional credit scoring via API. Institutional partners: Nequi, Claro, Bancóldex, ProMujer. 300K+ scored. Stage-limited but institutional partnership scope real.",
       "source": "scenius_latam_ep168",
-      "schema_origin": "v2.2_new"
+      "schema_origin": "v2.2_new",
+      "latam_relevance": "none"
     },
     {
       "slug": "1inch",
@@ -2484,7 +2603,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "6sense",
@@ -2502,7 +2622,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "abbvie",
@@ -2521,7 +2642,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "adobe",
@@ -2539,7 +2661,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "aeratechnology",
@@ -2557,7 +2680,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "agent",
@@ -2575,7 +2699,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "aig",
@@ -2593,7 +2718,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "airalo",
@@ -2611,7 +2737,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ampleinsightinc",
@@ -2629,7 +2756,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "amplitude",
@@ -2647,7 +2775,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "anthropic",
@@ -2666,7 +2795,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "apog",
@@ -2684,7 +2814,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "applike",
@@ -2704,7 +2835,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "astralisfoundation",
@@ -2722,7 +2854,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bcgdv",
@@ -2740,7 +2873,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bdx",
@@ -2758,7 +2892,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "binance",
@@ -2779,7 +2914,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bjakcareer",
@@ -2797,7 +2933,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "blueorigin",
@@ -2815,7 +2952,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "canva",
@@ -2833,7 +2971,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "capellaspace",
@@ -2851,7 +2990,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "capitalone",
@@ -2869,7 +3009,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "captivateiq",
@@ -2887,7 +3028,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "careaccess",
@@ -2906,7 +3048,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cellular-intelligence",
@@ -2926,7 +3069,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "centivo",
@@ -2944,7 +3088,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "check",
@@ -2962,7 +3107,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "checkatrade",
@@ -2980,7 +3126,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "clio",
@@ -2998,7 +3145,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cohere",
@@ -3016,7 +3164,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "collegeboard",
@@ -3034,7 +3183,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cgsfederal",
@@ -3052,7 +3202,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "curri",
@@ -3070,7 +3221,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "customerio",
@@ -3088,7 +3240,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cyrusone",
@@ -3106,7 +3259,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "dcard",
@@ -3124,7 +3278,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "delphina",
@@ -3142,7 +3297,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "directive",
@@ -3163,7 +3319,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "distro",
@@ -3181,7 +3338,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "doinstruct",
@@ -3202,7 +3360,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "donorschoose",
@@ -3220,7 +3379,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "downingcapitalgroup",
@@ -3238,7 +3398,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "earthspecies",
@@ -3256,7 +3417,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ebanx",
@@ -3276,7 +3438,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "edpuzzle",
@@ -3294,7 +3457,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "educate",
@@ -3312,7 +3476,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "eliseai",
@@ -3330,7 +3495,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "equip",
@@ -3350,7 +3516,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fairandjustprosecution",
@@ -3368,7 +3535,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ffive",
@@ -3386,7 +3554,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fireeyeinc1",
@@ -3404,7 +3573,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "flashdot",
@@ -3422,7 +3592,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "flex",
@@ -3443,7 +3614,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "flvs",
@@ -3461,7 +3633,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "flywire1",
@@ -3479,7 +3652,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fsg",
@@ -3497,7 +3671,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "futureof-life",
@@ -3517,7 +3692,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "galileofinancialtechnologies",
@@ -3535,7 +3711,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gamechanger",
@@ -3553,7 +3730,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "garnerhealth",
@@ -3573,7 +3751,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "getnextstep",
@@ -3591,7 +3770,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gilead",
@@ -3609,7 +3789,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "globalstrategygroup",
@@ -3629,7 +3810,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "guardanthealth",
@@ -3647,7 +3829,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "honeycomb",
@@ -3665,7 +3848,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "hopper",
@@ -3683,7 +3867,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "hostinger",
@@ -3701,7 +3886,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "humanagency",
@@ -3719,7 +3905,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "husqvarnagroup",
@@ -3737,7 +3924,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "icapitalnetwork",
@@ -3755,7 +3943,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "icf",
@@ -3773,7 +3962,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "immutable",
@@ -3791,7 +3981,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "infobip",
@@ -3809,7 +4000,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "intapp",
@@ -3827,7 +4019,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "istaridigital.ai",
@@ -3847,7 +4040,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "jdcom",
@@ -3865,7 +4059,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tryjeeves",
@@ -3885,7 +4080,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "jobgether",
@@ -3903,7 +4099,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "joinbetter",
@@ -3921,7 +4118,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "karat",
@@ -3939,7 +4137,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "katapult-labs",
@@ -3957,7 +4156,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kayak",
@@ -3975,7 +4175,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kimarutalent",
@@ -3993,7 +4194,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kit",
@@ -4011,7 +4213,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kraken.com",
@@ -4029,7 +4232,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "la2028",
@@ -4047,7 +4251,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "latamcent",
@@ -4065,7 +4270,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "latitudeinc",
@@ -4083,7 +4289,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "leagueinc",
@@ -4103,7 +4310,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "leovegascom",
@@ -4121,7 +4329,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "livanova",
@@ -4139,7 +4348,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "liveperson",
@@ -4157,7 +4367,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "lovable",
@@ -4175,7 +4386,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "loyal36",
@@ -4193,7 +4405,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "luxurypresence",
@@ -4212,7 +4425,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "machinifyinc",
@@ -4232,7 +4446,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "maintainx",
@@ -4254,7 +4469,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "mastercard",
@@ -4272,7 +4488,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "masterclass",
@@ -4290,7 +4507,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "matterport",
@@ -4308,7 +4526,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "mercury",
@@ -4329,7 +4548,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "meridianlink",
@@ -4349,7 +4569,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "mimica",
@@ -4369,7 +4590,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "monumental",
@@ -4387,7 +4609,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "newrelic",
@@ -4405,7 +4628,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nextech",
@@ -4423,7 +4647,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nordsec",
@@ -4441,7 +4666,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "northwoodspace",
@@ -4459,7 +4685,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nvidia",
@@ -4477,7 +4704,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "omio1",
@@ -4495,7 +4723,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ondeck",
@@ -4513,7 +4742,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ondofinance",
@@ -4531,7 +4761,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "openai",
@@ -4549,7 +4780,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "opendoor",
@@ -4567,7 +4799,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "opploans",
@@ -4587,7 +4820,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "orcristtechnologies",
@@ -4605,7 +4839,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "oura",
@@ -4626,7 +4861,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "outschool",
@@ -4644,7 +4880,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "palantir",
@@ -4665,7 +4902,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pano-ai",
@@ -4684,7 +4922,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "paradigminccareersopenpositions",
@@ -4703,7 +4942,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "careersatpeakenergy",
@@ -4721,7 +4961,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pebl",
@@ -4741,7 +4982,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "playco",
@@ -4759,7 +5001,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "postman",
@@ -4777,7 +5020,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ppro",
@@ -4795,7 +5039,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "project-expedition",
@@ -4813,7 +5058,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "propertyfinder",
@@ -4831,7 +5077,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "prove",
@@ -4849,7 +5096,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "public",
@@ -4867,7 +5115,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "radiant-industries",
@@ -4887,7 +5136,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "rapidai",
@@ -4905,7 +5155,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "reaktor",
@@ -4923,7 +5174,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "realself",
@@ -4941,7 +5193,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "recursionpharmaceuticals",
@@ -4963,7 +5216,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "red-gate",
@@ -4981,7 +5235,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "redhat",
@@ -4999,7 +5254,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "remofirst",
@@ -5019,7 +5275,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "replit",
@@ -5037,7 +5294,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "revenuecat",
@@ -5055,7 +5313,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "runpod",
@@ -5074,7 +5333,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sambatv",
@@ -5092,7 +5352,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "samsara",
@@ -5110,7 +5371,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "savantbio",
@@ -5128,7 +5390,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "scalablecapitalgmbh",
@@ -5146,7 +5409,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "securitize",
@@ -5164,7 +5428,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sensortower",
@@ -5182,7 +5447,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "servicenow",
@@ -5200,7 +5466,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "seven-starling",
@@ -5219,7 +5486,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "shopify",
@@ -5237,7 +5505,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "solidcore",
@@ -5255,7 +5524,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sprypointservices",
@@ -5273,7 +5543,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "square",
@@ -5291,7 +5562,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "standtogether",
@@ -5309,7 +5581,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "stealth",
@@ -5327,7 +5600,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "stripe",
@@ -5345,7 +5619,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sullyai",
@@ -5363,7 +5638,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "summer",
@@ -5381,7 +5657,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tandem-health",
@@ -5399,7 +5676,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tebra",
@@ -5421,7 +5699,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "techstars57",
@@ -5439,7 +5718,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "theorchard",
@@ -5457,7 +5737,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "toptal",
@@ -5475,7 +5756,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "trm-labs",
@@ -5493,7 +5775,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "truecaller",
@@ -5511,7 +5794,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "trustedhealth",
@@ -5529,7 +5813,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "twilio",
@@ -5548,7 +5833,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ubiminds",
@@ -5567,7 +5853,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "unlimit",
@@ -5588,7 +5875,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "upbound",
@@ -5606,7 +5894,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "upboundext",
@@ -5624,7 +5913,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "upvest",
@@ -5642,7 +5932,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "vanta",
@@ -5660,7 +5951,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "venafi",
@@ -5678,7 +5970,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "verkada",
@@ -5697,7 +5990,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "visa",
@@ -5716,7 +6010,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "vrtx",
@@ -5734,7 +6029,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "vsp",
@@ -5752,7 +6048,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "warp",
@@ -5770,7 +6067,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "washpost",
@@ -5788,7 +6086,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "webflow",
@@ -5807,7 +6106,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wellcome",
@@ -5825,7 +6125,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wemolo",
@@ -5843,7 +6144,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "whatnot",
@@ -5863,7 +6165,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wheel",
@@ -5881,7 +6184,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wikimedia",
@@ -5899,7 +6203,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27. [JD-enriched 2026-04-27]",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wise",
@@ -5917,7 +6222,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "worldwide",
@@ -5935,7 +6241,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "xero",
@@ -5953,7 +6260,8 @@
       "notes": "Auto-discovered via Google search 2026-04-27.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "newsela",
@@ -5971,7 +6279,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sparkadvisors",
@@ -5989,7 +6298,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gympass",
@@ -6007,7 +6317,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "purestorage",
@@ -6025,7 +6336,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gleanwork",
@@ -6043,7 +6355,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "addepar1",
@@ -6061,7 +6374,8 @@
       "notes": "Auto-discovered via Google search 2026-04-30.",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-30",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "array",
@@ -6079,7 +6393,8 @@
       "notes": "Fintech credit/identity API platform. CoS role applied 2026-04-30 by Joey.",
       "source": "manual_application_track",
       "added": "2026-04-30",
-      "schema_origin": "v2.3.1"
+      "schema_origin": "v2.3.1",
+      "latam_relevance": "none"
     },
     {
       "slug": "abridge",
@@ -6097,7 +6412,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "affirm",
@@ -6115,7 +6431,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "agile-defense",
@@ -6133,7 +6450,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "airspace-intelligence.com",
@@ -6151,7 +6469,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "alaro",
@@ -6169,7 +6488,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "alephalpha",
@@ -6187,7 +6507,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "articulate",
@@ -6205,7 +6526,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "asapp-2",
@@ -6223,7 +6545,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "atlan",
@@ -6241,7 +6564,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bluelabsanalyticsinc",
@@ -6259,7 +6583,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cargo-one",
@@ -6277,7 +6602,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "caribou",
@@ -6295,7 +6621,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "chief",
@@ -6313,7 +6640,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cprime",
@@ -6331,7 +6659,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "crypto",
@@ -6349,7 +6678,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "danaher",
@@ -6367,7 +6697,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "dataleap",
@@ -6385,7 +6716,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "deezer",
@@ -6403,7 +6735,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "dept",
@@ -6421,7 +6754,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wearedream",
@@ -6439,7 +6773,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "duet",
@@ -6457,7 +6792,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "easygenerator",
@@ -6475,7 +6811,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "joinefnow",
@@ -6493,7 +6830,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "eurofins",
@@ -6511,7 +6849,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fern",
@@ -6529,7 +6868,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "foundersfactory",
@@ -6547,7 +6887,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fresha",
@@ -6565,7 +6906,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "globalenergyallianceforpeopleandplanetgeappllc",
@@ -6583,7 +6925,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "grindr%20llc",
@@ -6601,7 +6944,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gsma",
@@ -6619,7 +6963,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "handshake",
@@ -6637,7 +6982,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "harvey",
@@ -6655,7 +7001,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "havocai",
@@ -6673,7 +7020,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "imubit",
@@ -6691,7 +7039,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "insify",
@@ -6709,7 +7058,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "jasper%20ai",
@@ -6727,7 +7077,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "juullabs",
@@ -6745,7 +7096,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "koahlabs",
@@ -6763,7 +7115,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "employerdirecthealthcare",
@@ -6781,7 +7134,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "launchdarkly",
@@ -6799,7 +7153,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "legora",
@@ -6817,7 +7172,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "lemon-markets",
@@ -6835,7 +7191,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "linkedin3",
@@ -6853,7 +7210,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "loopio",
@@ -6871,7 +7229,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "lseg",
@@ -6889,7 +7248,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "m-kopa",
@@ -6907,7 +7267,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "navexglobal",
@@ -6925,7 +7286,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "neon",
@@ -6943,7 +7305,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "netic",
@@ -6961,7 +7324,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nuitee",
@@ -6979,7 +7343,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "odysseyml",
@@ -6997,7 +7362,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "one-pass-solutions",
@@ -7015,7 +7381,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pacificfusion",
@@ -7033,7 +7400,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "publicisgroupe",
@@ -7051,7 +7419,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "qualtrics",
@@ -7069,7 +7438,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "radiant",
@@ -7087,7 +7457,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "relx",
@@ -7105,7 +7476,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "remotereferralboardinternaluseonly",
@@ -7123,7 +7495,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "rescale",
@@ -7141,7 +7514,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "salesforce",
@@ -7159,7 +7533,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "saviynt",
@@ -7177,7 +7552,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "scopear",
@@ -7195,7 +7571,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sierra",
@@ -7213,7 +7590,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sisu",
@@ -7231,7 +7609,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "smartrecruiters",
@@ -7249,7 +7628,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "statista",
@@ -7267,7 +7647,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "superpower",
@@ -7285,7 +7666,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tempus",
@@ -7303,7 +7685,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "generalintelligencecompany",
@@ -7321,7 +7704,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "thehartford",
@@ -7339,7 +7723,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tides",
@@ -7357,7 +7742,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "trustly",
@@ -7375,7 +7761,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ttecdigital",
@@ -7393,7 +7780,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "websummit",
@@ -7411,7 +7799,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wetravel",
@@ -7429,7 +7818,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "withcoverage",
@@ -7447,7 +7837,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "workwave",
@@ -7465,7 +7856,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wrapbook",
@@ -7483,7 +7875,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "yummysuperapp",
@@ -7501,7 +7894,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "zeromark",
@@ -7519,7 +7913,8 @@
       "notes": "Auto-discovered via Google search 2026-05-04.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-04",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "anduril",
@@ -7553,7 +7948,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS not detected via standard endpoints; likely proprietary careers page. Verify manually.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "brex",
@@ -7587,7 +7983,8 @@
       "notes": "Brazilian founders give natural Lusophone connection. Hiring international as expanding corporate cards globally.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "plaid",
@@ -7619,7 +8016,8 @@
       "notes": "EMEA expansion ongoing. Banking infrastructure - aligns with SVB/JPM background.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "carta",
@@ -7652,7 +8050,8 @@
       "notes": "International cap table/equity management. Growing in EU.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "ramp",
@@ -7684,7 +8083,8 @@
       "notes": "Corporate spend platform. International expansion forthcoming. Operator-friendly culture.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "notion",
@@ -7716,7 +8116,8 @@
       "notes": "Global remote-first culture. Hires Country Managers across geographies. Strong international flex.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "hubspot",
@@ -7746,7 +8147,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely Workday at hubspot.wd5.myworkdayjobs.com - verify exact subdomain.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "cloudflare",
@@ -7774,7 +8176,8 @@
       "notes": "Lisbon office, hires European GMs. Public company so equity is liquid.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "snyk",
@@ -7807,7 +8210,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS not detected via standard endpoints - verify careers page manually.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "klarna",
@@ -7839,7 +8243,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely SmartRecruiters - verify slug.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "revolut",
@@ -7871,7 +8276,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS not detected - likely proprietary or Workday. Verify careers page.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "mercadolibre",
@@ -7903,7 +8309,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS likely proprietary - careers.mercadolibre.com.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "nubank",
@@ -7936,7 +8343,8 @@
       "notes": "Brazilian neobank. Hires for Brazil + Mexico + Colombia expansion. Banking pedigree is the wedge.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "rappi",
@@ -7972,7 +8380,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS likely proprietary - verify careers page.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "konfio",
@@ -8003,7 +8412,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS not detected - verify careers page.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "bitso",
@@ -8036,7 +8446,8 @@
       "notes": "Mexico/LATAM crypto exchange. Worth knowing but Joey skips crypto - keep informational only.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "coursera",
@@ -8065,7 +8476,8 @@
       "notes": "Global edtech with active LATAM expansion.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "mural",
@@ -8094,7 +8506,8 @@
       "notes": "Argentine-rooted collaboration platform. Remote-first.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "wildlife-studios",
@@ -8124,7 +8537,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Greenhouse slug is \"wildlifestudios\" not \"wildlife-studios\".",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "zapier",
@@ -8152,7 +8566,8 @@
       "notes": "All-remote since founding. Has hired GM-style roles. Strong international flex.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "automattic",
@@ -8183,7 +8598,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Proprietary careers page - verify ATS.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "doist",
@@ -8210,7 +8626,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Proprietary careers page.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "hashicorp",
@@ -8236,7 +8653,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Post-IBM acquisition - check if hiring is now via IBM Workday or still independent.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "datadog",
@@ -8263,7 +8681,8 @@
       "notes": "Global operations. Hires GMs for verticals/regions. Public company.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "atlassian",
@@ -8289,7 +8708,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Proprietary careers page - verify ATS.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "pilot",
@@ -8322,7 +8742,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Greenhouse slug is \"pilothq\" not \"pilot\".",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "drata",
@@ -8350,7 +8771,8 @@
       "notes": "GM-style roles by industry for compliance market segments.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "tekever",
@@ -8379,7 +8801,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "European company - likely SmartRecruiters or proprietary. Verify.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "feedzai",
@@ -8411,7 +8834,8 @@
       "notes": "Portuguese AI fraud prevention. Expanding internationally. Hires US senior operators. Strong Lusophone exposure.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "outsystems",
@@ -8440,7 +8864,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely Workday - verify exact subdomain.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "talkdesk",
@@ -8470,7 +8895,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely Greenhouse historically - verify slug variations.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "unbabel",
@@ -8501,7 +8927,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely Lever historically - verify.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "farfetch",
@@ -8527,7 +8954,8 @@
       "notes": "Portuguese luxury e-commerce (now privately held under Coupang). Hires for international roles.",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "sword-health",
@@ -8559,7 +8987,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Lever slug is \"swordhealth\" not \"sword-health\".",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "mercadopago",
@@ -8588,7 +9017,8 @@
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "Likely shares Mercado Libre proprietary careers infrastructure.",
       "schema_origin": "v2.3",
-      "added": "2026-05-04"
+      "added": "2026-05-04",
+      "latam_relevance": "none"
     },
     {
       "slug": "activecampaign",
@@ -8606,7 +9036,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "aecom2",
@@ -8624,7 +9055,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "alembic",
@@ -8642,7 +9074,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "alethea",
@@ -8660,7 +9093,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "arlo",
@@ -8678,7 +9112,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "aspora",
@@ -8696,7 +9131,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "athenahealth",
@@ -8714,7 +9150,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "averydennison",
@@ -8732,7 +9169,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "betterhelpcom",
@@ -8750,7 +9188,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "biogen",
@@ -8768,7 +9207,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bonterra",
@@ -8786,7 +9226,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "brightmachines",
@@ -8804,7 +9245,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "broadridge",
@@ -8822,7 +9264,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "bullpen-talent",
@@ -8840,7 +9283,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cerence",
@@ -8858,7 +9302,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "clarityinnovates",
@@ -8876,7 +9321,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "claritypediatrics",
@@ -8894,7 +9340,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "coke",
@@ -8912,7 +9359,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "coverahealth",
@@ -8930,7 +9378,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cygnify",
@@ -8948,7 +9397,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ema",
@@ -8966,7 +9416,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "enpalbv",
@@ -8984,7 +9435,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "etched",
@@ -9002,7 +9454,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "experian",
@@ -9020,7 +9473,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "globe",
@@ -9038,7 +9492,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gridcare",
@@ -9056,7 +9511,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "intel",
@@ -9074,7 +9530,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "jll",
@@ -9092,7 +9549,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "joko",
@@ -9110,7 +9568,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kar",
@@ -9128,7 +9587,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "loadsmart",
@@ -9146,7 +9606,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "loftorbital",
@@ -9164,7 +9625,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "103644278",
@@ -9182,7 +9644,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "matchgroup",
@@ -9200,7 +9663,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "matia",
@@ -9218,7 +9682,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "motorolasolutions",
@@ -9236,7 +9701,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nasdaq",
@@ -9254,7 +9720,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "okx",
@@ -9272,7 +9739,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ontic",
@@ -9290,7 +9758,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "opswat",
@@ -9308,7 +9777,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "organon",
@@ -9326,7 +9796,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "outreach",
@@ -9344,7 +9815,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "paloaltonetworks2",
@@ -9362,7 +9834,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "qualytics",
@@ -9380,7 +9853,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "quince",
@@ -9398,7 +9872,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "riministreet",
@@ -9416,7 +9891,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "rubrik",
@@ -9434,7 +9910,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "seek",
@@ -9452,7 +9929,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sprinto",
@@ -9470,7 +9948,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "stblaw",
@@ -9488,7 +9967,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "suno",
@@ -9506,7 +9986,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sunrun",
@@ -9524,7 +10005,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "swordhealth",
@@ -9542,7 +10024,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "talentsafari",
@@ -9560,7 +10043,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "talentmanagementsolution",
@@ -9578,7 +10062,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "teneo",
@@ -9596,7 +10081,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "thequalitygroupgmbh1",
@@ -9614,7 +10100,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tracer",
@@ -9632,7 +10119,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "veeamsoftware",
@@ -9650,7 +10138,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "web",
@@ -9668,7 +10157,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "westernunion",
@@ -9686,7 +10176,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wizinc",
@@ -9704,7 +10195,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "xsolla",
@@ -9722,7 +10214,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "youcom",
@@ -9740,7 +10233,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "zillow",
@@ -9758,7 +10252,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "zip",
@@ -9776,7 +10271,8 @@
       "notes": "Auto-discovered via Google search 2026-05-07.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-07",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ajua",
@@ -9794,7 +10290,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "alphasense",
@@ -9812,7 +10309,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "aptura",
@@ -9830,7 +10328,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "arch",
@@ -9848,7 +10347,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "basis-research",
@@ -9866,7 +10366,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "blueland",
@@ -9884,7 +10385,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "broadcom",
@@ -9902,7 +10404,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "careervillage",
@@ -9920,7 +10423,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "coins",
@@ -9938,7 +10442,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "colemanresearch",
@@ -9956,7 +10461,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "comulate",
@@ -9974,7 +10480,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "dentsu",
@@ -9992,7 +10499,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "duckcreek",
@@ -10010,7 +10518,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "dudeperfect",
@@ -10028,7 +10537,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ecosia.org",
@@ -10046,7 +10556,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "meetelise",
@@ -10064,7 +10575,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "exa",
@@ -10082,7 +10594,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fastino-ai",
@@ -10100,7 +10613,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fleetio",
@@ -10118,7 +10632,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "formationbio",
@@ -10136,7 +10651,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "fullscript",
@@ -10154,7 +10670,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "galvanick",
@@ -10172,7 +10689,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "genpeach",
@@ -10190,7 +10708,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "gocardless",
@@ -10208,7 +10727,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "hive",
@@ -10226,7 +10746,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "industrious",
@@ -10244,7 +10765,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "thejacksonlaboratory",
@@ -10262,7 +10784,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "justworks",
@@ -10280,7 +10803,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "kong",
@@ -10298,7 +10822,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "manomano",
@@ -10316,7 +10841,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "modernatx",
@@ -10334,7 +10860,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "mytomorrows",
@@ -10352,7 +10879,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ogury",
@@ -10370,7 +10898,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "onehouse",
@@ -10388,7 +10917,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "p72pi",
@@ -10406,7 +10936,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "partly.com",
@@ -10424,7 +10955,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pattern",
@@ -10442,7 +10974,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "payjoy",
@@ -10460,7 +10993,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "photoroom",
@@ -10478,7 +11012,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pigment",
@@ -10496,7 +11031,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "pragmatico",
@@ -10514,7 +11050,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "promptfoo",
@@ -10532,7 +11069,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "protege",
@@ -10550,7 +11088,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "quillbot",
@@ -10568,7 +11107,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "reddit",
@@ -10586,7 +11126,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "retell-ai",
@@ -10604,7 +11145,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "righthandtalent",
@@ -10622,7 +11164,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "rover",
@@ -10640,7 +11183,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "ruggable",
@@ -10658,7 +11202,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "saronic",
@@ -10676,7 +11221,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "scaledagileinc",
@@ -10694,7 +11240,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "similarweb",
@@ -10712,7 +11259,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "sonarsource",
@@ -10730,7 +11278,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "strongpointpartners",
@@ -10748,7 +11297,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tilt",
@@ -10766,7 +11316,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "tin-can",
@@ -10784,7 +11335,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "trashie",
@@ -10802,7 +11354,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "umdaschgroup",
@@ -10820,7 +11373,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "unitedtalent",
@@ -10838,7 +11392,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "weworkglobalit",
@@ -10856,7 +11411,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wheely",
@@ -10874,7 +11430,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "woundedwarriorproject",
@@ -10892,7 +11449,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "wpp",
@@ -10910,7 +11468,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "writer",
@@ -10928,7 +11487,8 @@
       "notes": "Auto-discovered via Google search 2026-05-11.",
       "source": "auto_discovery_v2.3",
       "added": "2026-05-11",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "americasfrontierfund",
@@ -10946,7 +11506,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "appdirect",
@@ -10964,7 +11525,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "apptegy",
@@ -10982,7 +11544,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "arbitrumfoundation",
@@ -11000,7 +11563,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "battle-creek-games",
@@ -11018,7 +11582,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "cbinsights",
@@ -11036,7 +11601,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "celofoundation",
@@ -11054,7 +11620,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "collective",
@@ -11072,7 +11639,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "continuumglobal",
@@ -11090,7 +11658,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "deliveroo",
@@ -11108,7 +11677,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "duolingo",
@@ -11126,7 +11696,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "joinforage",
@@ -11144,7 +11715,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "givedirectly",
@@ -11162,7 +11734,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "goguardian",
@@ -11180,7 +11753,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "grafanalabs",
@@ -11198,7 +11772,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "inmobi",
@@ -11216,7 +11791,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "medier",
@@ -11234,7 +11810,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "miter",
@@ -11252,7 +11829,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nava",
@@ -11270,7 +11848,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "nielseniq",
@@ -11288,7 +11867,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "parker",
@@ -11306,7 +11886,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "reltio",
@@ -11324,7 +11905,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "thedispatch",
@@ -11342,7 +11924,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "decilegroup",
@@ -11360,7 +11943,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "viabill",
@@ -11378,7 +11962,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "vistar",
@@ -11396,7 +11981,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     },
     {
       "slug": "weedmaps77",
@@ -11414,7 +12000,8 @@
       "notes": "Auto-discovered via Google search 2026-06-10.",
       "source": "auto_discovery_v2.3",
       "added": "2026-06-10",
-      "schema_origin": "v2.3"
+      "schema_origin": "v2.3",
+      "latam_relevance": "none"
     }
   ]
 }

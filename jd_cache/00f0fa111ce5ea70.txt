@@ -1,0 +1,64 @@
+Client Strategy & Operations Manager
+Location
+Remote - NY
+Employment Type
+Full time
+Location Type
+Remote
+Department
+Client Success
+Compensation
+$120K – $150K • Offers Equity
+Overview
+Application
+About Pivotal Health
+Pivotal Health is the leading technology platform that helps healthcare providers get paid fairly in an increasingly complex reimbursement landscape.
+Today, many providers face persistent underpayment from health insurance companies, despite delivering high-quality care. While processes like IDR (Independent Dispute Resolution) were designed to promote fairness, they’re often administrative-heavy, time-consuming, and difficult to navigate without the right tools.
+Pivotal Health combines software, data, and service into a seamlessly integrated, AI-driven platform that simplifies these complex reimbursement workflows. We help providers efficiently dispute underpaid claims, reduce administrative burden, and recover the reimbursement they’re entitled to; without adding more work to already stretched teams.
+Our full-service IDR solution is just the starting point. We’re building solutions that enable providers to operate with clarity, control, and confidence across the reimbursement journey.
+About the Role
+Pivotal Health is looking for a Client Strategy and Operations Manager to own the operational and strategic engine behind our most complex client relationships- large health systems and hospitals. You’ll manage a portfolio of high-value enterprise pods, serving as the strategic and technical owner of how those clients are operated against day-to-day. You’ll combine deep data fluency, hands-on technical ownership, and senior client presence to surface issues before clients raise them, turn operational signal into client-facing strategy, and design the playbooks the rest of the team uses as we scale. This is a high-impact, hands-on role at a high-growth startup where your operating decisions will shape how Pivotal scales into the hospital and health system segment. This is an individual contributor role, not a managerial role.
+What You’ll Do
+Own end-to-end client operations for a portfolio of large health system and hospital clients- proactively monitoring data, surfacing trends, and resolving issues (file delivery issues, ineligibility spikes, payment anomalies, data quality gaps) before they become client-raised escalations.
+Work closely with implementations teams to understand the nuances and complexity of each clients setup and be the point person after go live for ensuring continued implementation quality
+Use Metabase, BigQuery, and our internal reporting tools to turn operational signal into client-facing strategy: AR aging deep-dives, ineligibility analyses, and executive-ready process recommendations. Build dashboards to surface important information in a timely manner, and then act on it.
+Serve as a credible strategic counterpart to our Client Success team partners and our clients- walking into every conversation with a recommendation, not just data. You are not just fixing things that break, you are a strategic partner with ideas on how we can move the lever for our clients
+Partner cross-functionally on IDR strategy and payer compliance work, leading special projects across the company and org that push our IDR model forward
+Mentor analysts on the team, contribute to playbooks and onboarding documentation, and consistently work to improve our internal processes, always focused on building an operating system that lets CS&O scale.
+Who You Are
+4–6 years in a client-facing operations, strategy, or analytics role such as Client Strategy & Operations, Implementation, or Account Management; experience in either healthtech, RCM, IDR, payer/provider, or healthcare-adjacent enterprise SaaS is required.
+Direct experience working with or inside large health systems and hospitals is required. You understand how a hospital revenue cycle actually runs, how its data actually flows, and what the nuances to working with health systems are. You bring SME level experience and are excited to take on incorporating your experience into our product.
+Strong SQL fluency, with comfort in BigQuery (or equivalent) and dashboarding tools like Metabase, Looker, or Tableau.
+Exceptional communication and presentation skills, with the ability to influence and build trusted relationships with C-level stakeholders and translate complex data findings into one-paragraph executive insights.
+Strategic and proactive mindset, with proven ability to manage high-value accounts, drive measurable outcomes, and mitigate risks before they escalate.
+Demonstrated success leading cross-functional initiatives and complex client implementations, with strong project management and operational excellence skills.
+Experienced mentor and team contributor who thrives in high-growth, fast-paced environments.
+Extra Credit Experience
+Experience at a Series A or early-stage startup
+Experience working with the Independent Dispute Resolution process (IDR)
+Why You’ll Love Working Here
+We’re a collaborative, low-ego team on a mission to make healthcare reimbursement fairer for providers. While we primarily hire around our core hubs–Los Angeles and New York–we remain open to exceptional talent outside those regions. Remote and hybrid flexibility varies by role and team, and is outlined in each job description.
+If you’re excited by solving complex problems and making a real-world impact, we’d love to hear from you.
+Benefits Include:
+Competitive compensation, including equity
+Full health, dental, and vision coverage
+Retirement savings plan through 401(k)
+Flexible time off
+Opportunities for company-wide connection and events
+Ready to Make an Impact?
+We’re building something meaningful; and we want you on the team.
+Bring your ideas, curiosity, and drive, and let’s transform healthcare reimbursement together.
+Employment Information
+Work Authorization
+Candidates must be authorized to work in the United States without current or future employer sponsorship.
+Equal Employment Opportunity
+Pivotal Health is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate on the basis of race, color, religion, sex, gender identity or expression, sexual orientation, national origin, age, disability, veteran status, or any other legally protected status.
+Reasonable Accommodations
+Pivotal Health provides reasonable accommodations for qualified individuals with disabilities in accordance with applicable laws. If you need assistance during the application or interview process, please let us know.
+Background Checks
+Employment is contingent upon successful completion of applicable background checks, where permitted by law.
+At-Will Employment
+Employment with Pivotal Health is at-will and may be terminated by either party at any time, with or without cause or notice, in accordance with applicable law.
+Apply for this Job
+Powered by
+Privacy PolicySecurityVulnerability Disclosure

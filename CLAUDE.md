@@ -95,20 +95,45 @@ CLAUDE.md                          this file
 Core/HANDOFF_ROADMAP_v4_Claude_Code.md   full phase plan
 Core/STRATEGY_ADDENDUM_v4.md       sourcing strategy (LinkedIn, diff, boards, SerpAPI)
 config/joey_profile.yaml           consolidated search config (Phase 0)
-prompts/score_jd_v4.md             locked scoring prompt (Phase 2)
+config/load_profile.py             validates profile.yaml, fails loudly on missing keys
+prompts/score_jd_v4.md             locked scoring prompt (Phase 2, not yet wired into run.py)
 resume/Joey_Clark_Resume_4-25_FINAL.pdf
-searches/joey/companies.json       live corpus (587 companies as of 2026-06-10)
-searches/joey/ats_api_checker.py   transitional checker; superseded by JC3/run.py in Phase 1
+scripts/corpus_append.py           appends new companies to companies.json (disqualifier-filtered)
+scripts/classify_url.py            URL -> {ats, slug, job_id, url_type}; corpus_append.py dependency
+scripts/disqualifiers.json         corpus_append.py's disqualifier rules
+searches/joey/companies.json       live corpus (587 companies as of 2026-06-10; latam_relevance
+                                    field added Phase 1, default "none" for all — no backfill
+                                    source found, confirmed with Joey to leave as-is)
+searches/joey/ats_api_checker.py   transitional; superseded by JC3/discover.py (Phase 1, built)
 searches/archive/                  old prompts, deprecated scripts, Phase 0 backups — reference only
 searches/For_Others/               frozen v5.x friends track — do not modify
-results/joey/LATAM/                v4 run output (Phase 1+)
+JC3/run.py                         Phase 1 orchestrator — the roadmap's target command, built+verified
+JC3/discover.py                    primary (ATS API sweep) + secondary (SmartRecruiters) + tertiary
+                                    (stub — real recall sources are Phase 3, not built)
+JC3/diff.py                        week-over-week/daily-new detection (Strategy Addendum §2)
+JC3/health.py                      URL health check, runs before JD fetch, non-API rows only
+JC3/fetch_jds.py                   full JD text fetch, requests + Playwright fallback
+JC3/package.py                     dedup + NEW/REPEAT + CSV/XLSX packaging
+jd_cache/                          cached JD text, keyed by sha256(url)[:16]
+snapshots/                         diff.py's daily API-result snapshots
+results/joey/LATAM/                v4 run output (Phase 1+), one Week_of_ folder per run
+results/joey/Master_LATAM_Joey.csv running master list, NEW/REPEAT tracked by URL
 results/For_Others/                frozen v5.x friends track — do not modify
 ```
 
 ## Run commands
 
-- Target (Phase 1, not yet built): `python3 JC3/run.py --user joey --variant latam`
-- Current (Phase 0 smoke test): `python3 searches/joey/ats_api_checker.py`
+- Full weekly run: `python3 JC3/run.py --user joey --variant latam` — built and verified
+  end-to-end against real data (Phase 1, 2026-07-20): 114 companies checked, 3166 jobs
+  scanned, 14/15 JDs fetched successfully (93%, above the 80% floor), branded XLSX +
+  Master CSV produced.
+- Daily fast sweep (no JD fetch/scoring, ~2-3 min, no model tokens): `python3 JC3/run.py
+  --user joey --variant latam --fresh-only`
+- Individual stages are also directly runnable: `python3 JC3/discover.py`, `JC3/diff.py`,
+  `JC3/health.py`, `JC3/fetch_jds.py`, `JC3/package.py` — each finds the current week's
+  input automatically if run standalone.
+- Scoring is not wired in yet: `prompts/score_jd_v4.md` exists (locked) but `score.py`
+  (Phase 2) hasn't been built. `run.py` completes after `package.py` and says so plainly.
 
 ## Reserved decisions — do not decide autonomously
 
