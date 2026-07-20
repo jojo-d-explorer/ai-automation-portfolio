@@ -135,9 +135,15 @@ JC3/portfolio_boards.py            Phase 3 (Strategy Addendum §3). Of the adden
                                     monashees, NXTP, Valor Capital Group, Atlantico, Nazca, SoftBank
                                     Latin America, Founders Fund, ALLVP (which appears to have
                                     rebranded to "Hi Ventures" — allvp.mx now redirects to hi.vc).
-                                    Do not hardcode guesses for these without new information. Only
-                                    captures each board's first page of results (no pagination yet).
-                                    Not yet wired into discover.py/run.py.
+                                    Do not hardcode guesses for these without new information. Fetches
+                                    the API's max batch size (1000) per board in one in-page fetch
+                                    call rather than the page's own default 15-job load — exhaustive
+                                    for Kaszek (912) and Endeavor (0), large-but-partial sample for
+                                    QED (~1463) and a16z (~15,455). True offset pagination isn't
+                                    supported by the endpoint (from/page/offset are all no-ops;
+                                    results are relevance-scored, not stably ordered). Verified live:
+                                    47 role-family matches across 286 companies. Not yet wired into
+                                    discover.py/run.py.
 searches/archive/job_search_project_v3/latam_fund_corpus_v1.md.pdf   turned out to NOT be a scrapable
                                     portfolio-company list as the roadmap's Phase 3 item 2 assumed —
                                     it's Joey's personal warm-outreach relationship tracker (named

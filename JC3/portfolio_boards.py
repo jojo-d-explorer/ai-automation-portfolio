@@ -25,9 +25,11 @@ URLs"), every one was verified for real before being hardcoded here. Only
 Getro/Consider both require a real browser session — their JSON APIs
 return {"code": "EXPIRED"} to a bare requests.get(), even with a Referer
 header. This isn't optional-header laziness; it's session-token gating.
-Playwright loads the real page (establishing a real session naturally)
-and intercepts the resulting API response, same pattern as fetch_jds.py's
-JS-rendered-page fallback.
+Playwright loads the real page (establishing a real session naturally),
+then replays the search-jobs POST from inside that authenticated context
+with the max batch size, same pattern as fetch_jds.py's JS-rendered-page
+fallback but going one step further than just reading what the page
+itself fetched.
 
 Consider platform (Kaszek/QED/Endeavor/a16z): full job-level extraction
 via the /api-boards/search-jobs response — real title, company, location,
@@ -36,6 +38,14 @@ natively), and critically `applyUrl`, the actual underlying ATS URL
 (e.g. a real job-boards.greenhouse.io link) — these rows plug directly
 into the existing pipeline the same way discover.py's primary/secondary
 rows do.
+
+Batch size, not true pagination: the endpoint's own offset/page/from
+parameters are all no-ops (tried four variants; results come back
+relevance-scored, not stably ordered, so "page 2" isn't coherent here
+anyway) — but it does accept size up to a hard server-enforced cap of
+1000 in one call (confirmed via its own 422 validation message). That's
+exhaustive for Kaszek (912 jobs) and Endeavor (currently 0), and a large
+but not complete sample for QED (~1463) and a16z (~15,455).
 
 Getro platform (General Catalyst): only company-list extraction
 (organizations/all) was mapped in the time available — the actual
@@ -66,12 +76,31 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 # CONFIRMED boards only — see module docstring for what was checked and
 # ruled out. provenance value per addendum §3 integration rule 4:
 # portfolio_board:{fund}
+#
+# board_id is Consider's internal identifier, captured from each board's
+# real initial request — do NOT assume it matches the URL slug. It usually
+# does (kaszek, qed-investors, endeavor all confirmed identical to their
+# slug) but a16z's is "andreessen-horowitz", found only by inspecting its
+# actual outgoing request. Guessing this field wrong doesn't error loudly;
+# it silently 500s ("Cannot wrap undefined with r.expr()") or, worse,
+# could silently return the wrong board's jobs — always verify per-board.
 CONSIDER_BOARDS = {
-    "kaszek": "https://consider.com/boards/vc/kaszek/jobs",
-    "qed-investors": "https://consider.com/boards/vc/qed-investors/jobs",
-    "endeavor": "https://consider.com/boards/vc/endeavor/jobs",
-    "a16z": "https://jobs.a16z.com",
+    "kaszek": {"url": "https://consider.com/boards/vc/kaszek/jobs", "board_id": "kaszek"},
+    "qed-investors": {"url": "https://consider.com/boards/vc/qed-investors/jobs", "board_id": "qed-investors"},
+    "endeavor": {"url": "https://consider.com/boards/vc/endeavor/jobs", "board_id": "endeavor"},
+    "a16z": {"url": "https://jobs.a16z.com", "board_id": "andreessen-horowitz"},
 }
+
+# Consider's search-jobs endpoint has no working offset/page/from parameter
+# — tried all three plus pageSize; every variant either got silently
+# ignored (same first result each time) or 422'd. Results appear to be
+# relevance-scored, not stable-ordered, so "page 2" isn't a coherent
+# concept here anyway. The endpoint does enforce a hard server-side cap of
+# 1000 (confirmed via its own validation error), so requesting the max in
+# one call is the actual ceiling, not partial pagination — for Kaszek (912
+# jobs) and Endeavor (0) this is exhaustive; for QED (~1463) and a16z
+# (~15,455) it's a large, but not complete, sample.
+MAX_BATCH_SIZE = 1000
 
 GETRO_COMPANY_LIST_BOARDS = {
     "general-catalyst": "https://jobs.generalcatalyst.com/jobs",
@@ -87,29 +116,45 @@ def _week_paths():
     return week_date, week_dir
 
 
-def fetch_consider_jobs(board_url, browser):
-    """Load a Consider-hosted board for real (establishing a real session)
-    and intercept the /api-boards/search-jobs response."""
-    captured = {}
-
-    def handle(response):
-        if "search-jobs" in response.url:
-            try:
-                captured["data"] = response.json()
-            except Exception:
-                pass
-
+def fetch_consider_jobs(board_url, board_id, browser):
+    """Load a Consider-hosted board for real (establishing the session its
+    API requires — see module docstring on session-gating), then replay
+    the search-jobs POST from inside that authenticated page context with
+    the max batch size, instead of settling for whatever the page's own
+    initial 15-job load happened to fetch. Relative URL so this works
+    identically whether the board lives on consider.com or a white-labeled
+    domain like jobs.a16z.com — it resolves against the page's own origin."""
     page = browser.new_page(user_agent=UA)
-    page.on("response", handle)
     try:
         page.goto(board_url, timeout=30000, wait_until="networkidle")
-        page.wait_for_timeout(1500)
+        page.wait_for_timeout(1000)
+        result = page.evaluate(
+            """
+            async ({boardId, size}) => {
+                const resp = await fetch('/api-boards/search-jobs', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        meta: {size: size},
+                        board: {id: boardId, isParent: true},
+                        query: {promoteFeatured: true}
+                    })
+                });
+                const data = await resp.json();
+                return {status: resp.status, jobs: data.jobs || [], errors: data.errors || []};
+            }
+            """,
+            {"boardId": board_id, "size": MAX_BATCH_SIZE},
+        )
+        if result["errors"]:
+            print(f"    API errors for {board_id}: {result['errors']}")
+        return result["jobs"]
     except Exception as e:
         print(f"    error loading {board_url}: {e}")
+        return []
     finally:
         page.close()
-
-    return captured.get("data", {}).get("jobs", [])
 
 
 def fetch_getro_companies(board_url, browser):
@@ -172,9 +217,9 @@ def run_portfolio_boards():
         print(f"\n{'─'*70}")
         print(f"  portfolio_boards.py — Consider boards (job-level)")
         print(f"{'─'*70}")
-        for fund_slug, url in CONSIDER_BOARDS.items():
-            jobs = fetch_consider_jobs(url, browser)
-            print(f"  {fund_slug:20} {len(jobs)} jobs on initial page load")
+        for fund_slug, board in CONSIDER_BOARDS.items():
+            jobs = fetch_consider_jobs(board["url"], board["board_id"], browser)
+            print(f"  {fund_slug:20} {len(jobs)} jobs (max batch, capped at {MAX_BATCH_SIZE})")
             for job in jobs:
                 row = normalize_consider_job(job, fund_slug)
                 stats["companies_seen"].add(row["company_slug"])
