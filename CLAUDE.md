@@ -110,7 +110,8 @@ searches/archive/                  old prompts, deprecated scripts, Phase 0 back
 searches/For_Others/               frozen v5.x friends track — do not modify
 JC3/run.py                         Phase 1 orchestrator — the roadmap's target command, built+verified
 JC3/discover.py                    primary (ATS API sweep) + secondary (SmartRecruiters) + tertiary
-                                    (stub — real recall sources are Phase 3, not built)
+                                    (stub — real recall sources are Phase 3, see below). Not yet
+                                    wired to portfolio_boards.py/linkedin_daily_links.py output.
 JC3/diff.py                        week-over-week/daily-new detection (Strategy Addendum §2)
 JC3/health.py                      URL health check, runs before JD fetch, non-API rows only
 JC3/fetch_jds.py                   full JD text fetch, requests + Playwright fallback
@@ -121,6 +122,30 @@ JC3/score.py                       judgment layer (Phase 2) — both backends ve
                                     JSON syntax error mid-response); --backend claude-p (roadmap
                                     default) shells out to the CLI, unwraps its --output-format json
                                     envelope, verified working too
+JC3/linkedin_daily_links.py         Phase 3 (Strategy Addendum §1.2). Separate file from the frozen
+                                    friends' JC3/linkedin_links.py — deliberately not touched.
+                                    5 role clusters x 4 geographies, pure URL generation, no auth.
+JC3/portfolio_boards.py            Phase 3 (Strategy Addendum §3). Of the addendum's 13 remembered
+                                    funds, only 5 turned out real after verification (roadmap's own
+                                    "do not trust remembered URLs" caution, borne out): Kaszek, QED
+                                    Investors, Endeavor, a16z (Consider platform — full job-level
+                                    extraction via Playwright + intercepted /api-boards/search-jobs),
+                                    General Catalyst (Getro — company-list only, jobs-search endpoint
+                                    not yet isolated). 8 funds not found despite real search effort:
+                                    monashees, NXTP, Valor Capital Group, Atlantico, Nazca, SoftBank
+                                    Latin America, Founders Fund, ALLVP (which appears to have
+                                    rebranded to "Hi Ventures" — allvp.mx now redirects to hi.vc).
+                                    Do not hardcode guesses for these without new information. Only
+                                    captures each board's first page of results (no pagination yet).
+                                    Not yet wired into discover.py/run.py.
+searches/archive/job_search_project_v3/latam_fund_corpus_v1.md.pdf   turned out to NOT be a scrapable
+                                    portfolio-company list as the roadmap's Phase 3 item 2 assumed —
+                                    it's Joey's personal warm-outreach relationship tracker (named
+                                    contacts, LinkedIn URLs, status checkboxes, "cross-reference
+                                    against your Anzu/JPM/DoD networks"). Not something to automate;
+                                    real portfolio company names mentioned in it were added to the
+                                    corpus by hand instead (see companies.json entries dated
+                                    2026-07-20, source=phase3_fund_corpus_names).
 jd_cache/                          cached JD text, keyed by sha256(url)[:16]
 snapshots/                         diff.py's daily API-result snapshots
 results/joey/LATAM/                v4 run output (Phase 1+), one Week_of_ folder per run

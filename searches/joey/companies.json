@@ -2,8 +2,8 @@
   "_meta": {
     "description": "Unified company corpus for Joey Clark job search tool",
     "schema_version": "2.2",
-    "last_updated": "2026-06-10",
-    "total_companies": 587,
+    "last_updated": "2026-07-20",
+    "total_companies": 595,
     "active": 103,
     "manual_review": 17,
     "from_v1_migrated": 91,
@@ -52,7 +52,7 @@
       "source": "historical_search",
       "added": "2026-03-17",
       "schema_origin": "v1_migrated",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "remotecom",
@@ -71,7 +71,7 @@
       "source": "historical_search",
       "added": "2026-03-17",
       "schema_origin": "v1_migrated",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "omnipresent",
@@ -219,11 +219,11 @@
       "us_investor_signal": "needs_verification",
       "priority_tier": 2,
       "status": "active",
-      "notes": "",
+      "notes": "Named portfolio company of Kaszek/monashees per latam_fund_corpus_v1.md (fund_portfolio, Phase 3).",
       "source": "historical_search",
       "added": "2026-03-17",
       "schema_origin": "v1_migrated",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "pleo",
@@ -1923,11 +1923,11 @@
       "investor_notes": "a16z Growth's largest single-company investment in LATAM ($200M of $300M). Multiple US-based crossover funds in latest round.",
       "priority_tier": 1,
       "status": "active",
-      "notes": "Series F $300M (Feb 2026). Mexico's first unicorn (2020). 120K transactions in 2025, first month of consolidated global profit Dec 2025. Fintech arm financed $1B+ in loans. Post-recovery growth mode = scope-heavy hiring expected.",
+      "notes": "Series F $300M (Feb 2026). Mexico's first unicorn (2020). 120K transactions in 2025, first month of consolidated global profit Dec 2025. Fintech arm financed $1B+ in loans. Post-recovery growth mode = scope-heavy hiring expected. Named portfolio company of Kaszek/monashees per latam_fund_corpus_v1.md (fund_portfolio, Phase 3).",
       "source": "scenius_latam_ep166",
       "verification_note": "User-verified Ashby. Slug needs verification.",
       "schema_origin": "v2.2_new",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "aplazo",
@@ -3589,11 +3589,11 @@
       "us_investor_signal": "needs_verification",
       "priority_tier": null,
       "status": "pending_review",
-      "notes": "Auto-discovered via Google search 2026-04-27.",
+      "notes": "Auto-discovered via Google search 2026-04-27. Named portfolio company of Kaszek/monashees per latam_fund_corpus_v1.md (fund_portfolio, Phase 3).",
       "source": "auto_discovery_v2.3",
       "added": "2026-04-27",
       "schema_origin": "v2.3",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "flex",
@@ -8340,11 +8340,11 @@
       "us_investor_signal": "high",
       "priority_tier": 1,
       "status": "pending_review",
-      "notes": "Brazilian neobank. Hires for Brazil + Mexico + Colombia expansion. Banking pedigree is the wedge.",
+      "notes": "Brazilian neobank. Hires for Brazil + Mexico + Colombia expansion. Banking pedigree is the wedge. Named portfolio company of Kaszek/monashees per latam_fund_corpus_v1.md (fund_portfolio, Phase 3).",
       "source": "gm_corpus_expansion_2026-05",
       "schema_origin": "v2.3",
       "added": "2026-05-04",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "rappi",
@@ -8376,12 +8376,12 @@
       "us_investor_signal": "high",
       "priority_tier": 1,
       "status": "pending_review",
-      "notes": "Colombian super-app. Hires US ops talent. Strong LATAM exposure.",
+      "notes": "Colombian super-app. Hires US ops talent. Strong LATAM exposure. Named portfolio company of Kaszek/monashees per latam_fund_corpus_v1.md (fund_portfolio, Phase 3).",
       "source": "gm_corpus_expansion_2026-05",
       "verification_note": "ATS likely proprietary - verify careers page.",
       "schema_origin": "v2.3",
       "added": "2026-05-04",
-      "latam_relevance": "none"
+      "latam_relevance": "direct"
     },
     {
       "slug": "konfio",
@@ -12002,6 +12002,158 @@
       "added": "2026-06-10",
       "schema_origin": "v2.3",
       "latam_relevance": "none"
+    },
+    {
+      "slug": "globalizationpartners",
+      "name": "G-P (Globalization Partners)",
+      "ats": "greenhouse",
+      "sector": [
+        "eor_cross_border_ops"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 1,
+      "status": "active",
+      "notes": "EOR country-team fit (roadmap Phase 3 item 3). ATS confirmed via direct Greenhouse API probe (200), 2026-07-20.",
+      "source": "phase3_eor_manual_add",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "multiplier",
+      "name": "Multiplier",
+      "ats": "needs_verification",
+      "sector": [
+        "eor_cross_border_ops"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 1,
+      "status": "pending_review",
+      "notes": "EOR country-team fit (roadmap Phase 3 item 3). ATS could not be confirmed via Greenhouse/Lever/Ashby probes 2026-07-20 — needs verify_ats.py or manual lookup before this becomes API-queryable.",
+      "source": "phase3_eor_manual_add",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "rippling",
+      "name": "Rippling",
+      "ats": "needs_verification",
+      "sector": [
+        "eor_cross_border_ops"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 1,
+      "status": "pending_review",
+      "notes": "EOR country-team fit (roadmap Phase 3 item 3). ATS could not be confirmed via Greenhouse/Lever/Ashby probes 2026-07-20 — needs verify_ats.py or manual lookup before this becomes API-queryable.",
+      "source": "phase3_eor_manual_add",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "slope",
+      "name": "Slope",
+      "ats": "needs_verification",
+      "sector": [
+        "unknown"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 2,
+      "status": "pending_review",
+      "notes": "Named portfolio company of monashees per latam_fund_corpus_v1.md (Phase 3). ATS not resolved — 404 on direct Greenhouse probe 2026-07-20; needs verify_ats.py or manual lookup.",
+      "source": "phase3_fund_corpus_names",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "music-ai",
+      "name": "Music.ai",
+      "ats": "needs_verification",
+      "sector": [
+        "unknown"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 2,
+      "status": "pending_review",
+      "notes": "Named portfolio company of monashees per latam_fund_corpus_v1.md (Phase 3). ATS not resolved — 404 on direct Greenhouse probe 2026-07-20; needs verify_ats.py or manual lookup.",
+      "source": "phase3_fund_corpus_names",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "creditas",
+      "name": "Creditas",
+      "ats": "needs_verification",
+      "sector": [
+        "unknown"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 2,
+      "status": "pending_review",
+      "notes": "Named portfolio company of Kaszek per latam_fund_corpus_v1.md (Phase 3). ATS not resolved — 404 on direct Greenhouse probe 2026-07-20; needs verify_ats.py or manual lookup.",
+      "source": "phase3_fund_corpus_names",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "loggi",
+      "name": "Loggi",
+      "ats": "needs_verification",
+      "sector": [
+        "unknown"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 2,
+      "status": "pending_review",
+      "notes": "Named portfolio company of monashees per latam_fund_corpus_v1.md (Phase 3). ATS not resolved — 404 on direct Greenhouse probe 2026-07-20; needs verify_ats.py or manual lookup.",
+      "source": "phase3_fund_corpus_names",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
+    },
+    {
+      "slug": "pomelo",
+      "name": "Pomelo",
+      "ats": "needs_verification",
+      "sector": [
+        "unknown"
+      ],
+      "stage": "unknown",
+      "geography_hq": "unknown",
+      "remote_posture": "unknown",
+      "us_investor_signal": "unknown",
+      "priority_tier": 2,
+      "status": "pending_review",
+      "notes": "Named portfolio company of Kaszek per latam_fund_corpus_v1.md (Phase 3). ATS not resolved — 404 on direct Greenhouse probe 2026-07-20; needs verify_ats.py or manual lookup.",
+      "source": "phase3_fund_corpus_names",
+      "added": "2026-07-20",
+      "schema_origin": "v2.2",
+      "latam_relevance": "direct"
     }
   ]
 }
