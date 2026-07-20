@@ -1,0 +1,214 @@
+# Consolidated search config for Joey Clark's v4 job intelligence pipeline.
+# Source of truth going forward — profile.yaml, not ONE_CLICK prompts.
+# See CLAUDE.md and Core/HANDOFF_ROADMAP_v4_Claude_Code.md for full context.
+# Written: 2026-07-20 (Phase 0)
+
+meta:
+  variant: latam
+  last_updated: "2026-07-20"
+  # Role-family keywords below are transcribed verbatim from the real,
+  # currently-used searches/joey/ats_api_checker.py ROLE_FAMILIES dict
+  # (schema v2.2) — not re-derived from the roadmap's prose list, which
+  # groups things slightly differently (11 narrative categories vs 7
+  # code-level families). This is the actual title-gate logic in production.
+
+role_families:
+  chief_of_staff:
+    - "chief of staff"
+    - "founding chief of staff"
+    - "head of ceo office"
+    - "office of the ceo"
+    - "principal to the ceo"
+    - "strategic advisor to ceo"
+    - "chief of staff to ceo"
+    - "chief of staff to founder"
+  partnerships_bd:
+    - "head of partnerships"
+    - "director of partnerships"
+    - "vp partnerships"
+    - "vp of partnerships"
+    - "partnerships director"
+    - "head of business development"
+    - "director of business development"
+    - "bd director"
+    - "head of bd"
+    - "strategic alliances"
+    - "head of strategic alliances"
+    - "platform partnerships"
+    - "ecosystem partnerships"
+    - "channel partnerships"
+    - "institutional partnerships"
+  strategic_ops:
+    - "strategic operations"
+    - "head of strategic operations"
+    - "strategy & operations"
+    - "strategy and operations"
+    - "director of strategy and operations"
+    - "director of strategy & operations"
+    - "director of strategy"
+    - "head of strategy"
+    - "strategic initiatives"
+    - "director of strategic initiatives"
+    - "strategic projects"
+    - "strategic projects director"
+    - "strategic programs"
+    - "business operations director"
+    - "director of business operations"
+    - "head of business operations"
+    - "chief operating officer"
+  market_entry:
+    - "market entry"
+    - "market launch"
+    - "country manager"
+    - "country lead"
+    - "general manager"
+    - "regional director"
+    - "regional lead"
+    - "expansion lead"
+    - "international expansion"
+    - "global expansion"
+    - "go-to-market lead"
+    - "market development"
+    # NOTE (Phase 0): the live script's list also carries "head of emea",
+    # "head of europe", "head of france", "head of uk", "head of portugal",
+    # "head of brazil", "head of latam", "head of americas" — legacy from
+    # the earlier Europe-focused search pivot. Kept out of this active
+    # config since v4's geography is LATAM-only (see location_tiers below);
+    # left in the script for now as a historical artifact. Revisit when
+    # Phase 1 rebuilds discover.py.
+  govt_defense:
+    - "government partnerships"
+    - "government affairs"
+    - "public sector partnerships"
+    - "defense partnerships"
+    - "federal partnerships"
+    - "head of federal"
+    - "mission operations"
+    - "head of mission"
+    - "public sector lead"
+  growth_commercial:
+    - "head of growth"
+    - "head of gtm"
+    - "go-to-market"
+    - "commercial director"
+    - "head of commercial"
+    - "corporate development"
+    - "operating partner"
+    - "operator-in-residence"
+    - "entrepreneur-in-residence"
+    - "venture partner"
+  program:
+    - "program director"
+    - "senior program manager"
+    - "head of programs"
+    - "director of programs"
+    - "strategic programs manager"
+
+seniority_gate:
+  # Transcribed from the live script's two-layer gate.
+  hard_reject:
+    - "associate"
+    - "coordinator"
+    - "specialist"
+    - "intern"
+    - "assistant"
+    - "junior"
+    - "entry-level"
+    - "entry level"
+  hard_reject_exceptions:
+    - "senior associate"
+    - "senior specialist"
+    - "principal associate"
+  soft_floor_markers:
+    - "manager"
+    - "senior manager"
+    - "principal"
+    - "lead"
+    - "head of"
+    - "director"
+    - "vp"
+    - "vice president"
+    - "chief"
+    - "founding"
+
+location_tiers:
+  # LATAM-only going forward, per the 2026-07-19 decision (roadmap §1, §8).
+  # The live script's "dc" and "portugal" eligibility modes are legacy from
+  # earlier pivots (DC-based search, Europe-based search) — not active
+  # targets. Left in ats_api_checker.py for now; not carried into this
+  # config as a target tier.
+  tier_1:
+    - "Mexico City / CDMX"
+    - "Buenos Aires"
+    - "Argentina"
+    - "Mexico"
+  tier_2:
+    values:
+      - "Remote-LATAM"
+      - "Remote-Americas"
+      - "Remote-Global"
+    note: >
+      Tier 2 counts only if genuinely open remote — no US residency, no
+      state restriction, no hybrid/recurring-onsite pattern. "Remote (US)"
+      is excluded, not flagged. Warm-connection exceptions to this are
+      added to the corpus manually by Joey; the pipeline never guesses.
+  tier_3:
+    - "Remote-Global with explicit LATAM expansion mandate"
+  hard_exclude:
+    - "in-person-locked non-LATAM cities"
+    - "US-residency-restricted roles"
+
+sectors:
+  # Priority order.
+  - fintech_payments
+  - eor_cross_border_ops
+  - defense_dual_use
+  - energy_industrial_tech
+  - vc_pe_platform_latam_mandate
+
+scoring_rubric:
+  # From prompts/score_jd_v4.md (locked 2026-07-19). Weights sum to 100.
+  weights:
+    skills_experience: 35
+    geography: 30
+    seniority: 20
+    sector: 15
+  two_stretch_cap:
+    dimensions: [function, domain, level, geography, compensation]
+    threshold: 2
+    capped_score: 55
+    compensation_note: >
+      Do NOT count compensation as a stretch dimension until comp_floor
+      below is resolved — record band facts (salary_usd, comp_band_type)
+      and let the human decide instead.
+  score_cutoff: 60
+  flag_band: [50, 59]
+  # score_jd_v4.md's own `recommend` field uses a slightly different band
+  # (75+ apply / 60-74 review / below-60 skip) than this cutoff+flag pair —
+  # both are transcribed faithfully as given in their respective source
+  # documents, not reconciled here. Flagging the discrepancy for Joey;
+  # changing either is a reserved decision (see below), not mine to resolve.
+  red_flag_archetypes:
+    - quota_partnerships_disguise
+    - founding_sales_as_cos
+    - pe_rollup_dev_track
+    - level_inverted_cos
+    - ghost_posting_signals
+
+spanish_requirement_rule: flag_not_exclude
+
+# --- RESERVED / UNRESOLVED — do not fill these in without Joey's explicit decision ---
+comp_floor:
+  status: UNRESOLVED
+  note: >
+    Joey has not set a LATAM compensation floor as of 2026-07-20. Open
+    question (roadmap §8): whether CDMX/BA-based roles paying LATAM-local
+    bands are acceptable, or whether the search targets US-level comp
+    regardless of base city. This affects the comp subscore and the
+    two-stretch calculus. DO NOT set a default value here — leave this
+    block as-is until Joey resolves it directly.
+
+reserved_decisions:
+  - "LATAM compensation floor (comp_floor above)"
+  - "Any change to the 60-point score_cutoff or scoring_rubric.weights"
+  - "Whether the RemoteGlobal secondary variant runs weekly alongside LATAM or biweekly"

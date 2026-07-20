@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
 """
-ATS API Checker for Joey Clark — v2.2 (v4 Phase 0 transitional copy)
+ATS API Checker for Joey Clark — v2.2
 Hits Greenhouse, Lever, and Ashby APIs for the curated company list.
 Reads flat v2.2 schema from companies.json.
 Outputs API-verified open jobs with corpus metadata enrichment + eligibility flag pre-tagging.
 
-Brought forward from job_search_project/ats_api_checker_v2.py (private,
-gitignored working copy) during the v4 consolidation — this was the real,
-actively-maintained corpus/script pair (587 companies as of 2026-06-10),
-not the stale v1.0 RemoteGlobal-variant script previously tracked here
-(now at searches/archive/pre_v4_backup/). Output path adjusted below to
-match HANDOFF_ROADMAP_v4's repo-root results/joey/LATAM/ convention.
-Superseded by JC3/run.py + discover.py once Phase 1 is built (see
-Core/HANDOFF_ROADMAP_v4.md) — this exists only to satisfy Phase 0's
-"environment verified" smoke test.
+The output is consumed by the ONE_CLICK_v2.md prompt for scoring.
 
 Usage:
-    python3 searches/joey/ats_api_checker.py
+    python3 ats_api_checker_v2.py
 
 Output:
-    results/joey/LATAM/Week_of_{DATE}/api_verified_{DATE}.csv
+    results/joey/Week_of_{DATE}/api_verified_{DATE}.csv
+    (consumed by ONE_CLICK_v2.md for scoring + dedup against Google-indexed results)
 
 Requires: requests (pip install requests)
 """
@@ -35,11 +28,11 @@ from datetime import datetime, timedelta
 # CONFIG
 # ============================================================
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_PATH = os.path.expanduser("~/GitHub/ai-automation-portfolio")
 TODAY = datetime.now()
 MONDAY = TODAY - timedelta(days=TODAY.weekday())
 WEEK_DATE = MONDAY.strftime("%Y-%m-%d")
-RESULTS_DIR = os.path.join(BASE_PATH, f"results/joey/LATAM/Week_of_{WEEK_DATE}")
+# Results land inside job_search_project/results/joey/Week_of_YYYY-MM-DD/
+RESULTS_DIR = os.path.join(SCRIPT_DIR, f"results/joey/Week_of_{WEEK_DATE}")
 OUTPUT_CSV = os.path.join(RESULTS_DIR, f"api_verified_{WEEK_DATE}.csv")
 COMPANIES_JSON = os.path.join(SCRIPT_DIR, "companies.json")
 os.makedirs(RESULTS_DIR, exist_ok=True)

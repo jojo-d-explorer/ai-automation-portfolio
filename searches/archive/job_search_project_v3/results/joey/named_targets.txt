@@ -1,0 +1,7 @@
+# Named target list for Stage 1 Step 2 sweep
+# Format: one company per line. Lines starting with # are comments.
+# Add company domains where Stage 1 should run a direct site: search.
+
+tekever.com
+# Add Scenius LATAM newsletter named companies here as you read each issue
+# Add other priority targets as they come up
