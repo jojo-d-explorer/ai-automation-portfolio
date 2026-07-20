@@ -69,7 +69,7 @@ BASE_PATH = os.path.dirname(SCRIPT_DIR)
 COMPANIES_JSON = os.path.join(BASE_PATH, "searches", "joey", "companies.json")
 
 sys.path.insert(0, SCRIPT_DIR)
-from discover import ROLE_FAMILIES, ALL_KEYWORDS, KEYWORD_TO_FAMILY, passes_seniority_gate, match_role  # noqa: E402
+from discover import enrich_and_filter, load_companies  # noqa: E402
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
@@ -182,11 +182,13 @@ def fetch_getro_companies(board_url, browser):
     return captured.get("data", {}).get("items", [])
 
 
-def normalize_consider_job(job, fund_slug):
+def normalize_consider_job(job):
+    """Same shape as discover.py's normalize_greenhouse/normalize_lever/etc
+    — company_name/role_family/eligibility are added by enrich_and_filter,
+    not here, so this row can go through the exact same enrichment path as
+    every other source instead of a parallel, easier-to-drift copy."""
     return {
-        "source": f"portfolio_board:{fund_slug}",
         "company_slug": job.get("companySlug", ""),
-        "company_name": job.get("companyName", ""),
         "title": job.get("title", ""),
         "location": ", ".join(job.get("locations", [])) or ("Remote" if job.get("remote") else ""),
         "url": job.get("applyUrl") or job.get("url", ""),
@@ -195,20 +197,14 @@ def normalize_consider_job(job, fund_slug):
     }
 
 
-def enrich_and_filter(row, stats):
-    family = match_role(row["title"])
-    if not family:
-        return None
-    if not passes_seniority_gate(row["title"]):
-        stats["rejected_seniority"] += 1
-        return None
-    row["role_family"] = family
-    return row
-
-
-def run_portfolio_boards():
+def run_portfolio_boards(companies_by_slug=None):
+    """companies_by_slug: optional {slug: company_dict} lookup from
+    companies.json, so a portfolio-board company already in the corpus
+    (e.g. Rappi, Nubank) gets its real latam_relevance/sector/etc instead
+    of enrich_and_filter's all-unknown defaults for an empty dict."""
     week_date, week_dir = _week_paths()
-    stats = {"rejected_seniority": 0, "matches": 0, "companies_seen": set()}
+    companies_by_slug = companies_by_slug or {}
+    stats = {"rejected_seniority": 0, "rejected_eligibility": 0, "matches": 0, "companies_seen": set()}
     all_rows = []
 
     with sync_playwright() as p:
@@ -221,9 +217,10 @@ def run_portfolio_boards():
             jobs = fetch_consider_jobs(board["url"], board["board_id"], browser)
             print(f"  {fund_slug:20} {len(jobs)} jobs (max batch, capped at {MAX_BATCH_SIZE})")
             for job in jobs:
-                row = normalize_consider_job(job, fund_slug)
+                row = normalize_consider_job(job)
                 stats["companies_seen"].add(row["company_slug"])
-                enriched = enrich_and_filter(row, stats)
+                company = companies_by_slug.get(row["company_slug"].lower(), {})
+                enriched = enrich_and_filter(row, company, f"portfolio_board:{fund_slug}", stats)
                 if enriched:
                     all_rows.append(enriched)
                     stats["matches"] += 1
@@ -240,14 +237,16 @@ def run_portfolio_boards():
         browser.close()
 
     print(f"\n{'='*70}")
-    print(f"  Consider: {len(all_rows)} role-family-matched jobs across "
+    print(f"  Consider: {len(all_rows)} role-family-matched, eligible jobs across "
           f"{len(stats['companies_seen'])} companies seen")
     print(f"  Getro: {len(getro_companies)} companies discovered (no job-level data this phase)")
-    print(f"  Rejected on seniority: {stats['rejected_seniority']}")
+    print(f"  Rejected on seniority: {stats['rejected_seniority']} | eligibility: {stats['rejected_eligibility']}")
     print(f"{'='*70}\n")
 
     return all_rows, getro_companies, week_dir, week_date
 
 
 if __name__ == "__main__":
-    run_portfolio_boards()
+    companies = load_companies(COMPANIES_JSON)
+    companies_by_slug = {c["slug"].lower(): c for c in companies}
+    run_portfolio_boards(companies_by_slug)

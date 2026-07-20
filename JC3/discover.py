@@ -458,6 +458,28 @@ def main():
                 all_matches.append(enriched)
                 stats["smartrecruiters_matches"] += 1
 
+    # ---------- PORTFOLIO BOARDS: Phase 3, Strategy Addendum §3 ----------
+    # Lazy import — portfolio_boards.py imports enrich_and_filter/load_companies
+    # from this module, so importing it at module load time here would be
+    # circular. Reuses the same companies list already loaded above (no
+    # second file read) as the latam_relevance/sector/etc lookup.
+    sys.path.insert(0, SCRIPT_DIR)
+    import portfolio_boards  # noqa: E402
+    companies_by_slug = {c["slug"].lower(): c for c in companies}
+    pb_rows, getro_companies, _pb_week_dir, _pb_week_date = portfolio_boards.run_portfolio_boards(companies_by_slug)
+    all_matches.extend(pb_rows)
+    stats["portfolio_board_matches"] = len(pb_rows)
+    # Getro company-list companies (General Catalyst, 537+) are NOT auto-
+    # appended to the corpus here — the addendum's own instruction for this
+    # fund is "filtered to remote and LATAM locations only," but the
+    # organizations/all endpoint gives names only, no location data to
+    # filter on. Bulk-adding all of them would pollute the corpus against
+    # that explicit intent. Logged for visibility; real filtering needs the
+    # jobs-search endpoint (not yet isolated — see portfolio_boards.py).
+    if getro_companies:
+        print(f"[portfolio_boards] {len(getro_companies)} Getro companies seen, not auto-appended "
+              f"(no location data to filter on yet — see portfolio_boards.py docstring)")
+
     # ---------- TERTIARY: capped web discovery, corpus growth only ----------
     new_company_candidates = discover_tertiary_web()
     if new_company_candidates:
@@ -469,7 +491,8 @@ def main():
     # ---------- OUTPUT ----------
     print(f"\n{'='*70}")
     print(f"Companies checked: {stats['companies_checked']} | Jobs scanned: {stats['total_jobs_scanned']}")
-    print(f"Matches: api={stats['api_matches']} smartrecruiters={stats['smartrecruiters_matches']} | "
+    print(f"Matches: api={stats['api_matches']} smartrecruiters={stats['smartrecruiters_matches']} "
+          f"portfolio_boards={stats.get('portfolio_board_matches', 0)} | "
           f"Rejected seniority={stats['rejected_seniority']} eligibility={stats['rejected_eligibility']}")
 
     fieldnames = ["source", "company_slug", "company_name", "title", "role_family", "location",
