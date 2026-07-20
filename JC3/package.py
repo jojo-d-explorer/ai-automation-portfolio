@@ -123,10 +123,29 @@ def update_master(deduped_rows, master_path, master_rows, week_date):
     return len(new_rows)
 
 
+def _union_fieldnames(rows):
+    """rows[0].keys() alone isn't safe here: update_master() mutates NEW
+    rows in place (adding first_seen_week) after classified is already
+    built, so rows share dict references and only some of them end up
+    with that key. A real mixed NEW/REPEAT run hit this — csv.DictWriter
+    raised "dict contains fields not in fieldnames" because row 0
+    (alphabetically first, a REPEAT row) lacked a key a later NEW row had.
+    Union of every row's keys, in first-seen order, so no field is ever
+    silently dropped or fatally missing depending on row order."""
+    seen = []
+    seen_set = set()
+    for row in rows:
+        for k in row.keys():
+            if k not in seen_set:
+                seen.append(k)
+                seen_set.add(k)
+    return seen
+
+
 def _autosize_and_style(ws, rows, highlight_new=False):
     if not rows:
         return
-    headers = list(rows[0].keys())
+    headers = _union_fieldnames(rows)
     ws.append(headers)
     for cell in ws[1]:
         cell.fill = HEADER_FILL
@@ -212,7 +231,7 @@ def run_package():
     xlsx_out = os.path.join(week_dir, f"LATAM_Joey_Complete_{week_date}.xlsx")
 
     if classified:
-        fieldnames = list(classified[0].keys())
+        fieldnames = _union_fieldnames(classified)
         with open(csv_out, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
