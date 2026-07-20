@@ -96,7 +96,8 @@ Core/HANDOFF_ROADMAP_v4_Claude_Code.md   full phase plan
 Core/STRATEGY_ADDENDUM_v4.md       sourcing strategy (LinkedIn, diff, boards, SerpAPI)
 config/joey_profile.yaml           consolidated search config (Phase 0)
 config/load_profile.py             validates profile.yaml, fails loudly on missing keys
-prompts/score_jd_v4.md             locked scoring prompt (Phase 2, not yet wired into run.py)
+prompts/score_jd_v4.md             locked scoring prompt (Phase 2, built + wired into run.py)
+config/joey_resume_digest.md       1-page resume digest for scoring, generated from the PDF (Phase 2)
 resume/Joey_Clark_Resume_4-25_FINAL.pdf
 scripts/corpus_append.py           appends new companies to companies.json (disqualifier-filtered)
 scripts/classify_url.py            URL -> {ats, slug, job_id, url_type}; corpus_append.py dependency
@@ -114,6 +115,12 @@ JC3/diff.py                        week-over-week/daily-new detection (Strategy 
 JC3/health.py                      URL health check, runs before JD fetch, non-API rows only
 JC3/fetch_jds.py                   full JD text fetch, requests + Playwright fallback
 JC3/package.py                     dedup + NEW/REPEAT + CSV/XLSX packaging
+JC3/score.py                       judgment layer (Phase 2) — both backends verified end-to-end:
+                                    --backend api uses tool-forced structured output (freeform-text
+                                    JSON proved unreliable in a live test: markdown fencing + a real
+                                    JSON syntax error mid-response); --backend claude-p (roadmap
+                                    default) shells out to the CLI, unwraps its --output-format json
+                                    envelope, verified working too
 jd_cache/                          cached JD text, keyed by sha256(url)[:16]
 snapshots/                         diff.py's daily API-result snapshots
 results/joey/LATAM/                v4 run output (Phase 1+), one Week_of_ folder per run
@@ -123,17 +130,19 @@ results/For_Others/                frozen v5.x friends track — do not modify
 
 ## Run commands
 
-- Full weekly run: `python3 JC3/run.py --user joey --variant latam` — built and verified
-  end-to-end against real data (Phase 1, 2026-07-20): 114 companies checked, 3166 jobs
-  scanned, 14/15 JDs fetched successfully (93%, above the 80% floor), branded XLSX +
-  Master CSV produced.
+- Full weekly run, including scoring: `python3 JC3/run.py --user joey --variant latam`
+  (defaults to --backend claude-p per roadmap §8) or `--backend api`. Built and verified
+  end-to-end against real data (2026-07-20): 114 companies checked, 3166 jobs scanned,
+  14/15 JDs fetched (93%, above the 80% floor), 13 scored on both backends, branded XLSX
+  + Master CSV produced. This week's real run scored 0 apply / 0 review / 13 skip — 11 of
+  those correctly geo_restricted (real "Remote, United States" postings). Honest result,
+  not a bug: the corpus isn't LATAM-enriched yet (Phase 3), so nothing this week should
+  have scored well.
 - Daily fast sweep (no JD fetch/scoring, ~2-3 min, no model tokens): `python3 JC3/run.py
   --user joey --variant latam --fresh-only`
 - Individual stages are also directly runnable: `python3 JC3/discover.py`, `JC3/diff.py`,
-  `JC3/health.py`, `JC3/fetch_jds.py`, `JC3/package.py` — each finds the current week's
-  input automatically if run standalone.
-- Scoring is not wired in yet: `prompts/score_jd_v4.md` exists (locked) but `score.py`
-  (Phase 2) hasn't been built. `run.py` completes after `package.py` and says so plainly.
+  `JC3/health.py`, `JC3/fetch_jds.py`, `JC3/package.py`, `JC3/score.py [--backend api]` —
+  each finds the current week's input automatically if run standalone.
 
 ## Reserved decisions — do not decide autonomously
 
