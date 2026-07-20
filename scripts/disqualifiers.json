@@ -1,0 +1,79 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "schema_version": "v2.3.1",
+    "purpose": "Disqualifier rules for corpus_append.py. A company classified into any of these buckets is dropped before being appended to companies.json.",
+    "philosophy": "Mechanical rejection only. No scoring, no LLM, no heuristics. Either the slug or name matches a pattern or it does not. When in doubt, do not add a rule — let the JD scoring stage filter the role instead.",
+    "last_updated": "2026-04-26"
+  },
+
+  "slug_blocklist": [
+    "tinder",
+    "bumble",
+    "match",
+    "hinge",
+    "okcupid",
+    "grindr",
+    "draftkings",
+    "fanduel",
+    "betmgm",
+    "caesars-sportsbook",
+    "pointsbet"
+  ],
+
+  "name_keyword_blocklist": [
+    "casino",
+    "sportsbook",
+    "gambling",
+    "lottery"
+  ],
+
+  "sector_keyword_clusters": {
+    "consumer_crypto_retail": {
+      "keywords": ["crypto exchange", "crypto wallet", "nft marketplace", "trade crypto", "buy bitcoin", "crypto trading", "memecoin", "coin trading"],
+      "note": "Targets retail crypto trading. Does NOT target B2B crypto infrastructure (custody platforms, institutional crypto, blockchain enterprise) — those can have legitimate Joey-fit roles."
+    },
+    "dating_apps": {
+      "keywords": ["dating app", "matchmaking", "find love", "find a date", "swipe right", "relationship app"],
+      "note": "Consumer dating only. B2B matchmaking and professional networking platforms are not in scope here."
+    },
+    "gambling": {
+      "keywords": ["sportsbook", "online casino", "place a bet", "sports betting", "real money gaming", "wagering"],
+      "note": "Gambling and sportsbook. Does NOT target gaming companies broadly (game studios, esports, etc.)."
+    },
+    "mlm_direct_sales": {
+      "keywords": ["multi-level marketing", "direct sales", "independent distributor", "downline", "network marketing"],
+      "note": "MLM is a small specific category. Names rarely match — keyword matching is the better signal."
+    },
+    "religious_nonprofits": {
+      "keywords": ["ministry", "church", "diocese", "evangelical", "missionary", "faith-based", "christian organization"],
+      "note": "Religious nonprofits are a known disqualifier. Generic 'nonprofit' is NOT a disqualifier — many growth-stage companies are technically nonprofits."
+    },
+    "consumer_lifestyle_apps": {
+      "keywords": ["meditation app", "habit tracker", "journaling app", "self-care app", "wellness app for individuals"],
+      "note": "Targets consumer wellness and lifestyle. Does NOT target enterprise wellness, B2B health platforms, or healthtech with a meaningful technical product."
+    },
+    "healthcare_admin": {
+      "keywords": ["medical billing", "claims processing", "revenue cycle management", "medical staffing agency", "healthcare administration"],
+      "note": "Targets healthcare admin and billing. Does NOT target healthtech, biotech, medical devices, digital health, or healthcare infrastructure."
+    },
+    "recruiting_agencies": {
+      "keywords": ["recruitment agency", "staffing firm", "talent agency", "executive search firm", "headhunter"],
+      "note": "Companies whose product IS recruiting, not companies that are hiring. The job listings they post are at OTHER companies."
+    },
+    "job_aggregators": {
+      "keywords": ["job board", "job aggregator", "applicant tracking system"],
+      "note": "Indeed, Glassdoor reposts, etc. Roles surfaced from these are the aggregator's own internal roles."
+    }
+  },
+
+  "rules": {
+    "order": [
+      "1. slug_blocklist exact match → reject",
+      "2. name_keyword_blocklist substring match (case-insensitive) → reject",
+      "3. sector_keyword_clusters: any cluster where 2+ keywords appear in name or snippet → reject",
+      "4. otherwise → pass"
+    ],
+    "rejection_audit": "All rejections are logged to disqualified_<week>.csv with slug, name, rejected_by_rule, matched_keywords, and snippet. Review the log periodically to tune the lists."
+  }
+}

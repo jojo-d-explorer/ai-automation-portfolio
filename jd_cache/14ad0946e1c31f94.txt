@@ -1,0 +1,80 @@
+Head of Growth Marketing
+Location
+San Francisco, CA (Hybrid) OR Remote (Americas, UTC-3 to UTC-10)
+Employment Type
+Full time
+Location Type
+Remote
+Department
+Growth
+Compensation
+$200K – $250K • Offers Equity
+Overview
+Application
+Head of Growth Marketing
+You'll own the growth engine behind how Firecrawl acquires and activates users — across content, SEO/GEO, product marketing, partnerships, social, and emerging agent-first distribution channels. This is a technical, operator-first role, not a narrow channel role and not a strategy seat. You'll run the operating system behind our signup growth: pacing, channel mix, performance diagnosis, prioritization, and team execution. You'll work closely with Eric, who owns growth strategy and the major bets, while you own turning that strategy into a machine that performs every single week.
+Salary Range: $200,000–$250,000/year (Range shown is for U.S.-based employees in San Francisco, CA. Compensation outside the U.S. is adjusted fairly based on your country's cost of living.)
+Equity Range: Competitive equity — details shared during the process.
+Location: San Francisco, CA or Remote (Americas, UTC-3 to UTC-10)
+Job Type: Full-Time
+Experience: 5+ years in growth or marketing leadership at a technical or developer-facing product
+Visa: Must be legally authorized to work in the United States. We're not able to sponsor visas right now, though that may change down the line.
+About Firecrawl
+Firecrawl is the easiest way to turn the web into data AI agents can use. One API call converts any URL into clean, LLM-ready markdown or structured data - the boring-hard problem everyone building with LLMs eventually hits, solved.
+We hit 8 figures in ARR in year one and more than doubled it in year two. We have 147k+ GitHub stars, and developers, agents, and category-defining AI companies build on us every day. Growth like this is rare, and we're just getting started.
+We're a small team punching far above our weight. Everyone here owns a real piece of the product and company, end to end, and runs it themselves - no hiding behind process or headcount.
+This is a place for people who want to work at the frontier: an AI company building the infrastructure other AI companies run on, not one bolting AI onto an existing product. We move fast, go deep, and are building the tools superintelligence will rely on to gather data from the web.
+What You'll Do
+Own weekly signup pacing and growth across core acquisition channels — you're accountable to the number, not just the strategy
+Build a defensible signup mix across SEO/GEO, partnerships, brand, and other durable channels that compound over time
+Run cross-channel planning, prioritization, and execution — including managing channel owners across content, PMM, partnerships, brand, and distribution
+Run weekly performance reviews: diagnose misses, identify what's working, and ship corrective action plans fast
+Partner with product and engineering on activation, onboarding, and growth constraints that live outside marketing's direct control
+Keep Eric focused on strategy and major bets — not on stitching the whole machine together week to week
+What We're Looking For
+A true operator, not a strategist. You've owned a growth number before — not advised on one. You know the difference between a channel that's underperforming and a channel that needs to be killed, and you make that call without waiting for someone else to tell you.
+Experienced running growth for a technical or developer-facing product. You understand how developers discover tools, evaluate them, and decide to actually use them. You've built growth systems for an audience that hates being marketed to.
+Strong management instincts. You can run a team with a mix of channel specialists, create cadence, drive accountability, and keep everyone moving in the same direction — without needing perfect information to do it.
+Fluent in modern distribution. SEO/GEO, content, product launches, AI-native discovery — you have real operational depth across multiple channels, not just talking points.
+Good messaging taste. You're not a pure brand specialist, but you know what good looks like. You can maintain a high bar across everything that goes out without being the bottleneck.
+Comfortable working directly with founders. No committee. No approval layers. You'll have a direct line to Eric and be expected to push back, make calls, and own the outcome.
+Backgrounds that often do well: head of growth or marketing at a developer tools or API-first company, early marketing leader at a PLG SaaS startup, founder-marketer who built a growth engine from scratch.
+What We're NOT Looking For
+Growth or marketing leaders who are great at strategy decks and weak on execution
+People who need a fully-staffed team under them before they can move the needle
+Anyone who mistakes activity — campaigns launched, emails sent, content published — for growth
+A Note On Pace
+We're a small team doing a lot. Roles here are loosely defined on purpose — you'll own things that don't have a clear owner yet, and that's a feature, not a bug. If you need your scope fully defined before you can move, this probably isn't the right fit. If you want to build something that matters inside one of the fastest-growing AI infrastructure companies in the world, let's talk.
+Benefits & Perks
+Available to all employees
+Salary that makes sense — $200,000–$250,000/year (SF, U.S.-based), based on impact, not tenure
+Own a piece — Gain competitive equity in what you're helping build
+Generous PTO — 15 days mandatory, anything after 24 days, just ask (holidays excluded); take the time you need to recharge
+Parental leave — 12 weeks fully paid, for all parents
+Wellness stipend — $100/month for the gym, therapy, massages, or whatever keeps you human
+Learning & Development — Expense up to $1,000/year toward anything that helps you grow professionally
+Team offsites — A change of scenery, minus the trust falls
+Sabbatical — 3 paid months off after 4 years, do something fun and new
+Available to US-based full-time employees
+Full coverage, no red tape — Medical, dental, and vision (100% for employees, 50% for spouse/kids) — no weird loopholes, just care that works
+Life & Disability insurance — Employer-paid short-term disability, long-term disability, and life insurance — coverage for life's curveballs
+Supplemental options — Optional accident, critical illness, hospital indemnity, and voluntary life insurance for extra peace of mind
+Doctegrity telehealth — Talk to a doctor from your couch
+401(k) plan — Retirement might be a ways off, but future-you will thank you
+Pre-tax benefits — Access to FSAs and commuter benefits (US-only) to help your wallet out a bit
+Pet insurance — Because fur babies are family too
+Available to SF-based employees
+SF HQ perks — Snacks, drinks, team lunches, intense ping pong, and peak startup energy
+E-Bike transportation — A loaner electric bike to get you around the city, on us
+Interview Process
+Application Review — Send us your work: a growth channel or system you've owned, a team you've built, or a number you've hit. A quick note on what you'd want to understand about Firecrawl's current growth before you started.
+Intro Chat (~20 min) — Quick alignment call. We'll talk about what you've built, how you run channel teams, and what you'd prioritize first.
+Deep Dive Chat (~60 min) — Walk us through a real example: a time you ran a multi-channel growth operation and had to diagnose and recover from a miss. Then a live scenario — how would you think about building a defensible signup mix for Firecrawl from where we are today?
+Founder Chat (~30 min) — Culture, pace, ownership, and how you like to work. Time for your questions too.
+Paid Work Trial (1–2 weeks) — Dig into a real growth problem: audit our current channel mix, identify the biggest lever, and present a 30-day plan. We evaluate on how you diagnose, how you prioritize, and whether your plan would actually move the number.
+Decision — We move fast after the trial.
+If you want to own the growth machine behind one of the fastest-growing developer tools on the internet — and you're ready to be accountable to the number, not just advise on it — this is your shot.
+👉 Apply now.
+Apply for this Job
+Powered by
+Privacy PolicySecurityVulnerability Disclosure

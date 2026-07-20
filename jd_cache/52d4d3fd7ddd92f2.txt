@@ -1,0 +1,196 @@
+Job Application for Go-To-Market Engineer II, Mid-Market at Apollo.io
+Back to jobs
+Go-To-Market Engineer II, Mid-Market
+Remote, United States
+Apply
+Apollo.io
+is the leading go-to-market solution for revenue teams, trusted by over 500,000 companies and millions of users globally, from rapidly growing startups to some of the world's largest enterprises. Founded in 2015, the company is one of the fastest growing companies in SaaS, raising approximately $250 million to date and valued at $1.6 billion.
+Apollo.io
+provides sales and marketing teams with easy access to verified contact data for over 210 million B2B contacts and 35 million companies worldwide, along with tools to engage and convert these contacts in one unified platform. By helping revenue professionals find the most accurate contact information and automating the outreach process,
+Apollo.io
+turns prospects into customers. Apollo raised a series D in 2023 and is backed by top-tier investors, including Sequoia Capital, Bain Capital Ventures, and more, and counts the former President and COO of Hubspot, JD Sherman, among its board members.
+We're looking for an experienced GTM Engineer to
+own Apollo's most strategic customer relationships. This is a rare blend of enterprise account strategist, AI-native systems builder, and trusted executive advisor — someone who can operate at the C-suite level as naturally as they can architect a signal-based outbound campaign.
+The GTM Engineer is Apollo's answer to the CSM: a success architect who designs and deploys customer interventions that drive adoption, credit consumption, and revenue growth.
+On the Mid-Market team, you're not just managing accounts — you're navigating complex organizations, building relationships across multiple stakeholder layers, and ensuring that every buying persona from RevOps to the CRO is aligned on value.
+What You'll Do
+Own customer outcomes post-sale:
+GRR (>95%), NRR, product adoption, and credit consumption growth across a portfolio of Apollo's highest-value accounts.
+Multithread across complex organizations:
+Build and maintain active relationships with
+3+ stakeholders per account
+— spanning RevOps, Sales Leadership, Marketing, and the C-suite — to drive alignment on GTM strategy and expansion outcomes.
+Configure Apollo to power AI-driven workflows:
+ICP definition, signal-based sequencing, messaging architecture, and campaign design tailored to each account's unique GTM motion.
+Turn usage data into expansion:
+Use product telemetry and behavioral signals to identify and execute upsell, seat expansion, and credit consumption opportunities before customers ask for them.
+Advise executives on GTM strategy:
+Present credibly to VP- and C-level stakeholders, proving ROI with measurable lift and
+influencing how your accounts think about their entire go-to-market motion and tech stack.
+Protect and grow your book:
+Identify and mitigate churn risk early by ensuring your accounts are never single-threaded and value is visible across the organization.
+Who You Are
+6+ years
+in Solution Engineering
+,
+GTM consulting, Customer Success, RevOps, Growth, or Sales Development — with a clear track record of
+influencing complex, multi-stakeholder accounts.
+A natural multi-threader:
+You've successfully expanded relationships beyond a single champion inside enterprise accounts. You know how to get a VP of Sales and a Head of RevOps aligned without being in the same room.
+AI-native:
+You're currently designing GTM campaigns, workflows, and systems agentically. MCP isn't a buzzword to you — it's how you work.
+Analytically fluent:
+You speak in signals, segments, and pipeline impact. ICP, TAM, SAM, and attribution models are core to how you think.
+Executive-ready:
+You present confidently to C-suite stakeholders, adapt your message to the audience, and can hold a strategic business conversation as easily as a technical one.
+Customer-obsessed:
+You build lasting relationships and raving fans. Your accounts don't churn because they don't want to leave.
+Success Looks Like
+Retention >95% across your Mid-Market book
+Consistent credit consumption uplift (10%+ NRR)
+Seat expansion and CSQL generation
+Executive-level relationships maintained across every Mid-Market account
+The listed Pay Range reflects the total cash compensation inclusive of annual base salary and annual bonus as applicable. For sales roles, the range provided is the role’s On Target Earnings ("OTE") range, meaning that the range includes both the sales commissions/sales bonus target and annual base salary for the role. This salary range may be inclusive of several career levels at Apollo and will be narrowed during the interview process based on a number of factors, including the candidate’s experience, qualifications, and location. Applicants interested in this role who are not located in the US may request the annual salary range for their location during the interview process.
+Additional benefits for this role may include: equity; company bonus or sales commissions/bonuses; 401(k) plan; at least 10 paid holidays per year, flex PTO, and parental leave; employee assistance program and wellbeing benefits; global travel coverage; life/AD&D/STD/LTD insurance; FSA/HSA and medical, dental, and vision benefits.
+Tier 1 Pay Range (San Francisco, New York City, Seattle)
+$150,000
+-
+$175,000
+USD
+Tier 2 Pay Range (All other US Locations)
+$150,000
+-
+$175,000
+USD
+We are AI Native
+Apollo.io is an AI-native company built on a culture of continuous improvement. We’re on the front lines of driving productivity for our customers—and we expect the same mindset from our team. If you're energized by finding smarter, faster ways to get things done using AI and automation, you'll thrive here.
+Why You’ll Love Working at Apollo
+At Apollo, we’re driven by a shared mission: to help our customers unlock their full revenue potential. That’s why we
+take extreme ownership
+of our work,
+move with focus and urgency
+, and
+learn voraciously
+to stay ahead.
+We invest deeply in your growth, ensuring you have the resources, support, and autonomy to
+own your role and make a real impact
+. Collaboration is at our core—we’re
+all for one
+, meaning you’ll have a team across departments ready to help you succeed. We encourage
+bold ideas and courageous action
+, giving you the freedom to experiment, take smart risks, and drive big wins.
+If you’re looking for a place where your work matters, where you can push boundaries, and where your career can thrive—Apollo is the place for you.
+Learn more
+here!
+Create a Job Alert
+Interested in building your career at Apollo.io? Get future opportunities sent straight to your email.
+Create alert
+Apply for this job
+*
+indicates a required field
+Quick Apply with MyGreenhouse
+First Name
+*
+Last Name
+*
+Email
+*
+Phone
+Country
+*
+Phone
+*
+Resume/CV
+*
+Attach
+Attach
+Dropbox
+Google Drive
+Enter manually
+Enter manually
+Accepted file types: pdf, doc, docx, txt, rtf
+Education
+School
+Select...
+Degree
+Select...
+Discipline
+Select...
+Start date month
+Select...
+Start date year
+End date month
+Select...
+End date year
+Add another
+LinkedIn Profile
+*
+What are your compensation expectations for the role? (Please do not say negotiable)
+*
+Will you now or in the future require sponsorship or a work visa to continue employment in this location?
+*
+Select...
+Are you legally authorized to work in the country/state/province where this position is located?
+*
+Select...
+Voluntary Self-Identification
+For government reporting purposes, we ask candidates to respond to the below self-identification survey.
+Completion of the form is entirely voluntary. Whatever your decision, it will not be considered in the hiring
+process or thereafter. Any information that you do provide will be recorded and maintained in a
+confidential file.
+As set forth in Apollo.io’s Equal Employment Opportunity policy,
+we do not discriminate on the basis of any protected group status under any applicable law.
+Gender
+Select...
+Are you Hispanic/Latino?
+Select...
+Race & Ethnicity Definitions
+If you believe you belong to any of the categories of protected veterans listed below, please indicate by making the appropriate selection.
+As a government contractor subject to the Vietnam Era Veterans Readjustment Assistance Act (VEVRAA), we request this information in order to measure
+the effectiveness of the outreach and positive recruitment efforts we undertake pursuant to VEVRAA. Classification of protected categories
+is as follows:
+A "disabled veteran" is one of the following: a veteran of the U.S. military, ground, naval or air service who is entitled to compensation (or who but for the receipt of military retired pay would be entitled to compensation) under laws administered by the Secretary of Veterans Affairs; or a person who was discharged or released from active duty because of a service-connected disability.
+A "recently separated veteran" means any veteran during the three-year period beginning on the date of such veteran's discharge or release from active duty in the U.S. military, ground, naval, or air service.
+An "active duty wartime or campaign badge veteran" means a veteran who served on active duty in the U.S. military, ground, naval or air service during a war, or in a campaign or expedition for which a campaign badge has been authorized under the laws administered by the Department of Defense.
+An "Armed forces service medal veteran" means a veteran who, while serving on active duty in the U.S. military, ground, naval or air service, participated in a United States military operation for which an Armed Forces service medal was awarded pursuant to Executive Order 12985.
+Veteran Status
+Select...
+Voluntary Self-Identification of Disability
+Form CC-305
+Page 1 of 1
+OMB Control Number 1250-0005
+Expires 04/30/2026
+Why are you being asked to complete this form?
+We are a federal contractor or subcontractor. The law requires us to provide equal employment opportunity to qualified people with disabilities. We have a goal of having at least 7% of our workers as people with disabilities. The law says we must measure our progress towards this goal. To do this, we must ask applicants and employees if they have a disability or have ever had one. People can become disabled, so we need to ask this question at least every five years.
+Completing this form is voluntary, and we hope that you will choose to do so. Your answer is confidential. No one who makes hiring decisions will see it. Your decision to complete the form and your answer will not harm you in any way. If you want to learn more about the law or this form, visit the U.S. Department of Labor’s Office of Federal Contract Compliance Programs (OFCCP) website at
+www.dol.gov/ofccp
+.
+How do you know if you have a disability?
+A disability is a condition that substantially limits one or more of your “major life activities.” If you have or have ever had such a condition, you are a person with a disability.
+Disabilities include, but are not limited to:
+Alcohol or other substance use disorder (not currently using drugs illegally)
+Autoimmune disorder, for example, lupus, fibromyalgia, rheumatoid arthritis, HIV/AIDS
+Blind or low vision
+Cancer (past or present)
+Cardiovascular or heart disease
+Celiac disease
+Cerebral palsy
+Deaf or serious difficulty hearing
+Diabetes
+Disfigurement, for example, disfigurement caused by burns, wounds, accidents, or congenital disorders
+Epilepsy or other seizure disorder
+Gastrointestinal disorders, for example, Crohn's Disease, irritable bowel syndrome
+Intellectual or developmental disability
+Mental health conditions, for example, depression, bipolar disorder, anxiety disorder, schizophrenia, PTSD
+Missing limbs or partially missing limbs
+Mobility impairment, benefiting from the use of a wheelchair, scooter, walker, leg brace(s) and/or other supports
+Nervous system condition, for example, migraine headaches, Parkinson’s disease, multiple sclerosis (MS)
+Neurodivergence, for example, attention-deficit/hyperactivity disorder (ADHD), autism spectrum disorder, dyslexia, dyspraxia, other learning disabilities
+Partial or complete paralysis (any cause)
+Pulmonary or respiratory conditions, for example, tuberculosis, asthma, emphysema
+Short stature (dwarfism)
+Traumatic brain injury
+Disability Status
+Select...
+PUBLIC BURDEN STATEMENT: According to the Paperwork Reduction Act of 1995 no persons are required to respond to a collection of information unless such collection displays a valid OMB control number. This survey should take about 5 minutes to complete.
+Submit application
