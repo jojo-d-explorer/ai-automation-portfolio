@@ -6,7 +6,7 @@ A multi-user job search automation system built as Phase 1 of an AI engineering 
 
 I'm Joey Clark, most recently SVP at Anzu Partners, with about a decade across DoD program management, banking, and venture capital. I built this system because I needed it. I was running my own job search and helping a few friends with theirs, and the existing tools weren't doing what I needed. So I started building, one piece at a time, and ended up with something I now run weekly for five people including myself.
 
-The repo has two tracks. A production system (v5.x) runs weekly searches and produces deliverables for the five active users. An R&D track (v2.x) is where I prototype more sophisticated patterns against my own search first, before bringing them into the production track. The two-stage discovery and scoring split, the auto-growing corpus, the JD-based filtering: all started as experiments on my search before they earned their way into the broader system.
+The repo has two tracks. A production system (v5.x) runs weekly searches and produces deliverables for the five active users. An R&D track is where I prototype more sophisticated patterns against my own search first, before bringing them into the production track — now on its fourth major architecture, v4 (see Week 13 below). The two-stage discovery and scoring split, the auto-growing corpus, the JD-based filtering: all started as experiments on my search before they earned their way into the broader system.
 
 Phase 2 — [Aula](https://github.com/jojo-d-explorer/spanish-aula), a full-stack Spanish-learning app — is live in a separate repository.
 
@@ -286,6 +286,20 @@ The second was a verification tool I needed for myself. After the corpus expansi
 Result: corpus grew from 395 to 430 companies. The ATS verification tool now handles a class of maintenance task that used to be one-off manual edits.
 
 Learned: an automation system needs maintenance tooling at least as much as it needs feature tooling. Most of what's gone wrong with this system over six months has been data quality issues, not logic bugs.
+
+### Week 13: v4 Rebuild — Code-as-Pipeline, Model-as-Judge ✅
+Completed: July 2026
+
+A full architectural rebuild of my own search track, moving it off CoWork-orchestrated prompts entirely. The prior R&D versions (v2.x–v2.4) used the model to drive search execution as well as scoring. Watching failure modes accumulate across six months of runs, the pattern was consistent: every real bug was a data-quality bug (stale URLs, snippet scoring, silent corpus drift), never a reasoning bug. So v4 flips the division of labor — deterministic Python owns discovery, fetching, and verification end to end; the model's only job is judgment, scoring a fixed rubric against full JD text that Python already fetched and cached.
+
+Four phases, each committed and verified against real runs before moving to the next:
+
+* **Phase 0 — Consolidation.** Three parallel, drifted copies of my own pipeline had accumulated across past pivots (a Europe-focused pass, a LATAM-focused pass, an attempt at generalizing the tool for other users). Merged them into one canonical, tracked path, and wrote down five recurring failure modes as hard rules for the rebuild: stale-index discovery, snippet scoring, runtime coupling (the model calling network tools instead of pure Python), late URL verification, and a LATAM recall gap (Country Manager / market-entry roles post disproportionately off the usual US-centric ATS boards).
+* **Phase 1 — Orchestrator.** Built `JC3/run.py`, a six-stage pipeline (`discover → diff → health → fetch_jds → package → score`) — each stage a standalone, independently runnable script, deterministic except the final scoring call.
+* **Phase 2 — Judgment layer.** Locked a scoring prompt (`prompts/score_jd_v4.md`) that runs against full fetched JD text, never a search snippet, with a resume digest generated from my actual resume. Verified two scoring backends end to end — a CLI backend and a direct-API backend using tool-forced structured output after a live test showed the API returning malformed freeform JSON.
+* **Phase 3 — Recall expansion.** Extended discovery past standard ATS boards: a LinkedIn direct-search-link generator, and a VC-portfolio job board miner covering the "posts to portfolio-company boards before it ever hits an ATS" pathway. Of 13 funds on the target list, verified 5 as real, live, scrapable boards (Kaszek, QED Investors, Endeavor, a16z, General Catalyst) and documented the other 8 as not found rather than guessing — one had quietly rebranded. Wired the new source into the main discovery pipeline with full eligibility filtering, not a parallel, partially-filtered copy.
+
+**Learned:** the "verify, don't trust remembered state" discipline that governs the pipeline's data has to govern its own build process too — several of this rebuild's real fixes (a fund's actual API shape, a platform's real auth requirement, whether a document was scrapable data or a personal contact list) only surfaced because each assumption got tested against a live source before being coded against.
 ---
 
 ## Phase 2: Aula (Spanish Learning Platform)
